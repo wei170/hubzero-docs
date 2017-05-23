@@ -1,0 +1,2958 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \GeSHi</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method_GeSHi" title="GeSHi() :: Creates a new GeSHi object, with source and language"><span class="description">Creates a new GeSHi object, with source and language</span><pre>GeSHi()</pre></a></li>
+<li class="method public "><a href="#method__genCSSName" title="_genCSSName() :: "><span class="description">_genCSSName()
+        </span><pre>_genCSSName()</pre></a></li>
+<li class="method public "><a href="#method__optimize_regexp_list_tokens_to_string" title="_optimize_regexp_list_tokens_to_string() :: this function creates the appropriate regexp string of an token array
+you should not call this function directly, @see $this-&gt;optimize_regexp_list()."><span class="description">this function creates the appropriate regexp string of an token array
+you should not call this function directly, @see $this-&gt;optimize_regexp_list().</span><pre>_optimize_regexp_list_tokens_to_string()</pre></a></li>
+<li class="method public "><a href="#method_add_keyword" title="add_keyword() :: Adds a keyword to a keyword group for highlighting"><span class="description">Adds a keyword to a keyword group for highlighting</span><pre>add_keyword()</pre></a></li>
+<li class="method public "><a href="#method_add_keyword_group" title="add_keyword_group() :: Creates a new keyword group"><span class="description">Creates a new keyword group</span><pre>add_keyword_group()</pre></a></li>
+<li class="method public "><a href="#method_build_parse_cache" title="build_parse_cache() :: Setup caches needed for parsing. This is automatically called in parse_code() when appropriate."><span class="description">Setup caches needed for parsing. This is automatically called in parse_code() when appropriate.</span><pre>build_parse_cache()</pre></a></li>
+<li class="method public "><a href="#method_build_style_cache" title="build_style_cache() :: Setup caches needed for styling. This is automatically called in
+parse_code() and get_stylesheet() when appropriate. This function helps
+stylesheet generators as they rely on some style information being
+preprocessed"><span class="description">Setup caches needed for styling. This is automatically called in
+parse_code() and get_stylesheet() when appropriate. This function helps
+stylesheet generators as they rely on some style information being
+preprocessed</span><pre>build_style_cache()</pre></a></li>
+<li class="method public "><a href="#method_change_case" title="change_case() :: Changes the case of a keyword for those languages where a change is asked for"><span class="description">Changes the case of a keyword for those languages where a change is asked for</span><pre>change_case()</pre></a></li>
+<li class="method public "><a href="#method_disable_highlighting" title="disable_highlighting() :: Disables all highlighting"><span class="description">Disables all highlighting</span><pre>disable_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_enable_classes" title="enable_classes() :: Sets whether CSS classes should be used to highlight the source. Default
+is off, calling this method with no arguments will turn it on"><span class="description">Sets whether CSS classes should be used to highlight the source. Default
+is off, calling this method with no arguments will turn it on</span><pre>enable_classes()</pre></a></li>
+<li class="method public "><a href="#method_enable_highlighting" title="enable_highlighting() :: Enables all highlighting"><span class="description">Enables all highlighting</span><pre>enable_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_enable_ids" title="enable_ids() :: Whether CSS IDs should be added to each line"><span class="description">Whether CSS IDs should be added to each line</span><pre>enable_ids()</pre></a></li>
+<li class="method public "><a href="#method_enable_important_blocks" title="enable_important_blocks() :: Sets whether context-important blocks are highlighted"><span class="description">Sets whether context-important blocks are highlighted</span><pre>enable_important_blocks()</pre></a></li>
+<li class="method public "><a href="#method_enable_inner_code_block" title="enable_inner_code_block() :: Sets whether to force a surrounding block around
+the highlighted code or not"><span class="description">Sets whether to force a surrounding block around
+the highlighted code or not</span><pre>enable_inner_code_block()</pre></a></li>
+<li class="method public "><a href="#method_enable_keyword_links" title="enable_keyword_links() :: Turns linking of keywords on or off."><span class="description">Turns linking of keywords on or off.</span><pre>enable_keyword_links()</pre></a></li>
+<li class="method public "><a href="#method_enable_line_numbers" title="enable_line_numbers() :: Sets whether line numbers should be displayed."><span class="description">Sets whether line numbers should be displayed.</span><pre>enable_line_numbers()</pre></a></li>
+<li class="method public "><a href="#method_enable_multiline_span" title="enable_multiline_span() :: Sets wether spans and other HTML markup generated by GeSHi can
+span over multiple lines or not. Defaults to true to reduce overhead."><span class="description">Sets wether spans and other HTML markup generated by GeSHi can
+span over multiple lines or not. Defaults to true to reduce overhead.</span><pre>enable_multiline_span()</pre></a></li>
+<li class="method public "><a href="#method_enable_strict_mode" title="enable_strict_mode() :: Enables/disables strict highlighting. Default is off, calling this
+method without parameters will turn it on. See documentation
+for more details on strict mode and where to use it."><span class="description">Enables/disables strict highlighting. Default is off, calling this
+method without parameters will turn it on. See documentation
+for more details on strict mode and where to use it.</span><pre>enable_strict_mode()</pre></a></li>
+<li class="method public "><a href="#method_error" title="error() :: Returns an error message associated with the last GeSHi operation,
+or false if no error has occured"><span class="description">Returns an error message associated with the last GeSHi operation,
+or false if no error has occured</span><pre>error()</pre></a></li>
+<li class="method public "><a href="#method_finalise" title="finalise() :: Takes the parsed code and various options, and creates the HTML
+surrounding it to make it look nice."><span class="description">Takes the parsed code and various options, and creates the HTML
+surrounding it to make it look nice.</span><pre>finalise()</pre></a></li>
+<li class="method public "><a href="#method_footer" title="footer() :: Returns the footer for the code block."><span class="description">Returns the footer for the code block.</span><pre>footer()</pre></a></li>
+<li class="method public "><a href="#method_get_language_fullname" title="get_language_fullname() :: Get full_name for a lang or false."><span class="description">Get full_name for a lang or false.</span><pre>get_language_fullname()</pre></a></li>
+<li class="method public "><a href="#method_get_language_name" title="get_language_name() :: Gets a human-readable language name (thanks to Simon Patterson
+for the idea :))"><span class="description">Gets a human-readable language name (thanks to Simon Patterson
+for the idea :))</span><pre>get_language_name()</pre></a></li>
+<li class="method public "><a href="#method_get_language_name_from_extension" title="get_language_name_from_extension() :: Given a file extension, this method returns either a valid geshi language
+name, or the empty string if it couldn't be found"><span class="description">Given a file extension, this method returns either a valid geshi language
+name, or the empty string if it couldn't be found</span><pre>get_language_name_from_extension()</pre></a></li>
+<li class="method public "><a href="#method_get_line_style" title="get_line_style() :: Get's the style that is used for the specified line"><span class="description">Get's the style that is used for the specified line</span><pre>get_line_style()</pre></a></li>
+<li class="method public "><a href="#method_get_multiline_span" title="get_multiline_span() :: Get current setting for multiline spans, see GeSHi-&gt;enable_multiline_span()."><span class="description">Get current setting for multiline spans, see GeSHi-&gt;enable_multiline_span().</span><pre>get_multiline_span()</pre></a></li>
+<li class="method public "><a href="#method_get_real_tab_width" title="get_real_tab_width() :: Returns the tab width to use, based on the current language and user
+preference"><span class="description">Returns the tab width to use, based on the current language and user
+preference</span><pre>get_real_tab_width()</pre></a></li>
+<li class="method public "><a href="#method_get_stylesheet" title="get_stylesheet() :: Returns a stylesheet for the highlighted code. If $economy mode
+is true, we only return the stylesheet declarations that matter for
+this code block instead of the whole thing"><span class="description">Returns a stylesheet for the highlighted code. If $economy mode
+is true, we only return the stylesheet declarations that matter for
+this code block instead of the whole thing</span><pre>get_stylesheet()</pre></a></li>
+<li class="method public "><a href="#method_get_supported_languages" title="get_supported_languages() :: Get supported langs or an associative array lang=&gt;full_name."><span class="description">Get supported langs or an associative array lang=&gt;full_name.</span><pre>get_supported_languages()</pre></a></li>
+<li class="method public "><a href="#method_get_time" title="get_time() :: Gets the time taken to parse the code"><span class="description">Gets the time taken to parse the code</span><pre>get_time()</pre></a></li>
+<li class="method public "><a href="#method_handle_keyword_replace" title="handle_keyword_replace() :: Handles replacements of keywords to include markup and links if requested"><span class="description">Handles replacements of keywords to include markup and links if requested</span><pre>handle_keyword_replace()</pre></a></li>
+<li class="method public "><a href="#method_handle_multiline_regexps" title="handle_multiline_regexps() :: handles newlines in REGEXPS matches. Set the _hmr_* vars before calling this"><span class="description">handles newlines in REGEXPS matches. Set the _hmr_* vars before calling this</span><pre>handle_multiline_regexps()</pre></a></li>
+<li class="method public "><a href="#method_handle_regexps_callback" title="handle_regexps_callback() :: handles regular expressions highlighting-definitions with callback functions"><span class="description">handles regular expressions highlighting-definitions with callback functions</span><pre>handle_regexps_callback()</pre></a></li>
+<li class="method public "><a href="#method_header" title="header() :: Creates the header for the code block (with correct attributes)"><span class="description">Creates the header for the code block (with correct attributes)</span><pre>header()</pre></a></li>
+<li class="method public "><a href="#method_highlight_lines_extra" title="highlight_lines_extra() :: Specifies which lines to highlight extra"><span class="description">Specifies which lines to highlight extra</span><pre>highlight_lines_extra()</pre></a></li>
+<li class="method public "><a href="#method_hsc" title="hsc() :: Secure replacement for PHP built-in function htmlspecialchars()."><span class="description">Secure replacement for PHP built-in function htmlspecialchars().</span><pre>hsc()</pre></a></li>
+<li class="method public "><a href="#method_indent" title="indent() :: Swaps out spaces and tabs for HTML indentation. Not needed if
+the code is in a pre block."><span class="description">Swaps out spaces and tabs for HTML indentation. Not needed if
+the code is in a pre block.</span><pre>indent()</pre></a></li>
+<li class="method public "><a href="#method_load_from_file" title="load_from_file() :: Given a file name, this method loads its contents in, and attempts
+to set the language automatically. An optional lookup table can be
+passed for looking up the language name. If not specified a default
+table is used"><span class="description">Given a file name, this method loads its contents in, and attempts
+to set the language automatically. An optional lookup table can be
+passed for looking up the language name. If not specified a default
+table is used</span><pre>load_from_file()</pre></a></li>
+<li class="method public "><a href="#method_load_language" title="load_language() :: Gets language information and stores it for later use"><span class="description">Gets language information and stores it for later use</span><pre>load_language()</pre></a></li>
+<li class="method public "><a href="#method_merge_arrays" title="merge_arrays() :: Merges arrays recursively, overwriting values of the first array with values of later arrays"><span class="description">Merges arrays recursively, overwriting values of the first array with values of later arrays</span><pre>merge_arrays()</pre></a></li>
+<li class="method public "><a href="#method_optimize_keyword_group" title="optimize_keyword_group() :: compile optimized regexp list for keyword group"><span class="description">compile optimized regexp list for keyword group</span><pre>optimize_keyword_group()</pre></a></li>
+<li class="method public "><a href="#method_optimize_regexp_list" title="optimize_regexp_list() :: this functions creates an optimized regular expression list
+of an array of strings."><span class="description">this functions creates an optimized regular expression list
+of an array of strings.</span><pre>optimize_regexp_list()</pre></a></li>
+<li class="method public "><a href="#method_parse_code" title="parse_code() :: Returns the code in $this-&gt;source, highlighted and surrounded by the
+nessecary HTML."><span class="description">Returns the code in $this-&gt;source, highlighted and surrounded by the
+nessecary HTML.</span><pre>parse_code()</pre></a></li>
+<li class="method public "><a href="#method_parse_non_string_part" title="parse_non_string_part() :: Takes a string that has no strings or comments in it, and highlights
+stuff like keywords, numbers and methods."><span class="description">Takes a string that has no strings or comments in it, and highlights
+stuff like keywords, numbers and methods.</span><pre>parse_non_string_part()</pre></a></li>
+<li class="method public "><a href="#method_remove_keyword" title="remove_keyword() :: Removes a keyword from a keyword group"><span class="description">Removes a keyword from a keyword group</span><pre>remove_keyword()</pre></a></li>
+<li class="method public "><a href="#method_remove_keyword_group" title="remove_keyword_group() :: Removes a keyword group"><span class="description">Removes a keyword group</span><pre>remove_keyword_group()</pre></a></li>
+<li class="method public "><a href="#method_replace_keywords" title="replace_keywords() :: Replaces certain keywords in the header and footer with
+certain configuration values"><span class="description">Replaces certain keywords in the header and footer with
+certain configuration values</span><pre>replace_keywords()</pre></a></li>
+<li class="method public "><a href="#method_set_brackets_highlighting" title="set_brackets_highlighting() :: Turns highlighting on/off for brackets"><span class="description">Turns highlighting on/off for brackets</span><pre>set_brackets_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_set_brackets_style" title="set_brackets_style() :: Sets the styles for brackets. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority"><span class="description">Sets the styles for brackets. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_brackets_style()</pre></a></li>
+<li class="method public "><a href="#method_set_case_keywords" title="set_case_keywords() :: Sets the case that keywords should use when found. Use the constants:"><span class="description">Sets the case that keywords should use when found. Use the constants:</span><pre>set_case_keywords()</pre></a></li>
+<li class="method public "><a href="#method_set_case_sensitivity" title="set_case_sensitivity() :: Sets whether a set of keywords are checked for in a case sensitive manner"><span class="description">Sets whether a set of keywords are checked for in a case sensitive manner</span><pre>set_case_sensitivity()</pre></a></li>
+<li class="method public "><a href="#method_set_code_style" title="set_code_style() :: Sets the style for the actual code. This should be a string
+containing valid stylesheet declarations. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority"><span class="description">Sets the style for the actual code. This should be a string
+containing valid stylesheet declarations. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_code_style()</pre></a></li>
+<li class="method public "><a href="#method_set_comments_highlighting" title="set_comments_highlighting() :: Turns highlighting on/off for comment groups"><span class="description">Turns highlighting on/off for comment groups</span><pre>set_comments_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_set_comments_style" title="set_comments_style() :: Sets the styles for comment groups.  If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority"><span class="description">Sets the styles for comment groups.  If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_comments_style()</pre></a></li>
+<li class="method public "><a href="#method_set_encoding" title="set_encoding() :: Sets the encoding used for htmlspecialchars(), for international
+support."><span class="description">Sets the encoding used for htmlspecialchars(), for international
+support.</span><pre>set_encoding()</pre></a></li>
+<li class="method public "><a href="#method_set_escape_characters_highlighting" title="set_escape_characters_highlighting() :: Turns highlighting on/off for escaped characters"><span class="description">Turns highlighting on/off for escaped characters</span><pre>set_escape_characters_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_set_escape_characters_style" title="set_escape_characters_style() :: Sets the styles for escaped characters. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority"><span class="description">Sets the styles for escaped characters. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_escape_characters_style()</pre></a></li>
+<li class="method public "><a href="#method_set_footer_content" title="set_footer_content() :: Sets the content of the footer block"><span class="description">Sets the content of the footer block</span><pre>set_footer_content()</pre></a></li>
+<li class="method public "><a href="#method_set_footer_content_style" title="set_footer_content_style() :: Sets the style for the footer content"><span class="description">Sets the style for the footer content</span><pre>set_footer_content_style()</pre></a></li>
+<li class="method public "><a href="#method_set_header_content" title="set_header_content() :: Sets the content of the header block"><span class="description">Sets the content of the header block</span><pre>set_header_content()</pre></a></li>
+<li class="method public "><a href="#method_set_header_content_style" title="set_header_content_style() :: Sets the style for the header content"><span class="description">Sets the style for the header content</span><pre>set_header_content_style()</pre></a></li>
+<li class="method public "><a href="#method_set_header_type" title="set_header_type() :: Sets the type of header to be used."><span class="description">Sets the type of header to be used.</span><pre>set_header_type()</pre></a></li>
+<li class="method public "><a href="#method_set_highlight_lines_extra_style" title="set_highlight_lines_extra_style() :: Sets the style for extra-highlighted lines"><span class="description">Sets the style for extra-highlighted lines</span><pre>set_highlight_lines_extra_style()</pre></a></li>
+<li class="method public "><a href="#method_set_important_styles" title="set_important_styles() :: Sets styles for important parts of the code"><span class="description">Sets styles for important parts of the code</span><pre>set_important_styles()</pre></a></li>
+<li class="method public "><a href="#method_set_keyword_group_highlighting" title="set_keyword_group_highlighting() :: Turns highlighting on/off for a keyword group"><span class="description">Turns highlighting on/off for a keyword group</span><pre>set_keyword_group_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_set_keyword_group_style" title="set_keyword_group_style() :: Sets the style for a keyword group. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority"><span class="description">Sets the style for a keyword group. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_keyword_group_style()</pre></a></li>
+<li class="method public "><a href="#method_set_language" title="set_language() :: Sets the language for this object"><span class="description">Sets the language for this object</span><pre>set_language()</pre></a></li>
+<li class="method public "><a href="#method_set_language_path" title="set_language_path() :: Sets the path to the directory containing the language files. Note
+that this path is relative to the directory of the script that included
+geshi.php, NOT geshi.php itself."><span class="description">Sets the path to the directory containing the language files. Note
+that this path is relative to the directory of the script that included
+geshi.php, NOT geshi.php itself.</span><pre>set_language_path()</pre></a></li>
+<li class="method public "><a href="#method_set_line_ending" title="set_line_ending() :: Sets the line-ending"><span class="description">Sets the line-ending</span><pre>set_line_ending()</pre></a></li>
+<li class="method public "><a href="#method_set_line_style" title="set_line_style() :: Sets the styles for the line numbers."><span class="description">Sets the styles for the line numbers.</span><pre>set_line_style()</pre></a></li>
+<li class="method public "><a href="#method_set_link_styles" title="set_link_styles() :: Sets styles for links in code"><span class="description">Sets styles for links in code</span><pre>set_link_styles()</pre></a></li>
+<li class="method public "><a href="#method_set_link_target" title="set_link_target() :: Sets the target for links in code"><span class="description">Sets the target for links in code</span><pre>set_link_target()</pre></a></li>
+<li class="method public "><a href="#method_set_methods_highlighting" title="set_methods_highlighting() :: Turns highlighting on/off for methods"><span class="description">Turns highlighting on/off for methods</span><pre>set_methods_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_set_methods_style" title='set_methods_style() :: Sets the styles for methods. $key is a number that references the
+appropriate "object splitter" - see the language file for the language
+you are highlighting to get this number. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority'><span class="description">Sets the styles for methods. $key is a number that references the
+appropriate "object splitter" - see the language file for the language
+you are highlighting to get this number. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_methods_style()</pre></a></li>
+<li class="method public "><a href="#method_set_numbers_highlighting" title="set_numbers_highlighting() :: Turns highlighting on/off for numbers"><span class="description">Turns highlighting on/off for numbers</span><pre>set_numbers_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_set_numbers_style" title="set_numbers_style() :: Sets the styles for numbers. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority"><span class="description">Sets the styles for numbers. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_numbers_style()</pre></a></li>
+<li class="method public "><a href="#method_set_overall_class" title="set_overall_class() :: Sets the overall classname for this block of code. This
+class can then be used in a stylesheet to style this object's
+output"><span class="description">Sets the overall classname for this block of code. This
+class can then be used in a stylesheet to style this object's
+output</span><pre>set_overall_class()</pre></a></li>
+<li class="method public "><a href="#method_set_overall_id" title="set_overall_id() :: Sets the overall id for this block of code. This id can then
+be used in a stylesheet to style this object's output"><span class="description">Sets the overall id for this block of code. This id can then
+be used in a stylesheet to style this object's output</span><pre>set_overall_id()</pre></a></li>
+<li class="method public "><a href="#method_set_overall_style" title="set_overall_style() :: Sets the styles for the code that will be outputted
+when this object is parsed. The style should be a
+string of valid stylesheet declarations"><span class="description">Sets the styles for the code that will be outputted
+when this object is parsed. The style should be a
+string of valid stylesheet declarations</span><pre>set_overall_style()</pre></a></li>
+<li class="method public "><a href="#method_set_regexps_highlighting" title="set_regexps_highlighting() :: Turns highlighting on/off for regexps"><span class="description">Turns highlighting on/off for regexps</span><pre>set_regexps_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_set_regexps_style" title="set_regexps_style() :: Sets the styles for regexps. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority"><span class="description">Sets the styles for regexps. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_regexps_style()</pre></a></li>
+<li class="method public "><a href="#method_set_script_style" title="set_script_style() :: Sets the styles for strict code blocks. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority"><span class="description">Sets the styles for strict code blocks. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_script_style()</pre></a></li>
+<li class="method public "><a href="#method_set_source" title="set_source() :: Sets the source code for this object"><span class="description">Sets the source code for this object</span><pre>set_source()</pre></a></li>
+<li class="method public "><a href="#method_set_strings_highlighting" title="set_strings_highlighting() :: Turns highlighting on/off for strings"><span class="description">Turns highlighting on/off for strings</span><pre>set_strings_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_set_strings_style" title="set_strings_style() :: Sets the styles for strings. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority"><span class="description">Sets the styles for strings. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_strings_style()</pre></a></li>
+<li class="method public "><a href="#method_set_symbols_highlighting" title="set_symbols_highlighting() :: Turns highlighting on/off for symbols"><span class="description">Turns highlighting on/off for symbols</span><pre>set_symbols_highlighting()</pre></a></li>
+<li class="method public "><a href="#method_set_symbols_style" title="set_symbols_style() :: Sets the styles for symbols. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority"><span class="description">Sets the styles for symbols. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</span><pre>set_symbols_style()</pre></a></li>
+<li class="method public "><a href="#method_set_tab_width" title="set_tab_width() :: Sets how many spaces a tab is substituted for"><span class="description">Sets how many spaces a tab is substituted for</span><pre>set_tab_width()</pre></a></li>
+<li class="method public "><a href="#method_set_time" title="set_time() :: Sets the time taken to parse the code"><span class="description">Sets the time taken to parse the code</span><pre>set_time()</pre></a></li>
+<li class="method public "><a href="#method_set_url_for_keyword_group" title="set_url_for_keyword_group() :: Sets the base URL to be used for keywords"><span class="description">Sets the base URL to be used for keywords</span><pre>set_url_for_keyword_group()</pre></a></li>
+<li class="method public "><a href="#method_set_use_language_tab_width" title="set_use_language_tab_width() :: Sets whether or not to use tab-stop width specifed by language"><span class="description">Sets whether or not to use tab-stop width specifed by language</span><pre>set_use_language_tab_width()</pre></a></li>
+<li class="method public "><a href="#method_start_line_numbers_at" title="start_line_numbers_at() :: Sets what number line numbers should start at. Should
+be a positive integer, and will be converted to one."><span class="description">Sets what number line numbers should start at. Should
+be a positive integer, and will be converted to one.</span><pre>start_line_numbers_at()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property__hmr_after" title="$_hmr_after() :: "><span class="description"></span><pre>$_hmr_after</pre></a></li>
+<li class="property public "><a href="#property__hmr_before" title='$_hmr_before() :: some "callback parameters" for handle_multiline_regexps'><span class="description"></span><pre>$_hmr_before</pre></a></li>
+<li class="property public "><a href="#property__hmr_key" title="$_hmr_key() :: "><span class="description"></span><pre>$_hmr_key</pre></a></li>
+<li class="property public "><a href="#property__hmr_replace" title="$_hmr_replace() :: "><span class="description"></span><pre>$_hmr_replace</pre></a></li>
+<li class="property public "><a href="#property__kw_replace_group" title="$_kw_replace_group() :: Work around for Suhosin Patch with disabled /e modifier"><span class="description"></span><pre>$_kw_replace_group</pre></a></li>
+<li class="property public "><a href="#property__rx_key" title="$_rx_key() :: "><span class="description"></span><pre>$_rx_key</pre></a></li>
+<li class="property public "><a href="#property_add_ids" title="$add_ids() :: Whether CSS IDs should be added to the code"><span class="description"></span><pre>$add_ids</pre></a></li>
+<li class="property public "><a href="#property_allow_multiline_span" title="$allow_multiline_span() :: Flag to decide if multi line spans are allowed. Set it to false to make sure
+each tag is closed before and reopened after each linefeed."><span class="description"></span><pre>$allow_multiline_span</pre></a></li>
+<li class="property public "><a href="#property_code_style" title="$code_style() :: The style for the actual code"><span class="description"></span><pre>$code_style</pre></a></li>
+<li class="property public "><a href="#property_enable_important_blocks" title="$enable_important_blocks() :: Whether important blocks should be recognised or not"><span class="description"></span><pre>$enable_important_blocks</pre></a></li>
+<li class="property public "><a href="#property_encoding" title="$encoding() :: The encoding to use for entity encoding
+NOTE: Used with Escape Char Sequences to fix UTF-8 handling (cf. SF#2037598)"><span class="description"></span><pre>$encoding</pre></a></li>
+<li class="property public "><a href="#property_error" title="$error() :: The error message associated with an error"><span class="description"></span><pre>$error</pre></a></li>
+<li class="property public "><a href="#property_error_messages" title="$error_messages() :: Possible error messages"><span class="description"></span><pre>$error_messages</pre></a></li>
+<li class="property public "><a href="#property_footer_content" title="$footer_content() :: The content of the footer block"><span class="description"></span><pre>$footer_content</pre></a></li>
+<li class="property public "><a href="#property_footer_content_style" title="$footer_content_style() :: The style of the footer block"><span class="description"></span><pre>$footer_content_style</pre></a></li>
+<li class="property public "><a href="#property_force_code_block" title="$force_code_block() :: Tells if a block around the highlighted source should be forced
+if not using line numbering"><span class="description"></span><pre>$force_code_block</pre></a></li>
+<li class="property public "><a href="#property_header_content" title="$header_content() :: The content of the header block"><span class="description"></span><pre>$header_content</pre></a></li>
+<li class="property public "><a href="#property_header_content_style" title="$header_content_style() :: The style of the header block"><span class="description"></span><pre>$header_content_style</pre></a></li>
+<li class="property public "><a href="#property_header_type" title="$header_type() :: The type of header to use. Can be one of the following
+values:"><span class="description"></span><pre>$header_type</pre></a></li>
+<li class="property public "><a href="#property_highlight_extra_lines" title="$highlight_extra_lines() :: Lines that should be highlighted extra"><span class="description"></span><pre>$highlight_extra_lines</pre></a></li>
+<li class="property public "><a href="#property_highlight_extra_lines_style" title="$highlight_extra_lines_style() :: Styles of extra-highlighted lines"><span class="description"></span><pre>$highlight_extra_lines_style</pre></a></li>
+<li class="property public "><a href="#property_highlight_extra_lines_styles" title="$highlight_extra_lines_styles() :: Styles of lines that should be highlighted extra"><span class="description"></span><pre>$highlight_extra_lines_styles</pre></a></li>
+<li class="property public "><a href="#property_important_styles" title="$important_styles() :: Styles for important parts of the code"><span class="description"></span><pre>$important_styles</pre></a></li>
+<li class="property public "><a href="#property_keyword_links" title="$keyword_links() :: Should keywords be linked?"><span class="description"></span><pre>$keyword_links</pre></a></li>
+<li class="property public "><a href="#property_language" title="$language() :: The language to use when highlighting"><span class="description"></span><pre>$language</pre></a></li>
+<li class="property public "><a href="#property_language_data" title="$language_data() :: The data for the language used"><span class="description"></span><pre>$language_data</pre></a></li>
+<li class="property public "><a href="#property_language_path" title="$language_path() :: The path to the language files"><span class="description"></span><pre>$language_path</pre></a></li>
+<li class="property public "><a href="#property_lexic_permissions" title="$lexic_permissions() :: Array of permissions for which lexics should be highlighted"><span class="description"></span><pre>$lexic_permissions</pre></a></li>
+<li class="property public "><a href="#property_line_ending" title="$line_ending() :: The line ending
+If null, nl2br() will be used on the result string."><span class="description"></span><pre>$line_ending</pre></a></li>
+<li class="property public "><a href="#property_line_nth_row" title='$line_nth_row() :: The "nth" value for fancy line highlighting'><span class="description"></span><pre>$line_nth_row</pre></a></li>
+<li class="property public "><a href="#property_line_numbers" title="$line_numbers() :: Flag for how line numbers are displayed"><span class="description"></span><pre>$line_numbers</pre></a></li>
+<li class="property public "><a href="#property_line_numbers_start" title="$line_numbers_start() :: Number at which line numbers should start at"><span class="description"></span><pre>$line_numbers_start</pre></a></li>
+<li class="property public "><a href="#property_line_style1" title="$line_style1() :: Line number styles"><span class="description"></span><pre>$line_style1</pre></a></li>
+<li class="property public "><a href="#property_line_style2" title="$line_style2() :: Line number styles for fancy lines"><span class="description"></span><pre>$line_style2</pre></a></li>
+<li class="property public "><a href="#property_link_styles" title="$link_styles() :: The styles for hyperlinks in the code"><span class="description"></span><pre>$link_styles</pre></a></li>
+<li class="property public "><a href="#property_link_target" title="$link_target() :: Default target for keyword links"><span class="description"></span><pre>$link_target</pre></a></li>
+<li class="property public "><a href="#property_loaded_language" title="$loaded_language() :: Currently loaded language file"><span class="description"></span><pre>$loaded_language</pre></a></li>
+<li class="property public "><a href="#property_overall_class" title="$overall_class() :: The overall class for this code block"><span class="description"></span><pre>$overall_class</pre></a></li>
+<li class="property public "><a href="#property_overall_id" title="$overall_id() :: The overall ID for this code block"><span class="description"></span><pre>$overall_id</pre></a></li>
+<li class="property public "><a href="#property_overall_style" title="$overall_style() :: The overall style for this code block"><span class="description"></span><pre>$overall_style</pre></a></li>
+<li class="property public "><a href="#property_parse_cache_built" title="$parse_cache_built() :: Wether the caches needed for parsing are built or not"><span class="description"></span><pre>$parse_cache_built</pre></a></li>
+<li class="property public "><a href="#property_source" title="$source() :: The source code to highlight"><span class="description"></span><pre>$source</pre></a></li>
+<li class="property public "><a href="#property_strict_mode" title="$strict_mode() :: Whether highlighting is strict or not"><span class="description"></span><pre>$strict_mode</pre></a></li>
+<li class="property public "><a href="#property_tab_width" title="$tab_width() :: The size of tab stops"><span class="description"></span><pre>$tab_width</pre></a></li>
+<li class="property public "><a href="#property_table_linenumber_style" title="$table_linenumber_style() :: Style for line numbers when GESHI_HEADER_PRE_TABLE is chosen"><span class="description"></span><pre>$table_linenumber_style</pre></a></li>
+<li class="property public "><a href="#property_time" title="$time() :: The time it took to parse the code"><span class="description"></span><pre>$time</pre></a></li>
+<li class="property public "><a href="#property_use_classes" title="$use_classes() :: Whether to use CSS classes in output"><span class="description"></span><pre>$use_classes</pre></a></li>
+<li class="property public "><a href="#property_use_language_tab_width" title="$use_language_tab_width() :: Should we use language-defined tab stop widths?"><span class="description"></span><pre>$use_language_tab_width</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\GeSHi"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/GeSHi.html">GeSHi</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">The GeSHi Class.</p>
+<div class="details">
+<div class="long_description"><p>Please refer to the documentation for GeSHi 1.0.X that is available
+at <a href="http://qbnz.com/highlighter/documentation.php">http://qbnz.com/highlighter/documentation.php</a> for more information
+about how to use this class.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/geshi.html">geshi</a></td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="">Nigel McNie <nigel@geshi.org>, Benny Baumann <BenBE@omorphia.de></a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>(C) 2004 - 2007 Nigel McNie, (C) 2007 - 2008 Benny Baumann</td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method_GeSHi"></a><div class="element clickable method public method_GeSHi " data-toggle="collapse" data-target=".method_GeSHi .collapse" title="public">
+<h2>Creates a new GeSHi object, with source and language</h2>
+<pre>GeSHi(string $source<code> = ''</code>, string $language<code> = ''</code>, string $path<code> = ''</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$source</h4>
+<code>string</code><p>The source code to highlight</p></div>
+<div class="subelement argument">
+<h4>$language</h4>
+<code>string</code><p>The language to highlight the source with</p></div>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>The path to the language file directory. <b>This
+is deprecated!</b> I've backported the auto path
+detection from the 1.1.X dev branch, so now it
+should be automatically set correctly. If you have
+renamed the language directory however, you will
+still need to set the path using this parameter or
+{@link GeSHi->set_language_path()}</p></div>
+</div></div>
+</div>
+<a id="method__genCSSName"></a><div class="element clickable method public method__genCSSName " data-toggle="collapse" data-target=".method__genCSSName .collapse" title="public">
+<h2>_genCSSName()
+        </h2>
+<pre>_genCSSName($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="method__optimize_regexp_list_tokens_to_string"></a><div class="element clickable method public method__optimize_regexp_list_tokens_to_string " data-toggle="collapse" data-target=".method__optimize_regexp_list_tokens_to_string .collapse" title="public">
+<h2>this function creates the appropriate regexp string of an token array
+you should not call this function directly, @see $this-&gt;optimize_regexp_list().</h2>
+<pre>_optimize_regexp_list_tokens_to_string(\&amp;$tokens $tokens, $recursed<code> = false</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="mailto:mail@milianw.de">Milian Wolff</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tokens</h4>
+<code>\&amp;$tokens</code><p>array of tokens</p></div>
+<div class="subelement argument">
+<h4>$recursed</h4><p>bool to know wether we recursed or not</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_add_keyword"></a><div class="element clickable method public method_add_keyword " data-toggle="collapse" data-target=".method_add_keyword .collapse" title="public">
+<h2>Adds a keyword to a keyword group for highlighting</h2>
+<pre>add_keyword(integer $key, string $word) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the keyword group to add the keyword to</p></div>
+<div class="subelement argument">
+<h4>$word</h4>
+<code>string</code><p>The word to add to the keyword group</p></div>
+</div></div>
+</div>
+<a id="method_add_keyword_group"></a><div class="element clickable method public method_add_keyword_group " data-toggle="collapse" data-target=".method_add_keyword_group .collapse" title="public">
+<h2>Creates a new keyword group</h2>
+<pre>add_keyword_group(integer $key, string $styles, boolean $case_sensitive<code> = true</code>, array $words<code> = array()</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the keyword group to create</p></div>
+<div class="subelement argument">
+<h4>$styles</h4>
+<code>string</code><p>The styles for the keyword group</p></div>
+<div class="subelement argument">
+<h4>$case_sensitive</h4>
+<code>boolean</code><p>Whether the keyword group is case sensitive ornot</p></div>
+<div class="subelement argument">
+<h4>$words</h4>
+<code>array</code><p>The words to use for the keyword group</p></div>
+</div></div>
+</div>
+<a id="method_build_parse_cache"></a><div class="element clickable method public method_build_parse_cache " data-toggle="collapse" data-target=".method_build_parse_cache .collapse" title="public">
+<h2>Setup caches needed for parsing. This is automatically called in parse_code() when appropriate.</h2>
+<pre>build_parse_cache() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This function makes stylesheet generators much faster as they do not need these caches.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_build_style_cache"></a><div class="element clickable method public method_build_style_cache " data-toggle="collapse" data-target=".method_build_style_cache .collapse" title="public">
+<h2>Setup caches needed for styling. This is automatically called in
+parse_code() and get_stylesheet() when appropriate. This function helps
+stylesheet generators as they rely on some style information being
+preprocessed</h2>
+<pre>build_style_cache() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_change_case"></a><div class="element clickable method public method_change_case " data-toggle="collapse" data-target=".method_change_case .collapse" title="public">
+<h2>Changes the case of a keyword for those languages where a change is asked for</h2>
+<pre>change_case(string $instr) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$instr</h4>
+<code>string</code><p>The keyword to change the case of</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The keyword with its case changed</div>
+</div></div>
+</div>
+<a id="method_disable_highlighting"></a><div class="element clickable method public method_disable_highlighting " data-toggle="collapse" data-target=".method_disable_highlighting .collapse" title="public">
+<h2>Disables all highlighting</h2>
+<pre>disable_highlighting() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>Rewrite with array traversal</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>In favour of enable_highlighting</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_enable_classes"></a><div class="element clickable method public method_enable_classes " data-toggle="collapse" data-target=".method_enable_classes .collapse" title="public">
+<h2>Sets whether CSS classes should be used to highlight the source. Default
+is off, calling this method with no arguments will turn it on</h2>
+<pre>enable_classes(boolean $flag<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Whether to turn classes on or not</p></div>
+</div></div>
+</div>
+<a id="method_enable_highlighting"></a><div class="element clickable method public method_enable_highlighting " data-toggle="collapse" data-target=".method_enable_highlighting .collapse" title="public">
+<h2>Enables all highlighting</h2>
+<pre>enable_highlighting(boolean $flag<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The optional flag parameter was added in version 1.0.7.21 and can be used
+to enable (true) or disable (false) all highlighting.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>Rewrite with array traversal</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>A flag specifying whether to enable or disable all highlighting</p></div>
+</div></div>
+</div>
+<a id="method_enable_ids"></a><div class="element clickable method public method_enable_ids " data-toggle="collapse" data-target=".method_enable_ids .collapse" title="public">
+<h2>Whether CSS IDs should be added to each line</h2>
+<pre>enable_ids(boolean $flag<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>If true, IDs will be added to each line.</p></div>
+</div></div>
+</div>
+<a id="method_enable_important_blocks"></a><div class="element clickable method public method_enable_important_blocks " data-toggle="collapse" data-target=".method_enable_important_blocks .collapse" title="public">
+<h2>Sets whether context-important blocks are highlighted</h2>
+<pre>enable_important_blocks(boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>todo</th>
+<td>REMOVE THIS SHIZ FROM GESHI!</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td></td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Tells whether to enable or disable highlighting of important blocks</p></div>
+</div></div>
+</div>
+<a id="method_enable_inner_code_block"></a><div class="element clickable method public method_enable_inner_code_block " data-toggle="collapse" data-target=".method_enable_inner_code_block .collapse" title="public">
+<h2>Sets whether to force a surrounding block around
+the highlighted code or not</h2>
+<pre>enable_inner_code_block(boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.7.20</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Tells whether to enable or disable this feature</p></div>
+</div></div>
+</div>
+<a id="method_enable_keyword_links"></a><div class="element clickable method public method_enable_keyword_links " data-toggle="collapse" data-target=".method_enable_keyword_links .collapse" title="public">
+<h2>Turns linking of keywords on or off.</h2>
+<pre>enable_keyword_links(boolean $enable<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$enable</h4>
+<code>boolean</code><p>If true, links will be added to keywords</p></div>
+</div></div>
+</div>
+<a id="method_enable_line_numbers"></a><div class="element clickable method public method_enable_line_numbers " data-toggle="collapse" data-target=".method_enable_line_numbers .collapse" title="public">
+<h2>Sets whether line numbers should be displayed.</h2>
+<pre>enable_line_numbers(integer $flag, integer $nth_row<code> = 5</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Valid values for the first parameter are:</p>
+<ul>
+<li>GESHI_NO_LINE_NUMBERS: Line numbers will not be displayed</li>
+<li>GESHI_NORMAL_LINE_NUMBERS: Line numbers will be displayed</li>
+<li>GESHI_FANCY_LINE_NUMBERS: Fancy line numbers will be displayed</li>
+</ul>
+<p>For fancy line numbers, the second parameter is used to signal which lines
+are to be fancy. For example, if the value of this parameter is 5 then every
+5th line will be fancy.</p></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>integer</code><p>How line numbers should be displayed</p></div>
+<div class="subelement argument">
+<h4>$nth_row</h4>
+<code>integer</code><p>Defines which lines are fancy</p></div>
+</div></div>
+</div>
+<a id="method_enable_multiline_span"></a><div class="element clickable method public method_enable_multiline_span " data-toggle="collapse" data-target=".method_enable_multiline_span .collapse" title="public">
+<h2>Sets wether spans and other HTML markup generated by GeSHi can
+span over multiple lines or not. Defaults to true to reduce overhead.</h2>
+<pre>enable_multiline_span(boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Set it to false if you want to manipulate the output or manually display
+the code in an ordered list.</p></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.7.22</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Wether multiline spans are allowed or not</p></div>
+</div></div>
+</div>
+<a id="method_enable_strict_mode"></a><div class="element clickable method public method_enable_strict_mode " data-toggle="collapse" data-target=".method_enable_strict_mode .collapse" title="public">
+<h2>Enables/disables strict highlighting. Default is off, calling this
+method without parameters will turn it on. See documentation
+for more details on strict mode and where to use it.</h2>
+<pre>enable_strict_mode(boolean $mode<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>boolean</code><p>Whether to enable strict mode or not</p></div>
+</div></div>
+</div>
+<a id="method_error"></a><div class="element clickable method public method_error " data-toggle="collapse" data-target=".method_error .collapse" title="public">
+<h2>Returns an error message associated with the last GeSHi operation,
+or false if no error has occured</h2>
+<pre>error() : string | false</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code><code>false</code>An error message if there has been an error, else false</div>
+</div></div>
+</div>
+<a id="method_finalise"></a><div class="element clickable method public method_finalise " data-toggle="collapse" data-target=".method_finalise .collapse" title="public">
+<h2>Takes the parsed code and various options, and creates the HTML
+surrounding it to make it look nice.</h2>
+<pre>finalise(string $parsed_code) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$parsed_code</h4>
+<code>string</code><p>The code already parsed (reference!)</p></div>
+</div></div>
+</div>
+<a id="method_footer"></a><div class="element clickable method public method_footer " data-toggle="collapse" data-target=".method_footer .collapse" title="public">
+<h2>Returns the footer for the code block.</h2>
+<pre>footer() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The footer for the code block</div>
+</div></div>
+</div>
+<a id="method_get_language_fullname"></a><div class="element clickable method public method_get_language_fullname " data-toggle="collapse" data-target=".method_get_language_fullname .collapse" title="public">
+<h2>Get full_name for a lang or false.</h2>
+<pre>get_language_fullname(string $language) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$language</h4>
+<code>string</code><p>short langname (html4strict for example)</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_get_language_name"></a><div class="element clickable method public method_get_language_name " data-toggle="collapse" data-target=".method_get_language_name .collapse" title="public">
+<h2>Gets a human-readable language name (thanks to Simon Patterson
+for the idea :))</h2>
+<pre>get_language_name() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The name for the current language</div>
+</div></div>
+</div>
+<a id="method_get_language_name_from_extension"></a><div class="element clickable method public method_get_language_name_from_extension " data-toggle="collapse" data-target=".method_get_language_name_from_extension .collapse" title="public">
+<h2>Given a file extension, this method returns either a valid geshi language
+name, or the empty string if it couldn't be found</h2>
+<pre>get_language_name_from_extension(string $extension, array $lookup<code> = array()</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.5</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>Re-think about how this method works (maybe make it private and/or make it
+      a extension->lang lookup?)</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>static?</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$extension</h4>
+<code>string</code><p>The extension to get a language name for</p></div>
+<div class="subelement argument">
+<h4>$lookup</h4>
+<code>array</code><p>A lookup array to use instead of the default one</p></div>
+</div></div>
+</div>
+<a id="method_get_line_style"></a><div class="element clickable method public method_get_line_style " data-toggle="collapse" data-target=".method_get_line_style .collapse" title="public">
+<h2>Get's the style that is used for the specified line</h2>
+<pre>get_line_style(integer $line) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.7.21</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$line</h4>
+<code>integer</code><p>The line number information is requested for</p></div>
+</div></div>
+</div>
+<a id="method_get_multiline_span"></a><div class="element clickable method public method_get_multiline_span " data-toggle="collapse" data-target=".method_get_multiline_span .collapse" title="public">
+<h2>Get current setting for multiline spans, see GeSHi-&gt;enable_multiline_span().</h2>
+<pre>get_multiline_span() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5Cenable_multiline_span"></a></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_get_real_tab_width"></a><div class="element clickable method public method_get_real_tab_width " data-toggle="collapse" data-target=".method_get_real_tab_width .collapse" title="public">
+<h2>Returns the tab width to use, based on the current language and user
+preference</h2>
+<pre>get_real_tab_width() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.7.20</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>Tab width</div>
+</div></div>
+</div>
+<a id="method_get_stylesheet"></a><div class="element clickable method public method_get_stylesheet " data-toggle="collapse" data-target=".method_get_stylesheet .collapse" title="public">
+<h2>Returns a stylesheet for the highlighted code. If $economy mode
+is true, we only return the stylesheet declarations that matter for
+this code block instead of the whole thing</h2>
+<pre>get_stylesheet(boolean $economy_mode<code> = true</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$economy_mode</h4>
+<code>boolean</code><p>Whether to use economy mode or not</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>A stylesheet built on the data for the current language</div>
+</div></div>
+</div>
+<a id="method_get_supported_languages"></a><div class="element clickable method public method_get_supported_languages " data-toggle="collapse" data-target=".method_get_supported_languages .collapse" title="public">
+<h2>Get supported langs or an associative array lang=&gt;full_name.</h2>
+<pre>get_supported_languages($full_names<code> = false</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$full_names</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get_time"></a><div class="element clickable method public method_get_time " data-toggle="collapse" data-target=".method_get_time .collapse" title="public">
+<h2>Gets the time taken to parse the code</h2>
+<pre>get_time() : double</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>double</code>The time taken to parse the code</div>
+</div></div>
+</div>
+<a id="method_handle_keyword_replace"></a><div class="element clickable method public method_handle_keyword_replace " data-toggle="collapse" data-target=".method_handle_keyword_replace .collapse" title="public">
+<h2>Handles replacements of keywords to include markup and links if requested</h2>
+<pre>handle_keyword_replace(string $match) : \The</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>Get rid of ender in keyword links</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$match</h4>
+<code>string</code><p>The keyword to add the Markup to</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\The</code>HTML for the match found</div>
+</div></div>
+</div>
+<a id="method_handle_multiline_regexps"></a><div class="element clickable method public method_handle_multiline_regexps " data-toggle="collapse" data-target=".method_handle_multiline_regexps .collapse" title="public">
+<h2>handles newlines in REGEXPS matches. Set the _hmr_* vars before calling this</h2>
+<pre>handle_multiline_regexps(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>note</th>
+<td>this is a callback, don't use it directly</td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>the matches array</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_handle_regexps_callback"></a><div class="element clickable method public method_handle_regexps_callback " data-toggle="collapse" data-target=".method_handle_regexps_callback .collapse" title="public">
+<h2>handles regular expressions highlighting-definitions with callback functions</h2>
+<pre>handle_regexps_callback(array $matches) : \The</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>note</th>
+<td>this is a callback, don't use it directly</td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>the matches array</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\The</code>highlighted string</div>
+</div></div>
+</div>
+<a id="method_header"></a><div class="element clickable method public method_header " data-toggle="collapse" data-target=".method_header .collapse" title="public">
+<h2>Creates the header for the code block (with correct attributes)</h2>
+<pre>header() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The header for the code block</div>
+</div></div>
+</div>
+<a id="method_highlight_lines_extra"></a><div class="element clickable method public method_highlight_lines_extra " data-toggle="collapse" data-target=".method_highlight_lines_extra .collapse" title="public">
+<h2>Specifies which lines to highlight extra</h2>
+<pre>highlight_lines_extra(mixed $lines, string $style<code> = null</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The extra style parameter was added in 1.0.7.21.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>Some data replication here that could be cut down on</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$lines</h4>
+<code>mixed</code><p>An array of line numbers to highlight, or just a line
+             number on its own.</p></div>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>A string specifying the style to use for this line.
+             If null is specified, the default style is used.
+             If false is specified, the line will be removed from
+             special highlighting</p></div>
+</div></div>
+</div>
+<a id="method_hsc"></a><div class="element clickable method public method_hsc " data-toggle="collapse" data-target=".method_hsc .collapse" title="public">
+<h2>Secure replacement for PHP built-in function htmlspecialchars().</h2>
+<pre>hsc(string $string, integer $quote_style<code> = ENT_COMPAT</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>See ticket #427 (<a href="http://wush.net/trac/wikka/ticket/427">http://wush.net/trac/wikka/ticket/427</a>) for the rationale
+for this replacement function.</p>
+<p>The INTERFACE for this function is almost the same as that for
+htmlspecialchars(), with the same default for quote style; however, there
+is no 'charset' parameter. The reason for this is as follows:</p>
+<p>The PHP docs say:
+&quot;The third argument charset defines character set used in conversion.&quot;</p>
+<p>I suspect PHP's htmlspecialchars() is working at the byte-value level and
+thus <em>needs</em> to know (or asssume) a character set because the special
+characters to be replaced could exist at different code points in
+different character sets. (If indeed htmlspecialchars() works at
+byte-value level that goes some  way towards explaining why the
+vulnerability would exist in this function, too, and not only in
+htmlentities() which certainly is working at byte-value level.)</p>
+<p>This replacement function however works at character level and should
+therefore be &quot;immune&quot; to character set differences - so no charset
+parameter is needed or provided. If a third parameter is passed, it will
+be silently ignored.</p>
+<p>In the OUTPUT there is a minor difference in that we use '&#39;' instead
+of PHP's '&#039;' for a single quote: this provides compatibility with
+get_html_translation_table(HTML_SPECIALCHARS, ENT_QUOTES)
+(see comment by mikiwoz at yahoo dot co dot uk on
+<a href="http://php.net/htmlspecialchars">http://php.net/htmlspecialchars</a>); it also matches the entity definition
+for XML 1.0
+(<a href="http://www.w3.org/TR/xhtml1/dtds.html#a_dtd_Special_characters">http://www.w3.org/TR/xhtml1/dtds.html#a_dtd_Special_characters</a>).
+Like PHP we use a numeric character reference instead of '&apos;' for the
+single quote. For the other special characters we use the named entity
+references, as PHP is doing.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="">{@link http://wikkawiki.org/JavaWoman Marjolein Katsma}</a></td>
+</tr>
+<tr>
+<th>license</th>
+<td><a href="http://www.gnu.org/copyleft/lgpl.html">GNU Lesser General Public License</a></td>
+</tr>
+<tr>
+<th>copyright</th>
+<td>Copyright 2007, {@link http://wikkawiki.org/CreditsPage
+             Wikka Development Team}</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.7.18</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$string</h4>
+<code>string</code><p>string to be converted</p></div>
+<div class="subelement argument">
+<h4>$quote_style</h4>
+<code>integer</code><ul>
+<li>ENT_COMPAT:   escapes &, <, > and double quote (default)
+<ul>
+<li>ENT_NOQUOTES: escapes only &, < and ></li>
+<li>ENT_QUOTES:   escapes &, <, >, double and single quotes</li>
+</ul></li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>converted string</div>
+</div></div>
+</div>
+<a id="method_indent"></a><div class="element clickable method public method_indent " data-toggle="collapse" data-target=".method_indent .collapse" title="public">
+<h2>Swaps out spaces and tabs for HTML indentation. Not needed if
+the code is in a pre block.</h2>
+<pre>indent(string $result) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>..</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$result</h4>
+<code>string</code><p>The source to indent (reference!)</p></div>
+</div></div>
+</div>
+<a id="method_load_from_file"></a><div class="element clickable method public method_load_from_file " data-toggle="collapse" data-target=".method_load_from_file .collapse" title="public">
+<h2>Given a file name, this method loads its contents in, and attempts
+to set the language automatically. An optional lookup table can be
+passed for looking up the language name. If not specified a default
+table is used</h2>
+<pre>load_from_file(string $file_name, array $lookup<code> = array()</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>The language table is in the form</p>
+<pre>array(
+  'lang_name' => array('extension', 'extension', ...),
+  'lang_name' ...
+);</pre></div>
+<table class="table table-bordered">
+<tr>
+<th>todo</th>
+<td>Complete rethink of this and above method</td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.5</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file_name</h4>
+<code>string</code><p>The filename to load the source from</p></div>
+<div class="subelement argument">
+<h4>$lookup</h4>
+<code>array</code><p>A lookup array to use instead of the default one</p></div>
+</div></div>
+</div>
+<a id="method_load_language"></a><div class="element clickable method public method_load_language " data-toggle="collapse" data-target=".method_load_language .collapse" title="public">
+<h2>Gets language information and stores it for later use</h2>
+<pre>load_language(string $file_name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>Needs to load keys for lexic permissions for keywords, regexps etc</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$file_name</h4>
+<code>string</code><p>The filename of the language file you want to load</p></div>
+</div></div>
+</div>
+<a id="method_merge_arrays"></a><div class="element clickable method public method_merge_arrays " data-toggle="collapse" data-target=".method_merge_arrays .collapse" title="public">
+<h2>Merges arrays recursively, overwriting values of the first array with values of later arrays</h2>
+<pre>merge_arrays() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="method_optimize_keyword_group"></a><div class="element clickable method public method_optimize_keyword_group " data-toggle="collapse" data-target=".method_optimize_keyword_group .collapse" title="public">
+<h2>compile optimized regexp list for keyword group</h2>
+<pre>optimize_keyword_group(integer $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the keyword group to compile & optimize</p></div>
+</div></div>
+</div>
+<a id="method_optimize_regexp_list"></a><div class="element clickable method public method_optimize_regexp_list " data-toggle="collapse" data-target=".method_optimize_regexp_list .collapse" title="public">
+<h2>this functions creates an optimized regular expression list
+of an array of strings.</h2>
+<pre>optimize_regexp_list($list, $regexp_delimiter<code> = '/'</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Example:
+<code>$list = array('faa', 'foo', 'foobar');
+=&gt; string 'f(aa|oo(bar)?)'</code></p></div>
+<table class="table table-bordered">
+<tr>
+<th>author</th>
+<td><a href="mailto:mail@milianw.de">Milian Wolff</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$list</h4><p>array of (unquoted) strings</p></div>
+<div class="subelement argument">
+<h4>$regexp_delimiter</h4><p>your regular expression delimiter, @see preg_quote()</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>for regular expression</div>
+</div></div>
+</div>
+<a id="method_parse_code"></a><div class="element clickable method public method_parse_code " data-toggle="collapse" data-target=".method_parse_code .collapse" title="public">
+<h2>Returns the code in $this-&gt;source, highlighted and surrounded by the
+nessecary HTML.</h2>
+<pre>parse_code() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This should only be called ONCE, cos it's SLOW! If you want to highlight
+the same source multiple times, you're better off doing a whole lot of
+str_replaces to replace the &lt;span&gt;s</p></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_parse_non_string_part"></a><div class="element clickable method public method_parse_non_string_part " data-toggle="collapse" data-target=".method_parse_non_string_part .collapse" title="public">
+<h2>Takes a string that has no strings or comments in it, and highlights
+stuff like keywords, numbers and methods.</h2>
+<pre>parse_non_string_part(string $stuff_to_parse) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>todo</th>
+<td>BUGGY! Why? Why not build string and return?</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$stuff_to_parse</h4>
+<code>string</code><p>The string to parse for keyword, numbers etc.</p></div>
+</div></div>
+</div>
+<a id="method_remove_keyword"></a><div class="element clickable method public method_remove_keyword " data-toggle="collapse" data-target=".method_remove_keyword .collapse" title="public">
+<h2>Removes a keyword from a keyword group</h2>
+<pre>remove_keyword(integer $key, string $word, boolean $recompile<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the keyword group to remove the keyword from</p></div>
+<div class="subelement argument">
+<h4>$word</h4>
+<code>string</code><p>The word to remove from the keyword group</p></div>
+<div class="subelement argument">
+<h4>$recompile</h4>
+<code>boolean</code><p>Wether to automatically recompile the optimized regexp list or not.
+Note: if you set this to false and @see GeSHi->parse_code() was already called once,
+for the current language, you have to manually call @see GeSHi->optimize_keyword_group()
+or the removed keyword will stay in cache and still be highlighted! On the other hand
+it might be too expensive to recompile the regexp list for every removal if you want to
+remove a lot of keywords.</p></div>
+</div></div>
+</div>
+<a id="method_remove_keyword_group"></a><div class="element clickable method public method_remove_keyword_group " data-toggle="collapse" data-target=".method_remove_keyword_group .collapse" title="public">
+<h2>Removes a keyword group</h2>
+<pre>remove_keyword_group(integer $key) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the keyword group to remove</p></div>
+</div></div>
+</div>
+<a id="method_replace_keywords"></a><div class="element clickable method public method_replace_keywords " data-toggle="collapse" data-target=".method_replace_keywords .collapse" title="public">
+<h2>Replaces certain keywords in the header and footer with
+certain configuration values</h2>
+<pre>replace_keywords(string $instr) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$instr</h4>
+<code>string</code><p>The header or footer content to do replacement on</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The header or footer with replaced keywords</div>
+</div></div>
+</div>
+<a id="method_set_brackets_highlighting"></a><div class="element clickable method public method_set_brackets_highlighting " data-toggle="collapse" data-target=".method_set_brackets_highlighting .collapse" title="public">
+<h2>Turns highlighting on/off for brackets</h2>
+<pre>set_brackets_highlighting(boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method is DEPRECATED: use set_symbols_highlighting instead.
+This method will be remove in 1.2.X</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>In favour of set_symbols_highlighting</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Whether to turn highlighting for brackets on or off</p></div>
+</div></div>
+</div>
+<a id="method_set_brackets_style"></a><div class="element clickable method public method_set_brackets_style " data-toggle="collapse" data-target=".method_set_brackets_style .collapse" title="public">
+<h2>Sets the styles for brackets. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_brackets_style(string $style, boolean $preserve_defaults<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>This method is DEPRECATED: use set_symbols_style instead.
+This method will be removed in 1.2.X</p></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>In favour of set_symbols_style</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style to make the brackets</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the new styles with the old or just
+               to overwrite them</p></div>
+</div></div>
+</div>
+<a id="method_set_case_keywords"></a><div class="element clickable method public method_set_case_keywords " data-toggle="collapse" data-target=".method_set_case_keywords .collapse" title="public">
+<h2>Sets the case that keywords should use when found. Use the constants:</h2>
+<pre>set_case_keywords(integer $case) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><ul>
+<li>GESHI_CAPS_NO_CHANGE: leave keywords as-is
+<ul>
+<li>GESHI_CAPS_UPPER: convert all keywords to uppercase where found</li>
+<li>GESHI_CAPS_LOWER: convert all keywords to lowercase where found</li>
+</ul></li>
+</ul></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.1</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$case</h4>
+<code>integer</code><p>A constant specifying what to do with matched keywords</p></div>
+</div></div>
+</div>
+<a id="method_set_case_sensitivity"></a><div class="element clickable method public method_set_case_sensitivity " data-toggle="collapse" data-target=".method_set_case_sensitivity .collapse" title="public">
+<h2>Sets whether a set of keywords are checked for in a case sensitive manner</h2>
+<pre>set_case_sensitivity(integer $key, boolean $case) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the keyword group to change the case sensitivity of</p></div>
+<div class="subelement argument">
+<h4>$case</h4>
+<code>boolean</code><p>Whether to check in a case sensitive manner or not</p></div>
+</div></div>
+</div>
+<a id="method_set_code_style"></a><div class="element clickable method public method_set_code_style " data-toggle="collapse" data-target=".method_set_code_style .collapse" title="public">
+<h2>Sets the style for the actual code. This should be a string
+containing valid stylesheet declarations. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_code_style(string $style, boolean $preserve_defaults<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Note: Use this method to override any style changes you made to
+the line numbers if you are using line numbers, else the line of
+code will have the same style as the line number! Consult the
+GeSHi documentation for more information about this.</p></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style to use for actual code</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the current styles with the new styles</p></div>
+</div></div>
+</div>
+<a id="method_set_comments_highlighting"></a><div class="element clickable method public method_set_comments_highlighting " data-toggle="collapse" data-target=".method_set_comments_highlighting .collapse" title="public">
+<h2>Turns highlighting on/off for comment groups</h2>
+<pre>set_comments_highlighting(integer $key, boolean $flag<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the comment group to turn on or off</p></div>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Whether to turn highlighting for that group on or off</p></div>
+</div></div>
+</div>
+<a id="method_set_comments_style"></a><div class="element clickable method public method_set_comments_style " data-toggle="collapse" data-target=".method_set_comments_style .collapse" title="public">
+<h2>Sets the styles for comment groups.  If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_comments_style(integer $key, string $style, boolean $preserve_defaults<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the comment group to change the styles of</p></div>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style to make the comments</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the new styles with the old or just
+               to overwrite them</p></div>
+</div></div>
+</div>
+<a id="method_set_encoding"></a><div class="element clickable method public method_set_encoding " data-toggle="collapse" data-target=".method_set_encoding .collapse" title="public">
+<h2>Sets the encoding used for htmlspecialchars(), for international
+support.</h2>
+<pre>set_encoding(string $encoding) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>NOTE: This is not needed for now because htmlspecialchars() is not
+being used (it has a security hole in PHP4 that has not been patched).
+Maybe in a future version it may make a return for speed reasons, but
+I doubt it.</p></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.3</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$encoding</h4>
+<code>string</code><p>The encoding to use for the source</p></div>
+</div></div>
+</div>
+<a id="method_set_escape_characters_highlighting"></a><div class="element clickable method public method_set_escape_characters_highlighting " data-toggle="collapse" data-target=".method_set_escape_characters_highlighting .collapse" title="public">
+<h2>Turns highlighting on/off for escaped characters</h2>
+<pre>set_escape_characters_highlighting(boolean $flag<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Whether to turn highlighting for escape characters on or off</p></div>
+</div></div>
+</div>
+<a id="method_set_escape_characters_style"></a><div class="element clickable method public method_set_escape_characters_style " data-toggle="collapse" data-target=".method_set_escape_characters_style .collapse" title="public">
+<h2>Sets the styles for escaped characters. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_escape_characters_style(string $style, boolean $preserve_defaults<code> = false</code>, $group<code> = 0</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style to make the escape characters</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the new styles with the old or just
+               to overwrite them</p></div>
+<div class="subelement argument"><h4>$group</h4></div>
+</div></div>
+</div>
+<a id="method_set_footer_content"></a><div class="element clickable method public method_set_footer_content " data-toggle="collapse" data-target=".method_set_footer_content .collapse" title="public">
+<h2>Sets the content of the footer block</h2>
+<pre>set_footer_content(string $content) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$content</h4>
+<code>string</code><p>The content of the footer block</p></div>
+</div></div>
+</div>
+<a id="method_set_footer_content_style"></a><div class="element clickable method public method_set_footer_content_style " data-toggle="collapse" data-target=".method_set_footer_content_style .collapse" title="public">
+<h2>Sets the style for the footer content</h2>
+<pre>set_footer_content_style(string $style) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style for the footer content</p></div>
+</div></div>
+</div>
+<a id="method_set_header_content"></a><div class="element clickable method public method_set_header_content " data-toggle="collapse" data-target=".method_set_header_content .collapse" title="public">
+<h2>Sets the content of the header block</h2>
+<pre>set_header_content(string $content) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$content</h4>
+<code>string</code><p>The content of the header block</p></div>
+</div></div>
+</div>
+<a id="method_set_header_content_style"></a><div class="element clickable method public method_set_header_content_style " data-toggle="collapse" data-target=".method_set_header_content_style .collapse" title="public">
+<h2>Sets the style for the header content</h2>
+<pre>set_header_content_style(string $style) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style for the header content</p></div>
+</div></div>
+</div>
+<a id="method_set_header_type"></a><div class="element clickable method public method_set_header_type " data-toggle="collapse" data-target=".method_set_header_type .collapse" title="public">
+<h2>Sets the type of header to be used.</h2>
+<pre>set_header_type(integer $type) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>If GESHI_HEADER_DIV is used, the code is surrounded in a &quot;div&quot;.This
+means more source code but more control over tab width and line-wrapping.
+GESHI_HEADER_PRE means that a &quot;pre&quot; is used - less source, but less
+control. Default is GESHI_HEADER_PRE.</p>
+<p>From 1.0.7.2, you can use GESHI_HEADER_NONE to specify that no header code
+should be outputted.</p></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>integer</code><p>The type of header to be used</p></div>
+</div></div>
+</div>
+<a id="method_set_highlight_lines_extra_style"></a><div class="element clickable method public method_set_highlight_lines_extra_style " data-toggle="collapse" data-target=".method_set_highlight_lines_extra_style .collapse" title="public">
+<h2>Sets the style for extra-highlighted lines</h2>
+<pre>set_highlight_lines_extra_style(string $styles) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$styles</h4>
+<code>string</code><p>The style for extra-highlighted lines</p></div>
+</div></div>
+</div>
+<a id="method_set_important_styles"></a><div class="element clickable method public method_set_important_styles " data-toggle="collapse" data-target=".method_set_important_styles .collapse" title="public">
+<h2>Sets styles for important parts of the code</h2>
+<pre>set_important_styles(string $styles) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$styles</h4>
+<code>string</code><p>The styles to use on important parts of the code</p></div>
+</div></div>
+</div>
+<a id="method_set_keyword_group_highlighting"></a><div class="element clickable method public method_set_keyword_group_highlighting " data-toggle="collapse" data-target=".method_set_keyword_group_highlighting .collapse" title="public">
+<h2>Turns highlighting on/off for a keyword group</h2>
+<pre>set_keyword_group_highlighting(integer $key, boolean $flag<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the keyword group to turn on or off</p></div>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Whether to turn highlighting for that group on or off</p></div>
+</div></div>
+</div>
+<a id="method_set_keyword_group_style"></a><div class="element clickable method public method_set_keyword_group_style " data-toggle="collapse" data-target=".method_set_keyword_group_style .collapse" title="public">
+<h2>Sets the style for a keyword group. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_keyword_group_style(integer $key, string $style, boolean $preserve_defaults<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the keyword group to change the styles of</p></div>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style to make the keywords</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the new styles with the old or just
+               to overwrite them</p></div>
+</div></div>
+</div>
+<a id="method_set_language"></a><div class="element clickable method public method_set_language " data-toggle="collapse" data-target=".method_set_language .collapse" title="public">
+<h2>Sets the language for this object</h2>
+<pre>set_language(string $language, $force_reset<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>note</th>
+<td>since 1.0.8 this function won't reset language-settings by default anymore!
+      if you need this set $force_reset = true</td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$language</h4>
+<code>string</code><p>The name of the language to use</p></div>
+<div class="subelement argument"><h4>$force_reset</h4></div>
+</div></div>
+</div>
+<a id="method_set_language_path"></a><div class="element clickable method public method_set_language_path " data-toggle="collapse" data-target=".method_set_language_path .collapse" title="public">
+<h2>Sets the path to the directory containing the language files. Note
+that this path is relative to the directory of the script that included
+geshi.php, NOT geshi.php itself.</h2>
+<pre>set_language_path(string $path) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr>
+<tr>
+<th>deprecated</th>
+<td>The path to the language files should now be automatically
+            detected, so this method should no longer be needed. The
+            1.1.X branch handles manual setting of the path differently
+            so this method will disappear in 1.2.0.</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>The path to the language directory</p></div>
+</div></div>
+</div>
+<a id="method_set_line_ending"></a><div class="element clickable method public method_set_line_ending " data-toggle="collapse" data-target=".method_set_line_ending .collapse" title="public">
+<h2>Sets the line-ending</h2>
+<pre>set_line_ending(string $line_ending) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$line_ending</h4>
+<code>string</code><p>The new line-ending</p></div>
+</div></div>
+</div>
+<a id="method_set_line_style"></a><div class="element clickable method public method_set_line_style " data-toggle="collapse" data-target=".method_set_line_style .collapse" title="public">
+<h2>Sets the styles for the line numbers.</h2>
+<pre>set_line_style(string $style1, string | boolean $style2<code> = ''</code>, boolean $preserve_defaults<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style1</h4>
+<code>string</code><p>The style for the line numbers that are "normal"</p></div>
+<div class="subelement argument">
+<h4>$style2</h4>
+<code>string</code><code>boolean</code><p>If a string, this is the style of the line
+numbers that are "fancy", otherwise if boolean then this
+defines whether the normal styles should be merged with the
+new normal styles or not</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>If set, is the flag for whether to merge the "fancy"
+styles with the current styles or not</p></div>
+</div></div>
+</div>
+<a id="method_set_link_styles"></a><div class="element clickable method public method_set_link_styles " data-toggle="collapse" data-target=".method_set_link_styles .collapse" title="public">
+<h2>Sets styles for links in code</h2>
+<pre>set_link_styles(integer $type, string $styles) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>integer</code><p>A constant that specifies what state the style is being
+set for - e.g. :hover or :visited</p></div>
+<div class="subelement argument">
+<h4>$styles</h4>
+<code>string</code><p>The styles to use for that state</p></div>
+</div></div>
+</div>
+<a id="method_set_link_target"></a><div class="element clickable method public method_set_link_target " data-toggle="collapse" data-target=".method_set_link_target .collapse" title="public">
+<h2>Sets the target for links in code</h2>
+<pre>set_link_target(string $target) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.3</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$target</h4>
+<code>string</code><p>The target for links in the code, e.g. _blank</p></div>
+</div></div>
+</div>
+<a id="method_set_methods_highlighting"></a><div class="element clickable method public method_set_methods_highlighting " data-toggle="collapse" data-target=".method_set_methods_highlighting .collapse" title="public">
+<h2>Turns highlighting on/off for methods</h2>
+<pre>set_methods_highlighting(boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Whether to turn highlighting for methods on or off</p></div>
+</div></div>
+</div>
+<a id="method_set_methods_style"></a><div class="element clickable method public method_set_methods_style " data-toggle="collapse" data-target=".method_set_methods_style .collapse" title="public">
+<h2>Sets the styles for methods. $key is a number that references the
+appropriate "object splitter" - see the language file for the language
+you are highlighting to get this number. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_methods_style(integer $key, string $style, boolean $preserve_defaults<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the object splitter to change the styles of</p></div>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style to make the methods</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the new styles with the old or just
+               to overwrite them</p></div>
+</div></div>
+</div>
+<a id="method_set_numbers_highlighting"></a><div class="element clickable method public method_set_numbers_highlighting " data-toggle="collapse" data-target=".method_set_numbers_highlighting .collapse" title="public">
+<h2>Turns highlighting on/off for numbers</h2>
+<pre>set_numbers_highlighting(boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Whether to turn highlighting for numbers on or off</p></div>
+</div></div>
+</div>
+<a id="method_set_numbers_style"></a><div class="element clickable method public method_set_numbers_style " data-toggle="collapse" data-target=".method_set_numbers_style .collapse" title="public">
+<h2>Sets the styles for numbers. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_numbers_style(string $style, boolean $preserve_defaults<code> = false</code>, integer $group<code> = 0</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style to make the numbers</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the new styles with the old or just
+               to overwrite them</p></div>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>integer</code><p>Tells the group of numbers for which style should be set.</p></div>
+</div></div>
+</div>
+<a id="method_set_overall_class"></a><div class="element clickable method public method_set_overall_class " data-toggle="collapse" data-target=".method_set_overall_class .collapse" title="public">
+<h2>Sets the overall classname for this block of code. This
+class can then be used in a stylesheet to style this object's
+output</h2>
+<pre>set_overall_class(string $class) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$class</h4>
+<code>string</code><p>The class name to use for this block of code</p></div>
+</div></div>
+</div>
+<a id="method_set_overall_id"></a><div class="element clickable method public method_set_overall_id " data-toggle="collapse" data-target=".method_set_overall_id .collapse" title="public">
+<h2>Sets the overall id for this block of code. This id can then
+be used in a stylesheet to style this object's output</h2>
+<pre>set_overall_id(string $id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code><p>The ID to use for this block of code</p></div>
+</div></div>
+</div>
+<a id="method_set_overall_style"></a><div class="element clickable method public method_set_overall_style " data-toggle="collapse" data-target=".method_set_overall_style .collapse" title="public">
+<h2>Sets the styles for the code that will be outputted
+when this object is parsed. The style should be a
+string of valid stylesheet declarations</h2>
+<pre>set_overall_style(string $style, boolean $preserve_defaults<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The overall style for the outputted code block</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the styles with the current styles or not</p></div>
+</div></div>
+</div>
+<a id="method_set_regexps_highlighting"></a><div class="element clickable method public method_set_regexps_highlighting " data-toggle="collapse" data-target=".method_set_regexps_highlighting .collapse" title="public">
+<h2>Turns highlighting on/off for regexps</h2>
+<pre>set_regexps_highlighting(integer $key, boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>integer</code><p>The key of the regular expression group to turn on or off</p></div>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Whether to turn highlighting for the regular expression group on or off</p></div>
+</div></div>
+</div>
+<a id="method_set_regexps_style"></a><div class="element clickable method public method_set_regexps_style " data-toggle="collapse" data-target=".method_set_regexps_style .collapse" title="public">
+<h2>Sets the styles for regexps. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_regexps_style(string $key, boolean $style, $preserve_defaults<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>The style to make the regular expression matches</p></div>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>boolean</code><p>Whether to merge the new styles with the old or just
+               to overwrite them</p></div>
+<div class="subelement argument"><h4>$preserve_defaults</h4></div>
+</div></div>
+</div>
+<a id="method_set_script_style"></a><div class="element clickable method public method_set_script_style " data-toggle="collapse" data-target=".method_set_script_style .collapse" title="public">
+<h2>Sets the styles for strict code blocks. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_script_style(string $style, boolean $preserve_defaults<code> = false</code>, integer $group<code> = 0</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.8.4</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style to make the script blocks</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the new styles with the old or just
+               to overwrite them</p></div>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>integer</code><p>Tells the group of script blocks for which style should be set.</p></div>
+</div></div>
+</div>
+<a id="method_set_source"></a><div class="element clickable method public method_set_source " data-toggle="collapse" data-target=".method_set_source .collapse" title="public">
+<h2>Sets the source code for this object</h2>
+<pre>set_source(string $source) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$source</h4>
+<code>string</code><p>The source code to highlight</p></div>
+</div></div>
+</div>
+<a id="method_set_strings_highlighting"></a><div class="element clickable method public method_set_strings_highlighting " data-toggle="collapse" data-target=".method_set_strings_highlighting .collapse" title="public">
+<h2>Turns highlighting on/off for strings</h2>
+<pre>set_strings_highlighting(boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Whether to turn highlighting for strings on or off</p></div>
+</div></div>
+</div>
+<a id="method_set_strings_style"></a><div class="element clickable method public method_set_strings_style " data-toggle="collapse" data-target=".method_set_strings_style .collapse" title="public">
+<h2>Sets the styles for strings. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_strings_style(string $style, boolean $preserve_defaults<code> = false</code>, integer $group<code> = 0</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style to make the escape characters</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the new styles with the old or just
+               to overwrite them</p></div>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>integer</code><p>Tells the group of strings for which style should be set.</p></div>
+</div></div>
+</div>
+<a id="method_set_symbols_highlighting"></a><div class="element clickable method public method_set_symbols_highlighting " data-toggle="collapse" data-target=".method_set_symbols_highlighting .collapse" title="public">
+<h2>Turns highlighting on/off for symbols</h2>
+<pre>set_symbols_highlighting(boolean $flag) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$flag</h4>
+<code>boolean</code><p>Whether to turn highlighting for symbols on or off</p></div>
+</div></div>
+</div>
+<a id="method_set_symbols_style"></a><div class="element clickable method public method_set_symbols_style " data-toggle="collapse" data-target=".method_set_symbols_style .collapse" title="public">
+<h2>Sets the styles for symbols. If $preserve_defaults is
+true, then styles are merged with the default styles, with the
+user defined styles having priority</h2>
+<pre>set_symbols_style(string $style, boolean $preserve_defaults<code> = false</code>, integer $group<code> = 0</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.1</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$style</h4>
+<code>string</code><p>The style to make the symbols</p></div>
+<div class="subelement argument">
+<h4>$preserve_defaults</h4>
+<code>boolean</code><p>Whether to merge the new styles with the old or just
+               to overwrite them</p></div>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>integer</code><p>Tells the group of symbols for which style should be set.</p></div>
+</div></div>
+</div>
+<a id="method_set_tab_width"></a><div class="element clickable method public method_set_tab_width " data-toggle="collapse" data-target=".method_set_tab_width .collapse" title="public">
+<h2>Sets how many spaces a tab is substituted for</h2>
+<pre>set_tab_width(integer $width) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Widths below zero are ignored</p></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.0</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$width</h4>
+<code>integer</code><p>The tab width</p></div>
+</div></div>
+</div>
+<a id="method_set_time"></a><div class="element clickable method public method_set_time " data-toggle="collapse" data-target=".method_set_time .collapse" title="public">
+<h2>Sets the time taken to parse the code</h2>
+<pre>set_time(\microtime $start_time, \microtime $end_time) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$start_time</h4>
+<code>\microtime</code><p>The time when parsing started</p></div>
+<div class="subelement argument">
+<h4>$end_time</h4>
+<code>\microtime</code><p>The time when parsing ended</p></div>
+</div></div>
+</div>
+<a id="method_set_url_for_keyword_group"></a><div class="element clickable method public method_set_url_for_keyword_group " data-toggle="collapse" data-target=".method_set_url_for_keyword_group .collapse" title="public">
+<h2>Sets the base URL to be used for keywords</h2>
+<pre>set_url_for_keyword_group(integer $group, string $url) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$group</h4>
+<code>integer</code><p>The key of the keyword group to set the URL for</p></div>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><p>The URL to set for the group. If {FNAME} is in
+the url somewhere, it is replaced by the keyword
+that the URL is being made for</p></div>
+</div></div>
+</div>
+<a id="method_set_use_language_tab_width"></a><div class="element clickable method public method_set_use_language_tab_width " data-toggle="collapse" data-target=".method_set_use_language_tab_width .collapse" title="public">
+<h2>Sets whether or not to use tab-stop width specifed by language</h2>
+<pre>set_use_language_tab_width(boolean $use) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.7.20</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$use</h4>
+<code>boolean</code><p>Whether to use language-specific tab-stop widths</p></div>
+</div></div>
+</div>
+<a id="method_start_line_numbers_at"></a><div class="element clickable method public method_start_line_numbers_at " data-toggle="collapse" data-target=".method_start_line_numbers_at .collapse" title="public">
+<h2>Sets what number line numbers should start at. Should
+be a positive integer, and will be converted to one.</h2>
+<pre>start_line_numbers_at(integer $number) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p><b>Warning:</b> Using this method will add the &quot;start&quot;
+attribute to the &lt;ol&gt; that is used for line numbering.
+This is <b>not</b> valid XHTML strict, so if that's what you
+care about then don't use this method. Firefox is getting
+support for the CSS method of doing this in 1.1 and Opera
+has support for the CSS method, but (of course) IE doesn't
+so it's not worth doing it the CSS way yet.</p></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$number</h4>
+<code>integer</code><p>The number to start line numbers at</p></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__hmr_after"> </a><div class="element clickable property public property__hmr_after" data-toggle="collapse" data-target=".property__hmr_after .collapse" title="public">
+<h2>$_hmr_after</h2>
+<pre>$_hmr_after </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__hmr_before"> </a><div class="element clickable property public property__hmr_before" data-toggle="collapse" data-target=".property__hmr_before .collapse" title="public">
+<h2>some "callback parameters" for handle_multiline_regexps</h2>
+<pre>$_hmr_before : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr>
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property__hmr_key"> </a><div class="element clickable property public property__hmr_key" data-toggle="collapse" data-target=".property__hmr_key .collapse" title="public">
+<h2>$_hmr_key</h2>
+<pre>$_hmr_key </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__hmr_replace"> </a><div class="element clickable property public property__hmr_replace" data-toggle="collapse" data-target=".property__hmr_replace .collapse" title="public">
+<h2>$_hmr_replace</h2>
+<pre>$_hmr_replace </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__kw_replace_group"> </a><div class="element clickable property public property__kw_replace_group" data-toggle="collapse" data-target=".property__kw_replace_group .collapse" title="public">
+<h2>Work around for Suhosin Patch with disabled /e modifier</h2>
+<pre>$_kw_replace_group : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Note from suhosins author in config file:</p>
+<blockquote>
+  The /e modifier inside <code>preg_replace()</code> allows code execution.
+  Often it is the cause for remote code execution exploits. It is wise to
+  deactivate this feature and test where in the application it is used.
+  The developer using the /e modifier should be made aware that he should
+  use <code>preg_replace_callback()</code> instead
+</blockquote></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__rx_key"> </a><div class="element clickable property public property__rx_key" data-toggle="collapse" data-target=".property__rx_key .collapse" title="public">
+<h2>$_rx_key</h2>
+<pre>$_rx_key </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_add_ids"> </a><div class="element clickable property public property_add_ids" data-toggle="collapse" data-target=".property_add_ids .collapse" title="public">
+<h2>Whether CSS IDs should be added to the code</h2>
+<pre>$add_ids : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_allow_multiline_span"> </a><div class="element clickable property public property_allow_multiline_span" data-toggle="collapse" data-target=".property_allow_multiline_span .collapse" title="public">
+<h2>Flag to decide if multi line spans are allowed. Set it to false to make sure
+each tag is closed before and reopened after each linefeed.</h2>
+<pre>$allow_multiline_span : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>true</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_code_style"> </a><div class="element clickable property public property_code_style" data-toggle="collapse" data-target=".property_code_style .collapse" title="public">
+<h2>The style for the actual code</h2>
+<pre>$code_style : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_enable_important_blocks"> </a><div class="element clickable property public property_enable_important_blocks" data-toggle="collapse" data-target=".property_enable_important_blocks .collapse" title="public">
+<h2>Whether important blocks should be recognised or not</h2>
+<pre>$enable_important_blocks : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td></td>
+</tr>
+<tr>
+<th>todo</th>
+<td>REMOVE THIS FUNCTIONALITY!</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_encoding"> </a><div class="element clickable property public property_encoding" data-toggle="collapse" data-target=".property_encoding .collapse" title="public">
+<h2>The encoding to use for entity encoding
+NOTE: Used with Escape Char Sequences to fix UTF-8 handling (cf. SF#2037598)</h2>
+<pre>$encoding : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'utf-8'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_error"> </a><div class="element clickable property public property_error" data-toggle="collapse" data-target=".property_error .collapse" title="public">
+<h2>The error message associated with an error</h2>
+<pre>$error : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>check err reporting works</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_error_messages"> </a><div class="element clickable property public property_error_messages" data-toggle="collapse" data-target=".property_error_messages .collapse" title="public">
+<h2>Possible error messages</h2>
+<pre>$error_messages : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array(GESHI_ERROR_NO_SUCH_LANG => 'GeSHi could not find the language {LANGUAGE} (using path {PATH})', GESHI_ERROR_FILE_NOT_READABLE => 'The file specified for load_from_file was not readable', GESHI_ERROR_INVALID_HEADER_TYPE => 'The header type specified is invalid', GESHI_ERROR_INVALID_LINE_NUMBER_TYPE => 'The line number type specified is invalid')</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_footer_content"> </a><div class="element clickable property public property_footer_content" data-toggle="collapse" data-target=".property_footer_content .collapse" title="public">
+<h2>The content of the footer block</h2>
+<pre>$footer_content : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_footer_content_style"> </a><div class="element clickable property public property_footer_content_style" data-toggle="collapse" data-target=".property_footer_content_style .collapse" title="public">
+<h2>The style of the footer block</h2>
+<pre>$footer_content_style : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_force_code_block"> </a><div class="element clickable property public property_force_code_block" data-toggle="collapse" data-target=".property_force_code_block .collapse" title="public">
+<h2>Tells if a block around the highlighted source should be forced
+if not using line numbering</h2>
+<pre>$force_code_block : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_header_content"> </a><div class="element clickable property public property_header_content" data-toggle="collapse" data-target=".property_header_content .collapse" title="public">
+<h2>The content of the header block</h2>
+<pre>$header_content : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_header_content_style"> </a><div class="element clickable property public property_header_content_style" data-toggle="collapse" data-target=".property_header_content_style .collapse" title="public">
+<h2>The style of the header block</h2>
+<pre>$header_content_style : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_header_type"> </a><div class="element clickable property public property_header_type" data-toggle="collapse" data-target=".property_header_type .collapse" title="public">
+<h2>The type of header to use. Can be one of the following
+values:</h2>
+<pre>$header_type : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>GESHI_HEADER_PRE</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><ul>
+<li>GESHI_HEADER_PRE: Source is outputted in a &quot;pre&quot; HTML element.</li>
+<li>GESHI_HEADER_DIV: Source is outputted in a &quot;div&quot; HTML element.</li>
+<li>GESHI_HEADER_NONE: No header is outputted.</li>
+</ul></div></div></div>
+</div>
+<a id="property_highlight_extra_lines"> </a><div class="element clickable property public property_highlight_extra_lines" data-toggle="collapse" data-target=".property_highlight_extra_lines .collapse" title="public">
+<h2>Lines that should be highlighted extra</h2>
+<pre>$highlight_extra_lines : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_highlight_extra_lines_style"> </a><div class="element clickable property public property_highlight_extra_lines_style" data-toggle="collapse" data-target=".property_highlight_extra_lines_style .collapse" title="public">
+<h2>Styles of extra-highlighted lines</h2>
+<pre>$highlight_extra_lines_style : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'background-color: #ffc;'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_highlight_extra_lines_styles"> </a><div class="element clickable property public property_highlight_extra_lines_styles" data-toggle="collapse" data-target=".property_highlight_extra_lines_styles .collapse" title="public">
+<h2>Styles of lines that should be highlighted extra</h2>
+<pre>$highlight_extra_lines_styles : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_important_styles"> </a><div class="element clickable property public property_important_styles" data-toggle="collapse" data-target=".property_important_styles .collapse" title="public">
+<h2>Styles for important parts of the code</h2>
+<pre>$important_styles : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'font-weight: bold; color: red;'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td></td>
+</tr>
+<tr>
+<th>todo</th>
+<td>As above - rethink the whole idea of important blocks as it is buggy and
+will be hard to implement in 1.2</td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_keyword_links"> </a><div class="element clickable property public property_keyword_links" data-toggle="collapse" data-target=".property_keyword_links .collapse" title="public">
+<h2>Should keywords be linked?</h2>
+<pre>$keyword_links : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>true</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_language"> </a><div class="element clickable property public property_language" data-toggle="collapse" data-target=".property_language .collapse" title="public">
+<h2>The language to use when highlighting</h2>
+<pre>$language : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_language_data"> </a><div class="element clickable property public property_language_data" data-toggle="collapse" data-target=".property_language_data .collapse" title="public">
+<h2>The data for the language used</h2>
+<pre>$language_data : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_language_path"> </a><div class="element clickable property public property_language_path" data-toggle="collapse" data-target=".property_language_path .collapse" title="public">
+<h2>The path to the language files</h2>
+<pre>$language_path : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>GESHI_LANG_ROOT</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_lexic_permissions"> </a><div class="element clickable property public property_lexic_permissions" data-toggle="collapse" data-target=".property_lexic_permissions .collapse" title="public">
+<h2>Array of permissions for which lexics should be highlighted</h2>
+<pre>$lexic_permissions : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('KEYWORDS' => array(), 'COMMENTS' => array('MULTI' => true), 'REGEXPS' => array(), 'ESCAPE_CHAR' => true, 'BRACKETS' => true, 'SYMBOLS' => false, 'STRINGS' => true, 'NUMBERS' => true, 'METHODS' => true, 'SCRIPT' => true)</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_line_ending"> </a><div class="element clickable property public property_line_ending" data-toggle="collapse" data-target=".property_line_ending .collapse" title="public">
+<h2>The line ending
+If null, nl2br() will be used on the result string.</h2>
+<pre>$line_ending : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Otherwise, all instances of \n will be replaced with $line_ending</p></div></div></div>
+</div>
+<a id="property_line_nth_row"> </a><div class="element clickable property public property_line_nth_row" data-toggle="collapse" data-target=".property_line_nth_row .collapse" title="public">
+<h2>The "nth" value for fancy line highlighting</h2>
+<pre>$line_nth_row : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_line_numbers"> </a><div class="element clickable property public property_line_numbers" data-toggle="collapse" data-target=".property_line_numbers .collapse" title="public">
+<h2>Flag for how line numbers are displayed</h2>
+<pre>$line_numbers : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>GESHI_NO_LINE_NUMBERS</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_line_numbers_start"> </a><div class="element clickable property public property_line_numbers_start" data-toggle="collapse" data-target=".property_line_numbers_start .collapse" title="public">
+<h2>Number at which line numbers should start at</h2>
+<pre>$line_numbers_start : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>1</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_line_style1"> </a><div class="element clickable property public property_line_style1" data-toggle="collapse" data-target=".property_line_style1 .collapse" title="public">
+<h2>Line number styles</h2>
+<pre>$line_style1 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'font-weight: normal; vertical-align:top;'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_line_style2"> </a><div class="element clickable property public property_line_style2" data-toggle="collapse" data-target=".property_line_style2 .collapse" title="public">
+<h2>Line number styles for fancy lines</h2>
+<pre>$line_style2 : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'font-weight: bold; vertical-align:top;'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_link_styles"> </a><div class="element clickable property public property_link_styles" data-toggle="collapse" data-target=".property_link_styles .collapse" title="public">
+<h2>The styles for hyperlinks in the code</h2>
+<pre>$link_styles : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_link_target"> </a><div class="element clickable property public property_link_target" data-toggle="collapse" data-target=".property_link_target .collapse" title="public">
+<h2>Default target for keyword links</h2>
+<pre>$link_target : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_loaded_language"> </a><div class="element clickable property public property_loaded_language" data-toggle="collapse" data-target=".property_loaded_language .collapse" title="public">
+<h2>Currently loaded language file</h2>
+<pre>$loaded_language : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.7.22</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_overall_class"> </a><div class="element clickable property public property_overall_class" data-toggle="collapse" data-target=".property_overall_class .collapse" title="public">
+<h2>The overall class for this code block</h2>
+<pre>$overall_class : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_overall_id"> </a><div class="element clickable property public property_overall_id" data-toggle="collapse" data-target=".property_overall_id .collapse" title="public">
+<h2>The overall ID for this code block</h2>
+<pre>$overall_id : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_overall_style"> </a><div class="element clickable property public property_overall_style" data-toggle="collapse" data-target=".property_overall_style .collapse" title="public">
+<h2>The overall style for this code block</h2>
+<pre>$overall_style : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'font-family:monospace;'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_parse_cache_built"> </a><div class="element clickable property public property_parse_cache_built" data-toggle="collapse" data-target=".property_parse_cache_built .collapse" title="public">
+<h2>Wether the caches needed for parsing are built or not</h2>
+<pre>$parse_cache_built : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>since</th>
+<td>1.0.8</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_source"> </a><div class="element clickable property public property_source" data-toggle="collapse" data-target=".property_source .collapse" title="public">
+<h2>The source code to highlight</h2>
+<pre>$source : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_strict_mode"> </a><div class="element clickable property public property_strict_mode" data-toggle="collapse" data-target=".property_strict_mode .collapse" title="public">
+<h2>Whether highlighting is strict or not</h2>
+<pre>$strict_mode : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tab_width"> </a><div class="element clickable property public property_tab_width" data-toggle="collapse" data-target=".property_tab_width .collapse" title="public">
+<h2>The size of tab stops</h2>
+<pre>$tab_width : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>8</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_table_linenumber_style"> </a><div class="element clickable property public property_table_linenumber_style" data-toggle="collapse" data-target=".property_table_linenumber_style .collapse" title="public">
+<h2>Style for line numbers when GESHI_HEADER_PRE_TABLE is chosen</h2>
+<pre>$table_linenumber_style : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_time"> </a><div class="element clickable property public property_time" data-toggle="collapse" data-target=".property_time .collapse" title="public">
+<h2>The time it took to parse the code</h2>
+<pre>$time : double</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_use_classes"> </a><div class="element clickable property public property_use_classes" data-toggle="collapse" data-target=".property_use_classes .collapse" title="public">
+<h2>Whether to use CSS classes in output</h2>
+<pre>$use_classes : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_use_language_tab_width"> </a><div class="element clickable property public property_use_language_tab_width" data-toggle="collapse" data-target=".property_use_language_tab_width .collapse" title="public">
+<h2>Should we use language-defined tab stop widths?</h2>
+<pre>$use_language_tab_width : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:34:53-04:00.<br></footer></div>
+</div>
+</body>
+</html>

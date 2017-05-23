@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » Cron</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Namespaces</li>
+<li>
+<a href="../namespaces/Cron.html" title="Cron"><i class="icon-th"></i>Cron</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li class="nav-header">
+<i title="Interfaces" class="icon-custom icon-interface"></i> Interfaces</li>
+<li><a href="#FieldInterface" title="CRON field interface">FieldInterface</a></li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#YearField" title="Year field.  Allows: * , / -">YearField</a></li>
+<li><a href="#MinutesField" title="Minutes field.  Allows: * , / -">MinutesField</a></li>
+<li><a href="#DayOfWeekField" title="Day of week field.  Allows: * / , - ? L #">DayOfWeekField</a></li>
+<li><a href="#DayOfMonthField" title="Day of month field.  Allows: * , / - ? L W">DayOfMonthField</a></li>
+<li><a href="#CronExpression" title="CRON expression parser that can determine whether or not a CRON expression is
+due to run, the next run date and previous run date of a CRON expression.">CronExpression</a></li>
+<li><a href="#MonthField" title="Month field.  Allows: * , / -">MonthField</a></li>
+<li><a href="#FieldFactory" title="CRON field factory implementating a flyweight factory">FieldFactory</a></li>
+<li><a href="#AbstractField" title="Abstract CRON expression field">AbstractField</a></li>
+<li><a href="#HoursField" title="Hours field.  Allows: * , / -">HoursField</a></li>
+</ul>
+</div>
+<div class="span8 namespace-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li class="active"><a href="../namespaces/Cron.html">Cron</a></li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="FieldInterface" class="element ajax clickable interface">
+<h1>FieldInterface<a href="../classes/Cron.FieldInterface.html">¶</a>
+</h1>
+<p class="short_description">CRON field interface</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.FieldInterface.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="AbstractField" class="element ajax clickable class">
+<h1>AbstractField<a href="../classes/Cron.AbstractField.html">¶</a>
+</h1>
+<p class="short_description">Abstract CRON expression field</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.AbstractField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CronExpression" class="element ajax clickable class">
+<h1>CronExpression<a href="../classes/Cron.CronExpression.html">¶</a>
+</h1>
+<p class="short_description">CRON expression parser that can determine whether or not a CRON expression is
+due to run, the next run date and previous run date of a CRON expression.</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.CronExpression.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="DayOfMonthField" class="element ajax clickable class">
+<h1>DayOfMonthField<a href="../classes/Cron.DayOfMonthField.html">¶</a>
+</h1>
+<p class="short_description">Day of month field.  Allows: * , / - ? L W</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.DayOfMonthField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="DayOfWeekField" class="element ajax clickable class">
+<h1>DayOfWeekField<a href="../classes/Cron.DayOfWeekField.html">¶</a>
+</h1>
+<p class="short_description">Day of week field.  Allows: * / , - ? L #</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.DayOfWeekField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="FieldFactory" class="element ajax clickable class">
+<h1>FieldFactory<a href="../classes/Cron.FieldFactory.html">¶</a>
+</h1>
+<p class="short_description">CRON field factory implementating a flyweight factory</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.FieldFactory.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="HoursField" class="element ajax clickable class">
+<h1>HoursField<a href="../classes/Cron.HoursField.html">¶</a>
+</h1>
+<p class="short_description">Hours field.  Allows: * , / -</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.HoursField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MinutesField" class="element ajax clickable class">
+<h1>MinutesField<a href="../classes/Cron.MinutesField.html">¶</a>
+</h1>
+<p class="short_description">Minutes field.  Allows: * , / -</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.MinutesField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MonthField" class="element ajax clickable class">
+<h1>MonthField<a href="../classes/Cron.MonthField.html">¶</a>
+</h1>
+<p class="short_description">Month field.  Allows: * , / -</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.MonthField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="YearField" class="element ajax clickable class">
+<h1>YearField<a href="../classes/Cron.YearField.html">¶</a>
+</h1>
+<p class="short_description">Year field.  Allows: * , / -</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.YearField.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:27:32-04:00.<br></footer></div>
+</div>
+</body>
+</html>

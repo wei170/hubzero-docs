@@ -1,0 +1,410 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \MathRenderer</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_render" title="render() :: Render a formula
+This will return either an image tag with link to image (complicated formulas)
+or html (simple)"><span class="description">Render a formula
+This will return either an image tag with link to image (complicated formulas)
+or html (simple)</span><pre>render()</pre></a></li>
+<li class="method public "><a href="#method_renderMath" title="renderMath() :: Check of a formula exists, rendering if not
+This will return either an image tag with link to image (complicated formulas)
+or html (simple)"><span class="description">Check of a formula exists, rendering if not
+This will return either an image tag with link to image (complicated formulas)
+or html (simple)</span><pre>renderMath()</pre></a></li>
+<li class="method public "><a href="#method_setOutputMode" title="setOutputMode() :: Set the output mode (0 - 5)"><span class="description">Set the output mode (0 - 5)</span><pre>setOutputMode()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method__decodeBlob" title="_decodeBlob() :: Decode blob"><span class="description">Decode blob</span><pre>_decodeBlob()</pre></a></li>
+<li class="method private "><a href="#method__doRender" title="_doRender() :: Select among PNG, HTML, or MathML output depending on"><span class="description">Select among PNG, HTML, or MathML output depending on</span><pre>_doRender()</pre></a></li>
+<li class="method private "><a href="#method__encodeBlob" title="_encodeBlob() :: Encode blob"><span class="description">Encode blob</span><pre>_encodeBlob()</pre></a></li>
+<li class="method private "><a href="#method__error" title="_error() :: Return an error message"><span class="description">Return an error message</span><pre>_error()</pre></a></li>
+<li class="method private "><a href="#method__getHashPath" title="_getHashPath() :: Get the hash path"><span class="description">Get the hash path</span><pre>_getHashPath()</pre></a></li>
+<li class="method private "><a href="#method__linkToMathImage" title="_linkToMathImage() :: Generate an image tag for displaying rendered formulas"><span class="description">Generate an image tag for displaying rendered formulas</span><pre>_linkToMathImage()</pre></a></li>
+<li class="method private "><a href="#method__makePath" title="_makePath() :: Create directories in a path if they don't exist"><span class="description">Create directories in a path if they don't exist</span><pre>_makePath()</pre></a></li>
+<li class="method private "><a href="#method__recall" title="_recall() :: Detect if a formula exists"><span class="description">Detect if a formula exists</span><pre>_recall()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_conservativeness" title="$conservativeness() :: Description for 'conservativeness'"><span class="description"></span><pre>$conservativeness</pre></a></li>
+<li class="property public "><a href="#property_hash" title="$hash() :: Description for 'hash'"><span class="description"></span><pre>$hash</pre></a></li>
+<li class="property public "><a href="#property_html" title="$html() :: Description for 'html'"><span class="description"></span><pre>$html</pre></a></li>
+<li class="property public "><a href="#property_inputhash" title="$inputhash() :: Description for 'inputhash'"><span class="description"></span><pre>$inputhash</pre></a></li>
+<li class="property public "><a href="#property_mathml" title="$mathml() :: Description for 'mathml'"><span class="description"></span><pre>$mathml</pre></a></li>
+<li class="property public "><a href="#property_mode" title="$mode() :: Description for 'mode'"><span class="description"></span><pre>$mode</pre></a></li>
+<li class="property public "><a href="#property_tex" title="$tex() :: Description for 'tex'"><span class="description"></span><pre>$tex</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\MathRenderer"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/MathRenderer.html">MathRenderer</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Contain everything related to <math> </math> parsing</p>
+<div class="details">
+<div class="long_description"><p>Takes LaTeX fragments, sends them to a helper program (texvc) for rendering
+to rasterized PNG and HTML and MathML approximations. An appropriate
+rendering form is picked and returned.</p>
+<p>Based off code by Tomasz Wegrzanowski, with additions by Brion Vibber (2003, 2004)</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/MathRenderer.html">MathRenderer</a></td>
+</tr></table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Constructor</h2>
+<pre>__construct(string $tex, array $params<code> = array()</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tex</h4>
+<code>string</code><p>LaTeX formula</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>Parameters (not used?)</p></div>
+</div></div>
+</div>
+<a id="method_render"></a><div class="element clickable method public method_render " data-toggle="collapse" data-target=".method_render .collapse" title="public">
+<h2>Render a formula
+This will return either an image tag with link to image (complicated formulas)
+or html (simple)</h2>
+<pre>render() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_renderMath"></a><div class="element clickable method public method_renderMath " data-toggle="collapse" data-target=".method_renderMath .collapse" title="public">
+<h2>Check of a formula exists, rendering if not
+This will return either an image tag with link to image (complicated formulas)
+or html (simple)</h2>
+<pre>renderMath(string $tex, array $params<code> = array()</code>) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tex</h4>
+<code>string</code><p>LaTeX formula</p></div>
+<div class="subelement argument">
+<h4>$params</h4>
+<code>array</code><p>Parameters (not used?)</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_setOutputMode"></a><div class="element clickable method public method_setOutputMode " data-toggle="collapse" data-target=".method_setOutputMode .collapse" title="public">
+<h2>Set the output mode (0 - 5)</h2>
+<pre>setOutputMode(integer $mode) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>integer</code><p>Output mode to set</p></div>
+</div></div>
+</div>
+<a id="method__decodeBlob"></a><div class="element clickable method private method__decodeBlob " data-toggle="collapse" data-target=".method__decodeBlob .collapse" title="private">
+<h2>Decode blob</h2>
+<pre>_decodeBlob(string $b) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$b</h4>
+<code>string</code><p>Blob to decode</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__doRender"></a><div class="element clickable method private method__doRender " data-toggle="collapse" data-target=".method__doRender .collapse" title="private">
+<h2>Select among PNG, HTML, or MathML output depending on</h2>
+<pre>_doRender() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__encodeBlob"></a><div class="element clickable method private method__encodeBlob " data-toggle="collapse" data-target=".method__encodeBlob .collapse" title="private">
+<h2>Encode blob</h2>
+<pre>_encodeBlob(string $b) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$b</h4>
+<code>string</code><p>Blob to encode</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__error"></a><div class="element clickable method private method__error " data-toggle="collapse" data-target=".method__error .collapse" title="private">
+<h2>Return an error message</h2>
+<pre>_error(string $msg, string $append<code> = ''</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$msg</h4>
+<code>string</code><p>Message</p></div>
+<div class="subelement argument">
+<h4>$append</h4>
+<code>string</code><p>Data to append</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>HTML</div>
+</div></div>
+</div>
+<a id="method__getHashPath"></a><div class="element clickable method private method__getHashPath " data-toggle="collapse" data-target=".method__getHashPath .collapse" title="private">
+<h2>Get the hash path</h2>
+<pre>_getHashPath() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__linkToMathImage"></a><div class="element clickable method private method__linkToMathImage " data-toggle="collapse" data-target=".method__linkToMathImage .collapse" title="private">
+<h2>Generate an image tag for displaying rendered formulas</h2>
+<pre>_linkToMathImage() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>HTML</div>
+</div></div>
+</div>
+<a id="method__makePath"></a><div class="element clickable method private method__makePath " data-toggle="collapse" data-target=".method__makePath .collapse" title="private">
+<h2>Create directories in a path if they don't exist</h2>
+<pre>_makePath(string $path, integer $mode<code> = 511</code>) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>Path</p></div>
+<div class="subelement argument">
+<h4>$mode</h4>
+<code>integer</code><p>chmod</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>False if errors, True on success</div>
+</div></div>
+</div>
+<a id="method__recall"></a><div class="element clickable method private method__recall " data-toggle="collapse" data-target=".method__recall .collapse" title="private">
+<h2>Detect if a formula exists</h2>
+<pre>_recall() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if image exists</div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_conservativeness"> </a><div class="element clickable property public property_conservativeness" data-toggle="collapse" data-target=".property_conservativeness .collapse" title="public">
+<h2>Description for 'conservativeness'</h2>
+<pre>$conservativeness : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_hash"> </a><div class="element clickable property public property_hash" data-toggle="collapse" data-target=".property_hash .collapse" title="public">
+<h2>Description for 'hash'</h2>
+<pre>$hash : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_html"> </a><div class="element clickable property public property_html" data-toggle="collapse" data-target=".property_html .collapse" title="public">
+<h2>Description for 'html'</h2>
+<pre>$html : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_inputhash"> </a><div class="element clickable property public property_inputhash" data-toggle="collapse" data-target=".property_inputhash .collapse" title="public">
+<h2>Description for 'inputhash'</h2>
+<pre>$inputhash : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_mathml"> </a><div class="element clickable property public property_mathml" data-toggle="collapse" data-target=".property_mathml .collapse" title="public">
+<h2>Description for 'mathml'</h2>
+<pre>$mathml : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_mode"> </a><div class="element clickable property public property_mode" data-toggle="collapse" data-target=".property_mode .collapse" title="public">
+<h2>Description for 'mode'</h2>
+<pre>$mode : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>MW_MATH_MODERN</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tex"> </a><div class="element clickable property public property_tex" data-toggle="collapse" data-target=".property_tex .collapse" title="public">
+<h2>Description for 'tex'</h2>
+<pre>$tex : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:33:26-04:00.<br></footer></div>
+</div>
+</body>
+</html>

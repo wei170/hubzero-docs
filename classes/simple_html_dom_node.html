@@ -1,0 +1,653 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \simple_html_dom_node</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___destruct" title="__destruct() :: "><span class="description">__destruct()
+        </span><pre>__destruct()</pre></a></li>
+<li class="method public "><a href="#method___get" title="__get() :: "><span class="description">__get()
+        </span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___isset" title="__isset() :: "><span class="description">__isset()
+        </span><pre>__isset()</pre></a></li>
+<li class="method public "><a href="#method___set" title="__set() :: "><span class="description">__set()
+        </span><pre>__set()</pre></a></li>
+<li class="method public "><a href="#method___toString" title="__toString() :: "><span class="description">__toString()
+        </span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#method___unset" title="__unset() :: "><span class="description">__unset()
+        </span><pre>__unset()</pre></a></li>
+<li class="method public "><a href="#method_childNodes" title="childNodes() :: "><span class="description">childNodes()
+        </span><pre>childNodes()</pre></a></li>
+<li class="method public "><a href="#method_children" title="children() :: "><span class="description">children()
+        </span><pre>children()</pre></a></li>
+<li class="method public "><a href="#method_clear" title="clear() :: "><span class="description">clear()
+        </span><pre>clear()</pre></a></li>
+<li class="method public "><a href="#method_find" title="find() :: "><span class="description">find()
+        </span><pre>find()</pre></a></li>
+<li class="method public "><a href="#method_firstChild" title="firstChild() :: "><span class="description">firstChild()
+        </span><pre>firstChild()</pre></a></li>
+<li class="method public "><a href="#method_first_child" title="first_child() :: "><span class="description">first_child()
+        </span><pre>first_child()</pre></a></li>
+<li class="method public "><a href="#method_getAllAttributes" title="getAllAttributes() :: "><span class="description">getAllAttributes()
+        </span><pre>getAllAttributes()</pre></a></li>
+<li class="method public "><a href="#method_getAttribute" title="getAttribute() :: "><span class="description">getAttribute()
+        </span><pre>getAttribute()</pre></a></li>
+<li class="method public "><a href="#method_getElementById" title="getElementById() :: "><span class="description">getElementById()
+        </span><pre>getElementById()</pre></a></li>
+<li class="method public "><a href="#method_getElementByTagName" title="getElementByTagName() :: "><span class="description">getElementByTagName()
+        </span><pre>getElementByTagName()</pre></a></li>
+<li class="method public "><a href="#method_getElementsById" title="getElementsById() :: "><span class="description">getElementsById()
+        </span><pre>getElementsById()</pre></a></li>
+<li class="method public "><a href="#method_getElementsByTagName" title="getElementsByTagName() :: "><span class="description">getElementsByTagName()
+        </span><pre>getElementsByTagName()</pre></a></li>
+<li class="method public "><a href="#method_hasAttribute" title="hasAttribute() :: "><span class="description">hasAttribute()
+        </span><pre>hasAttribute()</pre></a></li>
+<li class="method public "><a href="#method_innertext" title="innertext() :: "><span class="description">innertext()
+        </span><pre>innertext()</pre></a></li>
+<li class="method public "><a href="#method_lastChild" title="lastChild() :: "><span class="description">lastChild()
+        </span><pre>lastChild()</pre></a></li>
+<li class="method public "><a href="#method_last_child" title="last_child() :: "><span class="description">last_child()
+        </span><pre>last_child()</pre></a></li>
+<li class="method public "><a href="#method_makeup" title="makeup() :: "><span class="description">makeup()
+        </span><pre>makeup()</pre></a></li>
+<li class="method public "><a href="#method_nextSibling" title="nextSibling() :: "><span class="description">nextSibling()
+        </span><pre>nextSibling()</pre></a></li>
+<li class="method public "><a href="#method_next_sibling" title="next_sibling() :: "><span class="description">next_sibling()
+        </span><pre>next_sibling()</pre></a></li>
+<li class="method public "><a href="#method_outertext" title="outertext() :: "><span class="description">outertext()
+        </span><pre>outertext()</pre></a></li>
+<li class="method public "><a href="#method_parent" title="parent() :: "><span class="description">parent()
+        </span><pre>parent()</pre></a></li>
+<li class="method public "><a href="#method_parentNode" title="parentNode() :: "><span class="description">parentNode()
+        </span><pre>parentNode()</pre></a></li>
+<li class="method public "><a href="#method_plaintext" title="plaintext() :: "><span class="description">plaintext()
+        </span><pre>plaintext()</pre></a></li>
+<li class="method public "><a href="#method_prev_sibling" title="prev_sibling() :: "><span class="description">prev_sibling()
+        </span><pre>prev_sibling()</pre></a></li>
+<li class="method public "><a href="#method_previousSibling" title="previousSibling() :: "><span class="description">previousSibling()
+        </span><pre>previousSibling()</pre></a></li>
+<li class="method public "><a href="#method_removeAttribute" title="removeAttribute() :: "><span class="description">removeAttribute()
+        </span><pre>removeAttribute()</pre></a></li>
+<li class="method public "><a href="#method_setAttribute" title="setAttribute() :: "><span class="description">setAttribute()
+        </span><pre>setAttribute()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_match" title="match() :: "><span class="description">match()
+        </span><pre>match()</pre></a></li>
+<li class="method protected "><a href="#method_parse_selector" title="parse_selector() :: "><span class="description">parse_selector()
+        </span><pre>parse_selector()</pre></a></li>
+<li class="method protected "><a href="#method_seek" title="seek() :: "><span class="description">seek()
+        </span><pre>seek()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property__" title="$_() :: "><span class="description"></span><pre>$_</pre></a></li>
+<li class="property public "><a href="#property_attr" title="$attr() :: "><span class="description"></span><pre>$attr</pre></a></li>
+<li class="property public "><a href="#property_children" title="$children() :: "><span class="description"></span><pre>$children</pre></a></li>
+<li class="property public "><a href="#property_nodes" title="$nodes() :: "><span class="description"></span><pre>$nodes</pre></a></li>
+<li class="property public "><a href="#property_nodetype" title="$nodetype() :: "><span class="description"></span><pre>$nodetype</pre></a></li>
+<li class="property public "><a href="#property_parent" title="$parent() :: "><span class="description"></span><pre>$parent</pre></a></li>
+<li class="property public "><a href="#property_tag" title="$tag() :: "><span class="description"></span><pre>$tag</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="property private "><a href="#property_dom" title="$dom() :: "><span class="description"></span><pre>$dom</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\simple_html_dom_node"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/simple_html_dom_node.html">simple_html_dom_node</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>__construct()
+        </h2>
+<pre>__construct($dom) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dom</h4></div>
+</div></div>
+</div>
+<a id="method___destruct"></a><div class="element clickable method public method___destruct " data-toggle="collapse" data-target=".method___destruct .collapse" title="public">
+<h2>__destruct()
+        </h2>
+<pre>__destruct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get " data-toggle="collapse" data-target=".method___get .collapse" title="public">
+<h2>__get()
+        </h2>
+<pre>__get($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="method___isset"></a><div class="element clickable method public method___isset " data-toggle="collapse" data-target=".method___isset .collapse" title="public">
+<h2>__isset()
+        </h2>
+<pre>__isset($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set " data-toggle="collapse" data-target=".method___set .collapse" title="public">
+<h2>__set()
+        </h2>
+<pre>__set($name, $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString " data-toggle="collapse" data-target=".method___toString .collapse" title="public">
+<h2>__toString()
+        </h2>
+<pre>__toString() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method___unset"></a><div class="element clickable method public method___unset " data-toggle="collapse" data-target=".method___unset .collapse" title="public">
+<h2>__unset()
+        </h2>
+<pre>__unset($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="method_childNodes"></a><div class="element clickable method public method_childNodes " data-toggle="collapse" data-target=".method_childNodes .collapse" title="public">
+<h2>childNodes()
+        </h2>
+<pre>childNodes($idx<code> = -1</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$idx</h4></div>
+</div></div>
+</div>
+<a id="method_children"></a><div class="element clickable method public method_children " data-toggle="collapse" data-target=".method_children .collapse" title="public">
+<h2>children()
+        </h2>
+<pre>children($idx<code> = -1</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$idx</h4></div>
+</div></div>
+</div>
+<a id="method_clear"></a><div class="element clickable method public method_clear " data-toggle="collapse" data-target=".method_clear .collapse" title="public">
+<h2>clear()
+        </h2>
+<pre>clear() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_find"></a><div class="element clickable method public method_find " data-toggle="collapse" data-target=".method_find .collapse" title="public">
+<h2>find()
+        </h2>
+<pre>find($selector, $idx<code> = null</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$selector</h4></div>
+<div class="subelement argument"><h4>$idx</h4></div>
+</div></div>
+</div>
+<a id="method_firstChild"></a><div class="element clickable method public method_firstChild " data-toggle="collapse" data-target=".method_firstChild .collapse" title="public">
+<h2>firstChild()
+        </h2>
+<pre>firstChild() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_first_child"></a><div class="element clickable method public method_first_child " data-toggle="collapse" data-target=".method_first_child .collapse" title="public">
+<h2>first_child()
+        </h2>
+<pre>first_child() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getAllAttributes"></a><div class="element clickable method public method_getAllAttributes " data-toggle="collapse" data-target=".method_getAllAttributes .collapse" title="public">
+<h2>getAllAttributes()
+        </h2>
+<pre>getAllAttributes() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_getAttribute"></a><div class="element clickable method public method_getAttribute " data-toggle="collapse" data-target=".method_getAttribute .collapse" title="public">
+<h2>getAttribute()
+        </h2>
+<pre>getAttribute($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="method_getElementById"></a><div class="element clickable method public method_getElementById " data-toggle="collapse" data-target=".method_getElementById .collapse" title="public">
+<h2>getElementById()
+        </h2>
+<pre>getElementById($id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a id="method_getElementByTagName"></a><div class="element clickable method public method_getElementByTagName " data-toggle="collapse" data-target=".method_getElementByTagName .collapse" title="public">
+<h2>getElementByTagName()
+        </h2>
+<pre>getElementByTagName($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="method_getElementsById"></a><div class="element clickable method public method_getElementsById " data-toggle="collapse" data-target=".method_getElementsById .collapse" title="public">
+<h2>getElementsById()
+        </h2>
+<pre>getElementsById($id, $idx<code> = null</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$id</h4></div>
+<div class="subelement argument"><h4>$idx</h4></div>
+</div></div>
+</div>
+<a id="method_getElementsByTagName"></a><div class="element clickable method public method_getElementsByTagName " data-toggle="collapse" data-target=".method_getElementsByTagName .collapse" title="public">
+<h2>getElementsByTagName()
+        </h2>
+<pre>getElementsByTagName($name, $idx<code> = null</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument"><h4>$idx</h4></div>
+</div></div>
+</div>
+<a id="method_hasAttribute"></a><div class="element clickable method public method_hasAttribute " data-toggle="collapse" data-target=".method_hasAttribute .collapse" title="public">
+<h2>hasAttribute()
+        </h2>
+<pre>hasAttribute($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="method_innertext"></a><div class="element clickable method public method_innertext " data-toggle="collapse" data-target=".method_innertext .collapse" title="public">
+<h2>innertext()
+        </h2>
+<pre>innertext() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_lastChild"></a><div class="element clickable method public method_lastChild " data-toggle="collapse" data-target=".method_lastChild .collapse" title="public">
+<h2>lastChild()
+        </h2>
+<pre>lastChild() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_last_child"></a><div class="element clickable method public method_last_child " data-toggle="collapse" data-target=".method_last_child .collapse" title="public">
+<h2>last_child()
+        </h2>
+<pre>last_child() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_makeup"></a><div class="element clickable method public method_makeup " data-toggle="collapse" data-target=".method_makeup .collapse" title="public">
+<h2>makeup()
+        </h2>
+<pre>makeup() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_nextSibling"></a><div class="element clickable method public method_nextSibling " data-toggle="collapse" data-target=".method_nextSibling .collapse" title="public">
+<h2>nextSibling()
+        </h2>
+<pre>nextSibling() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_next_sibling"></a><div class="element clickable method public method_next_sibling " data-toggle="collapse" data-target=".method_next_sibling .collapse" title="public">
+<h2>next_sibling()
+        </h2>
+<pre>next_sibling() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_outertext"></a><div class="element clickable method public method_outertext " data-toggle="collapse" data-target=".method_outertext .collapse" title="public">
+<h2>outertext()
+        </h2>
+<pre>outertext() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_parent"></a><div class="element clickable method public method_parent " data-toggle="collapse" data-target=".method_parent .collapse" title="public">
+<h2>parent()
+        </h2>
+<pre>parent() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_parentNode"></a><div class="element clickable method public method_parentNode " data-toggle="collapse" data-target=".method_parentNode .collapse" title="public">
+<h2>parentNode()
+        </h2>
+<pre>parentNode() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_plaintext"></a><div class="element clickable method public method_plaintext " data-toggle="collapse" data-target=".method_plaintext .collapse" title="public">
+<h2>plaintext()
+        </h2>
+<pre>plaintext() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_prev_sibling"></a><div class="element clickable method public method_prev_sibling " data-toggle="collapse" data-target=".method_prev_sibling .collapse" title="public">
+<h2>prev_sibling()
+        </h2>
+<pre>prev_sibling() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_previousSibling"></a><div class="element clickable method public method_previousSibling " data-toggle="collapse" data-target=".method_previousSibling .collapse" title="public">
+<h2>previousSibling()
+        </h2>
+<pre>previousSibling() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_removeAttribute"></a><div class="element clickable method public method_removeAttribute " data-toggle="collapse" data-target=".method_removeAttribute .collapse" title="public">
+<h2>removeAttribute()
+        </h2>
+<pre>removeAttribute($name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+</div></div>
+</div>
+<a id="method_setAttribute"></a><div class="element clickable method public method_setAttribute " data-toggle="collapse" data-target=".method_setAttribute .collapse" title="public">
+<h2>setAttribute()
+        </h2>
+<pre>setAttribute($name, $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$name</h4></div>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_match"></a><div class="element clickable method protected method_match " data-toggle="collapse" data-target=".method_match .collapse" title="protected">
+<h2>match()
+        </h2>
+<pre>match($exp, $pattern, $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$exp</h4></div>
+<div class="subelement argument"><h4>$pattern</h4></div>
+<div class="subelement argument"><h4>$value</h4></div>
+</div></div>
+</div>
+<a id="method_parse_selector"></a><div class="element clickable method protected method_parse_selector " data-toggle="collapse" data-target=".method_parse_selector .collapse" title="protected">
+<h2>parse_selector()
+        </h2>
+<pre>parse_selector($selector_string) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$selector_string</h4></div>
+</div></div>
+</div>
+<a id="method_seek"></a><div class="element clickable method protected method_seek " data-toggle="collapse" data-target=".method_seek .collapse" title="protected">
+<h2>seek()
+        </h2>
+<pre>seek($selector, $ret) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$selector</h4></div>
+<div class="subelement argument"><h4>$ret</h4></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__"> </a><div class="element clickable property public property__" data-toggle="collapse" data-target=".property__ .collapse" title="public">
+<h2>$_</h2>
+<pre>$_ </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_attr"> </a><div class="element clickable property public property_attr" data-toggle="collapse" data-target=".property_attr .collapse" title="public">
+<h2>$attr</h2>
+<pre>$attr </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_children"> </a><div class="element clickable property public property_children" data-toggle="collapse" data-target=".property_children .collapse" title="public">
+<h2>$children</h2>
+<pre>$children </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_nodes"> </a><div class="element clickable property public property_nodes" data-toggle="collapse" data-target=".property_nodes .collapse" title="public">
+<h2>$nodes</h2>
+<pre>$nodes </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_nodetype"> </a><div class="element clickable property public property_nodetype" data-toggle="collapse" data-target=".property_nodetype .collapse" title="public">
+<h2>$nodetype</h2>
+<pre>$nodetype </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>HDOM_TYPE_TEXT</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_parent"> </a><div class="element clickable property public property_parent" data-toggle="collapse" data-target=".property_parent .collapse" title="public">
+<h2>$parent</h2>
+<pre>$parent </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tag"> </a><div class="element clickable property public property_tag" data-toggle="collapse" data-target=".property_tag .collapse" title="public">
+<h2>$tag</h2>
+<pre>$tag </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'text'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_dom"> </a><div class="element clickable property private property_dom" data-toggle="collapse" data-target=".property_dom .collapse" title="private">
+<h2>$dom</h2>
+<pre>$dom </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:37:20-04:00.<br></footer></div>
+</div>
+</body>
+</html>

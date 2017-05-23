@@ -1,0 +1,1268 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \WikiParser</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_get" title="get() :: Returns a property of the object or the default value if the property is not set."><span class="description">Returns a property of the object or the default value if the property is not set.</span><pre>get()</pre></a></li>
+<li class="method public "><a href="#method_glyphs" title="glyphs() :: Convert common special characters to their HTML entity counterpart"><span class="description">Convert common special characters to their HTML entity counterpart</span><pre>glyphs()</pre></a></li>
+<li class="method public "><a href="#method_input" title="input() :: Get the raw input"><span class="description">Get the raw input</span><pre>input()</pre></a></li>
+<li class="method public "><a href="#method_linkAuto" title="linkAuto() :: Automatically links any strings matching a URL or email pattern"><span class="description">Automatically links any strings matching a URL or email pattern</span><pre>linkAuto()</pre></a></li>
+<li class="method public "><a href="#method_linkAutoemail" title="linkAutoemail() :: Automatically links any strings matching an email pattern"><span class="description">Automatically links any strings matching an email pattern</span><pre>linkAutoemail()</pre></a></li>
+<li class="method public "><a href="#method_linkAutourl" title="linkAutourl() :: Automatically links any strings matching a URL pattern"><span class="description">Automatically links any strings matching a URL pattern</span><pre>linkAutourl()</pre></a></li>
+<li class="method public "><a href="#method_linkExternal" title="linkExternal() :: Generate a link to an internal (same site) page
+Link is pushed to internal array and placeholder returned
+This is to ensure links aren't parsed twice. We put the links back in place
+towards the end of parsing."><span class="description">Generate a link to an internal (same site) page
+Link is pushed to internal array and placeholder returned
+This is to ensure links aren't parsed twice. We put the links back in place
+towards the end of parsing.</span><pre>linkExternal()</pre></a></li>
+<li class="method public "><a href="#method_linkInternal" title="linkInternal() :: Generate a link to an external (off-site) page
+Link is pushed to internal array and placeholder returned
+This is to ensure links aren't parsed twice. We put the links back in place
+towards the end of parsing."><span class="description">Generate a link to an external (off-site) page
+Link is pushed to internal array and placeholder returned
+This is to ensure links aren't parsed twice. We put the links back in place
+towards the end of parsing.</span><pre>linkInternal()</pre></a></li>
+<li class="method public "><a href="#method_linkWikiName" title="linkWikiName() :: Generate a link to a wiki page based on page name"><span class="description">Generate a link to a wiki page based on page name</span><pre>linkWikiName()</pre></a></li>
+<li class="method public "><a href="#method_links" title="links() :: Convert wiki links to HTML links"><span class="description">Convert wiki links to HTML links</span><pre>links()</pre></a></li>
+<li class="method public "><a href="#method_obfuscate" title="obfuscate() :: Obfuscate an email address"><span class="description">Obfuscate an email address</span><pre>obfuscate()</pre></a></li>
+<li class="method public "><a href="#method_output" title="output() :: Get the parsed output"><span class="description">Get the parsed output</span><pre>output()</pre></a></li>
+<li class="method public "><a href="#method_parse" title="parse() :: Where all the magic takes place
+Turns raw wiki text to HTML"><span class="description">Where all the magic takes place
+Turns raw wiki text to HTML</span><pre>parse()</pre></a></li>
+<li class="method public "><a href="#method_set" title="set() :: Modifies a property of the object, creating it if it does not already exist."><span class="description">Modifies a property of the object, creating it if it does not already exist.</span><pre>set()</pre></a></li>
+<li class="method public "><a href="#method_toc" title="toc() :: Builds a Table of Contents and links to headings"><span class="description">Builds a Table of Contents and links to headings</span><pre>toc()</pre></a></li>
+<li class="method public "><a href="#method_token" title="token() :: Get the unique string"><span class="description">Get the unique string</span><pre>token()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method__closeList" title="_closeList() :: Close a list"><span class="description">Close a list</span><pre>_closeList()</pre></a></li>
+<li class="method private "><a href="#method__closeParagraph" title="_closeParagraph() :: Generate a closed paragraph tag"><span class="description">Generate a closed paragraph tag</span><pre>_closeParagraph()</pre></a></li>
+<li class="method private "><a href="#method__code" title="_code() :: Parse code declarations
+   `{{{."><span class="description">Parse code declarations
+   `{{{.</span><pre>_code()</pre></a></li>
+<li class="method private "><a href="#method__dataPull" title="_dataPull() :: Store an item in the shelf
+Returns a unique ID as a placeholder for content retrieval later on"><span class="description">Store an item in the shelf
+Returns a unique ID as a placeholder for content retrieval later on</span><pre>_dataPull()</pre></a></li>
+<li class="method private "><a href="#method__dataPush" title="_dataPush() :: Store an item in the shelf
+Returns a unique ID as a placeholder for content retrieval later on"><span class="description">Store an item in the shelf
+Returns a unique ID as a placeholder for content retrieval later on</span><pre>_dataPush()</pre></a></li>
+<li class="method private "><a href="#method__getAdmonition" title="_getAdmonition() :: Convert the admonition content to HTML"><span class="description">Convert the admonition content to HTML</span><pre>_getAdmonition()</pre></a></li>
+<li class="method private "><a href="#method__getCode" title="_getCode() :: `{{{."><span class="description">`{{{.</span><pre>_getCode()</pre></a></li>
+<li class="method private "><a href="#method__getCommon" title="_getCommon() :: Returns the length of the longest common substring
+of both arguments, starting at the beginning of both."><span class="description">Returns the length of the longest common substring
+of both arguments, starting at the beginning of both.</span><pre>_getCommon()</pre></a></li>
+<li class="method private "><a href="#method__getInclude" title="_getInclude() :: Retrieve an included page
+This is recursive and should look for inclusions in any included page."><span class="description">Retrieve an included page
+This is recursive and should look for inclusions in any included page.</span><pre>_getInclude()</pre></a></li>
+<li class="method private "><a href="#method__getMacro" title="_getMacro() :: Attempt to load a specific macro class and return its contents"><span class="description">Attempt to load a specific macro class and return its contents</span><pre>_getMacro()</pre></a></li>
+<li class="method private "><a href="#method__getMath" title="_getMath() :: Render a math forumla
+Output depends on complexity of formula. HTML is tried first with image used for complex formulas"><span class="description">Render a math forumla
+Output depends on complexity of formula. HTML is tried first with image used for complex formulas</span><pre>_getMath()</pre></a></li>
+<li class="method private "><a href="#method__getQuotes" title="_getQuotes() :: Convert quotes to HTML"><span class="description">Convert quotes to HTML</span><pre>_getQuotes()</pre></a></li>
+<li class="method private "><a href="#method__getSpan" title="_getSpan() :: Convert wiki markup to HTML for common inline elements"><span class="description">Convert wiki markup to HTML for common inline elements</span><pre>_getSpan()</pre></a></li>
+<li class="method private "><a href="#method__getTable" title="_getTable() :: Convert a string for wiki table syntax into a table"><span class="description">Convert a string for wiki table syntax into a table</span><pre>_getTable()</pre></a></li>
+<li class="method private "><a href="#method__makeHeadline" title="_makeHeadline() :: Generate an HTML header with an anchor for the table of contents to jump to"><span class="description">Generate an HTML header with an anchor for the table of contents to jump to</span><pre>_makeHeadline()</pre></a></li>
+<li class="method private "><a href="#method__nextItem" title="_nextItem() :: Close the current list item and continue to the next list item"><span class="description">Close the current list item and continue to the next list item</span><pre>_nextItem()</pre></a></li>
+<li class="method private "><a href="#method__openList" title="_openList() :: Open a list"><span class="description">Open a list</span><pre>_openList()</pre></a></li>
+<li class="method private "><a href="#method__randomString" title="_randomString() :: Generate a unique prefix"><span class="description">Generate a unique prefix</span><pre>_randomString()</pre></a></li>
+<li class="method private "><a href="#method__restoreAnchor" title="_restoreAnchor() :: Inject link back into text"><span class="description">Inject link back into text</span><pre>_restoreAnchor()</pre></a></li>
+<li class="method private "><a href="#method__restoreCode" title="_restoreCode() :: Restores &lt;code&gt;&lt;/code&gt; blocks to their actual content"><span class="description">Restores &lt;code&gt;&lt;/code&gt; blocks to their actual content</span><pre>_restoreCode()</pre></a></li>
+<li class="method private "><a href="#method__restoreMacro" title="_restoreMacro() :: Put macro output back into the text"><span class="description">Put macro output back into the text</span><pre>_restoreMacro()</pre></a></li>
+<li class="method private "><a href="#method__restoreMath" title="_restoreMath() :: Format math output before injecting back into primary text"><span class="description">Format math output before injecting back into primary text</span><pre>_restoreMath()</pre></a></li>
+<li class="method private "><a href="#method__restorePre" title="_restorePre() :: Restores &lt;pre&gt;&lt;/pre&gt; blocks to their actual content"><span class="description">Restores &lt;pre&gt;&lt;/pre&gt; blocks to their actual content</span><pre>_restorePre()</pre></a></li>
+<li class="method private "><a href="#method__tocIndent" title="_tocIndent() :: Start a sub-list"><span class="description">Start a sub-list</span><pre>_tocIndent()</pre></a></li>
+<li class="method private "><a href="#method__tocLine" title="_tocLine() :: Open a list item and generate link"><span class="description">Open a list item and generate link</span><pre>_tocLine()</pre></a></li>
+<li class="method private "><a href="#method__tocLineEnd" title="_tocLineEnd() :: Close a list item"><span class="description">Close a list item</span><pre>_tocLineEnd()</pre></a></li>
+<li class="method private "><a href="#method__tocUnindent" title="_tocUnindent() :: Close a sub-list"><span class="description">Close a sub-list</span><pre>_tocUnindent()</pre></a></li>
+<li class="method private "><a href="#method_admonitions" title="admonitions() :: Admonitions"><span class="description">Admonitions</span><pre>admonitions()</pre></a></li>
+<li class="method private "><a href="#method_blocks" title="blocks() :: Make lists from lines starting with 'some text::', '*', '#', etc."><span class="description">Make lists from lines starting with 'some text::', '*', '#', etc.</span><pre>blocks()</pre></a></li>
+<li class="method private "><a href="#method_cleanXss" title="cleanXss() :: Clean potential Cross-Site Scripting hazards from a strong"><span class="description">Clean potential Cross-Site Scripting hazards from a strong</span><pre>cleanXss()</pre></a></li>
+<li class="method private "><a href="#method_definitions" title="definitions() :: Create definition lists
+ term::
+   definition"><span class="description">Create definition lists
+ term::
+   definition</span><pre>definitions()</pre></a></li>
+<li class="method private "><a href="#method_encodeHtml" title="encodeHtml() :: Very basic HTML entity encoder"><span class="description">Very basic HTML entity encoder</span><pre>encodeHtml()</pre></a></li>
+<li class="method private "><a href="#method_hAlign" title="hAlign() :: Horizontal alignment
+markup =&gt; value"><span class="description">Horizontal alignment
+markup =&gt; value</span><pre>hAlign()</pre></a></li>
+<li class="method private "><a href="#method_headings" title="headings() :: Headings h[1-6]"><span class="description">Headings h[1-6]</span><pre>headings()</pre></a></li>
+<li class="method private "><a href="#method_includes" title="includes() :: Search for include syntax and replace with any included text
+  [[Include(SomePage)]]"><span class="description">Search for include syntax and replace with any included text
+  [[Include(SomePage)]]</span><pre>includes()</pre></a></li>
+<li class="method private "><a href="#method_macros" title="macros() :: Parse macro tags
+[[MacroName(args)]]"><span class="description">Parse macro tags
+[[MacroName(args)]]</span><pre>macros()</pre></a></li>
+<li class="method private "><a href="#method_math" title="math() :: Convert math forumlas"><span class="description">Convert math forumlas</span><pre>math()</pre></a></li>
+<li class="method private "><a href="#method_pba" title="pba() :: Parse Block Attributes"><span class="description">Parse Block Attributes</span><pre>pba()</pre></a></li>
+<li class="method private "><a href="#method_quotes" title="quotes() :: Quotes
+''    =&gt; &lt;i&gt;
+'''   =&gt; &lt;b&gt;
+''''' =&gt; &lt;b&gt;&lt;i&gt;"><span class="description">Quotes
+''    =&gt; &lt;i&gt;
+'''   =&gt; &lt;b&gt;
+''''' =&gt; &lt;b&gt;&lt;i&gt;</span><pre>quotes()</pre></a></li>
+<li class="method private "><a href="#method_spans" title="spans() :: Parse markup syntax for several inline elements and their allowed attributes
+[cite, u, del, span, ins, sub, sup]"><span class="description">Parse markup syntax for several inline elements and their allowed attributes
+[cite, u, del, span, ins, sub, sup]</span><pre>spans()</pre></a></li>
+<li class="method private "><a href="#method_strip" title="strip() :: Strip &lt;pre&gt; and &lt;code&gt; blocks from text"><span class="description">Strip &lt;pre&gt; and &lt;code&gt; blocks from text</span><pre>strip()</pre></a></li>
+<li class="method private "><a href="#method_tables" title="tables() :: Look for table syntax and convert
+  ||Cell 1||Cell 2||Cell 3||
+  ||Cell 4||Cell 5||Cell 6||"><span class="description">Look for table syntax and convert
+  ||Cell 1||Cell 2||Cell 3||
+  ||Cell 4||Cell 5||Cell 6||</span><pre>tables()</pre></a></li>
+<li class="method private "><a href="#method_unstrip" title="unstrip() :: Put &lt;pre&gt; blocks back into the main content flow"><span class="description">Put &lt;pre&gt; blocks back into the main content flow</span><pre>unstrip()</pre></a></li>
+<li class="method private "><a href="#method_vAlign" title="vAlign() :: Vertical alignment
+markup =&gt; value"><span class="description">Vertical alignment
+markup =&gt; value</span><pre>vAlign()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property__config" title="$_config() :: Configuration options"><span class="description"></span><pre>$_config</pre></a></li>
+<li class="property private "><a href="#property__data" title="$_data() :: Data store"><span class="description"></span><pre>$_data</pre></a></li>
+<li class="property private "><a href="#property__patterns" title="$_patterns() :: Useful patterns"><span class="description"></span><pre>$_patterns</pre></a></li>
+<li class="property private "><a href="#property__token" title="$_token() :: A unique token"><span class="description"></span><pre>$_token</pre></a></li>
+<li class="property private "><a href="#property__tokens" title="$_tokens() :: Parsed content temp storage"><span class="description"></span><pre>$_tokens</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_CS_CODE" title="CS_CODE() :: Preformatted code state
+i.e., inside a &lt;pre&gt; block"><span class="description">Preformatted code state
+i.e., inside a &lt;pre&gt; block</span><pre>CS_CODE</pre></a></li>
+<li class="constant  "><a href="#constant_CS_CODE_SUB" title="CS_CODE_SUB() :: Preformatted code within code state
+i.e., &lt;pre&gt; inside a &lt;pre&gt; block"><span class="description">Preformatted code within code state
+i.e., &lt;pre&gt; inside a &lt;pre&gt; block</span><pre>CS_CODE_SUB</pre></a></li>
+<li class="constant  "><a href="#constant_CS_NONE" title="CS_NONE() :: Preformatted NOT in code state
+i.e., not inside a &lt;pre&gt; block"><span class="description">Preformatted NOT in code state
+i.e., not inside a &lt;pre&gt; block</span><pre>CS_NONE</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\WikiParser"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/WikiParser.html">WikiParser</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Wiki parser class
+converts wiki syntax to HTML</p>
+<div class="details">
+<div class="long_description"><p>Code was heavily influenced by MediaWiki's Parser, Trac's parser, and Textile.</p></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero-cms.html">hubzero-cms</a></td>
+</tr></table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Constructor</h2>
+<pre>__construct(array $config<code> = array()</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>array</code><p>Configuration options</p></div>
+</div></div>
+</div>
+<a id="method_get"></a><div class="element clickable method public method_get " data-toggle="collapse" data-target=".method_get .collapse" title="public">
+<h2>Returns a property of the object or the default value if the property is not set.</h2>
+<pre>get(string $property, mixed $default<code> = null</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$default</h4>
+<code>mixed</code><p>The default value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The value of the property.</div>
+</div></div>
+</div>
+<a id="method_glyphs"></a><div class="element clickable method public method_glyphs " data-toggle="collapse" data-target=".method_glyphs .collapse" title="public">
+<h2>Convert common special characters to their HTML entity counterpart</h2>
+<pre>glyphs(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_input"></a><div class="element clickable method public method_input " data-toggle="collapse" data-target=".method_input .collapse" title="public">
+<h2>Get the raw input</h2>
+<pre>input() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_linkAuto"></a><div class="element clickable method public method_linkAuto " data-toggle="collapse" data-target=".method_linkAuto .collapse" title="public">
+<h2>Automatically links any strings matching a URL or email pattern</h2>
+<pre>linkAuto(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Link is pushed to internal array and placeholder returned
+This is to ensure links aren't parsed twice. We put the links back in place
+towards the end of parsing.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>Text matching link pattern</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_linkAutoemail"></a><div class="element clickable method public method_linkAutoemail " data-toggle="collapse" data-target=".method_linkAutoemail .collapse" title="public">
+<h2>Automatically links any strings matching an email pattern</h2>
+<pre>linkAutoemail(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>Text matching link pattern</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_linkAutourl"></a><div class="element clickable method public method_linkAutourl " data-toggle="collapse" data-target=".method_linkAutourl .collapse" title="public">
+<h2>Automatically links any strings matching a URL pattern</h2>
+<pre>linkAutourl(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>Text matching link pattern</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_linkExternal"></a><div class="element clickable method public method_linkExternal " data-toggle="collapse" data-target=".method_linkExternal .collapse" title="public">
+<h2>Generate a link to an internal (same site) page
+Link is pushed to internal array and placeholder returned
+This is to ensure links aren't parsed twice. We put the links back in place
+towards the end of parsing.</h2>
+<pre>linkExternal(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>Text matching internal link pattern</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Placeholder tag</div>
+</div></div>
+</div>
+<a id="method_linkInternal"></a><div class="element clickable method public method_linkInternal " data-toggle="collapse" data-target=".method_linkInternal .collapse" title="public">
+<h2>Generate a link to an external (off-site) page
+Link is pushed to internal array and placeholder returned
+This is to ensure links aren't parsed twice. We put the links back in place
+towards the end of parsing.</h2>
+<pre>linkInternal(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>Text matching internal link pattern</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Placeholder tag</div>
+</div></div>
+</div>
+<a id="method_linkWikiName"></a><div class="element clickable method public method_linkWikiName " data-toggle="collapse" data-target=".method_linkWikiName .collapse" title="public">
+<h2>Generate a link to a wiki page based on page name</h2>
+<pre>linkWikiName(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_links"></a><div class="element clickable method public method_links " data-toggle="collapse" data-target=".method_links .collapse" title="public">
+<h2>Convert wiki links to HTML links</h2>
+<pre>links(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_obfuscate"></a><div class="element clickable method public method_obfuscate " data-toggle="collapse" data-target=".method_obfuscate .collapse" title="public">
+<h2>Obfuscate an email address</h2>
+<pre>obfuscate(string $email) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$email</h4>
+<code>string</code><p>Address to obfuscate</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_output"></a><div class="element clickable method public method_output " data-toggle="collapse" data-target=".method_output .collapse" title="public">
+<h2>Get the parsed output</h2>
+<pre>output() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_parse"></a><div class="element clickable method public method_parse " data-toggle="collapse" data-target=".method_parse .collapse" title="public">
+<h2>Where all the magic takes place
+Turns raw wiki text to HTML</h2>
+<pre>parse(string $text, boolean $fullparse<code> = true</code>, integer $linestart<code> = 0</code>, integer $camelcase<code> = 1</code>) : \unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Raw wiki markup</p></div>
+<div class="subelement argument">
+<h4>$fullparse</h4>
+<code>boolean</code><p>Full or limited parse? Limited does not parse macros</p></div>
+<div class="subelement argument">
+<h4>$linestart</h4>
+<code>integer</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$camelcase</h4>
+<code>integer</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_set"></a><div class="element clickable method public method_set " data-toggle="collapse" data-target=".method_set .collapse" title="public">
+<h2>Modifies a property of the object, creating it if it does not already exist.</h2>
+<pre>set(string $property, mixed $value<code> = null</code>) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>The value of the property to set.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>Method chaining</div>
+</div></div>
+</div>
+<a id="method_toc"></a><div class="element clickable method public method_toc " data-toggle="collapse" data-target=".method_toc .collapse" title="public">
+<h2>Builds a Table of Contents and links to headings</h2>
+<pre>toc(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Text to build TOC from</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_token"></a><div class="element clickable method public method_token " data-toggle="collapse" data-target=".method_token .collapse" title="public">
+<h2>Get the unique string</h2>
+<pre>token() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__closeList"></a><div class="element clickable method private method__closeList " data-toggle="collapse" data-target=".method__closeList .collapse" title="private">
+<h2>Close a list</h2>
+<pre>_closeList(string $char) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$char</h4>
+<code>string</code><p>List type indicator</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__closeParagraph"></a><div class="element clickable method private method__closeParagraph " data-toggle="collapse" data-target=".method__closeParagraph .collapse" title="private">
+<h2>Generate a closed paragraph tag</h2>
+<pre>_closeParagraph() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__code"></a><div class="element clickable method private method__code " data-toggle="collapse" data-target=".method__code .collapse" title="private">
+<h2>Parse code declarations
+   `{{{.</h2>
+<pre>_code(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>..}}}<code>-&gt;  &lt;code&gt;{{{...}}}&lt;/code&gt; {{{</code>...<code>}}}  -&gt;  &lt;code&gt;</code>...<code>&lt;/code&gt; {{{...}}}    -&gt;  &lt;code&gt;...&lt;/code&gt; </code>...`        -&gt;  <code>...</code></p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Text to replace code blocks in</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__dataPull"></a><div class="element clickable method private method__dataPull " data-toggle="collapse" data-target=".method__dataPull .collapse" title="private">
+<h2>Store an item in the shelf
+Returns a unique ID as a placeholder for content retrieval later on</h2>
+<pre>_dataPull($matches) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$matches</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>Unique ID</div>
+</div></div>
+</div>
+<a id="method__dataPush"></a><div class="element clickable method private method__dataPush " data-toggle="collapse" data-target=".method__dataPush .collapse" title="private">
+<h2>Store an item in the shelf
+Returns a unique ID as a placeholder for content retrieval later on</h2>
+<pre>_dataPush($matches) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$matches</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>Unique ID</div>
+</div></div>
+</div>
+<a id="method__getAdmonition"></a><div class="element clickable method private method__getAdmonition " data-toggle="collapse" data-target=".method__getAdmonition .collapse" title="private">
+<h2>Convert the admonition content to HTML</h2>
+<pre>_getAdmonition(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>Content matching {admonition} ... {/admonition}</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Parsed wiki content</div>
+</div></div>
+</div>
+<a id="method__getCode"></a><div class="element clickable method private method__getCode " data-toggle="collapse" data-target=".method__getCode .collapse" title="private">
+<h2>`{{{.</h2>
+<pre>_getCode(\unknown $m) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>..}}}`</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$m</h4>
+<code>\unknown</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method__getCommon"></a><div class="element clickable method private method__getCommon " data-toggle="collapse" data-target=".method__getCommon .collapse" title="private">
+<h2>Returns the length of the longest common substring
+of both arguments, starting at the beginning of both.</h2>
+<pre>_getCommon(string $st1, string $st2) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$st1</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$st2</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method__getInclude"></a><div class="element clickable method private method__getInclude " data-toggle="collapse" data-target=".method__getInclude .collapse" title="private">
+<h2>Retrieve an included page
+This is recursive and should look for inclusions in any included page.</h2>
+<pre>_getInclude(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>Pattern matches from includes() method</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__getMacro"></a><div class="element clickable method private method__getMacro " data-toggle="collapse" data-target=".method__getMacro .collapse" title="private">
+<h2>Attempt to load a specific macro class and return its contents</h2>
+<pre>_getMacro(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>Result form [[Macro()]] pattern matching</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__getMath"></a><div class="element clickable method private method__getMath " data-toggle="collapse" data-target=".method__getMath .collapse" title="private">
+<h2>Render a math forumla
+Output depends on complexity of formula. HTML is tried first with image used for complex formulas</h2>
+<pre>_getMath($matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$matches</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__getQuotes"></a><div class="element clickable method private method__getQuotes " data-toggle="collapse" data-target=".method__getQuotes .collapse" title="private">
+<h2>Convert quotes to HTML</h2>
+<pre>_getQuotes(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__getSpan"></a><div class="element clickable method private method__getSpan " data-toggle="collapse" data-target=".method__getSpan .collapse" title="private">
+<h2>Convert wiki markup to HTML for common inline elements</h2>
+<pre>_getSpan(array $m) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$m</h4>
+<code>array</code><p>Pattern matches</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__getTable"></a><div class="element clickable method private method__getTable " data-toggle="collapse" data-target=".method__getTable .collapse" title="private">
+<h2>Convert a string for wiki table syntax into a table</h2>
+<pre>_getTable(array $matches) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$matches</h4>
+<code>array</code><p>Pattern matches for table syntax</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__makeHeadline"></a><div class="element clickable method private method__makeHeadline " data-toggle="collapse" data-target=".method__makeHeadline .collapse" title="private">
+<h2>Generate an HTML header with an anchor for the table of contents to jump to</h2>
+<pre>_makeHeadline(string $level, string $attribs, string $anchor, string $text, string $link) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$level</h4>
+<code>string</code><p>TOC level</p></div>
+<div class="subelement argument">
+<h4>$attribs</h4>
+<code>string</code><p>Header attributes</p></div>
+<div class="subelement argument">
+<h4>$anchor</h4>
+<code>string</code><p>Link anchor name #anchor</p></div>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Header text</p></div>
+<div class="subelement argument">
+<h4>$link</h4>
+<code>string</code><p>Link</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__nextItem"></a><div class="element clickable method private method__nextItem " data-toggle="collapse" data-target=".method__nextItem .collapse" title="private">
+<h2>Close the current list item and continue to the next list item</h2>
+<pre>_nextItem(string $char) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$char</h4>
+<code>string</code><p>List type indicator</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__openList"></a><div class="element clickable method private method__openList " data-toggle="collapse" data-target=".method__openList .collapse" title="private">
+<h2>Open a list</h2>
+<pre>_openList(string $char) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$char</h4>
+<code>string</code><p>List type indicator</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__randomString"></a><div class="element clickable method private method__randomString " data-toggle="collapse" data-target=".method__randomString .collapse" title="private">
+<h2>Generate a unique prefix</h2>
+<pre>_randomString() : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>integer</code></div>
+</div></div>
+</div>
+<a id="method__restoreAnchor"></a><div class="element clickable method private method__restoreAnchor " data-toggle="collapse" data-target=".method__restoreAnchor .collapse" title="private">
+<h2>Inject link back into text</h2>
+<pre>_restoreAnchor(string $txt) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$txt</h4>
+<code>string</code><p>Link HTML</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__restoreCode"></a><div class="element clickable method private method__restoreCode " data-toggle="collapse" data-target=".method__restoreCode .collapse" title="private">
+<h2>Restores &lt;code&gt;&lt;/code&gt; blocks to their actual content</h2>
+<pre>_restoreCode(string $txt) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$txt</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__restoreMacro"></a><div class="element clickable method private method__restoreMacro " data-toggle="collapse" data-target=".method__restoreMacro .collapse" title="private">
+<h2>Put macro output back into the text</h2>
+<pre>_restoreMacro(string $txt) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$txt</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__restoreMath"></a><div class="element clickable method private method__restoreMath " data-toggle="collapse" data-target=".method__restoreMath .collapse" title="private">
+<h2>Format math output before injecting back into primary text</h2>
+<pre>_restoreMath(string $txt) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$txt</h4>
+<code>string</code><p>Math output</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__restorePre"></a><div class="element clickable method private method__restorePre " data-toggle="collapse" data-target=".method__restorePre .collapse" title="private">
+<h2>Restores &lt;pre&gt;&lt;/pre&gt; blocks to their actual content</h2>
+<pre>_restorePre($txt) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$txt</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__tocIndent"></a><div class="element clickable method private method__tocIndent " data-toggle="collapse" data-target=".method__tocIndent .collapse" title="private">
+<h2>Start a sub-list</h2>
+<pre>_tocIndent() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__tocLine"></a><div class="element clickable method private method__tocLine " data-toggle="collapse" data-target=".method__tocLine .collapse" title="private">
+<h2>Open a list item and generate link</h2>
+<pre>_tocLine(string $anchor, string $tocLine, string $tocnumber, string $level) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$anchor</h4>
+<code>string</code><p>Link anchor #anchor</p></div>
+<div class="subelement argument">
+<h4>$tocLine</h4>
+<code>string</code><p>TOC item Text</p></div>
+<div class="subelement argument">
+<h4>$tocnumber</h4>
+<code>string</code><p>TOC item number</p></div>
+<div class="subelement argument">
+<h4>$level</h4>
+<code>string</code><p>TOC level</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__tocLineEnd"></a><div class="element clickable method private method__tocLineEnd " data-toggle="collapse" data-target=".method__tocLineEnd .collapse" title="private">
+<h2>Close a list item</h2>
+<pre>_tocLineEnd() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__tocUnindent"></a><div class="element clickable method private method__tocUnindent " data-toggle="collapse" data-target=".method__tocUnindent .collapse" title="private">
+<h2>Close a sub-list</h2>
+<pre>_tocUnindent(integer $level) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$level</h4>
+<code>integer</code><p>Nested list depth</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_admonitions"></a><div class="element clickable method private method_admonitions " data-toggle="collapse" data-target=".method_admonitions .collapse" title="private">
+<h2>Admonitions</h2>
+<pre>admonitions(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Parsed wiki content</div>
+</div></div>
+</div>
+<a id="method_blocks"></a><div class="element clickable method private method_blocks " data-toggle="collapse" data-target=".method_blocks .collapse" title="private">
+<h2>Make lists from lines starting with 'some text::', '*', '#', etc.</h2>
+<pre>blocks(string $text, integer $linestart<code> = 0</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<div class="subelement argument">
+<h4>$linestart</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_cleanXss"></a><div class="element clickable method private method_cleanXss " data-toggle="collapse" data-target=".method_cleanXss .collapse" title="private">
+<h2>Clean potential Cross-Site Scripting hazards from a strong</h2>
+<pre>cleanXss(string $string) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$string</h4>
+<code>string</code><p>Content to be cleaned</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_definitions"></a><div class="element clickable method private method_definitions " data-toggle="collapse" data-target=".method_definitions .collapse" title="private">
+<h2>Create definition lists
+ term::
+   definition</h2>
+<pre>definitions(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_encodeHtml"></a><div class="element clickable method private method_encodeHtml " data-toggle="collapse" data-target=".method_encodeHtml .collapse" title="private">
+<h2>Very basic HTML entity encoder</h2>
+<pre>encodeHtml(string $str, integer $quotes<code> = 1</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$str</h4>
+<code>string</code><p>Text to encode.</p></div>
+<div class="subelement argument">
+<h4>$quotes</h4>
+<code>integer</code><p>Encode quotes?</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_hAlign"></a><div class="element clickable method private method_hAlign " data-toggle="collapse" data-target=".method_hAlign .collapse" title="private">
+<h2>Horizontal alignment
+markup =&gt; value</h2>
+<pre>hAlign(string $in) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$in</h4>
+<code>string</code><p>Markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_headings"></a><div class="element clickable method private method_headings " data-toggle="collapse" data-target=".method_headings .collapse" title="private">
+<h2>Headings h[1-6]</h2>
+<pre>headings(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Raw wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_includes"></a><div class="element clickable method private method_includes " data-toggle="collapse" data-target=".method_includes .collapse" title="private">
+<h2>Search for include syntax and replace with any included text
+  [[Include(SomePage)]]</h2>
+<pre>includes(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Raw wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_macros"></a><div class="element clickable method private method_macros " data-toggle="collapse" data-target=".method_macros .collapse" title="private">
+<h2>Parse macro tags
+[[MacroName(args)]]</h2>
+<pre>macros(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Raw wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_math"></a><div class="element clickable method private method_math " data-toggle="collapse" data-target=".method_math .collapse" title="private">
+<h2>Convert math forumlas</h2>
+<pre>math(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Parsed wiki content</div>
+</div></div>
+</div>
+<a id="method_pba"></a><div class="element clickable method private method_pba " data-toggle="collapse" data-target=".method_pba .collapse" title="private">
+<h2>Parse Block Attributes</h2>
+<pre>pba(string $in, string $element<code> = ''</code>, integer $include_id<code> = 1</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$in</h4>
+<code>string</code><p>Wiki markup for attributes</p></div>
+<div class="subelement argument">
+<h4>$element</h4>
+<code>string</code><p>HTML element type</p></div>
+<div class="subelement argument">
+<h4>$include_id</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_quotes"></a><div class="element clickable method private method_quotes " data-toggle="collapse" data-target=".method_quotes .collapse" title="private">
+<h2>Quotes
+''    =&gt; &lt;i&gt;
+'''   =&gt; &lt;b&gt;
+''''' =&gt; &lt;b&gt;&lt;i&gt;</h2>
+<pre>quotes(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Raw wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_spans"></a><div class="element clickable method private method_spans " data-toggle="collapse" data-target=".method_spans .collapse" title="private">
+<h2>Parse markup syntax for several inline elements and their allowed attributes
+[cite, u, del, span, ins, sub, sup]</h2>
+<pre>spans(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_strip"></a><div class="element clickable method private method_strip " data-toggle="collapse" data-target=".method_strip .collapse" title="private">
+<h2>Strip &lt;pre&gt; and &lt;code&gt; blocks from text</h2>
+<pre>strip(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_tables"></a><div class="element clickable method private method_tables " data-toggle="collapse" data-target=".method_tables .collapse" title="private">
+<h2>Look for table syntax and convert
+  ||Cell 1||Cell 2||Cell 3||
+  ||Cell 4||Cell 5||Cell 6||</h2>
+<pre>tables(string $text) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_unstrip"></a><div class="element clickable method private method_unstrip " data-toggle="collapse" data-target=".method_unstrip .collapse" title="private">
+<h2>Put &lt;pre&gt; blocks back into the main content flow</h2>
+<pre>unstrip(string $text, boolean $html<code> = true</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$text</h4>
+<code>string</code><p>Wiki markup</p></div>
+<div class="subelement argument">
+<h4>$html</h4>
+<code>boolean</code><p>Escape HTML?</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_vAlign"></a><div class="element clickable method private method_vAlign " data-toggle="collapse" data-target=".method_vAlign .collapse" title="private">
+<h2>Vertical alignment
+markup =&gt; value</h2>
+<pre>vAlign(string $in) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$in</h4>
+<code>string</code><p>Markup</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__config"> </a><div class="element clickable property private property__config" data-toggle="collapse" data-target=".property__config .collapse" title="private">
+<h2>Configuration options</h2>
+<pre>$_config : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('option' => null, 'scope' => null, 'pagename' => null, 'pageid' => null, 'filepath' => null, 'path' => null, 'macros' => true, 'domain' => '', 'domain_id' => 0, 'url' => '', 'fullparse' => true, 'camelcase' => true, 'loglinks' => false)</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__data"> </a><div class="element clickable property private property__data" data-toggle="collapse" data-target=".property__data .collapse" title="private">
+<h2>Data store</h2>
+<pre>$_data : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('input' => null, 'output' => null, 'links' => array())</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__patterns"> </a><div class="element clickable property private property__patterns" data-toggle="collapse" data-target=".property__patterns .collapse" title="private">
+<h2>Useful patterns</h2>
+<pre>$_patterns : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('url' => "(?:https?:|mailto:|ftp:|gopher:|news:|file:)(?:[^ |\\/\"\']*\\/)*[^ |\\t\\n\\/\"\']*[A-Za-z0-9\\/?=&~_]", 'hlgn' => "(?:\<(?!>)|(?<!<)\>|\<\>|\=|[()]+(?!))", 'vlgn' => "[\-^~]", 'clas' => "(?:\([^)]+\))", 'lnge' => "(?:\[[^]]+\])", 'styl' => "(?:\{[^}]+\})", 'cspn' => "(?:\\\\\d+)", 'rspn' => "(?:\/\d+)", 'algn' => "(?:(?:\<(?!>)|(?<!<)\>|\<\>|\=|[()]+(?!))|[\-^~])*", 'spns' => "(?:(?:\\\\\d+)|(?:\/\d+))*", 'clss' => "(?:(?:\([^)]+\))|(?:\{[^}]+\}))*")</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__token"> </a><div class="element clickable property private property__token" data-toggle="collapse" data-target=".property__token .collapse" title="private">
+<h2>A unique token</h2>
+<pre>$_token : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__tokens"> </a><div class="element clickable property private property__tokens" data-toggle="collapse" data-target=".property__tokens .collapse" title="private">
+<h2>Parsed content temp storage</h2>
+<pre>$_tokens : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array('pre' => array(), 'code' => array(), 'anchor' => array(), 'macro' => array(), 'math' => array())</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_CS_CODE"> </a><div class="element clickable constant  constant_CS_CODE" data-toggle="collapse" data-target=".constant_CS_CODE .collapse" title="">
+<h2>Preformatted code state
+i.e., inside a &lt;pre&gt; block</h2>
+<pre>CS_CODE = 1 : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CS_CODE_SUB"> </a><div class="element clickable constant  constant_CS_CODE_SUB" data-toggle="collapse" data-target=".constant_CS_CODE_SUB .collapse" title="">
+<h2>Preformatted code within code state
+i.e., &lt;pre&gt; inside a &lt;pre&gt; block</h2>
+<pre>CS_CODE_SUB = 2 : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_CS_NONE"> </a><div class="element clickable constant  constant_CS_NONE" data-toggle="collapse" data-target=".constant_CS_NONE .collapse" title="">
+<h2>Preformatted NOT in code state
+i.e., not inside a &lt;pre&gt; block</h2>
+<pre>CS_NONE = 0 : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:33:25-04:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1229 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="css/template.css" rel="stylesheet" media="all">
+<script src="js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="js/bootstrap.js" type="text/javascript"></script><script src="js/template.js" type="text/javascript"></script><script src="js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4"><ul class="side-nav nav nav-list">
+<li class="nav-header">Navigation</li>
+<li><a href="#hubzero-cms/core/plugins/wiki/parserdefault/parser.php"><i class="icon-file"></i>hubzero-cms/core/plugins/wiki/parserdefault/parser.php</a></li>
+<li><a href="#hubzero-cms/core/plugins/editors-xtd/readmore/readmore.php"><i class="icon-file"></i>hubzero-cms/core/plugins/editors-xtd/readmore/readmore.php</a></li>
+<li><a href="#hubzero-cms/core/plugins/extension/joomla/joomla.php"><i class="icon-file"></i>hubzero-cms/core/plugins/extension/joomla/joomla.php</a></li>
+<li><a href="#hubzero-cms/core/plugins/content/geshi/geshi/geshi.php"><i class="icon-file"></i>hubzero-cms/core/plugins/content/geshi/geshi/geshi.php</a></li>
+<li><a href="#hubzero-cms/core/plugins/user/joomla/joomla.php"><i class="icon-file"></i>hubzero-cms/core/plugins/user/joomla/joomla.php</a></li>
+<li><a href="#hubzero-cms/core/plugins/antispam/mollom/Service/Mollom/AbstractMollom.php"><i class="icon-file"></i>hubzero-cms/core/plugins/antispam/mollom/Service/Mollom/AbstractMollom.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_citations/models/importer.php"><i class="icon-file"></i>hubzero-cms/core/components/com_citations/models/importer.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_cart/models/CurrentCart.php"><i class="icon-file"></i>hubzero-cms/core/components/com_cart/models/CurrentCart.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_cart/site/controllers/checkout.php"><i class="icon-file"></i>hubzero-cms/core/components/com_cart/site/controllers/checkout.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_users/admin/controllers/user.php"><i class="icon-file"></i>hubzero-cms/core/components/com_users/admin/controllers/user.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_users/admin/models/level.php"><i class="icon-file"></i>hubzero-cms/core/components/com_users/admin/models/level.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_users/admin/models/user.php"><i class="icon-file"></i>hubzero-cms/core/components/com_users/admin/models/user.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_users/admin/models/levels.php"><i class="icon-file"></i>hubzero-cms/core/components/com_users/admin/models/levels.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_users/admin/helpers/users.php"><i class="icon-file"></i>hubzero-cms/core/components/com_users/admin/helpers/users.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_events/helpers/csv.php"><i class="icon-file"></i>hubzero-cms/core/components/com_events/helpers/csv.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_newsfeeds/site/helpers/route.php"><i class="icon-file"></i>hubzero-cms/core/components/com_newsfeeds/site/helpers/route.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_newsfeeds/admin/models/newsfeed.php"><i class="icon-file"></i>hubzero-cms/core/components/com_newsfeeds/admin/models/newsfeed.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_resources/admin/controllers/items.php"><i class="icon-file"></i>hubzero-cms/core/components/com_resources/admin/controllers/items.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_categories/admin/models/category.php"><i class="icon-file"></i>hubzero-cms/core/components/com_categories/admin/models/category.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_dataviewer/site/lib/dl.php"><i class="icon-file"></i>hubzero-cms/core/components/com_dataviewer/site/lib/dl.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_menus/admin/models/menu.php"><i class="icon-file"></i>hubzero-cms/core/components/com_menus/admin/models/menu.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_menus/admin/models/menutypes.php"><i class="icon-file"></i>hubzero-cms/core/components/com_menus/admin/models/menutypes.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_menus/admin/models/item.php"><i class="icon-file"></i>hubzero-cms/core/components/com_menus/admin/models/item.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_content/site/views/article/view.html.php"><i class="icon-file"></i>hubzero-cms/core/components/com_content/site/views/article/view.html.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_content/site/controllers/article.php"><i class="icon-file"></i>hubzero-cms/core/components/com_content/site/controllers/article.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_content/site/models/article.php"><i class="icon-file"></i>hubzero-cms/core/components/com_content/site/models/article.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_content/site/models/category.php"><i class="icon-file"></i>hubzero-cms/core/components/com_content/site/models/category.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_content/admin/views/article/view.html.php"><i class="icon-file"></i>hubzero-cms/core/components/com_content/admin/views/article/view.html.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_content/admin/models/article.php"><i class="icon-file"></i>hubzero-cms/core/components/com_content/admin/models/article.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_members/models/registration.php"><i class="icon-file"></i>hubzero-cms/core/components/com_members/models/registration.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_members/site/controllers/register.php"><i class="icon-file"></i>hubzero-cms/core/components/com_members/site/controllers/register.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_storefront/models/Collection.php"><i class="icon-file"></i>hubzero-cms/core/components/com_storefront/models/Collection.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_storefront/models/OptionGroup.php"><i class="icon-file"></i>hubzero-cms/core/components/com_storefront/models/OptionGroup.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_storefront/models/Product.php"><i class="icon-file"></i>hubzero-cms/core/components/com_storefront/models/Product.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_storefront/models/Option.php"><i class="icon-file"></i>hubzero-cms/core/components/com_storefront/models/Option.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_storefront/site/controllers/product.php"><i class="icon-file"></i>hubzero-cms/core/components/com_storefront/site/controllers/product.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_installer/admin/controllers/install.php"><i class="icon-file"></i>hubzero-cms/core/components/com_installer/admin/controllers/install.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_installer/admin/models/update.php"><i class="icon-file"></i>hubzero-cms/core/components/com_installer/admin/models/update.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_installer/admin/models/manage.php"><i class="icon-file"></i>hubzero-cms/core/components/com_installer/admin/models/manage.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_installer/admin/helpers/script.php"><i class="icon-file"></i>hubzero-cms/core/components/com_installer/admin/helpers/script.php</a></li>
+<li><a href="#hubzero-cms/core/components/com_wiki/helpers/sanitizer.php"><i class="icon-file"></i>hubzero-cms/core/components/com_wiki/helpers/sanitizer.php</a></li>
+<li><a href="#hubzero-framework/src/Form/Field.php"><i class="icon-file"></i>hubzero-framework/src/Form/Field.php</a></li>
+<li><a href="#hubzero-framework/src/Form/Form.php"><i class="icon-file"></i>hubzero-framework/src/Form/Form.php</a></li>
+<li><a href="#hubzero-framework/src/Form/Rule.php"><i class="icon-file"></i>hubzero-framework/src/Form/Rule.php</a></li>
+<li><a href="#hubzero-framework/src/Form/Helper.php"><i class="icon-file"></i>hubzero-framework/src/Form/Helper.php</a></li>
+<li><a href="#hubzero-framework/src/Html/Parameter/Element/MenuItem.php"><i class="icon-file"></i>hubzero-framework/src/Html/Parameter/Element/MenuItem.php</a></li>
+<li><a href="#hubzero-framework/src/Access/Access.php"><i class="icon-file"></i>hubzero-framework/src/Access/Access.php</a></li>
+<li><a href="#hubzero-framework/src/Base/ClientDetector.php"><i class="icon-file"></i>hubzero-framework/src/Base/ClientDetector.php</a></li>
+<li><a href="#hubzero-framework/src/User/User.php"><i class="icon-file"></i>hubzero-framework/src/User/User.php</a></li>
+<li><a href="#hubzero-framework/src/Document/Base.php"><i class="icon-file"></i>hubzero-framework/src/Document/Base.php</a></li>
+<li><a href="#hubzero-framework/src/Auth/Guard.php"><i class="icon-file"></i>hubzero-framework/src/Auth/Guard.php</a></li>
+</ul></div>
+<div class="span8">
+<ul class="breadcrumb">
+<li>
+<a href=""><i class="icon-map-marker"></i></a><span class="divider">\</span>
+</li>
+<li>Markers</li>
+</ul>
+<div id="marker-accordion">
+<div class="package-contents">
+<a name="hubzero-cms/core/plugins/wiki/parserdefault/parser.php" id="hubzero-cms/core/plugins/wiki/parserdefault/parser.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/plugins/wiki/parserdefault/parser.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>fixme</td>
+<td>2692</td>
+<td>This is dupe of code above</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/plugins/editors-xtd/readmore/readmore.php" id="hubzero-cms/core/plugins/editors-xtd/readmore/readmore.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/plugins/editors-xtd/readmore/readmore.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>82</td>
+<td>The button writer needs to take into account the javascript directive</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/plugins/extension/joomla/joomla.php" id="hubzero-cms/core/plugins/extension/joomla/joomla.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/plugins/extension/joomla/joomla.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>165</td>
+<td>investigate alternative of using a query after the delete below with a query and not in like above</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/plugins/content/geshi/geshi/geshi.php" id="hubzero-cms/core/plugins/content/geshi/geshi/geshi.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/plugins/content/geshi/geshi/geshi.php<small style="float: right;padding-right: 10px;">14</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>3621</td>
+<td>Fix lexic permissions not converting entities if shouldn't</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>4823</td>
+<td>a|bb|c => [ac]|bb</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>306</td>
+<td>check err reporting works</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1454</td>
+<td>Rewrite with array traversal</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1469</td>
+<td>Rewrite with array traversal</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1497</td>
+<td>Re-think about how this method works (maybe make it private and/or make it
+      a extension->lang lookup?)</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1497</td>
+<td>static?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1600</td>
+<td>Complete rethink of this and above method</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>409</td>
+<td>REMOVE THIS FUNCTIONALITY!</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1886</td>
+<td>Some data replication here that could be cut down on</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>3323</td>
+<td>Get rid of ender in keyword links</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>3433</td>
+<td>BUGGY! Why? Why not build string and return?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>3822</td>
+<td>Needs to load keys for lexic permissions for keywords, regexps etc</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>418</td>
+<td>As above - rethink the whole idea of important blocks as it is buggy and
+will be hard to implement in 1.2</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/plugins/user/joomla/joomla.php" id="hubzero-cms/core/plugins/user/joomla/joomla.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/plugins/user/joomla/joomla.php<small style="float: right;padding-right: 10px;">4</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>109</td>
+<td>Probably should raise a plugin error but this event is not error checked.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>115</td>
+<td>Suck in the frontend registration emails here as well. Job for a rainy day.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>174</td>
+<td>Probably should raise a plugin error but this event is not error checked.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>377</td>
+<td>: move this out of the plugin</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/plugins/antispam/mollom/Service/Mollom/AbstractMollom.php" id="hubzero-cms/core/plugins/antispam/mollom/Service/Mollom/AbstractMollom.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/plugins/antispam/mollom/Service/Mollom/AbstractMollom.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>1357</td>
+<td>List parameters.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_citations/models/importer.php" id="hubzero-cms/core/components/com_citations/models/importer.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_citations/models/importer.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>486</td>
+<td>undefined index type? I just suppressed the error b/c I'm not sure what the logic is supposed to be /SS</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_cart/models/CurrentCart.php" id="hubzero-cms/core/components/com_cart/models/CurrentCart.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_cart/models/CurrentCart.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>1408</td>
+<td>record expired coupon to display later</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_cart/site/controllers/checkout.php" id="hubzero-cms/core/components/com_cart/site/controllers/checkout.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_cart/site/controllers/checkout.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>429</td>
+<td>Calculate shipping</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_users/admin/controllers/user.php" id="hubzero-cms/core/components/com_users/admin/controllers/user.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_users/admin/controllers/user.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>93</td>
+<td>JForm should really have a validation handler for this.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_users/admin/models/level.php" id="hubzero-cms/core/components/com_users/admin/models/level.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_users/admin/models/level.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>81</td>
+<td>Could assemble an array of the tables used by each view level list those,</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_users/admin/models/user.php" id="hubzero-cms/core/components/com_users/admin/models/user.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_users/admin/models/user.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>107</td>
+<td>Maybe this can go into the parent model somehow?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_users/admin/models/levels.php" id="hubzero-cms/core/components/com_users/admin/models/levels.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_users/admin/models/levels.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>163</td>
+<td>Where clause to restrict category.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_users/admin/helpers/users.php" id="hubzero-cms/core/components/com_users/admin/helpers/users.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_users/admin/helpers/users.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>83</td>
+<td>Refactor to work with notes</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_events/helpers/csv.php" id="hubzero-cms/core/components/com_events/helpers/csv.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_events/helpers/csv.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>168</td>
+<td>Oops, I should have made these fields match up better in the first place.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_newsfeeds/site/helpers/route.php" id="hubzero-cms/core/components/com_newsfeeds/site/helpers/route.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_newsfeeds/site/helpers/route.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>46</td>
+<td>Throw error that the category either not exists or is unpublished</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_newsfeeds/admin/models/newsfeed.php" id="hubzero-cms/core/components/com_newsfeeds/admin/models/newsfeed.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_newsfeeds/admin/models/newsfeed.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>114</td>
+<td>Deal with ordering?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_resources/admin/controllers/items.php" id="hubzero-cms/core/components/com_resources/admin/controllers/items.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_resources/admin/controllers/items.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>279</td>
+<td>Phase out all learning modules code</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_categories/admin/models/category.php" id="hubzero-cms/core/components/com_categories/admin/models/category.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_categories/admin/models/category.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>662</td>
+<td>Deal with ordering?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_dataviewer/site/lib/dl.php" id="hubzero-cms/core/components/com_dataviewer/site/lib/dl.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_dataviewer/site/lib/dl.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>34</td>
+<td>Better mimetype detection</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_menus/admin/models/menu.php" id="hubzero-cms/core/components/com_menus/admin/models/menu.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_menus/admin/models/menu.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>231</td>
+<td>Delete the menu associations - Menu items and Modules</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_menus/admin/models/menutypes.php" id="hubzero-cms/core/components/com_menus/admin/models/menutypes.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_menus/admin/models/menutypes.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>328</td>
+<td>This should only search one template -- the current template for this item (default of specified)</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_menus/admin/models/item.php" id="hubzero-cms/core/components/com_menus/admin/models/item.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_menus/admin/models/item.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>309</td>
+<td>Deal with ordering?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>993</td>
+<td>Work out why 'fixing' this breaks JForm</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_content/site/views/article/view.html.php" id="hubzero-cms/core/components/com_content/site/views/article/view.html.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_content/site/views/article/view.html.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>51</td>
+<td>Change based on shownoauth</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_content/site/controllers/article.php" id="hubzero-cms/core/components/com_content/site/controllers/article.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_content/site/controllers/article.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>197</td>
+<td>This is a bandaid, not a long term solution.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_content/site/models/article.php" id="hubzero-cms/core/components/com_content/site/models/article.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_content/site/models/article.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>52</td>
+<td>Tune these values based on other permissions.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_content/site/models/category.php" id="hubzero-cms/core/components/com_content/site/models/category.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_content/site/models/category.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>329</td>
+<td>Why aren't we lazy loading the children and siblings?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_content/admin/views/article/view.html.php" id="hubzero-cms/core/components/com_content/admin/views/article/view.html.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_content/admin/views/article/view.html.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>29</td>
+<td>This is really dogy - should change this one day.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_content/admin/models/article.php" id="hubzero-cms/core/components/com_content/admin/models/article.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_content/admin/models/article.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>124</td>
+<td>Deal with ordering?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_members/models/registration.php" id="hubzero-cms/core/components/com_members/models/registration.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_members/models/registration.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>186</td>
+<td>more cleanup</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_members/site/controllers/register.php" id="hubzero-cms/core/components/com_members/site/controllers/register.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_members/site/controllers/register.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>476</td>
+<td>update all session of this user</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>477</td>
+<td>only update if changed</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_storefront/models/Collection.php" id="hubzero-cms/core/components/com_storefront/models/Collection.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_storefront/models/Collection.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>226</td>
+<td>redo it properly to allow trashing</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_storefront/models/OptionGroup.php" id="hubzero-cms/core/components/com_storefront/models/OptionGroup.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_storefront/models/OptionGroup.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>147</td>
+<td>redo it properly to allow trashing</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_storefront/models/Product.php" id="hubzero-cms/core/components/com_storefront/models/Product.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_storefront/models/Product.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>857</td>
+<td>redo it properly to allow trashing</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_storefront/models/Option.php" id="hubzero-cms/core/components/com_storefront/models/Option.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_storefront/models/Option.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>172</td>
+<td>redo it properly to allow trashing</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_storefront/site/controllers/product.php" id="hubzero-cms/core/components/com_storefront/site/controllers/product.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_storefront/site/controllers/product.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>184</td>
+<td>add it to the SKU table to set on the per SKU level</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_installer/admin/controllers/install.php" id="hubzero-cms/core/components/com_installer/admin/controllers/install.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_installer/admin/controllers/install.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>87</td>
+<td>Reset the users acl here as well to kill off any missing bits</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_installer/admin/models/update.php" id="hubzero-cms/core/components/com_installer/admin/models/update.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_installer/admin/models/update.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>276</td>
+<td>Reconfigure this code when you have more battery life left</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_installer/admin/models/manage.php" id="hubzero-cms/core/components/com_installer/admin/models/manage.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_installer/admin/models/manage.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>117</td>
+<td>If it isn't an array do we want to set an error and fail?</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>213</td>
+<td>If it isn't an array do we want to set an error and fail?</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_installer/admin/helpers/script.php" id="hubzero-cms/core/components/com_installer/admin/helpers/script.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_installer/admin/helpers/script.php<small style="float: right;padding-right: 10px;">4</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>93</td>
+<td>Remove this for 2.5</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>113</td>
+<td>Remove this for 2.5</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>133</td>
+<td>Remove this for 2.5</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>390</td>
+<td>There is an issue while deleting folders using the ftp mode</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-cms/core/components/com_wiki/helpers/sanitizer.php" id="hubzero-cms/core/components/com_wiki/helpers/sanitizer.php"></a><h3>
+<i class="icon-file"></i>hubzero-cms/core/components/com_wiki/helpers/sanitizer.php<small style="float: right;padding-right: 10px;">7</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>677</td>
+<td>Check for legal values where the DTD limits things.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>677</td>
+<td>Check for unique id attribute :P</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>697</td>
+<td>Check for legal values where the DTD limits things.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>697</td>
+<td>Check for unique id attribute :P</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>742</td>
+<td>implement merging for other attributes such as style</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>933</td>
+<td>For extra validity, input should be validated UTF-8.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>1306</td>
+<td>Document it a bit</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-framework/src/Form/Field.php" id="hubzero-framework/src/Form/Field.php"></a><h3>
+<i class="icon-file"></i>hubzero-framework/src/Form/Field.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>46</td>
+<td>Rewrite all of this.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-framework/src/Form/Form.php" id="hubzero-framework/src/Form/Form.php"></a><h3>
+<i class="icon-file"></i>hubzero-framework/src/Form/Form.php<small style="float: right;padding-right: 10px;">9</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>319</td>
+<td>throw exception.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>765</td>
+<td>throw exception.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>793</td>
+<td>throw exception.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>843</td>
+<td>throw exception.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>851</td>
+<td>throw exception.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>909</td>
+<td>throw exception.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>948</td>
+<td>throw exception.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>957</td>
+<td>throw exception.</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>57</td>
+<td>Rewrite all of this.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-framework/src/Form/Rule.php" id="hubzero-framework/src/Form/Rule.php"></a><h3>
+<i class="icon-file"></i>hubzero-framework/src/Form/Rule.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>51</td>
+<td>Rewrite all of this.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-framework/src/Form/Helper.php" id="hubzero-framework/src/Form/Helper.php"></a><h3>
+<i class="icon-file"></i>hubzero-framework/src/Form/Helper.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>43</td>
+<td>Rewrite all of this.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-framework/src/Html/Parameter/Element/MenuItem.php" id="hubzero-framework/src/Html/Parameter/Element/MenuItem.php"></a><h3>
+<i class="icon-file"></i>hubzero-framework/src/Html/Parameter/Element/MenuItem.php<small style="float: right;padding-right: 10px;">3</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>71</td>
+<td>move query to model</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>87</td>
+<td>move query to model</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>115</td>
+<td>use node model</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-framework/src/Access/Access.php" id="hubzero-framework/src/Access/Access.php"></a><h3>
+<i class="icon-file"></i>hubzero-framework/src/Access/Access.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>343</td>
+<td>This method should move somewhere else</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>493</td>
+<td>This may go in a separate class - error reporting may be improved.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-framework/src/Base/ClientDetector.php" id="hubzero-framework/src/Base/ClientDetector.php"></a><h3>
+<i class="icon-file"></i>hubzero-framework/src/Base/ClientDetector.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>84</td>
+<td>Base off URI instead of Joomla path constant</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-framework/src/User/User.php" id="hubzero-framework/src/User/User.php"></a><h3>
+<i class="icon-file"></i>hubzero-framework/src/User/User.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>751</td>
+<td>Move to ORM-based models</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-framework/src/Document/Base.php" id="hubzero-framework/src/Document/Base.php"></a><h3>
+<i class="icon-file"></i>hubzero-framework/src/Document/Base.php<small style="float: right;padding-right: 10px;">1</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>40</td>
+<td>Rewrite all of this.</td>
+</tr>
+</table></div>
+</div>
+<div class="package-contents">
+<a name="hubzero-framework/src/Auth/Guard.php" id="hubzero-framework/src/Auth/Guard.php"></a><h3>
+<i class="icon-file"></i>hubzero-framework/src/Auth/Guard.php<small style="float: right;padding-right: 10px;">2</small>
+</h3>
+<div><table class="table markers table-bordered">
+<tr>
+<th>Type</th>
+<th>Line</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>todo</td>
+<td>109</td>
+<td>Update plugins to not need this and remove method</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>178</td>
+<td>Update plugins to not need this and remove method</td>
+</tr>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T17:03:26-04:00.<br></footer></div>
+</div>
+</body>
+</html>

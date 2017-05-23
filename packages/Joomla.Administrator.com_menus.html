@@ -1,0 +1,290 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » Joomla.Administrator\com_menus</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Joomla.Administrator.com_menus.html" title="com_menus"><i class="icon-folder-open"></i>com_menus</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#MenusViewItem" title="The HTML Menus Menu Item View.">MenusViewItem</a></li>
+<li><a href="#MenusViewMenutypes" title="The HTML Menus Menu Item TYpes View.">MenusViewMenutypes</a></li>
+<li><a href="#MenusViewItems" title="The HTML Menus Menu Items View.">MenusViewItems</a></li>
+<li><a href="#MenusViewMenus" title="The HTML Menus Menu Menus View.">MenusViewMenus</a></li>
+<li><a href="#MenusViewMenu" title="The HTML Menus Menu Item View.">MenusViewMenu</a></li>
+<li><a href="#MenusControllerMenus" title="The Menu List Controller">MenusControllerMenus</a></li>
+<li><a href="#MenusControllerMenu" title="The Menu Type Controller">MenusControllerMenu</a></li>
+<li><a href="#MenusControllerItems" title="The Menu Item Controller">MenusControllerItems</a></li>
+<li><a href="#MenusControllerItem" title="The Menu Item Controller">MenusControllerItem</a></li>
+<li><a href="#MenusModelMenus" title="Menu List Model for Menus.">MenusModelMenus</a></li>
+<li><a href="#MenusModelMenu" title="Menu Item Model for Menus.">MenusModelMenu</a></li>
+<li><a href="#MenusModelMenutypes" title="Menu Item Types Model for Menus.">MenusModelMenutypes</a></li>
+<li><a href="#JFormFieldMenuOrdering" title="Form Field class for the Joomla Framework.">JFormFieldMenuOrdering</a></li>
+<li><a href="#JFormFieldMenuParent" title="Form Field class for the Joomla Framework.">JFormFieldMenuParent</a></li>
+<li><a href="#JFormFieldMenutype" title="Form Field class for the Joomla Framework.">JFormFieldMenutype</a></li>
+<li><a href="#MenusModelItems" title="Menu Item List Model for Menus.">MenusModelItems</a></li>
+<li><a href="#MenusModelItem" title="Menu Item Model for Menus.">MenusModelItem</a></li>
+<li><a href="#MenusTableMenu" title="">MenusTableMenu</a></li>
+<li><a href="#MenusController" title="Base controller class for Menu Manager.">MenusController</a></li>
+<li><a href="#MenusHtmlMenus" title="">MenusHtmlMenus</a></li>
+<li><a href="#MenusHelper" title="Menus component helper.">MenusHelper</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Joomla.Administrator.html">Joomla.Administrator</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Joomla.Administrator.com_menus.html">com_menus</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="JFormFieldMenuOrdering" class="element ajax clickable class">
+<h1>JFormFieldMenuOrdering<a href="../classes/JFormFieldMenuOrdering.html">¶</a>
+</h1>
+<p class="short_description">Form Field class for the Joomla Framework.</p>
+<div class="details collapse"></div>
+<a href="../classes/JFormFieldMenuOrdering.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="JFormFieldMenuParent" class="element ajax clickable class">
+<h1>JFormFieldMenuParent<a href="../classes/JFormFieldMenuParent.html">¶</a>
+</h1>
+<p class="short_description">Form Field class for the Joomla Framework.</p>
+<div class="details collapse"></div>
+<a href="../classes/JFormFieldMenuParent.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="JFormFieldMenutype" class="element ajax clickable class">
+<h1>JFormFieldMenutype<a href="../classes/JFormFieldMenutype.html">¶</a>
+</h1>
+<p class="short_description">Form Field class for the Joomla Framework.</p>
+<div class="details collapse"></div>
+<a href="../classes/JFormFieldMenutype.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusController" class="element ajax clickable class">
+<h1>MenusController<a href="../classes/MenusController.html">¶</a>
+</h1>
+<p class="short_description">Base controller class for Menu Manager.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusController.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusControllerItem" class="element ajax clickable class">
+<h1>MenusControllerItem<a href="../classes/MenusControllerItem.html">¶</a>
+</h1>
+<p class="short_description">The Menu Item Controller</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusControllerItem.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusControllerItems" class="element ajax clickable class">
+<h1>MenusControllerItems<a href="../classes/MenusControllerItems.html">¶</a>
+</h1>
+<p class="short_description">The Menu Item Controller</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusControllerItems.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusControllerMenu" class="element ajax clickable class">
+<h1>MenusControllerMenu<a href="../classes/MenusControllerMenu.html">¶</a>
+</h1>
+<p class="short_description">The Menu Type Controller</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusControllerMenu.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusControllerMenus" class="element ajax clickable class">
+<h1>MenusControllerMenus<a href="../classes/MenusControllerMenus.html">¶</a>
+</h1>
+<p class="short_description">The Menu List Controller</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusControllerMenus.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusHelper" class="element ajax clickable class">
+<h1>MenusHelper<a href="../classes/MenusHelper.html">¶</a>
+</h1>
+<p class="short_description">Menus component helper.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusHelper.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusHtmlMenus" class="element ajax clickable class">
+<h1>MenusHtmlMenus<a href="../classes/MenusHtmlMenus.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/MenusHtmlMenus.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusModelItem" class="element ajax clickable class">
+<h1>MenusModelItem<a href="../classes/MenusModelItem.html">¶</a>
+</h1>
+<p class="short_description">Menu Item Model for Menus.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusModelItem.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusModelItems" class="element ajax clickable class">
+<h1>MenusModelItems<a href="../classes/MenusModelItems.html">¶</a>
+</h1>
+<p class="short_description">Menu Item List Model for Menus.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusModelItems.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusModelMenu" class="element ajax clickable class">
+<h1>MenusModelMenu<a href="../classes/MenusModelMenu.html">¶</a>
+</h1>
+<p class="short_description">Menu Item Model for Menus.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusModelMenu.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusModelMenus" class="element ajax clickable class">
+<h1>MenusModelMenus<a href="../classes/MenusModelMenus.html">¶</a>
+</h1>
+<p class="short_description">Menu List Model for Menus.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusModelMenus.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusModelMenutypes" class="element ajax clickable class">
+<h1>MenusModelMenutypes<a href="../classes/MenusModelMenutypes.html">¶</a>
+</h1>
+<p class="short_description">Menu Item Types Model for Menus.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusModelMenutypes.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusTableMenu" class="element ajax clickable class">
+<h1>MenusTableMenu<a href="../classes/MenusTableMenu.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/MenusTableMenu.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusViewItem" class="element ajax clickable class">
+<h1>MenusViewItem<a href="../classes/MenusViewItem.html">¶</a>
+</h1>
+<p class="short_description">The HTML Menus Menu Item View.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusViewItem.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusViewItems" class="element ajax clickable class">
+<h1>MenusViewItems<a href="../classes/MenusViewItems.html">¶</a>
+</h1>
+<p class="short_description">The HTML Menus Menu Items View.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusViewItems.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusViewMenu" class="element ajax clickable class">
+<h1>MenusViewMenu<a href="../classes/MenusViewMenu.html">¶</a>
+</h1>
+<p class="short_description">The HTML Menus Menu Item View.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusViewMenu.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusViewMenus" class="element ajax clickable class">
+<h1>MenusViewMenus<a href="../classes/MenusViewMenus.html">¶</a>
+</h1>
+<p class="short_description">The HTML Menus Menu Menus View.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusViewMenus.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MenusViewMenutypes" class="element ajax clickable class">
+<h1>MenusViewMenutypes<a href="../classes/MenusViewMenutypes.html">¶</a>
+</h1>
+<p class="short_description">The HTML Menus Menu Item TYpes View.</p>
+<div class="details collapse"></div>
+<a href="../classes/MenusViewMenutypes.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:32:24-04:00.<br></footer></div>
+</div>
+</body>
+</html>

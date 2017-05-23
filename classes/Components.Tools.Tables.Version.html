@@ -1,0 +1,563 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \Components\Tools\Tables\Version</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list"><li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Short description for '__construct'"><span class="description">Short description for '__construct'</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_check" title="check() :: Short description for 'check'"><span class="description">Short description for 'check'</span><pre>check()</pre></a></li>
+<li class="method public "><a href="#method_compileResource" title="compileResource() :: Short description for 'compileResource'"><span class="description">Short description for 'compileResource'</span><pre>compileResource()</pre></a></li>
+<li class="method public "><a href="#method_getAll" title="getAll() :: Short description for 'getAll'"><span class="description">Short description for 'getAll'</span><pre>getAll()</pre></a></li>
+<li class="method public "><a href="#method_getCurrentVersionProperty" title="getCurrentVersionProperty() :: Short description for 'getCurrentVersionProperty'"><span class="description">Short description for 'getCurrentVersionProperty'</span><pre>getCurrentVersionProperty()</pre></a></li>
+<li class="method public "><a href="#method_getDevVersionProperty" title="getDevVersionProperty() :: Short description for 'getDevVersionProperty'"><span class="description">Short description for 'getDevVersionProperty'</span><pre>getDevVersionProperty()</pre></a></li>
+<li class="method public "><a href="#method_getToolVersions" title="getToolVersions() :: Short description for 'getToolVersions'"><span class="description">Short description for 'getToolVersions'</span><pre>getToolVersions()</pre></a></li>
+<li class="method public "><a href="#method_getToolname" title="getToolname() :: Short description for 'getToolname'"><span class="description">Short description for 'getToolname'</span><pre>getToolname()</pre></a></li>
+<li class="method public "><a href="#method_getVersionIdFromResource" title="getVersionIdFromResource() :: Short description for 'getVersionIdFromResource'"><span class="description">Short description for 'getVersionIdFromResource'</span><pre>getVersionIdFromResource()</pre></a></li>
+<li class="method public "><a href="#method_getVersionInfo" title="getVersionInfo() :: Short description for 'getVersionInfo'"><span class="description">Short description for 'getVersionInfo'</span><pre>getVersionInfo()</pre></a></li>
+<li class="method public "><a href="#method_getVersions" title="getVersions() :: Short description for 'getVersions'"><span class="description">Short description for 'getVersions'</span><pre>getVersions()</pre></a></li>
+<li class="method public "><a href="#method_loadFromInstance" title="loadFromInstance() :: Short description for 'loadFromInstance'"><span class="description">Short description for 'loadFromInstance'</span><pre>loadFromInstance()</pre></a></li>
+<li class="method public "><a href="#method_loadFromName" title="loadFromName() :: Short description for 'loadFromName'"><span class="description">Short description for 'loadFromName'</span><pre>loadFromName()</pre></a></li>
+<li class="method public "><a href="#method_load_version" title="load_version() :: Short description for 'load_version'"><span class="description">Short description for 'load_version'</span><pre>load_version()</pre></a></li>
+<li class="method public "><a href="#method_save" title="save() :: Short description for 'save'"><span class="description">Short description for 'save'</span><pre>save()</pre></a></li>
+<li class="method public "><a href="#method_setUnpublishDate" title="setUnpublishDate() :: Short description for 'setUnpublishDate'"><span class="description">Short description for 'setUnpublishDate'</span><pre>setUnpublishDate()</pre></a></li>
+<li class="method public "><a href="#method_store" title="store() :: Short description for 'store'"><span class="description">Short description for 'store'</span><pre>store()</pre></a></li>
+<li class="method public "><a href="#method_unpublish" title="unpublish() :: Short description for 'unpublish'"><span class="description">Short description for 'unpublish'</span><pre>unpublish()</pre></a></li>
+<li class="method public "><a href="#method_validLicense" title="validLicense() :: Short description for 'validLicense'"><span class="description">Short description for 'validLicense'</span><pre>validLicense()</pre></a></li>
+<li class="method public "><a href="#method_validToolReg" title="validToolReg() :: Short description for 'validToolReg'"><span class="description">Short description for 'validToolReg'</span><pre>validToolReg()</pre></a></li>
+<li class="method public "><a href="#method_validVersion" title="validVersion() :: Short description for 'validVersion'"><span class="description">Short description for 'validVersion'</span><pre>validVersion()</pre></a></li>
+</ul>
+</li></ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Components\Tools\Tables\Version"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Tools.html">Tools</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Tools.Tables.html">Tables</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Components.Tools.Tables.Version.html">Version</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Table class for a tool version</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero-cms.html">hubzero-cms</a></td>
+</tr></table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Short description for '__construct'</h2>
+<pre>__construct(\Components\Tools\Tables\unknown $db) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$db</h4>
+<code>\Components\Tools\Tables\unknown</code><p>&$db Parameter description (if any) ...</p></div>
+</div></div>
+</div>
+<a id="method_check"></a><div class="element clickable method public method_check " data-toggle="collapse" data-target=".method_check .collapse" title="public">
+<h2>Short description for 'check'</h2>
+<pre>check() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_compileResource"></a><div class="element clickable method public method_compileResource " data-toggle="collapse" data-target=".method_compileResource .collapse" title="public">
+<h2>Short description for 'compileResource'</h2>
+<pre>compileResource(object $thistool, mixed $curtool<code> = ''</code>, mixed $resource, string $revision, object $config) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$thistool</h4>
+<code>object</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$curtool</h4>
+<code>mixed</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$resource</h4>
+<code>mixed</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$revision</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>object</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_getAll"></a><div class="element clickable method public method_getAll " data-toggle="collapse" data-target=".method_getAll .collapse" title="public">
+<h2>Short description for 'getAll'</h2>
+<pre>getAll(integer $includedev<code> = 1</code>) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$includedev</h4>
+<code>integer</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_getCurrentVersionProperty"></a><div class="element clickable method public method_getCurrentVersionProperty " data-toggle="collapse" data-target=".method_getCurrentVersionProperty .collapse" title="public">
+<h2>Short description for 'getCurrentVersionProperty'</h2>
+<pre>getCurrentVersionProperty(string $toolname, string $property) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$toolname</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_getDevVersionProperty"></a><div class="element clickable method public method_getDevVersionProperty " data-toggle="collapse" data-target=".method_getDevVersionProperty .collapse" title="public">
+<h2>Short description for 'getDevVersionProperty'</h2>
+<pre>getDevVersionProperty(string $toolname, string $property) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$toolname</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_getToolVersions"></a><div class="element clickable method public method_getToolVersions " data-toggle="collapse" data-target=".method_getToolVersions .collapse" title="public">
+<h2>Short description for 'getToolVersions'</h2>
+<pre>getToolVersions(string $toolid, array $versions, string $toolname<code> = ''</code>, integer $exclude_dev<code> = 0</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$toolid</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$versions</h4>
+<code>array</code><p>&$versions Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$toolname</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$exclude_dev</h4>
+<code>integer</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_getToolname"></a><div class="element clickable method public method_getToolname " data-toggle="collapse" data-target=".method_getToolname .collapse" title="public">
+<h2>Short description for 'getToolname'</h2>
+<pre>getToolname(string $instance) : \Components\Tools\Tables\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$instance</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Tools\Tables\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_getVersionIdFromResource"></a><div class="element clickable method public method_getVersionIdFromResource " data-toggle="collapse" data-target=".method_getVersionIdFromResource .collapse" title="public">
+<h2>Short description for 'getVersionIdFromResource'</h2>
+<pre>getVersionIdFromResource(string $rid<code> = NULL</code>, string $version<code> = 'dev'</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rid</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$version</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_getVersionInfo"></a><div class="element clickable method public method_getVersionInfo " data-toggle="collapse" data-target=".method_getVersionInfo .collapse" title="public">
+<h2>Short description for 'getVersionInfo'</h2>
+<pre>getVersionInfo(string $id, string $version<code> = ''</code>, string $toolname<code> = ''</code>, string $instance<code> = ''</code>) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$version</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$toolname</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$instance</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_getVersions"></a><div class="element clickable method public method_getVersions " data-toggle="collapse" data-target=".method_getVersions .collapse" title="public">
+<h2>Short description for 'getVersions'</h2>
+<pre>getVersions(string $alias) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$alias</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_loadFromInstance"></a><div class="element clickable method public method_loadFromInstance " data-toggle="collapse" data-target=".method_loadFromInstance .collapse" title="public">
+<h2>Short description for 'loadFromInstance'</h2>
+<pre>loadFromInstance(string $tool<code> = NULL</code>) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tool</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_loadFromName"></a><div class="element clickable method public method_loadFromName " data-toggle="collapse" data-target=".method_loadFromName .collapse" title="public">
+<h2>Short description for 'loadFromName'</h2>
+<pre>loadFromName(string $alias) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$alias</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_load_version"></a><div class="element clickable method public method_load_version " data-toggle="collapse" data-target=".method_load_version .collapse" title="public">
+<h2>Short description for 'load_version'</h2>
+<pre>load_version(string $toolid<code> = NULL</code>, string $version<code> = 'dev'</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$toolid</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$version</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_save"></a><div class="element clickable method public method_save " data-toggle="collapse" data-target=".method_save .collapse" title="public">
+<h2>Short description for 'save'</h2>
+<pre>save(\Components\Tools\Tables\unknown $toolid<code> = NULL</code>, string $version<code> = 'dev'</code>, integer $create_new<code> = 0</code>) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$toolid</h4>
+<code>\Components\Tools\Tables\unknown</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$version</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$create_new</h4>
+<code>integer</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_setUnpublishDate"></a><div class="element clickable method public method_setUnpublishDate " data-toggle="collapse" data-target=".method_setUnpublishDate .collapse" title="public">
+<h2>Short description for 'setUnpublishDate'</h2>
+<pre>setUnpublishDate(\Components\Tools\Tables\unknown $toolid<code> = NULL</code>, string $toolname<code> = ''</code>, mixed $vid<code> = 0</code>) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$toolid</h4>
+<code>\Components\Tools\Tables\unknown</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$toolname</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$vid</h4>
+<code>mixed</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_store"></a><div class="element clickable method public method_store " data-toggle="collapse" data-target=".method_store .collapse" title="public">
+<h2>Short description for 'store'</h2>
+<pre>store($updateNulls<code> = false</code>) : \Components\Tools\Tables\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$updateNulls</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Tools\Tables\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_unpublish"></a><div class="element clickable method public method_unpublish " data-toggle="collapse" data-target=".method_unpublish .collapse" title="public">
+<h2>Short description for 'unpublish'</h2>
+<pre>unpublish(string $toolid<code> = NULL</code>, mixed $vid<code> = 0</code>) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$toolid</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$vid</h4>
+<code>mixed</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_validLicense"></a><div class="element clickable method public method_validLicense " data-toggle="collapse" data-target=".method_validLicense .collapse" title="public">
+<h2>Short description for 'validLicense'</h2>
+<pre>validLicense(\Components\Tools\Tables\unknown $toolname, array $license, string $code, \Components\Tools\Tables\unknown $error, integer $result<code> = 0</code>) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$toolname</h4>
+<code>\Components\Tools\Tables\unknown</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$license</h4>
+<code>array</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$error</h4>
+<code>\Components\Tools\Tables\unknown</code><p>&$error Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$result</h4>
+<code>integer</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_validToolReg"></a><div class="element clickable method public method_validToolReg " data-toggle="collapse" data-target=".method_validToolReg .collapse" title="public">
+<h2>Short description for 'validToolReg'</h2>
+<pre>validToolReg(array $tool, array $err, string $id, object $config, integer $checker<code> = 0</code>, integer $result<code> = 1</code>) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$tool</h4>
+<code>array</code><p>&$tool Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$err</h4>
+<code>array</code><p>&$err Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$id</h4>
+<code>string</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>object</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$checker</h4>
+<code>integer</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$result</h4>
+<code>integer</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_validVersion"></a><div class="element clickable method public method_validVersion " data-toggle="collapse" data-target=".method_validVersion .collapse" title="public">
+<h2>Short description for 'validVersion'</h2>
+<pre>validVersion(\Components\Tools\Tables\unknown $toolname, \Components\Tools\Tables\unknown $newversion, \Components\Tools\Tables\unknown $error, integer $required<code> = 1</code>, integer $result<code> = 1</code>) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$toolname</h4>
+<code>\Components\Tools\Tables\unknown</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$newversion</h4>
+<code>\Components\Tools\Tables\unknown</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$error</h4>
+<code>\Components\Tools\Tables\unknown</code><p>&$error Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$required</h4>
+<code>integer</code><p>Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$result</h4>
+<code>integer</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>Return description (if any) ...</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:47:03-04:00.<br></footer></div>
+</div>
+</body>
+</html>

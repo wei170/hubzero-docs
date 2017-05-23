@@ -1,0 +1,411 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » hubzero.cms.admin</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/hubzero.cms.admin.html" title="hubzero.cms.admin"><i class="icon-folder-open"></i>hubzero.cms.admin</a><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>com_dataviewer</span><ul class="nav nav-list nav-packages"></ul>
+</li></ul>
+</li>
+<li class="nav-header">
+<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function_authorized" title="authorized() :: "><span class="description">authorized()
+        </span><pre>authorized</pre></a></li>
+<li class="function  "><a href="#function_check_rid" title="check_rid() :: "><span class="description">check_rid()
+        </span><pre>check_rid</pre></a></li>
+<li class="function  "><a href="#function_controller_exec" title="controller_exec() :: "><span class="description">controller_exec()
+        </span><pre>controller_exec</pre></a></li>
+<li class="function  "><a href="#function_db_msg" title="db_msg() :: "><span class="description">db_msg()
+        </span><pre>db_msg</pre></a></li>
+<li class="function  "><a href="#function_db_show_msg" title="db_show_msg() :: "><span class="description">db_show_msg()
+        </span><pre>db_show_msg</pre></a></li>
+<li class="function  "><a href="#function_dv_config" title="dv_config() :: "><span class="description">dv_config()
+        </span><pre>dv_config</pre></a></li>
+<li class="function  "><a href="#function_dv_config_current" title="dv_config_current() :: "><span class="description">dv_config_current()
+        </span><pre>dv_config_current</pre></a></li>
+<li class="function  "><a href="#function_dv_config_update" title="dv_config_update() :: "><span class="description">dv_config_update()
+        </span><pre>dv_config_update</pre></a></li>
+<li class="function  "><a href="#function_dv_data_definition" title="dv_data_definition() :: "><span class="description">dv_data_definition()
+        </span><pre>dv_data_definition</pre></a></li>
+<li class="function  "><a href="#function_dv_data_definition_new" title="dv_data_definition_new() :: "><span class="description">dv_data_definition_new()
+        </span><pre>dv_data_definition_new</pre></a></li>
+<li class="function  "><a href="#function_dv_data_definition_remove" title="dv_data_definition_remove() :: "><span class="description">dv_data_definition_remove()
+        </span><pre>dv_data_definition_remove</pre></a></li>
+<li class="function  "><a href="#function_dv_data_definition_update" title="dv_data_definition_update() :: "><span class="description">dv_data_definition_update()
+        </span><pre>dv_data_definition_update</pre></a></li>
+<li class="function  "><a href="#function_dv_dataview_list" title="dv_dataview_list() :: "><span class="description">dv_dataview_list()
+        </span><pre>dv_dataview_list</pre></a></li>
+<li class="function  "><a href="#function_dv_list" title="dv_list() :: "><span class="description">dv_list()
+        </span><pre>dv_list</pre></a></li>
+<li class="function  "><a href="#function_format_var" title="format_var() :: "><span class="description">format_var()
+        </span><pre>format_var</pre></a></li>
+<li class="function  "><a href="#function_json_format" title="json_format() :: "><span class="description">json_format()
+        </span><pre>json_format</pre></a></li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#constant_DB_COM" title="DB_COM() :: "><span class="description">DB_COM</span><pre>DB_COM</pre></a></li>
+<li class="constant  "><a href="#constant_DB_PATH" title="DB_PATH() :: "><span class="description">DB_PATH</span><pre>DB_PATH</pre></a></li>
+<li class="constant  "><a href="#constant_DB_RID" title="DB_RID() :: "><span class="description">DB_RID</span><pre>DB_RID</pre></a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
+<a xmlns:php="http://php.net/xsl" id="function_authorized"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_authorized " data-toggle="collapse" data-target=".function_authorized .collapse" title="">
+<h2>authorized()
+        </h2>
+<pre>authorized() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_check_rid"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_check_rid " data-toggle="collapse" data-target=".function_check_rid .collapse" title="">
+<h2>check_rid()
+        </h2>
+<pre>check_rid() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_controller_exec"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_controller_exec " data-toggle="collapse" data-target=".function_controller_exec .collapse" title="">
+<h2>controller_exec()
+        </h2>
+<pre>controller_exec() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_db_msg"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_db_msg " data-toggle="collapse" data-target=".function_db_msg .collapse" title="">
+<h2>db_msg()
+        </h2>
+<pre>db_msg($msg, $type<code> = 'error'</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$msg</h4></div>
+<div class="subelement argument"><h4>$type</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_db_show_msg"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_db_show_msg " data-toggle="collapse" data-target=".function_db_show_msg .collapse" title="">
+<h2>db_show_msg()
+        </h2>
+<pre>db_show_msg() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_config"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_config " data-toggle="collapse" data-target=".function_dv_config .collapse" title="">
+<h2>dv_config()
+        </h2>
+<pre>dv_config() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_config_current"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_config_current " data-toggle="collapse" data-target=".function_dv_config_current .collapse" title="">
+<h2>dv_config_current()
+        </h2>
+<pre>dv_config_current() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_config_update"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_config_update " data-toggle="collapse" data-target=".function_dv_config_update .collapse" title="">
+<h2>dv_config_update()
+        </h2>
+<pre>dv_config_update() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_data_definition"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_data_definition " data-toggle="collapse" data-target=".function_dv_data_definition .collapse" title="">
+<h2>dv_data_definition()
+        </h2>
+<pre>dv_data_definition() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_data_definition_new"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_data_definition_new " data-toggle="collapse" data-target=".function_dv_data_definition_new .collapse" title="">
+<h2>dv_data_definition_new()
+        </h2>
+<pre>dv_data_definition_new() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_data_definition_remove"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_data_definition_remove " data-toggle="collapse" data-target=".function_dv_data_definition_remove .collapse" title="">
+<h2>dv_data_definition_remove()
+        </h2>
+<pre>dv_data_definition_remove() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_data_definition_update"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_data_definition_update " data-toggle="collapse" data-target=".function_dv_data_definition_update .collapse" title="">
+<h2>dv_data_definition_update()
+        </h2>
+<pre>dv_data_definition_update() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_dataview_list"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_dataview_list " data-toggle="collapse" data-target=".function_dv_dataview_list .collapse" title="">
+<h2>dv_dataview_list()
+        </h2>
+<pre>dv_dataview_list() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_list"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_list " data-toggle="collapse" data-target=".function_dv_list .collapse" title="">
+<h2>dv_list()
+        </h2>
+<pre>dv_list() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_format_var"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_format_var " data-toggle="collapse" data-target=".function_format_var .collapse" title="">
+<h2>format_var()
+        </h2>
+<pre>format_var($var) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$var</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_json_format"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_json_format " data-toggle="collapse" data-target=".function_json_format .collapse" title="">
+<h2>json_format()
+        </h2>
+<pre>json_format($json) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$json</h4></div>
+</div></div>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a xmlns:php="http://php.net/xsl" id="constant_DB_COM"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_DB_COM" data-toggle="collapse" data-target=".constant_DB_COM .collapse" title="">
+<h2>DB_COM</h2>
+<pre>DB_COM = $com_name </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_DB_PATH"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_DB_PATH" data-toggle="collapse" data-target=".constant_DB_PATH .collapse" title="">
+<h2>DB_PATH</h2>
+<pre>DB_PATH = $com_path </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_DB_RID"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_DB_RID" data-toggle="collapse" data-target=".constant_DB_RID .collapse" title="">
+<h2>DB_RID</h2>
+<pre>DB_RID = $_SESSION['db']['__rid'] </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.admin.html">hubzero.cms.admin</a></td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:32:40-04:00.<br></footer></div>
+</div>
+</body>
+</html>

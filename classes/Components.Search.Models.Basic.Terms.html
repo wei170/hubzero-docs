@@ -1,0 +1,439 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \Components\Search\Models\Basic\Terms</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___toString" title="__toString() :: Short description for '__toString'"><span class="description">Short description for '__toString'</span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#method_any" title="any() :: Short description for 'any'"><span class="description">Short description for 'any'</span><pre>any()</pre></a></li>
+<li class="method public "><a href="#method_get_forbidden_chunks" title="get_forbidden_chunks() :: Short description for 'get_forbidden_chunks'"><span class="description">Short description for 'get_forbidden_chunks'</span><pre>get_forbidden_chunks()</pre></a></li>
+<li class="method public "><a href="#method_get_mandatory_chunks" title="get_mandatory_chunks() :: Short description for 'get_mandatory_chunks'"><span class="description">Short description for 'get_mandatory_chunks'</span><pre>get_mandatory_chunks()</pre></a></li>
+<li class="method public "><a href="#method_get_optional_chunks" title="get_optional_chunks() :: Short description for 'get_optional_chunks'"><span class="description">Short description for 'get_optional_chunks'</span><pre>get_optional_chunks()</pre></a></li>
+<li class="method public "><a href="#method_get_positive_chunks" title="get_positive_chunks() :: Short description for 'get_positive_chunks'"><span class="description">Short description for 'get_positive_chunks'</span><pre>get_positive_chunks()</pre></a></li>
+<li class="method public "><a href="#method_get_raw" title="get_raw() :: Short description for 'get_raw'"><span class="description">Short description for 'get_raw'</span><pre>get_raw()</pre></a></li>
+<li class="method public "><a href="#method_get_raw_without_section" title="get_raw_without_section() :: Short description for 'get_raw_without_section'"><span class="description">Short description for 'get_raw_without_section'</span><pre>get_raw_without_section()</pre></a></li>
+<li class="method public "><a href="#method_get_section" title="get_section() :: Short description for 'get_section'"><span class="description">Short description for 'get_section'</span><pre>get_section()</pre></a></li>
+<li class="method public "><a href="#method_get_stemmed_chunks" title="get_stemmed_chunks() :: Short description for 'get_stemmed_chunks'"><span class="description">Short description for 'get_stemmed_chunks'</span><pre>get_stemmed_chunks()</pre></a></li>
+<li class="method public "><a href="#method_get_word_regex" title="get_word_regex() :: Short description for 'get_word_regex'"><span class="description">Short description for 'get_word_regex'</span><pre>get_word_regex()</pre></a></li>
+<li class="method public "><a href="#method_is_quoted" title="is_quoted() :: Short description for 'is_quoted'"><span class="description">Short description for 'is_quoted'</span><pre>is_quoted()</pre></a></li>
+<li class="method public "><a href="#method_is_set" title="is_set() :: Short description for 'is_set'"><span class="description">Short description for 'is_set'</span><pre>is_set()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method_add_chunk" title="add_chunk() :: Short description for 'add_chunk'"><span class="description">Short description for 'add_chunk'</span><pre>add_chunk()</pre></a></li>
+<li class="method private "><a href="#method_parse_searchable_chunks" title="parse_searchable_chunks() :: Short description for 'parse_searchable_chunks'"><span class="description">Short description for 'parse_searchable_chunks'</span><pre>parse_searchable_chunks()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property_forbidden_chunks" title="$forbidden_chunks() :: Description for 'raw'"><span class="description"></span><pre>$forbidden_chunks</pre></a></li>
+<li class="property private "><a href="#property_mandatory_chunks" title="$mandatory_chunks() :: Description for 'raw'"><span class="description"></span><pre>$mandatory_chunks</pre></a></li>
+<li class="property private "><a href="#property_optional_chunks" title="$optional_chunks() :: Description for 'raw'"><span class="description"></span><pre>$optional_chunks</pre></a></li>
+<li class="property private "><a href="#property_positive_chunks" title="$positive_chunks() :: Description for 'raw'"><span class="description"></span><pre>$positive_chunks</pre></a></li>
+<li class="property private "><a href="#property_quoted" title="$quoted() :: Description for 'raw'"><span class="description"></span><pre>$quoted</pre></a></li>
+<li class="property private "><a href="#property_raw" title="$raw() :: Description for 'raw'"><span class="description"></span><pre>$raw</pre></a></li>
+<li class="property private "><a href="#property_section" title="$section() :: Description for 'raw'"><span class="description"></span><pre>$section</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Components\Search\Models\Basic\Terms"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.html">Search</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.Models.html">Models</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.Models.Basic.html">Basic</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Components.Search.Models.Basic.Terms.html">Terms</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Search terms</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero-cms.html">hubzero-cms</a></td>
+</tr></table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Constructor</h2>
+<pre>__construct(string $raw) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$raw</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString " data-toggle="collapse" data-target=".method___toString .collapse" title="public">
+<h2>Short description for '__toString'</h2>
+<pre>__toString() : \Components\Search\Models\Basic\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Search\Models\Basic\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_any"></a><div class="element clickable method public method_any " data-toggle="collapse" data-target=".method_any .collapse" title="public">
+<h2>Short description for 'any'</h2>
+<pre>any() : \Components\Search\Models\Basic\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Search\Models\Basic\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_get_forbidden_chunks"></a><div class="element clickable method public method_get_forbidden_chunks " data-toggle="collapse" data-target=".method_get_forbidden_chunks .collapse" title="public">
+<h2>Short description for 'get_forbidden_chunks'</h2>
+<pre>get_forbidden_chunks() : \Components\Search\Models\Basic\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Search\Models\Basic\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_get_mandatory_chunks"></a><div class="element clickable method public method_get_mandatory_chunks " data-toggle="collapse" data-target=".method_get_mandatory_chunks .collapse" title="public">
+<h2>Short description for 'get_mandatory_chunks'</h2>
+<pre>get_mandatory_chunks() : \Components\Search\Models\Basic\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Search\Models\Basic\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_get_optional_chunks"></a><div class="element clickable method public method_get_optional_chunks " data-toggle="collapse" data-target=".method_get_optional_chunks .collapse" title="public">
+<h2>Short description for 'get_optional_chunks'</h2>
+<pre>get_optional_chunks() : \Components\Search\Models\Basic\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Search\Models\Basic\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_get_positive_chunks"></a><div class="element clickable method public method_get_positive_chunks " data-toggle="collapse" data-target=".method_get_positive_chunks .collapse" title="public">
+<h2>Short description for 'get_positive_chunks'</h2>
+<pre>get_positive_chunks() : \Components\Search\Models\Basic\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Search\Models\Basic\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_get_raw"></a><div class="element clickable method public method_get_raw " data-toggle="collapse" data-target=".method_get_raw .collapse" title="public">
+<h2>Short description for 'get_raw'</h2>
+<pre>get_raw() : \Components\Search\Models\Basic\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Search\Models\Basic\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_get_raw_without_section"></a><div class="element clickable method public method_get_raw_without_section " data-toggle="collapse" data-target=".method_get_raw_without_section .collapse" title="public">
+<h2>Short description for 'get_raw_without_section'</h2>
+<pre>get_raw_without_section() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_get_section"></a><div class="element clickable method public method_get_section " data-toggle="collapse" data-target=".method_get_section .collapse" title="public">
+<h2>Short description for 'get_section'</h2>
+<pre>get_section() : \Components\Search\Models\Basic\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Search\Models\Basic\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_get_stemmed_chunks"></a><div class="element clickable method public method_get_stemmed_chunks " data-toggle="collapse" data-target=".method_get_stemmed_chunks .collapse" title="public">
+<h2>Short description for 'get_stemmed_chunks'</h2>
+<pre>get_stemmed_chunks() : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_get_word_regex"></a><div class="element clickable method public method_get_word_regex " data-toggle="collapse" data-target=".method_get_word_regex .collapse" title="public">
+<h2>Short description for 'get_word_regex'</h2>
+<pre>get_word_regex() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_is_quoted"></a><div class="element clickable method public method_is_quoted " data-toggle="collapse" data-target=".method_is_quoted .collapse" title="public">
+<h2>Short description for 'is_quoted'</h2>
+<pre>is_quoted(\Components\Search\Models\Basic\unknown $idx) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idx</h4>
+<code>\Components\Search\Models\Basic\unknown</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_is_set"></a><div class="element clickable method public method_is_set " data-toggle="collapse" data-target=".method_is_set .collapse" title="public">
+<h2>Short description for 'is_set'</h2>
+<pre>is_set() : \Components\Search\Models\Basic\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Search\Models\Basic\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_add_chunk"></a><div class="element clickable method private method_add_chunk " data-toggle="collapse" data-target=".method_add_chunk .collapse" title="private">
+<h2>Short description for 'add_chunk'</h2>
+<pre>add_chunk(string $partial, string $sign<code> = ''</code>, boolean $quoted<code> = false</code>) : \Components\Search\Models\Basic\unknown</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Long description (if any) ...</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$partial</h4>
+<code>string</code><p>&$partial Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$sign</h4>
+<code>string</code><p>&$sign Parameter description (if any) ...</p></div>
+<div class="subelement argument">
+<h4>$quoted</h4>
+<code>boolean</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Search\Models\Basic\unknown</code>Return description (if any) ...</div>
+</div></div>
+</div>
+<a id="method_parse_searchable_chunks"></a><div class="element clickable method private method_parse_searchable_chunks " data-toggle="collapse" data-target=".method_parse_searchable_chunks .collapse" title="private">
+<h2>Short description for 'parse_searchable_chunks'</h2>
+<pre>parse_searchable_chunks() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>Long description (if any) ...</p></div></div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_forbidden_chunks"> </a><div class="element clickable property private property_forbidden_chunks" data-toggle="collapse" data-target=".property_forbidden_chunks .collapse" title="private">
+<h2>Description for 'raw'</h2>
+<pre>$forbidden_chunks : \Components\Search\Models\Basic\unknown</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_mandatory_chunks"> </a><div class="element clickable property private property_mandatory_chunks" data-toggle="collapse" data-target=".property_mandatory_chunks .collapse" title="private">
+<h2>Description for 'raw'</h2>
+<pre>$mandatory_chunks : \Components\Search\Models\Basic\unknown</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_optional_chunks"> </a><div class="element clickable property private property_optional_chunks" data-toggle="collapse" data-target=".property_optional_chunks .collapse" title="private">
+<h2>Description for 'raw'</h2>
+<pre>$optional_chunks : \Components\Search\Models\Basic\unknown</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_positive_chunks"> </a><div class="element clickable property private property_positive_chunks" data-toggle="collapse" data-target=".property_positive_chunks .collapse" title="private">
+<h2>Description for 'raw'</h2>
+<pre>$positive_chunks : \Components\Search\Models\Basic\unknown</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_quoted"> </a><div class="element clickable property private property_quoted" data-toggle="collapse" data-target=".property_quoted .collapse" title="private">
+<h2>Description for 'raw'</h2>
+<pre>$quoted : \Components\Search\Models\Basic\unknown</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_raw"> </a><div class="element clickable property private property_raw" data-toggle="collapse" data-target=".property_raw .collapse" title="private">
+<h2>Description for 'raw'</h2>
+<pre>$raw : \Components\Search\Models\Basic\unknown</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_section"> </a><div class="element clickable property private property_section" data-toggle="collapse" data-target=".property_section .collapse" title="private">
+<h2>Description for 'raw'</h2>
+<pre>$section : \Components\Search\Models\Basic\unknown</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:42:03-04:00.<br></footer></div>
+</div>
+</body>
+</html>

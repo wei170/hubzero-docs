@@ -1,0 +1,296 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » PEAR</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/PEAR.html" title="PEAR"><i class="icon-folder-open"></i>PEAR</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function__PEAR_call_destructors" title="_PEAR_call_destructors() :: "><span class="description">_PEAR_call_destructors()
+        </span><pre>_PEAR_call_destructors</pre></a></li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#PEAR" title="Base class for other PEAR classes.  Provides rudimentary
+emulation of destructors.">PEAR</a></li>
+<li><a href="#PEAR_Error" title="Standard PEAR error class for PHP 4">PEAR_Error</a></li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#constant_OS_UNIX" title="OS_UNIX() :: "><span class="description">OS_UNIX</span><pre>OS_UNIX</pre></a></li>
+<li class="constant  "><a href="#constant_OS_WINDOWS" title="OS_WINDOWS() :: "><span class="description">OS_WINDOWS</span><pre>OS_WINDOWS</pre></a></li>
+<li class="constant  "><a href="#constant_PEAR_ERROR_CALLBACK" title="PEAR_ERROR_CALLBACK() :: "><span class="description">PEAR_ERROR_CALLBACK</span><pre>PEAR_ERROR_CALLBACK</pre></a></li>
+<li class="constant  "><a href="#constant_PEAR_ERROR_DIE" title="PEAR_ERROR_DIE() :: "><span class="description">PEAR_ERROR_DIE</span><pre>PEAR_ERROR_DIE</pre></a></li>
+<li class="constant  "><a href="#constant_PEAR_ERROR_EXCEPTION" title="PEAR_ERROR_EXCEPTION() :: WARNING: obsolete"><span class="description">WARNING: obsolete</span><pre>PEAR_ERROR_EXCEPTION</pre></a></li>
+<li class="constant  "><a href="#constant_PEAR_ERROR_PRINT" title="PEAR_ERROR_PRINT() :: "><span class="description">PEAR_ERROR_PRINT</span><pre>PEAR_ERROR_PRINT</pre></a></li>
+<li class="constant  "><a href="#constant_PEAR_ERROR_RETURN" title="PEAR_ERROR_RETURN() :: "><span class="description">PEAR_ERROR_RETURN</span><pre>PEAR_ERROR_RETURN</pre></a></li>
+<li class="constant  "><a href="#constant_PEAR_ERROR_TRIGGER" title="PEAR_ERROR_TRIGGER() :: "><span class="description">PEAR_ERROR_TRIGGER</span><pre>PEAR_ERROR_TRIGGER</pre></a></li>
+<li class="constant  "><a href="#constant_PEAR_OS" title="PEAR_OS() :: "><span class="description">PEAR_OS</span><pre>PEAR_OS</pre></a></li>
+<li class="constant  "><a href="#constant_PEAR_ZE2" title="PEAR_ZE2() :: "><span class="description">PEAR_ZE2</span><pre>PEAR_ZE2</pre></a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/PEAR.html">PEAR</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
+<a xmlns:php="http://php.net/xsl" id="function__PEAR_call_destructors"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function__PEAR_call_destructors " data-toggle="collapse" data-target=".function__PEAR_call_destructors .collapse" title="">
+<h2>_PEAR_call_destructors()
+        </h2>
+<pre>_PEAR_call_destructors() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr></table>
+</div></div>
+</div>
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="PEAR" class="element ajax clickable class">
+<h1>PEAR<a href="../classes/PEAR.html">¶</a>
+</h1>
+<p class="short_description">Base class for other PEAR classes.  Provides rudimentary
+emulation of destructors.</p>
+<div class="details collapse"></div>
+<a href="../classes/PEAR.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="PEAR_Error" class="element ajax clickable class">
+<h1>PEAR_Error<a href="../classes/PEAR_Error.html">¶</a>
+</h1>
+<p class="short_description">Standard PEAR error class for PHP 4</p>
+<div class="details collapse"></div>
+<a href="../classes/PEAR_Error.html" class="more">« More »</a>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a xmlns:php="http://php.net/xsl" id="constant_OS_UNIX"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_OS_UNIX" data-toggle="collapse" data-target=".constant_OS_UNIX .collapse" title="">
+<h2>OS_UNIX</h2>
+<pre>OS_UNIX = true </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_OS_WINDOWS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_OS_WINDOWS" data-toggle="collapse" data-target=".constant_OS_WINDOWS .collapse" title="">
+<h2>OS_WINDOWS</h2>
+<pre>OS_WINDOWS = false </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_PEAR_ERROR_CALLBACK"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_PEAR_ERROR_CALLBACK" data-toggle="collapse" data-target=".constant_PEAR_ERROR_CALLBACK .collapse" title="">
+<h2>PEAR_ERROR_CALLBACK</h2>
+<pre>PEAR_ERROR_CALLBACK = 16 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_PEAR_ERROR_DIE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_PEAR_ERROR_DIE" data-toggle="collapse" data-target=".constant_PEAR_ERROR_DIE .collapse" title="">
+<h2>PEAR_ERROR_DIE</h2>
+<pre>PEAR_ERROR_DIE = 8 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_PEAR_ERROR_EXCEPTION"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_PEAR_ERROR_EXCEPTION" data-toggle="collapse" data-target=".constant_PEAR_ERROR_EXCEPTION .collapse" title="">
+<h2>WARNING: obsolete</h2>
+<pre>PEAR_ERROR_EXCEPTION = 32 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_PEAR_ERROR_PRINT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_PEAR_ERROR_PRINT" data-toggle="collapse" data-target=".constant_PEAR_ERROR_PRINT .collapse" title="">
+<h2>PEAR_ERROR_PRINT</h2>
+<pre>PEAR_ERROR_PRINT = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_PEAR_ERROR_RETURN"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_PEAR_ERROR_RETURN" data-toggle="collapse" data-target=".constant_PEAR_ERROR_RETURN .collapse" title="">
+<h2>PEAR_ERROR_RETURN</h2>
+<pre>PEAR_ERROR_RETURN = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_PEAR_ERROR_TRIGGER"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_PEAR_ERROR_TRIGGER" data-toggle="collapse" data-target=".constant_PEAR_ERROR_TRIGGER .collapse" title="">
+<h2>PEAR_ERROR_TRIGGER</h2>
+<pre>PEAR_ERROR_TRIGGER = 4 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_PEAR_OS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_PEAR_OS" data-toggle="collapse" data-target=".constant_PEAR_OS .collapse" title="">
+<h2>PEAR_OS</h2>
+<pre>PEAR_OS = 'Unix' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_PEAR_ZE2"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_PEAR_ZE2" data-toggle="collapse" data-target=".constant_PEAR_ZE2 .collapse" title="">
+<h2>PEAR_ZE2</h2>
+<pre>PEAR_ZE2 = function_exists('version_compare') &amp;&amp; version_compare(zend_version(), "2-dev", "ge") </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/PEAR.html">PEAR</a></td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:32:34-04:00.<br></footer></div>
+</div>
+</body>
+</html>

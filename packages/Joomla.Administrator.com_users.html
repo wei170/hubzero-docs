@@ -1,0 +1,418 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » Joomla.Administrator\com_users</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Joomla.Administrator.com_users.html" title="com_users"><i class="icon-folder-open"></i>com_users</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#UsersViewNotes" title="User notes list view">UsersViewNotes</a></li>
+<li><a href="#UsersViewGroups" title="View class for a list of user groups.">UsersViewGroups</a></li>
+<li><a href="#UsersViewLevel" title="View to edit a user view level.">UsersViewLevel</a></li>
+<li><a href="#UsersViewLevels" title="The HTML Users access levels view.">UsersViewLevels</a></li>
+<li><a href="#UsersViewMail" title="Users mail view.">UsersViewMail</a></li>
+<li><a href="#UsersViewDebugUser" title="View class for a list of users.">UsersViewDebugUser</a></li>
+<li><a href="#UsersViewDebugGroup" title="View class for a list of users.">UsersViewDebugGroup</a></li>
+<li><a href="#UsersViewUser" title="">UsersViewUser</a></li>
+<li><a href="#UsersViewUsers" title="View class for a list of users.">UsersViewUsers</a></li>
+<li><a href="#UsersViewGroup" title="View to edit a user group.">UsersViewGroup</a></li>
+<li><a href="#UsersViewNote" title="User note edit view">UsersViewNote</a></li>
+<li><a href="#UsersControllerLevel" title="User view level controller class.">UsersControllerLevel</a></li>
+<li><a href="#UsersControllerGroup" title="User view level controller class.">UsersControllerGroup</a></li>
+<li><a href="#UsersControllerGroups" title="User groups list controller class.">UsersControllerGroups</a></li>
+<li><a href="#UsersControllerNotes" title="User notes controller class.">UsersControllerNotes</a></li>
+<li><a href="#UsersControllerNote" title="User note controller class.">UsersControllerNote</a></li>
+<li><a href="#UsersControllerUser" title="User controller class.">UsersControllerUser</a></li>
+<li><a href="#UsersControllerUsers" title="Users list controller class.">UsersControllerUsers</a></li>
+<li><a href="#UsersControllerMail" title="Users mail controller.">UsersControllerMail</a></li>
+<li><a href="#UsersControllerLevels" title="User view levels list controller class.">UsersControllerLevels</a></li>
+<li><a href="#UsersModelLevel" title="User view level model.">UsersModelLevel</a></li>
+<li><a href="#UsersModelDebugGroup" title="Methods supporting a list of user records.">UsersModelDebugGroup</a></li>
+<li><a href="#UsersModelGroup" title="User group model.">UsersModelGroup</a></li>
+<li><a href="#UsersModelGroups" title="Methods supporting a list of user group records.">UsersModelGroups</a></li>
+<li><a href="#UsersModelNotes" title="User notes model class.">UsersModelNotes</a></li>
+<li><a href="#UsersModelDebugUser" title="Methods supporting a list of user records.">UsersModelDebugUser</a></li>
+<li><a href="#UsersModelNote" title="User note model.">UsersModelNote</a></li>
+<li><a href="#UsersModelUser" title="User model.">UsersModelUser</a></li>
+<li><a href="#JFormFieldGroupParent" title="Form Field class for the Joomla Framework.">JFormFieldGroupParent</a></li>
+<li><a href="#UsersModelUsers" title="Methods supporting a list of user records.">UsersModelUsers</a></li>
+<li><a href="#UsersModelMail" title="Users mail model.">UsersModelMail</a></li>
+<li><a href="#UsersModelLevels" title="Methods supporting a list of user access level records.">UsersModelLevels</a></li>
+<li><a href="#UsersTableNote" title="User notes table class">UsersTableNote</a></li>
+<li><a href="#UsersController" title="Users master display controller.">UsersController</a></li>
+<li><a href="#JHtmlUsers" title="Extended Utility class for the Users component.">JHtmlUsers</a></li>
+<li><a href="#UsersHelperDebug" title="Users component debugging helper.">UsersHelperDebug</a></li>
+<li><a href="#UsersHelper" title="Users component helper.">UsersHelper</a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li><a href="../packages/Joomla.Administrator.html">Joomla.Administrator</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../packages/Joomla.Administrator.com_users.html">com_users</a>
+</li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="JFormFieldGroupParent" class="element ajax clickable class">
+<h1>JFormFieldGroupParent<a href="../classes/JFormFieldGroupParent.html">¶</a>
+</h1>
+<p class="short_description">Form Field class for the Joomla Framework.</p>
+<div class="details collapse"></div>
+<a href="../classes/JFormFieldGroupParent.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="JHtmlUsers" class="element ajax clickable class">
+<h1>JHtmlUsers<a href="../classes/JHtmlUsers.html">¶</a>
+</h1>
+<p class="short_description">Extended Utility class for the Users component.</p>
+<div class="details collapse"></div>
+<a href="../classes/JHtmlUsers.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersController" class="element ajax clickable class">
+<h1>UsersController<a href="../classes/UsersController.html">¶</a>
+</h1>
+<p class="short_description">Users master display controller.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersController.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersControllerGroup" class="element ajax clickable class">
+<h1>UsersControllerGroup<a href="../classes/UsersControllerGroup.html">¶</a>
+</h1>
+<p class="short_description">User view level controller class.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersControllerGroup.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersControllerGroups" class="element ajax clickable class">
+<h1>UsersControllerGroups<a href="../classes/UsersControllerGroups.html">¶</a>
+</h1>
+<p class="short_description">User groups list controller class.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersControllerGroups.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersControllerLevel" class="element ajax clickable class">
+<h1>UsersControllerLevel<a href="../classes/UsersControllerLevel.html">¶</a>
+</h1>
+<p class="short_description">User view level controller class.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersControllerLevel.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersControllerLevels" class="element ajax clickable class">
+<h1>UsersControllerLevels<a href="../classes/UsersControllerLevels.html">¶</a>
+</h1>
+<p class="short_description">User view levels list controller class.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersControllerLevels.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersControllerMail" class="element ajax clickable class">
+<h1>UsersControllerMail<a href="../classes/UsersControllerMail.html">¶</a>
+</h1>
+<p class="short_description">Users mail controller.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersControllerMail.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersControllerNote" class="element ajax clickable class">
+<h1>UsersControllerNote<a href="../classes/UsersControllerNote.html">¶</a>
+</h1>
+<p class="short_description">User note controller class.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersControllerNote.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersControllerNotes" class="element ajax clickable class">
+<h1>UsersControllerNotes<a href="../classes/UsersControllerNotes.html">¶</a>
+</h1>
+<p class="short_description">User notes controller class.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersControllerNotes.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersControllerUser" class="element ajax clickable class">
+<h1>UsersControllerUser<a href="../classes/UsersControllerUser.html">¶</a>
+</h1>
+<p class="short_description">User controller class.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersControllerUser.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersControllerUsers" class="element ajax clickable class">
+<h1>UsersControllerUsers<a href="../classes/UsersControllerUsers.html">¶</a>
+</h1>
+<p class="short_description">Users list controller class.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersControllerUsers.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersHelper" class="element ajax clickable class">
+<h1>UsersHelper<a href="../classes/UsersHelper.html">¶</a>
+</h1>
+<p class="short_description">Users component helper.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersHelper.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersHelperDebug" class="element ajax clickable class">
+<h1>UsersHelperDebug<a href="../classes/UsersHelperDebug.html">¶</a>
+</h1>
+<p class="short_description">Users component debugging helper.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersHelperDebug.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelDebugGroup" class="element ajax clickable class">
+<h1>UsersModelDebugGroup<a href="../classes/UsersModelDebugGroup.html">¶</a>
+</h1>
+<p class="short_description">Methods supporting a list of user records.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelDebugGroup.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelDebugUser" class="element ajax clickable class">
+<h1>UsersModelDebugUser<a href="../classes/UsersModelDebugUser.html">¶</a>
+</h1>
+<p class="short_description">Methods supporting a list of user records.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelDebugUser.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelGroup" class="element ajax clickable class">
+<h1>UsersModelGroup<a href="../classes/UsersModelGroup.html">¶</a>
+</h1>
+<p class="short_description">User group model.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelGroup.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelGroups" class="element ajax clickable class">
+<h1>UsersModelGroups<a href="../classes/UsersModelGroups.html">¶</a>
+</h1>
+<p class="short_description">Methods supporting a list of user group records.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelGroups.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelLevel" class="element ajax clickable class">
+<h1>UsersModelLevel<a href="../classes/UsersModelLevel.html">¶</a>
+</h1>
+<p class="short_description">User view level model.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelLevel.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelLevels" class="element ajax clickable class">
+<h1>UsersModelLevels<a href="../classes/UsersModelLevels.html">¶</a>
+</h1>
+<p class="short_description">Methods supporting a list of user access level records.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelLevels.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelMail" class="element ajax clickable class">
+<h1>UsersModelMail<a href="../classes/UsersModelMail.html">¶</a>
+</h1>
+<p class="short_description">Users mail model.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelMail.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelNote" class="element ajax clickable class">
+<h1>UsersModelNote<a href="../classes/UsersModelNote.html">¶</a>
+</h1>
+<p class="short_description">User note model.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelNote.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelNotes" class="element ajax clickable class">
+<h1>UsersModelNotes<a href="../classes/UsersModelNotes.html">¶</a>
+</h1>
+<p class="short_description">User notes model class.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelNotes.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelUser" class="element ajax clickable class">
+<h1>UsersModelUser<a href="../classes/UsersModelUser.html">¶</a>
+</h1>
+<p class="short_description">User model.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelUser.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersModelUsers" class="element ajax clickable class">
+<h1>UsersModelUsers<a href="../classes/UsersModelUsers.html">¶</a>
+</h1>
+<p class="short_description">Methods supporting a list of user records.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersModelUsers.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersTableNote" class="element ajax clickable class">
+<h1>UsersTableNote<a href="../classes/UsersTableNote.html">¶</a>
+</h1>
+<p class="short_description">User notes table class</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersTableNote.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewDebugGroup" class="element ajax clickable class">
+<h1>UsersViewDebugGroup<a href="../classes/UsersViewDebugGroup.html">¶</a>
+</h1>
+<p class="short_description">View class for a list of users.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewDebugGroup.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewDebugUser" class="element ajax clickable class">
+<h1>UsersViewDebugUser<a href="../classes/UsersViewDebugUser.html">¶</a>
+</h1>
+<p class="short_description">View class for a list of users.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewDebugUser.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewGroup" class="element ajax clickable class">
+<h1>UsersViewGroup<a href="../classes/UsersViewGroup.html">¶</a>
+</h1>
+<p class="short_description">View to edit a user group.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewGroup.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewGroups" class="element ajax clickable class">
+<h1>UsersViewGroups<a href="../classes/UsersViewGroups.html">¶</a>
+</h1>
+<p class="short_description">View class for a list of user groups.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewGroups.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewLevel" class="element ajax clickable class">
+<h1>UsersViewLevel<a href="../classes/UsersViewLevel.html">¶</a>
+</h1>
+<p class="short_description">View to edit a user view level.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewLevel.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewLevels" class="element ajax clickable class">
+<h1>UsersViewLevels<a href="../classes/UsersViewLevels.html">¶</a>
+</h1>
+<p class="short_description">The HTML Users access levels view.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewLevels.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewMail" class="element ajax clickable class">
+<h1>UsersViewMail<a href="../classes/UsersViewMail.html">¶</a>
+</h1>
+<p class="short_description">Users mail view.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewMail.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewNote" class="element ajax clickable class">
+<h1>UsersViewNote<a href="../classes/UsersViewNote.html">¶</a>
+</h1>
+<p class="short_description">User note edit view</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewNote.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewNotes" class="element ajax clickable class">
+<h1>UsersViewNotes<a href="../classes/UsersViewNotes.html">¶</a>
+</h1>
+<p class="short_description">User notes list view</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewNotes.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewUser" class="element ajax clickable class">
+<h1>UsersViewUser<a href="../classes/UsersViewUser.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewUser.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UsersViewUsers" class="element ajax clickable class">
+<h1>UsersViewUsers<a href="../classes/UsersViewUsers.html">¶</a>
+</h1>
+<p class="short_description">View class for a list of users.</p>
+<div class="details collapse"></div>
+<a href="../classes/UsersViewUsers.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:32:25-04:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,729 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \Components\Resources\Models\Resource</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___construct" title="__construct() :: Class constructor, overridden in descendant classes."><span class="description">Class constructor, overridden in descendant classes.</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method___get" title="__get() :: Get a property"><span class="description">Get a property</span><pre>__get()</pre></a></li>
+<li class="method public "><a href="#method___isset" title="__isset() :: Check if a property is set"><span class="description">Check if a property is set</span><pre>__isset()</pre></a></li>
+<li class="method public "><a href="#method___set" title="__set() :: Set a property"><span class="description">Set a property</span><pre>__set()</pre></a></li>
+<li class="method public inherited"><a href="#method___toString" title="__toString() :: Magic method to convert the object to a string gracefully."><span class="description">Magic method to convert the object to a string gracefully.</span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#method_access" title="access() :: Check a user's authorization"><span class="description">Check a user's authorization</span><pre>access()</pre></a></li>
+<li class="method public "><a href="#method_children" title="children() :: Get a list of contributors on this resource
+  Accepts either a numeric array index or a string [id, name]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or names"><span class="description">Get a list of contributors on this resource
+  Accepts either a numeric array index or a string [id, name]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or names</span><pre>children()</pre></a></li>
+<li class="method public "><a href="#method_citations" title="citations() :: Get citations on a resource
+  Accepts a numeric array index"><span class="description">Get citations on a resource
+  Accepts a numeric array index</span><pre>citations()</pre></a></li>
+<li class="method public "><a href="#method_contributors" title="contributors() :: Get a list of contributors on this resource
+  Accepts either a numeric array index or a string [id, name]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or names"><span class="description">Get a list of contributors on this resource
+  Accepts either a numeric array index or a string [id, name]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or names</span><pre>contributors()</pre></a></li>
+<li class="method public inherited"><a href="#method_def" title="def() :: Sets a default value if not alreay assigned"><span class="description">Sets a default value if not alreay assigned</span><pre>def()</pre></a></li>
+<li class="method public "><a href="#method_deleted" title="deleted() :: Check if the resource was deleted"><span class="description">Check if the resource was deleted</span><pre>deleted()</pre></a></li>
+<li class="method public "><a href="#method_description" title="description() :: Get the content of the record."><span class="description">Get the content of the record.</span><pre>description()</pre></a></li>
+<li class="method public "><a href="#method_exists" title="exists() :: Check if the resource exists"><span class="description">Check if the resource exists</span><pre>exists()</pre></a></li>
+<li class="method public inherited"><a href="#method_get" title="get() :: Returns a property of the object or the default value if the property is not set."><span class="description">Returns a property of the object or the default value if the property is not set.</span><pre>get()</pre></a></li>
+<li class="method public inherited"><a href="#method_getError" title="getError() :: Get the most recent error message."><span class="description">Get the most recent error message.</span><pre>getError()</pre></a></li>
+<li class="method public inherited"><a href="#method_getErrors" title="getErrors() :: Return all errors, if any."><span class="description">Return all errors, if any.</span><pre>getErrors()</pre></a></li>
+<li class="method public "><a href="#method_getInstance" title="getInstance() :: Returns a reference to a wiki page object"><span class="description">Returns a reference to a wiki page object</span><pre>getInstance()</pre></a></li>
+<li class="method public inherited"><a href="#method_getProperties" title="getProperties() :: Returns an associative array of object properties."><span class="description">Returns an associative array of object properties.</span><pre>getProperties()</pre></a></li>
+<li class="method public "><a href="#method_inGroup" title="inGroup() :: Check if the resource is a tool or not"><span class="description">Check if the resource is a tool or not</span><pre>inGroup()</pre></a></li>
+<li class="method public "><a href="#method_isTool" title="isTool() :: Check if the resource is a tool or not"><span class="description">Check if the resource is a tool or not</span><pre>isTool()</pre></a></li>
+<li class="method public "><a href="#method_parents" title="parents() :: Get a list of parents of this resource
+  Accepts either a numeric array index
+  If index, it'll return the entry matching that index in the list"><span class="description">Get a list of parents of this resource
+  Accepts either a numeric array index
+  If index, it'll return the entry matching that index in the list</span><pre>parents()</pre></a></li>
+<li class="method public "><a href="#method_published" title="published() :: Check if the resource is a tool or not"><span class="description">Check if the resource is a tool or not</span><pre>published()</pre></a></li>
+<li class="method public "><a href="#method_revisions" title="revisions() :: Get a list of parents of this resource
+  Accepts either a numeric array index
+  If index, it'll return the entry matching that index in the list"><span class="description">Get a list of parents of this resource
+  Accepts either a numeric array index
+  If index, it'll return the entry matching that index in the list</span><pre>revisions()</pre></a></li>
+<li class="method public inherited"><a href="#method_set" title="set() :: Modifies a property of the object, creating it if it does not already exist."><span class="description">Modifies a property of the object, creating it if it does not already exist.</span><pre>set()</pre></a></li>
+<li class="method public inherited"><a href="#method_setError" title="setError() :: Add an error message."><span class="description">Add an error message.</span><pre>setError()</pre></a></li>
+<li class="method public inherited"><a href="#method_setErrors" title="setErrors() :: Set the list of errors"><span class="description">Set the list of errors</span><pre>setErrors()</pre></a></li>
+<li class="method public inherited"><a href="#method_setProperties" title="setProperties() :: Set the object properties based on a named array/hash."><span class="description">Set the object properties based on a named array/hash.</span><pre>setProperties()</pre></a></li>
+<li class="method public "><a href="#method_tags" title="tags() :: Get a list of tags on this resource
+  Accepts either a numeric array index or a string [id, raw]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or raw tags"><span class="description">Get a list of tags on this resource
+  Accepts either a numeric array index or a string [id, raw]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or raw tags</span><pre>tags()</pre></a></li>
+<li class="method public "><a href="#method_types" title="types() :: Get a list of resource types
+  Accepts either a numeric array index or a string [id, name]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or names"><span class="description">Get a list of resource types
+  Accepts either a numeric array index or a string [id, name]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or names</span><pre>types()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul><li class="method private "><a href="#method__authorize" title="_authorize() :: Authorize current user"><span class="description">Authorize current user</span><pre>_authorize()</pre></a></li></ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul></ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="property protected "><a href="#property__errors" title="$_errors() :: An array of error messages or Exception objects."><span class="description"></span><pre>$_errors</pre></a></li></ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="property private "><a href="#property__authorized" title="$_authorized() :: Resource ID"><span class="description"></span><pre>$_authorized</pre></a></li>
+<li class="property private "><a href="#property__data" title="$_data() :: Container for properties"><span class="description"></span><pre>$_data</pre></a></li>
+<li class="property private "><a href="#property__db" title="$_db() :: JDatabase"><span class="description"></span><pre>$_db</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Components\Resources\Models\Resource"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Resources.html">Resources</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Resources.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Components.Resources.Models.Resource.html">Resource</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Information retrieval for items/info linked to a resource</p>
+<div class="details">
+<div class="long_description"><p>This class allows for simple but smart objects with get and set methods
+and an internal error handler.</p>
+<p>Based off of Joomla's JObject</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/hubzero-cms.html">hubzero-cms</a></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Hubzero\Base\Object</td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Constructor</h2>
+<pre>__construct($oid, object $revision<code> = null</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Hubzero\Base\Object::__construct()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$oid</h4></div>
+<div class="subelement argument">
+<h4>$revision</h4>
+<code>object</code><p>&$db JDatabase</p></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Class constructor, overridden in descendant classes.</h2>
+<pre>__construct(mixed $properties<code> = null</code>) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$properties</h4>
+<code>mixed</code><p>Either and associative array or another
+                             object to set the initial properties of the object.</p></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get " data-toggle="collapse" data-target=".method___get .collapse" title="public">
+<h2>Get a property</h2>
+<pre>__get(string $property) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>Name of property to retrieve</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method___isset"></a><div class="element clickable method public method___isset " data-toggle="collapse" data-target=".method___isset .collapse" title="public">
+<h2>Check if a property is set</h2>
+<pre>__isset(string $property) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>Name of property to set</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if set</div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set " data-toggle="collapse" data-target=".method___set .collapse" title="public">
+<h2>Set a property</h2>
+<pre>__set(string $property, mixed $value) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>Name of property to set</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>Value to set property to</p></div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString inherited" data-toggle="collapse" data-target=".method___toString .collapse" title="public">
+<h2>Magic method to convert the object to a string gracefully.</h2>
+<pre>__toString() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The classname.</div>
+</div></div>
+</div>
+<a id="method_access"></a><div class="element clickable method public method_access " data-toggle="collapse" data-target=".method_access .collapse" title="public">
+<h2>Check a user's authorization</h2>
+<pre>access(string $action<code> = 'view'</code>) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>string</code><p>Action to check</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True if authorized, false if not</div>
+</div></div>
+</div>
+<a id="method_children"></a><div class="element clickable method public method_children " data-toggle="collapse" data-target=".method_children .collapse" title="public">
+<h2>Get a list of contributors on this resource
+  Accepts either a numeric array index or a string [id, name]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or names</h2>
+<pre>children(mixed $idx<code> = null</code>, $limit<code> = 0</code>, $start<code> = 0</code>, $order<code> = 'ordering'</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idx</h4>
+<code>mixed</code><p>Index value</p></div>
+<div class="subelement argument"><h4>$limit</h4></div>
+<div class="subelement argument"><h4>$start</h4></div>
+<div class="subelement argument"><h4>$order</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_citations"></a><div class="element clickable method public method_citations " data-toggle="collapse" data-target=".method_citations .collapse" title="public">
+<h2>Get citations on a resource
+  Accepts a numeric array index</h2>
+<pre>citations(integer $idx<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idx</h4>
+<code>integer</code><p>Index value</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_contributors"></a><div class="element clickable method public method_contributors " data-toggle="collapse" data-target=".method_contributors .collapse" title="public">
+<h2>Get a list of contributors on this resource
+  Accepts either a numeric array index or a string [id, name]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or names</h2>
+<pre>contributors(mixed $idx<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idx</h4>
+<code>mixed</code><p>Index value</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_def"></a><div class="element clickable method public method_def inherited" data-toggle="collapse" data-target=".method_def .collapse" title="public">
+<h2>Sets a default value if not alreay assigned</h2>
+<pre>def(string $property, mixed $default<code> = null</code>) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$default</h4>
+<code>mixed</code><p>The default value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_deleted"></a><div class="element clickable method public method_deleted " data-toggle="collapse" data-target=".method_deleted .collapse" title="public">
+<h2>Check if the resource was deleted</h2>
+<pre>deleted() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_description"></a><div class="element clickable method public method_description " data-toggle="collapse" data-target=".method_description .collapse" title="public">
+<h2>Get the content of the record.</h2>
+<pre>description(string $as<code> = 'parsed'</code>, integer $shorten<code> = 0</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Optional argument to determine how content should be handled</p>
+<p>parsed - performs parsing on content (i.e., converting wiki markup to HTML)
+clean  - parses content and then strips tags
+raw    - as is, no parsing</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$as</h4>
+<code>string</code><p>Format to return content in [parsed, clean, raw]</p></div>
+<div class="subelement argument">
+<h4>$shorten</h4>
+<code>integer</code><p>Number of characters to shorten text to</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_exists"></a><div class="element clickable method public method_exists " data-toggle="collapse" data-target=".method_exists .collapse" title="public">
+<h2>Check if the resource exists</h2>
+<pre>exists() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_get"></a><div class="element clickable method public method_get inherited" data-toggle="collapse" data-target=".method_get .collapse" title="public">
+<h2>Returns a property of the object or the default value if the property is not set.</h2>
+<pre>get(string $property, mixed $default<code> = null</code>) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$default</h4>
+<code>mixed</code><p>The default value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The value of the property.</div>
+</div></div>
+</div>
+<a id="method_getError"></a><div class="element clickable method public method_getError inherited" data-toggle="collapse" data-target=".method_getError .collapse" title="public">
+<h2>Get the most recent error message.</h2>
+<pre>getError(integer $i<code> = null</code>, boolean $toString<code> = true</code>) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$i</h4>
+<code>integer</code><p>Option error index.</p></div>
+<div class="subelement argument">
+<h4>$toString</h4>
+<code>boolean</code><p>Indicates if error objects should return their error message.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Error message</div>
+</div></div>
+</div>
+<a id="method_getErrors"></a><div class="element clickable method public method_getErrors inherited" data-toggle="collapse" data-target=".method_getErrors .collapse" title="public">
+<h2>Return all errors, if any.</h2>
+<pre>getErrors() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>Array of error messages</div>
+</div></div>
+</div>
+<a id="method_getInstance"></a><div class="element clickable method public method_getInstance " data-toggle="collapse" data-target=".method_getInstance .collapse" title="public">
+<h2>Returns a reference to a wiki page object</h2>
+<pre>getInstance($oid<code> = null</code>, $revision<code> = null</code>) : object</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$oid</h4></div>
+<div class="subelement argument"><h4>$revision</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_getProperties"></a><div class="element clickable method public method_getProperties inherited" data-toggle="collapse" data-target=".method_getProperties .collapse" title="public">
+<h2>Returns an associative array of object properties.</h2>
+<pre>getProperties(boolean $public<code> = true</code>) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$public</h4>
+<code>boolean</code><p>If true, returns only the public properties.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_inGroup"></a><div class="element clickable method public method_inGroup " data-toggle="collapse" data-target=".method_inGroup .collapse" title="public">
+<h2>Check if the resource is a tool or not</h2>
+<pre>inGroup($group<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$group</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_isTool"></a><div class="element clickable method public method_isTool " data-toggle="collapse" data-target=".method_isTool .collapse" title="public">
+<h2>Check if the resource is a tool or not</h2>
+<pre>isTool() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_parents"></a><div class="element clickable method public method_parents " data-toggle="collapse" data-target=".method_parents .collapse" title="public">
+<h2>Get a list of parents of this resource
+  Accepts either a numeric array index
+  If index, it'll return the entry matching that index in the list</h2>
+<pre>parents(mixed $idx<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idx</h4>
+<code>mixed</code><p>Index value</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_published"></a><div class="element clickable method public method_published " data-toggle="collapse" data-target=".method_published .collapse" title="public">
+<h2>Check if the resource is a tool or not</h2>
+<pre>published() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_revisions"></a><div class="element clickable method public method_revisions " data-toggle="collapse" data-target=".method_revisions .collapse" title="public">
+<h2>Get a list of parents of this resource
+  Accepts either a numeric array index
+  If index, it'll return the entry matching that index in the list</h2>
+<pre>revisions(mixed $idx<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idx</h4>
+<code>mixed</code><p>Index value</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_set"></a><div class="element clickable method public method_set inherited" data-toggle="collapse" data-target=".method_set .collapse" title="public">
+<h2>Modifies a property of the object, creating it if it does not already exist.</h2>
+<pre>set(string $property, mixed $value) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Returns $this so set() can be chained</p>
+<p>$object-&gt;set('foo', $bar)
+-&gt;set('bar', $foo)
+-&gt;doSomething();</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>The value of the property to set.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_setError"></a><div class="element clickable method public method_setError inherited" data-toggle="collapse" data-target=".method_setError .collapse" title="public">
+<h2>Add an error message.</h2>
+<pre>setError(string $error, string $key<code> = null</code>) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$error</h4>
+<code>string</code><p>Error message.</p></div>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>Specific key to set the value to</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_setErrors"></a><div class="element clickable method public method_setErrors inherited" data-toggle="collapse" data-target=".method_setErrors .collapse" title="public">
+<h2>Set the list of errors</h2>
+<pre>setErrors(array $errors) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$errors</h4>
+<code>array</code><p>List of Error message.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_setProperties"></a><div class="element clickable method public method_setProperties inherited" data-toggle="collapse" data-target=".method_setProperties .collapse" title="public">
+<h2>Set the object properties based on a named array/hash.</h2>
+<pre>setProperties(mixed $properties) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$properties</h4>
+<code>mixed</code><p>Either an associative array or another object.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_tags"></a><div class="element clickable method public method_tags " data-toggle="collapse" data-target=".method_tags .collapse" title="public">
+<h2>Get a list of tags on this resource
+  Accepts either a numeric array index or a string [id, raw]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or raw tags</h2>
+<pre>tags(mixed $idx<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idx</h4>
+<code>mixed</code><p>Index value</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_types"></a><div class="element clickable method public method_types " data-toggle="collapse" data-target=".method_types .collapse" title="public">
+<h2>Get a list of resource types
+  Accepts either a numeric array index or a string [id, name]
+  If index, it'll return the entry matching that index in the list
+  If string, it'll return either a list of IDs or names</h2>
+<pre>types(mixed $idx<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$idx</h4>
+<code>mixed</code><p>Index value</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__authorize"></a><div class="element clickable method private method__authorize " data-toggle="collapse" data-target=".method__authorize .collapse" title="private">
+<h2>Authorize current user</h2>
+<pre>_authorize() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__errors"> </a><div class="element clickable property protected property__errors" data-toggle="collapse" data-target=".property__errors .collapse" title="protected">
+<h2>An array of error messages or Exception objects.</h2>
+<pre>$_errors : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__authorized"> </a><div class="element clickable property private property__authorized" data-toggle="collapse" data-target=".property__authorized .collapse" title="private">
+<h2>Resource ID</h2>
+<pre>$_authorized : mixed</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__data"> </a><div class="element clickable property private property__data" data-toggle="collapse" data-target=".property__data .collapse" title="private">
+<h2>Container for properties</h2>
+<pre>$_data : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__db"> </a><div class="element clickable property private property__db" data-toggle="collapse" data-target=".property__db .collapse" title="private">
+<h2>JDatabase</h2>
+<pre>$_db : object</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:42:39-04:00.<br></footer></div>
+</div>
+</body>
+</html>

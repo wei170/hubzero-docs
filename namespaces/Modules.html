@@ -1,0 +1,2335 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » Modules</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Namespaces</li>
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>Modules</span><ul class="nav nav-list nav-namespaces">
+<li>
+<a href="../namespaces/Modules.AdminLogin.html" title="AdminLogin"><i class="icon-th"></i>AdminLogin</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.AdminMenu.html" title="AdminMenu"><i class="icon-th"></i>AdminMenu</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Announcements.html" title="Announcements"><i class="icon-th"></i>Announcements</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Answers.html" title="Answers"><i class="icon-th"></i>Answers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.ApplicationEnv.html" title="ApplicationEnv"><i class="icon-th"></i>ApplicationEnv</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.ArticleArchive.html" title="ArticleArchive"><i class="icon-th"></i>ArticleArchive</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.ArticlesCategories.html" title="ArticlesCategories"><i class="icon-th"></i>ArticlesCategories</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.ArticlesCategory.html" title="ArticlesCategory"><i class="icon-th"></i>ArticlesCategory</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.ArticlesLatest.html" title="ArticlesLatest"><i class="icon-th"></i>ArticlesLatest</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.ArticlesNews.html" title="ArticlesNews"><i class="icon-th"></i>ArticlesNews</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.ArticlesPopular.html" title="ArticlesPopular"><i class="icon-th"></i>ArticlesPopular</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Billboards.html" title="Billboards"><i class="icon-th"></i>Billboards</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.BreadCrumbs.html" title="BreadCrumbs"><i class="icon-th"></i>BreadCrumbs</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Collect.html" title="Collect"><i class="icon-th"></i>Collect</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Courses.html" title="Courses"><i class="icon-th"></i>Courses</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Custom.html" title="Custom"><i class="icon-th"></i>Custom</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.EventsCalendar.html" title="EventsCalendar"><i class="icon-th"></i>EventsCalendar</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.EventsLatest.html" title="EventsLatest"><i class="icon-th"></i>EventsLatest</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Featuredblog.html" title="Featuredblog"><i class="icon-th"></i>Featuredblog</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Featuredmember.html" title="Featuredmember"><i class="icon-th"></i>Featuredmember</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Featuredquestion.html" title="Featuredquestion"><i class="icon-th"></i>Featuredquestion</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Featuredresource.html" title="Featuredresource"><i class="icon-th"></i>Featuredresource</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Feed.html" title="Feed"><i class="icon-th"></i>Feed</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.FeedYoutube.html" title="FeedYoutube"><i class="icon-th"></i>FeedYoutube</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Feedaggregator.html" title="Feedaggregator"><i class="icon-th"></i>Feedaggregator</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.FindResources.html" title="FindResources"><i class="icon-th"></i>FindResources</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Footer.html" title="Footer"><i class="icon-th"></i>Footer</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.GoogleAnalytics.html" title="GoogleAnalytics"><i class="icon-th"></i>GoogleAnalytics</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.GroupPages.html" title="GroupPages"><i class="icon-th"></i>GroupPages</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Groups.html" title="Groups"><i class="icon-th"></i>Groups</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Hubzilla.html" title="Hubzilla"><i class="icon-th"></i>Hubzilla</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.IncrementalRegistration.html" title="IncrementalRegistration"><i class="icon-th"></i>IncrementalRegistration</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Languages.html" title="Languages"><i class="icon-th"></i>Languages</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Latest.html" title="Latest"><i class="icon-th"></i>Latest</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.LatestBlog.html" title="LatestBlog"><i class="icon-th"></i>LatestBlog</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.LatestDiscussions.html" title="LatestDiscussions"><i class="icon-th"></i>LatestDiscussions</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.LatestGroups.html" title="LatestGroups"><i class="icon-th"></i>LatestGroups</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.LatestUsage.html" title="LatestUsage"><i class="icon-th"></i>LatestUsage</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Login.html" title="Login"><i class="icon-th"></i>Login</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Members.html" title="Members"><i class="icon-th"></i>Members</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Menu.html" title="Menu"><i class="icon-th"></i>Menu</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyActivity.html" title="MyActivity"><i class="icon-th"></i>MyActivity</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyContributions.html" title="MyContributions"><i class="icon-th"></i>MyContributions</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyCourses.html" title="MyCourses"><i class="icon-th"></i>MyCourses</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyCuration.html" title="MyCuration"><i class="icon-th"></i>MyCuration</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyGroups.html" title="MyGroups"><i class="icon-th"></i>MyGroups</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyMessages.html" title="MyMessages"><i class="icon-th"></i>MyMessages</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyPoints.html" title="MyPoints"><i class="icon-th"></i>MyPoints</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyProjects.html" title="MyProjects"><i class="icon-th"></i>MyProjects</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyQuestions.html" title="MyQuestions"><i class="icon-th"></i>MyQuestions</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyResources.html" title="MyResources"><i class="icon-th"></i>MyResources</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MySessions.html" title="MySessions"><i class="icon-th"></i>MySessions</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MySubmissions.html" title="MySubmissions"><i class="icon-th"></i>MySubmissions</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyTickets.html" title="MyTickets"><i class="icon-th"></i>MyTickets</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyTodos.html" title="MyTodos"><i class="icon-th"></i>MyTodos</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyTools.html" title="MyTools"><i class="icon-th"></i>MyTools</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.MyWishes.html" title="MyWishes"><i class="icon-th"></i>MyWishes</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Newsletter.html" title="Newsletter"><i class="icon-th"></i>Newsletter</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Notices.html" title="Notices"><i class="icon-th"></i>Notices</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Poll.html" title="Poll"><i class="icon-th"></i>Poll</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.PollTitle.html" title="PollTitle"><i class="icon-th"></i>PollTitle</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Popular.html" title="Popular"><i class="icon-th"></i>Popular</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.PopularFaq.html" title="PopularFaq"><i class="icon-th"></i>PopularFaq</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.PopularQuestions.html" title="PopularQuestions"><i class="icon-th"></i>PopularQuestions</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.QuickIcon.html" title="QuickIcon"><i class="icon-th"></i>QuickIcon</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.QuickTips.html" title="QuickTips"><i class="icon-th"></i>QuickTips</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Quotes.html" title="Quotes"><i class="icon-th"></i>Quotes</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.RandomImage.html" title="RandomImage"><i class="icon-th"></i>RandomImage</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.RandomQuote.html" title="RandomQuote"><i class="icon-th"></i>RandomQuote</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.RapidContact.html" title="RapidContact"><i class="icon-th"></i>RapidContact</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.RecentQuestions.html" title="RecentQuestions"><i class="icon-th"></i>RecentQuestions</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.RelatedItems.html" title="RelatedItems"><i class="icon-th"></i>RelatedItems</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.ReportProblems.html" title="ReportProblems"><i class="icon-th"></i>ReportProblems</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.ResourceMenu.html" title="ResourceMenu"><i class="icon-th"></i>ResourceMenu</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Resources.html" title="Resources"><i class="icon-th"></i>Resources</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Search.html" title="Search"><i class="icon-th"></i>Search</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Slideshow.html" title="Slideshow"><i class="icon-th"></i>Slideshow</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.SlidingPanes.html" title="SlidingPanes"><i class="icon-th"></i>SlidingPanes</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Stats.html" title="Stats"><i class="icon-th"></i>Stats</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Submenu.html" title="Submenu"><i class="icon-th"></i>Submenu</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.SupportActivity.html" title="SupportActivity"><i class="icon-th"></i>SupportActivity</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Supporttickets.html" title="Supporttickets"><i class="icon-th"></i>Supporttickets</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Syndicate.html" title="Syndicate"><i class="icon-th"></i>Syndicate</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Title.html" title="Title"><i class="icon-th"></i>Title</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Toolbar.html" title="Toolbar"><i class="icon-th"></i>Toolbar</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Tools.html" title="Tools"><i class="icon-th"></i>Tools</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Toptags.html" title="Toptags"><i class="icon-th"></i>Toptags</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Users.html" title="Users"><i class="icon-th"></i>Users</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.UsersLatest.html" title="UsersLatest"><i class="icon-th"></i>UsersLatest</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Version.html" title="Version"><i class="icon-th"></i>Version</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.WhatsNew.html" title="WhatsNew"><i class="icon-th"></i>WhatsNew</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Whosonline.html" title="Whosonline"><i class="icon-th"></i>Whosonline</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.WishVoters.html" title="WishVoters"><i class="icon-th"></i>WishVoters</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Wishlist.html" title="Wishlist"><i class="icon-th"></i>Wishlist</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Modules.Youtube.html" title="Youtube"><i class="icon-th"></i>Youtube</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8 namespace-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li class="active"><a href="../namespaces/Modules.html">Modules</a></li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.AdminLogin.html">AdminLogin</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.AdminLogin.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a login form</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.AdminLogin.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.AdminMenu.html">AdminMenu</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.AdminMenu.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying the admin menu</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.AdminMenu.Helper.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Node" class="element ajax clickable class">
+<h1>Node<a href="../classes/Modules.AdminMenu.Node.html">¶</a>
+</h1>
+<p class="short_description">Menu node class</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.AdminMenu.Node.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Tree" class="element ajax clickable class">
+<h1>Tree<a href="../classes/Modules.AdminMenu.Tree.html">¶</a>
+</h1>
+<p class="short_description">Extended class for rendering nested menus</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.AdminMenu.Tree.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Announcements.html">Announcements</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Announcements.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying announcements</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Announcements.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Answers.html">Answers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Answers.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for com_answers data</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Answers.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.ApplicationEnv.html">ApplicationEnv</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.ApplicationEnv.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying current system environment</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.ApplicationEnv.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.ArticleArchive.html">ArticleArchive</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.ArticleArchive.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying an article archive</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.ArticleArchive.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.ArticlesCategories.html">ArticlesCategories</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.ArticlesCategories.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a list of categories</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.ArticlesCategories.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.ArticlesCategory.html">ArticlesCategory</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.ArticlesCategory.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying articles in a category</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.ArticlesCategory.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.ArticlesLatest.html">ArticlesLatest</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.ArticlesLatest.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying latest articles</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.ArticlesLatest.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.ArticlesNews.html">ArticlesNews</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.ArticlesNews.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying news articles</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.ArticlesNews.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.ArticlesPopular.html">ArticlesPopular</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.ArticlesPopular.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying popular articles</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.ArticlesPopular.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Billboards.html">Billboards</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Billboards.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module helper class, used to query for billboards and contains the display method</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Billboards.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.BreadCrumbs.html">BreadCrumbs</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.BreadCrumbs.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying breadcrumbs</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.BreadCrumbs.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Collect.html">Collect</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Collect.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a list of activity logs</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Collect.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Courses.html">Courses</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Courses.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for com_courses data</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Courses.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Custom.html">Custom</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Custom.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying custom HTML</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Custom.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.EventsCalendar.html">EventsCalendar</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.EventsCalendar.Helper.html">¶</a>
+</h1>
+<p class="short_description">Class for events calendar module</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.EventsCalendar.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.EventsLatest.html">EventsLatest</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.EventsLatest.Helper.html">¶</a>
+</h1>
+<p class="short_description">Parameters:
+===========</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.EventsLatest.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Featuredblog.html">Featuredblog</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Featuredblog.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a random, featured blog entry</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Featuredblog.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Featuredmember.html">Featuredmember</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Featuredmember.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying featured members</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Featuredmember.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Featuredquestion.html">Featuredquestion</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Featuredquestion.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a random featured question</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Featuredquestion.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Featuredresource.html">Featuredresource</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Featuredresource.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a random featured resource</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Featuredresource.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Feed.html">Feed</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Feed.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying items from a feed</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Feed.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.FeedYoutube.html">FeedYoutube</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.FeedYoutube.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a YouTube feed</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.FeedYoutube.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Feedaggregator.html">Feedaggregator</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Feedaggregator.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying items from a feed</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Feedaggregator.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.FindResources.html">FindResources</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.FindResources.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying ways to find resources</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.FindResources.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Footer.html">Footer</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Footer.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for diplaying site footer</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Footer.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.GoogleAnalytics.html">GoogleAnalytics</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.GoogleAnalytics.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for adding Google Analytics script to a page</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.GoogleAnalytics.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.GroupPages.html">GroupPages</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.GroupPages.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for showing group pages</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.GroupPages.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Groups.html">Groups</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Groups.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for com_groups data</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Groups.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Hubzilla.html">Hubzilla</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Hubzilla.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying the king of hubs</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Hubzilla.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.IncrementalRegistration.html">IncrementalRegistration</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.IncrementalRegistration.Helper.html">¶</a>
+</h1>
+<p class="short_description">Incremental Registration Module controller class</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.IncrementalRegistration.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Languages.html">Languages</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Languages.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a menu</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Languages.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Latest.html">Latest</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Latest.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying the latest articles</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Latest.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.LatestBlog.html">LatestBlog</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.LatestBlog.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying the latest blog posts</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.LatestBlog.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.LatestDiscussions.html">LatestDiscussions</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.LatestDiscussions.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying the latest forum posts</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.LatestDiscussions.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.LatestGroups.html">LatestGroups</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.LatestGroups.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying the latest groups</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.LatestGroups.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.LatestUsage.html">LatestUsage</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.LatestUsage.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying latest usage</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.LatestUsage.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Login.html">Login</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Login.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a login form</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Login.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Members.html">Members</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Members.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for com_members data</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Members.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Menu.html">Menu</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Menu.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a menu</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Menu.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyActivity.html">MyActivity</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyActivity.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a list of user activity</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyActivity.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyContributions.html">MyContributions</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyContributions.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying contributions in progress</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyContributions.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyCourses.html">MyCourses</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyCourses.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a list of courses for a user</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyCourses.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyCuration.html">MyCuration</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyCuration.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a user's publication curation tasks</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyCuration.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyGroups.html">MyGroups</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyGroups.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a list of groups for a user</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyGroups.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyMessages.html">MyMessages</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyMessages.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying the latest messages</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyMessages.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyPoints.html">MyPoints</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyPoints.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying point total and recent transactions</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyPoints.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyProjects.html">MyProjects</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyProjects.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a user's projects</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyProjects.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyQuestions.html">MyQuestions</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyQuestions.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a user's questions
+Requires com_answers component</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyQuestions.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyResources.html">MyResources</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyResources.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a user's resources</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyResources.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MySessions.html">MySessions</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MySessions.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a user's sessions</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MySessions.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MySubmissions.html">MySubmissions</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MySubmissions.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a user's submissions and their progress</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MySubmissions.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyTickets.html">MyTickets</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyTickets.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a user's support tickets</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyTickets.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyTodos.html">MyTodos</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyTodos.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a user's to do items</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyTodos.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyTools.html">MyTools</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="App" class="element ajax clickable class">
+<h1>App<a href="../classes/Modules.MyTools.App.html">¶</a>
+</h1>
+<p class="short_description">This class holds information about one application.</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyTools.App.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyTools.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a user's recently used/favorite tools</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyTools.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.MyWishes.html">MyWishes</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.MyWishes.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a user's wishes</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.MyWishes.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Newsletter.html">Newsletter</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Newsletter.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying Newsletter Mailing List Sign up</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Newsletter.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Notices.html">Notices</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Notices.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying site wide notices</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Notices.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Poll.html">Poll</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Poll.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a poll</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Poll.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.PollTitle.html">PollTitle</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.PollTitle.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying the latest poll's title</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.PollTitle.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Popular.html">Popular</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Popular.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying popular articles</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Popular.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.PopularFaq.html">PopularFaq</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.PopularFaq.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying popular KB articles</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.PopularFaq.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.PopularQuestions.html">PopularQuestions</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.PopularQuestions.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying popular questions</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.PopularQuestions.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.QuickIcon.html">QuickIcon</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.QuickIcon.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying shortcut idons for common tasks</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.QuickIcon.Helper.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Icons" class="element ajax clickable class">
+<h1>Icons<a href="../classes/Modules.QuickIcon.Icons.html">¶</a>
+</h1>
+<p class="short_description">Utility class for icons.</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.QuickIcon.Icons.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.QuickTips.html">QuickTips</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.QuickTips.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying tips</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.QuickTips.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Quotes.html">Quotes</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Quotes.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying quotes</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Quotes.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.RandomImage.html">RandomImage</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.RandomImage.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a random image</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.RandomImage.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.RandomQuote.html">RandomQuote</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.RandomQuote.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a random quote</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.RandomQuote.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.RapidContact.html">RapidContact</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.RapidContact.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a quick contact form</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.RapidContact.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.RecentQuestions.html">RecentQuestions</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.RecentQuestions.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying recent questions</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.RecentQuestions.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.RelatedItems.html">RelatedItems</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.RelatedItems.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying related articles</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.RelatedItems.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.ReportProblems.html">ReportProblems</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.ReportProblems.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a report problems form</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.ReportProblems.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.ResourceMenu.html">ResourceMenu</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.ResourceMenu.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a megamenu</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.ResourceMenu.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Resources.html">Resources</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Resources.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for com_resources data</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Resources.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Search.html">Search</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Search.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a search form</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Search.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Slideshow.html">Slideshow</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Slideshow.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a slideshow</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Slideshow.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.SlidingPanes.html">SlidingPanes</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.SlidingPanes.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying sliding panes of content</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.SlidingPanes.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Stats.html">Stats</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Stats.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module helper class for displaying stats</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Stats.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Submenu.html">Submenu</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Submenu.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for rendering a submenu</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Submenu.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.SupportActivity.html">SupportActivity</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.SupportActivity.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for an activity feed</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.SupportActivity.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Supporttickets.html">Supporttickets</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Supporttickets.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for com_support ticket data</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Supporttickets.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Syndicate.html">Syndicate</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Syndicate.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module helper class for syndicating a feed</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Syndicate.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Title.html">Title</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Title.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying component title</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Title.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Toolbar.html">Toolbar</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Toolbar.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying component toolbar</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Toolbar.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Tools.html">Tools</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Tools.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for com_tools data</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Tools.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Toptags.html">Toptags</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Toptags.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a tag cloud of most used tags</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Toptags.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Users.html">Users</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Users.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for com_users data</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Users.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.UsersLatest.html">UsersLatest</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.UsersLatest.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying latest registered users</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.UsersLatest.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Version.html">Version</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Version.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying CMS version</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Version.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.WhatsNew.html">WhatsNew</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.WhatsNew.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying what's new in a category of content</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.WhatsNew.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Whosonline.html">Whosonline</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Whosonline.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for showing users online</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Whosonline.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.WishVoters.html">WishVoters</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.WishVoters.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying top wish voters</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.WishVoters.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Wishlist.html">Wishlist</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Wishlist.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for com_wishlist data</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Wishlist.Helper.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Modules.html">Modules</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Modules.Youtube.html">Youtube</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Helper" class="element ajax clickable class">
+<h1>Helper<a href="../classes/Modules.Youtube.Helper.html">¶</a>
+</h1>
+<p class="short_description">Module class for displaying a YouTube feed</p>
+<div class="details collapse"></div>
+<a href="../classes/Modules.Youtube.Helper.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:30:09-04:00.<br></footer></div>
+</div>
+</body>
+</html>

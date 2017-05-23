@@ -1,0 +1,511 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \Plugins\Wiki\Parserdefault\Macros\GroupMacro</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Load group"><span class="description">Load group</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___construct" title="__construct() :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___get" title="__get() :: Get a property"><span class="description">Get a property</span><pre>__get()</pre></a></li>
+<li class="method public inherited"><a href="#method___set" title="__set() :: Set a property"><span class="description">Set a property</span><pre>__set()</pre></a></li>
+<li class="method public "><a href="#method_description" title="description() :: Returns description of macro, use, and accepted arguments
+this should be overriden by extended classes"><span class="description">Returns description of macro, use, and accepted arguments
+this should be overriden by extended classes</span><pre>description()</pre></a></li>
+<li class="method public inherited"><a href="#method_description" title="description() :: Returns description of macro, use, and accepted arguments
+this should be overriden by extended classes"><span class="description">Returns description of macro, use, and accepted arguments
+this should be overriden by extended classes</span><pre>description()</pre></a></li>
+<li class="method public inherited"><a href="#method_getInstance" title="getInstance() :: Get an instance of this macro, creating it if not found"><span class="description">Get an instance of this macro, creating it if not found</span><pre>getInstance()</pre></a></li>
+<li class="method public inherited"><a href="#method_name" title="name() :: Return the macro's name"><span class="description">Return the macro's name</span><pre>name()</pre></a></li>
+<li class="method public inherited"><a href="#method_render" title="render() :: Render macro output
+this should be overriden by extended classes"><span class="description">Render macro output
+this should be overriden by extended classes</span><pre>render()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_canRender" title="canRender() :: Can render macro method"><span class="description">Can render macro method</span><pre>canRender()</pre></a></li>
+<li class="method protected "><a href="#method_getArgs" title="getArgs() :: Get macro args"><span class="description">Get macro args</span><pre>getArgs()</pre></a></li>
+<li class="method protected inherited"><a href="#method_getArgument" title="getArgument() :: Get a macro argument"><span class="description">Get a macro argument</span><pre>getArgument()</pre></a></li>
+<li class="method protected inherited"><a href="#method_getArguments" title="getArguments() :: Get macro argumentss"><span class="description">Get macro argumentss</span><pre>getArguments()</pre></a></li>
+<li class="method protected inherited"><a href="#method_hasArgument" title="hasArgument() :: Check if macro has specified argument"><span class="description">Check if macro has specified argument</span><pre>hasArgument()</pre></a></li>
+<li class="method protected inherited"><a href="#method_hasArguments" title="hasArguments() :: Check if macro has any arguments"><span class="description">Check if macro has any arguments</span><pre>hasArguments()</pre></a></li>
+<li class="method protected inherited"><a href="#method_setArgument" title="setArgument() :: Set a macro argument value"><span class="description">Set a macro argument value</span><pre>setArgument()</pre></a></li>
+<li class="method protected inherited"><a href="#method_setArguments" title="setArguments() :: Set all macro argument values"><span class="description">Set all macro argument values</span><pre>setArguments()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_allowPartial" title="$allowPartial() :: Allow macro in partial parsing?"><span class="description"></span><pre>$allowPartial</pre></a></li>
+<li class="property public "><a href="#property_group" title="$group() :: Group"><span class="description"></span><pre>$group</pre></a></li>
+<li class="property public "><a href="#property_linkLog" title="$linkLog() :: Allow macro in partial parsing?"><span class="description"></span><pre>$linkLog</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__arguments" title="$_arguments() :: Container for errors"><span class="description"></span><pre>$_arguments</pre></a></li>
+<li class="property protected "><a href="#property__data" title="$_data() :: Container for internal data"><span class="description"></span><pre>$_data</pre></a></li>
+<li class="property protected "><a href="#property__db" title="$_db() :: Database"><span class="description"></span><pre>$_db</pre></a></li>
+<li class="property protected "><a href="#property__error" title="$_error() :: Container for errors"><span class="description"></span><pre>$_error</pre></a></li>
+<li class="property protected "><a href="#property__name" title="$_name() :: Name of the macro"><span class="description"></span><pre>$_name</pre></a></li>
+<li class="property protected "><a href="#property_thisInstance" title="$thisInstance() :: Instance of a macro"><span class="description"></span><pre>$thisInstance</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Plugins\Wiki\Parserdefault\Macros\GroupMacro"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Plugins.html">Plugins</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Plugins.Wiki.html">Wiki</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Plugins.Wiki.Parserdefault.html">Parserdefault</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Plugins.Wiki.Parserdefault.Macros.html">Macros</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Plugins.Wiki.Parserdefault.Macros.GroupMacro.html">GroupMacro</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Group Macro Base Class
+Extends basic macro class</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/hubzero-cms.html">hubzero-cms</a></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\WikiMacro</td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Load group</h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\WikiMacro::__construct()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Constructor</h2>
+<pre>__construct(array $config<code> = array()</code>) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>array</code><p>Configuration options</p></div>
+</div></div>
+</div>
+<a id="method___get"></a><div class="element clickable method public method___get inherited" data-toggle="collapse" data-target=".method___get .collapse" title="public">
+<h2>Get a property</h2>
+<pre>__get(string $property) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>Name of property to retrieve</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method___set"></a><div class="element clickable method public method___set inherited" data-toggle="collapse" data-target=".method___set .collapse" title="public">
+<h2>Set a property</h2>
+<pre>__set(string $property, mixed $value) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>Name of property to set</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>Value to set property to</p></div>
+</div></div>
+</div>
+<a id="method_description"></a><div class="element clickable method public method_description " data-toggle="collapse" data-target=".method_description .collapse" title="public">
+<h2>Returns description of macro, use, and accepted arguments
+this should be overriden by extended classes</h2>
+<pre>description() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\WikiMacro::description()</td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_description"></a><div class="element clickable method public method_description inherited" data-toggle="collapse" data-target=".method_description .collapse" title="public">
+<h2>Returns description of macro, use, and accepted arguments
+this should be overriden by extended classes</h2>
+<pre>description() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getInstance"></a><div class="element clickable method public method_getInstance inherited" data-toggle="collapse" data-target=".method_getInstance .collapse" title="public">
+<h2>Get an instance of this macro, creating it if not found</h2>
+<pre>getInstance(array $config<code> = array()</code>) : object</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$config</h4>
+<code>array</code><p>Configuration parameters</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_name"></a><div class="element clickable method public method_name inherited" data-toggle="collapse" data-target=".method_name .collapse" title="public">
+<h2>Return the macro's name</h2>
+<pre>name() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_render"></a><div class="element clickable method public method_render inherited" data-toggle="collapse" data-target=".method_render .collapse" title="public">
+<h2>Render macro output
+this should be overriden by extended classes</h2>
+<pre>render() : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_canRender"></a><div class="element clickable method protected method_canRender " data-toggle="collapse" data-target=".method_canRender .collapse" title="protected">
+<h2>Can render macro method</h2>
+<pre>canRender() : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_getArgs"></a><div class="element clickable method protected method_getArgs " data-toggle="collapse" data-target=".method_getArgs .collapse" title="protected">
+<h2>Get macro args</h2>
+<pre>getArgs() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>of arguments</div>
+</div></div>
+</div>
+<a id="method_getArgument"></a><div class="element clickable method protected method_getArgument inherited" data-toggle="collapse" data-target=".method_getArgument .collapse" title="protected">
+<h2>Get a macro argument</h2>
+<pre>getArgument(mixed $key, mixed $default<code> = null</code>) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>mixed</code>
+</div>
+<div class="subelement argument">
+<h4>$default</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getArguments"></a><div class="element clickable method protected method_getArguments inherited" data-toggle="collapse" data-target=".method_getArguments .collapse" title="protected">
+<h2>Get macro argumentss</h2>
+<pre>getArguments() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>List of arguments</div>
+</div></div>
+</div>
+<a id="method_hasArgument"></a><div class="element clickable method protected method_hasArgument inherited" data-toggle="collapse" data-target=".method_hasArgument .collapse" title="protected">
+<h2>Check if macro has specified argument</h2>
+<pre>hasArgument(string $key) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_hasArguments"></a><div class="element clickable method protected method_hasArguments inherited" data-toggle="collapse" data-target=".method_hasArguments .collapse" title="protected">
+<h2>Check if macro has any arguments</h2>
+<pre>hasArguments() : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_setArgument"></a><div class="element clickable method protected method_setArgument inherited" data-toggle="collapse" data-target=".method_setArgument .collapse" title="protected">
+<h2>Set a macro argument value</h2>
+<pre>setArgument(mixed $key, mixed $val) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>mixed</code>
+</div>
+<div class="subelement argument">
+<h4>$val</h4>
+<code>mixed</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_setArguments"></a><div class="element clickable method protected method_setArguments inherited" data-toggle="collapse" data-target=".method_setArguments .collapse" title="protected">
+<h2>Set all macro argument values</h2>
+<pre>setArguments(array $data) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_allowPartial"> </a><div class="element clickable property public property_allowPartial" data-toggle="collapse" data-target=".property_allowPartial .collapse" title="public">
+<h2>Allow macro in partial parsing?</h2>
+<pre>$allowPartial : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_group"> </a><div class="element clickable property public property_group" data-toggle="collapse" data-target=".property_group .collapse" title="public">
+<h2>Group</h2>
+<pre>$group : \Plugins\Wiki\Parserdefault\Macros\Hubzero\User\Group</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_linkLog"> </a><div class="element clickable property public property_linkLog" data-toggle="collapse" data-target=".property_linkLog .collapse" title="public">
+<h2>Allow macro in partial parsing?</h2>
+<pre>$linkLog : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__arguments"> </a><div class="element clickable property protected property__arguments" data-toggle="collapse" data-target=".property__arguments .collapse" title="protected">
+<h2>Container for errors</h2>
+<pre>$_arguments : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__data"> </a><div class="element clickable property protected property__data" data-toggle="collapse" data-target=".property__data .collapse" title="protected">
+<h2>Container for internal data</h2>
+<pre>$_data : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__db"> </a><div class="element clickable property protected property__db" data-toggle="collapse" data-target=".property__db .collapse" title="protected">
+<h2>Database</h2>
+<pre>$_db : object</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__error"> </a><div class="element clickable property protected property__error" data-toggle="collapse" data-target=".property__error .collapse" title="protected">
+<h2>Container for errors</h2>
+<pre>$_error : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__name"> </a><div class="element clickable property protected property__name" data-toggle="collapse" data-target=".property__name .collapse" title="protected">
+<h2>Name of the macro</h2>
+<pre>$_name : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_thisInstance"> </a><div class="element clickable property protected property_thisInstance" data-toggle="collapse" data-target=".property_thisInstance .collapse" title="protected">
+<h2>Instance of a macro</h2>
+<pre>$thisInstance : object</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:33:02-04:00.<br></footer></div>
+</div>
+</body>
+</html>

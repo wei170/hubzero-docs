@@ -1,0 +1,1137 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \plgProjectsFiles</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public inherited"><a href="#method___construct" title="__construct() :: Class constructor, overridden in descendant classes."><span class="description">Class constructor, overridden in descendant classes.</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___toString" title="__toString() :: Magic method to convert the object to a string gracefully."><span class="description">Magic method to convert the object to a string gracefully.</span><pre>__toString()</pre></a></li>
+<li class="method public inherited"><a href="#method_addPluginMessage" title="addPluginMessage() :: Method to add a message to the component message que"><span class="description">Method to add a message to the component message que</span><pre>addPluginMessage()</pre></a></li>
+<li class="method public inherited"><a href="#method_css" title="css() :: Push CSS to the document"><span class="description">Push CSS to the document</span><pre>css()</pre></a></li>
+<li class="method public inherited"><a href="#method_def" title="def() :: Sets a default value if not alreay assigned"><span class="description">Sets a default value if not alreay assigned</span><pre>def()</pre></a></li>
+<li class="method public "><a href="#method_diskspace" title="diskspace() :: Show disk usage"><span class="description">Show disk usage</span><pre>diskspace()</pre></a></li>
+<li class="method public inherited"><a href="#method_get" title="get() :: Returns a property of the object or the default value if the property is not set."><span class="description">Returns a property of the object or the default value if the property is not set.</span><pre>get()</pre></a></li>
+<li class="method public inherited"><a href="#method_getError" title="getError() :: Get the most recent error message."><span class="description">Get the most recent error message.</span><pre>getError()</pre></a></li>
+<li class="method public inherited"><a href="#method_getErrors" title="getErrors() :: Return all errors, if any."><span class="description">Return all errors, if any.</span><pre>getErrors()</pre></a></li>
+<li class="method public "><a href="#method_getMembersPath" title="getMembersPath() :: Get path to member dir (for provisioned projects)"><span class="description">Get path to member dir (for provisioned projects)</span><pre>getMembersPath()</pre></a></li>
+<li class="method public inherited"><a href="#method_getParams" title="getParams() :: Method to get plugin params"><span class="description">Method to get plugin params</span><pre>getParams()</pre></a></li>
+<li class="method public inherited"><a href="#method_getPluginMessage" title="getPluginMessage() :: Method to get component messages"><span class="description">Method to get component messages</span><pre>getPluginMessage()</pre></a></li>
+<li class="method public inherited"><a href="#method_getProperties" title="getProperties() :: Returns an associative array of object properties."><span class="description">Returns an associative array of object properties.</span><pre>getProperties()</pre></a></li>
+<li class="method public inherited"><a href="#method_img" title="img() :: Get the path to an image"><span class="description">Get the path to an image</span><pre>img()</pre></a></li>
+<li class="method public inherited"><a href="#method_js" title="js() :: Push JS to the document"><span class="description">Push JS to the document</span><pre>js()</pre></a></li>
+<li class="method public inherited"><a href="#method_loadLanguage" title="loadLanguage() :: Loads the plugin language file"><span class="description">Loads the plugin language file</span><pre>loadLanguage()</pre></a></li>
+<li class="method public "><a href="#method_onAfterUpdate" title="onAfterUpdate() :: Event call after file update"><span class="description">Event call after file update</span><pre>onAfterUpdate()</pre></a></li>
+<li class="method public "><a href="#method_onProject" title="onProject() :: Event call to return data for a specific project"><span class="description">Event call to return data for a specific project</span><pre>onProject()</pre></a></li>
+<li class="method public "><a href="#method_onProjectAreas" title="onProjectAreas() :: Event call to determine if this plugin should return data"><span class="description">Event call to determine if this plugin should return data</span><pre>onProjectAreas()</pre></a></li>
+<li class="method public "><a href="#method_onProjectCount" title="onProjectCount() :: Event call to return count of items"><span class="description">Event call to return count of items</span><pre>onProjectCount()</pre></a></li>
+<li class="method public "><a href="#method_onProjectMiniList" title="onProjectMiniList() :: Event call to get side content for main project page"><span class="description">Event call to get side content for main project page</span><pre>onProjectMiniList()</pre></a></li>
+<li class="method public "><a href="#method_optimize" title="optimize() :: Optimize repository"><span class="description">Optimize repository</span><pre>optimize()</pre></a></li>
+<li class="method public inherited"><a href="#method_redirect" title="redirect() :: Redirect"><span class="description">Redirect</span><pre>redirect()</pre></a></li>
+<li class="method public "><a href="#method_registerUpdate" title="registerUpdate() :: Register update info in user session"><span class="description">Register update info in user session</span><pre>registerUpdate()</pre></a></li>
+<li class="method public "><a href="#method_serve" title="serve() :: Serve file (usually via public link)"><span class="description">Serve file (usually via public link)</span><pre>serve()</pre></a></li>
+<li class="method public inherited"><a href="#method_set" title="set() :: Modifies a property of the object, creating it if it does not already exist."><span class="description">Modifies a property of the object, creating it if it does not already exist.</span><pre>set()</pre></a></li>
+<li class="method public inherited"><a href="#method_setError" title="setError() :: Add an error message."><span class="description">Add an error message.</span><pre>setError()</pre></a></li>
+<li class="method public inherited"><a href="#method_setErrors" title="setErrors() :: Set the list of errors"><span class="description">Set the list of errors</span><pre>setErrors()</pre></a></li>
+<li class="method public inherited"><a href="#method_setProperties" title="setProperties() :: Set the object properties based on a named array/hash."><span class="description">Set the object properties based on a named array/hash.</span><pre>setProperties()</pre></a></li>
+<li class="method public "><a href="#method_syncError" title="syncError() :: Sync error"><span class="description">Sync error</span><pre>syncError()</pre></a></li>
+<li class="method public "><a href="#method_syncStatus" title="syncStatus() :: Get sync status (AJAX call)"><span class="description">Get sync status (AJAX call)</span><pre>syncStatus()</pre></a></li>
+<li class="method public inherited"><a href="#method_view" title="view() :: Create a plugin view and return it"><span class="description">Create a plugin view and return it</span><pre>view()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method__browse" title="_browse() :: View of project files"><span class="description">View of project files</span><pre>_browse()</pre></a></li>
+<li class="method protected "><a href="#method__cleanData" title="_cleanData() :: Clean incoming data"><span class="description">Clean incoming data</span><pre>_cleanData()</pre></a></li>
+<li class="method protected "><a href="#method__compile" title="_compile() :: Compile PDF/image preview for any kind of file"><span class="description">Compile PDF/image preview for any kind of file</span><pre>_compile()</pre></a></li>
+<li class="method protected "><a href="#method__connect" title="_connect() :: Manage connections to outside services"><span class="description">Manage connections to outside services</span><pre>_connect()</pre></a></li>
+<li class="method protected "><a href="#method__delete" title="_delete() :: Delete items"><span class="description">Delete items</span><pre>_delete()</pre></a></li>
+<li class="method protected "><a href="#method__deleteDir" title="_deleteDir() :: Delete directory"><span class="description">Delete directory</span><pre>_deleteDir()</pre></a></li>
+<li class="method protected "><a href="#method__diff" title="_diff() :: Show revision diffs"><span class="description">Show revision diffs</span><pre>_diff()</pre></a></li>
+<li class="method protected "><a href="#method__download" title="_download() :: Download file(s)"><span class="description">Download file(s)</span><pre>_download()</pre></a></li>
+<li class="method protected "><a href="#method__getMemberFiles" title="_getMemberFiles() :: Get member files (provisioned project)"><span class="description">Get member files (provisioned project)</span><pre>_getMemberFiles()</pre></a></li>
+<li class="method protected "><a href="#method__getRemoteConnections" title="_getRemoteConnections() :: Get stored remote connections"><span class="description">Get stored remote connections</span><pre>_getRemoteConnections()</pre></a></li>
+<li class="method protected "><a href="#method__history" title="_history() :: Show file history"><span class="description">Show file history</span><pre>_history()</pre></a></li>
+<li class="method protected "><a href="#method__iniSync" title="_iniSync() :: Initiate sync"><span class="description">Initiate sync</span><pre>_iniSync()</pre></a></li>
+<li class="method protected "><a href="#method__move" title="_move() :: Move file(s)"><span class="description">Move file(s)</span><pre>_move()</pre></a></li>
+<li class="method protected "><a href="#method__newDir" title="_newDir() :: New directory form"><span class="description">New directory form</span><pre>_newDir()</pre></a></li>
+<li class="method protected "><a href="#method__rename" title="_rename() :: Rename"><span class="description">Rename</span><pre>_rename()</pre></a></li>
+<li class="method protected "><a href="#method__restore" title="_restore() :: Restore deleted files"><span class="description">Restore deleted files</span><pre>_restore()</pre></a></li>
+<li class="method protected "><a href="#method__save" title="_save() :: Upload file(s) and add to repository"><span class="description">Upload file(s) and add to repository</span><pre>_save()</pre></a></li>
+<li class="method protected "><a href="#method__saveDir" title="_saveDir() :: Save new directory"><span class="description">Save new directory</span><pre>_saveDir()</pre></a></li>
+<li class="method protected "><a href="#method__select" title="_select() :: Browser within publications (Curation)"><span class="description">Browser within publications (Curation)</span><pre>_select()</pre></a></li>
+<li class="method protected "><a href="#method__share" title="_share() :: Send file back or from to remote service for remote editing
+Local repo only"><span class="description">Send file back or from to remote service for remote editing
+Local repo only</span><pre>_share()</pre></a></li>
+<li class="method protected "><a href="#method__showTrash" title="_showTrash() :: Show deleted files"><span class="description">Show deleted files</span><pre>_showTrash()</pre></a></li>
+<li class="method protected "><a href="#method__sortIncoming" title="_sortIncoming() :: Sort incoming file/folder data"><span class="description">Sort incoming file/folder data</span><pre>_sortIncoming()</pre></a></li>
+<li class="method protected "><a href="#method__upload" title="_upload() :: Upload view"><span class="description">Upload view</span><pre>_upload()</pre></a></li>
+<li class="method protected inherited"><a href="#method_isSuperGroupAsset" title="isSuperGroupAsset() :: Modify paths if in a super group"><span class="description">Modify paths if in a super group</span><pre>isSuperGroupAsset()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method__archiveFiles" title="_archiveFiles() :: Archive files"><span class="description">Archive files</span><pre>_archiveFiles()</pre></a></li>
+<li class="method private inherited"><a href="#method_detectExtensionName" title="detectExtensionName() :: Determine the extension the view is being called from"><span class="description">Determine the extension the view is being called from</span><pre>detectExtensionName()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_params" title="$params() :: A Registry object holding the parameters for the plugin"><span class="description"></span><pre>$params</pre></a></li>
+<li class="property public "><a href="#property_pluginMessageQueue" title="$pluginMessageQueue() :: Container for component messages"><span class="description"></span><pre>$pluginMessageQueue</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="property protected "><a href="#property__autoloadLanguage" title="$_autoloadLanguage() :: Affects constructor behavior. If true, language files will be loaded automatically."><span class="description"></span><pre>$_autoloadLanguage</pre></a></li>
+<li class="property protected "><a href="#property__autoloadLanguage" title="$_autoloadLanguage() :: Affects constructor behavior. If true, language files will be loaded automatically."><span class="description"></span><pre>$_autoloadLanguage</pre></a></li>
+<li class="property protected "><a href="#property__errors" title="$_errors() :: An array of error messages or Exception objects."><span class="description"></span><pre>$_errors</pre></a></li>
+<li class="property protected "><a href="#property__msg" title="$_msg() :: Store internal message"><span class="description"></span><pre>$_msg</pre></a></li>
+<li class="property protected "><a href="#property__name" title="$_name() :: The name of the plugin"><span class="description"></span><pre>$_name</pre></a></li>
+<li class="property protected "><a href="#property__option" title="$_option() :: Component name"><span class="description"></span><pre>$_option</pre></a></li>
+<li class="property protected "><a href="#property__path" title="$_path() :: Repository path"><span class="description"></span><pre>$_path</pre></a></li>
+<li class="property protected "><a href="#property__subject" title="$_subject() :: Event object to observe."><span class="description"></span><pre>$_subject</pre></a></li>
+<li class="property protected "><a href="#property__type" title="$_type() :: The plugin type"><span class="description"></span><pre>$_type</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\plgProjectsFiles"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/plgProjectsFiles.html">plgProjectsFiles</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Projects Files plugin</p>
+<div class="details">
+<div class="long_description"><p>This class allows for simple but smart objects with get and set methods
+and an internal error handler.</p>
+<p>Based off of Joomla's JObject</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/hubzero-cms.html">hubzero-cms</a></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Hubzero\Plugin\Plugin</td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Class constructor, overridden in descendant classes.</h2>
+<pre>__construct(mixed $properties<code> = null</code>) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$properties</h4>
+<code>mixed</code><p>Either and associative array or another
+                             object to set the initial properties of the object.</p></div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString inherited" data-toggle="collapse" data-target=".method___toString .collapse" title="public">
+<h2>Magic method to convert the object to a string gracefully.</h2>
+<pre>__toString() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The classname.</div>
+</div></div>
+</div>
+<a id="method_addPluginMessage"></a><div class="element clickable method public method_addPluginMessage inherited" data-toggle="collapse" data-target=".method_addPluginMessage .collapse" title="public">
+<h2>Method to add a message to the component message que</h2>
+<pre>addPluginMessage(string $message, string $type<code> = 'message'</code>) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$message</h4>
+<code>string</code><p>The message to add</p></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code><p>The type of message to add</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_css"></a><div class="element clickable method public method_css inherited" data-toggle="collapse" data-target=".method_css .collapse" title="public">
+<h2>Push CSS to the document</h2>
+<pre>css(string $stylesheet<code> = ''</code>, string $extension<code> = null</code>, array $attributes<code> = array()</code>) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$stylesheet</h4>
+<code>string</code><p>Stylesheet or styles to add</p></div>
+<div class="subelement argument">
+<h4>$extension</h4>
+<code>string</code><p>Extension name, e.g.: com_example, mod_example, plg_example_test</p></div>
+<div class="subelement argument">
+<h4>$attributes</h4>
+<code>array</code><p>Attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_def"></a><div class="element clickable method public method_def inherited" data-toggle="collapse" data-target=".method_def .collapse" title="public">
+<h2>Sets a default value if not alreay assigned</h2>
+<pre>def(string $property, mixed $default<code> = null</code>) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$default</h4>
+<code>mixed</code><p>The default value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_diskspace"></a><div class="element clickable method public method_diskspace " data-toggle="collapse" data-target=".method_diskspace .collapse" title="public">
+<h2>Show disk usage</h2>
+<pre>diskspace(object $model, string $repoName<code> = 'local'</code>, integer $by<code> = ''</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code>object</code><p>Project model</p></div>
+<div class="subelement argument">
+<h4>$repoName</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$by</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_get"></a><div class="element clickable method public method_get inherited" data-toggle="collapse" data-target=".method_get .collapse" title="public">
+<h2>Returns a property of the object or the default value if the property is not set.</h2>
+<pre>get(string $property, mixed $default<code> = null</code>) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$default</h4>
+<code>mixed</code><p>The default value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The value of the property.</div>
+</div></div>
+</div>
+<a id="method_getError"></a><div class="element clickable method public method_getError inherited" data-toggle="collapse" data-target=".method_getError .collapse" title="public">
+<h2>Get the most recent error message.</h2>
+<pre>getError(integer $i<code> = null</code>, boolean $toString<code> = true</code>) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$i</h4>
+<code>integer</code><p>Option error index.</p></div>
+<div class="subelement argument">
+<h4>$toString</h4>
+<code>boolean</code><p>Indicates if error objects should return their error message.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Error message</div>
+</div></div>
+</div>
+<a id="method_getErrors"></a><div class="element clickable method public method_getErrors inherited" data-toggle="collapse" data-target=".method_getErrors .collapse" title="public">
+<h2>Return all errors, if any.</h2>
+<pre>getErrors() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>Array of error messages</div>
+</div></div>
+</div>
+<a id="method_getMembersPath"></a><div class="element clickable method public method_getMembersPath " data-toggle="collapse" data-target=".method_getMembersPath .collapse" title="public">
+<h2>Get path to member dir (for provisioned projects)</h2>
+<pre>getMembersPath() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_getParams"></a><div class="element clickable method public method_getParams inherited" data-toggle="collapse" data-target=".method_getParams .collapse" title="public">
+<h2>Method to get plugin params</h2>
+<pre>getParams(string $name, string $folder) : object</pre>
+<div class="labels">
+<span class="label">Inherited</span><span class="label">Static</span>
+</div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>Plugin name</p></div>
+<div class="subelement argument">
+<h4>$folder</h4>
+<code>string</code><p>Plugin folder</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_getPluginMessage"></a><div class="element clickable method public method_getPluginMessage inherited" data-toggle="collapse" data-target=".method_getPluginMessage .collapse" title="public">
+<h2>Method to get component messages</h2>
+<pre>getPluginMessage() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td></td>
+</tr></table>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getProperties"></a><div class="element clickable method public method_getProperties inherited" data-toggle="collapse" data-target=".method_getProperties .collapse" title="public">
+<h2>Returns an associative array of object properties.</h2>
+<pre>getProperties(boolean $public<code> = true</code>) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$public</h4>
+<code>boolean</code><p>If true, returns only the public properties.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_img"></a><div class="element clickable method public method_img inherited" data-toggle="collapse" data-target=".method_img .collapse" title="public">
+<h2>Get the path to an image</h2>
+<pre>img(string $asset, string $extension<code> = null</code>) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$asset</h4>
+<code>string</code><p>Image name</p></div>
+<div class="subelement argument">
+<h4>$extension</h4>
+<code>string</code><p>Extension name, e.g.: com_example, mod_example, plg_example_test</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_js"></a><div class="element clickable method public method_js inherited" data-toggle="collapse" data-target=".method_js .collapse" title="public">
+<h2>Push JS to the document</h2>
+<pre>js(string $asset<code> = ''</code>, string $extension<code> = null</code>, array $attributes<code> = array()</code>) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$asset</h4>
+<code>string</code><p>Script to add</p></div>
+<div class="subelement argument">
+<h4>$extension</h4>
+<code>string</code><p>Extension name, e.g.: com_example, mod_example, plg_example_test</p></div>
+<div class="subelement argument">
+<h4>$attributes</h4>
+<code>array</code><p>Attributes</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_loadLanguage"></a><div class="element clickable method public method_loadLanguage inherited" data-toggle="collapse" data-target=".method_loadLanguage .collapse" title="public">
+<h2>Loads the plugin language file</h2>
+<pre>loadLanguage(string $extension<code> = ''</code>, string $basePath<code> = PATH_APP</code>) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$extension</h4>
+<code>string</code><p>The extension for which a language file should be loaded</p></div>
+<div class="subelement argument">
+<h4>$basePath</h4>
+<code>string</code><p>The basepath to use</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>True, if the file has successfully loaded.</div>
+</div></div>
+</div>
+<a id="method_onAfterUpdate"></a><div class="element clickable method public method_onAfterUpdate " data-toggle="collapse" data-target=".method_onAfterUpdate .collapse" title="public">
+<h2>Event call after file update</h2>
+<pre>onAfterUpdate(object $model<code> = null</code>, array $changes<code> = array()</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code>object</code>
+</div>
+<div class="subelement argument">
+<h4>$changes</h4>
+<code>array</code>
+</div>
+</div></div>
+</div>
+<a id="method_onProject"></a><div class="element clickable method public method_onProject " data-toggle="collapse" data-target=".method_onProject .collapse" title="public">
+<h2>Event call to return data for a specific project</h2>
+<pre>onProject(object $model, string $action<code> = ''</code>, string $areas<code> = null</code>, $params<code> = array()</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code>object</code><p>Project model</p></div>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>string</code><p>Plugin task</p></div>
+<div class="subelement argument">
+<h4>$areas</h4>
+<code>string</code><p>Plugins to return data</p></div>
+<div class="subelement argument"><h4>$params</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>Return array of html</div>
+</div></div>
+</div>
+<a id="method_onProjectAreas"></a><div class="element clickable method public method_onProjectAreas " data-toggle="collapse" data-target=".method_onProjectAreas .collapse" title="public">
+<h2>Event call to determine if this plugin should return data</h2>
+<pre>onProjectAreas($alias<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$alias</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>Plugin name and title</div>
+</div></div>
+</div>
+<a id="method_onProjectCount"></a><div class="element clickable method public method_onProjectCount " data-toggle="collapse" data-target=".method_onProjectCount .collapse" title="public">
+<h2>Event call to return count of items</h2>
+<pre>onProjectCount(object $model) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code>object</code><p>Project</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>integer</div>
+</div></div>
+</div>
+<a id="method_onProjectMiniList"></a><div class="element clickable method public method_onProjectMiniList " data-toggle="collapse" data-target=".method_onProjectMiniList .collapse" title="public">
+<h2>Event call to get side content for main project page</h2>
+<pre>onProjectMiniList(object $model) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code>object</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_optimize"></a><div class="element clickable method public method_optimize " data-toggle="collapse" data-target=".method_optimize .collapse" title="public">
+<h2>Optimize repository</h2>
+<pre>optimize(object $model, string $repoName<code> = 'local'</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$model</h4>
+<code>object</code><p>Project model</p></div>
+<div class="subelement argument">
+<h4>$repoName</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_redirect"></a><div class="element clickable method public method_redirect inherited" data-toggle="collapse" data-target=".method_redirect .collapse" title="public">
+<h2>Redirect</h2>
+<pre>redirect(string $url, string $msg<code> = ''</code>, string $msgType<code> = ''</code>) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$url</h4>
+<code>string</code><p>The url to redirect to</p></div>
+<div class="subelement argument">
+<h4>$msg</h4>
+<code>string</code><p>A message to display</p></div>
+<div class="subelement argument">
+<h4>$msgType</h4>
+<code>string</code><p>Message type [error, success, warning]</p></div>
+</div></div>
+</div>
+<a id="method_registerUpdate"></a><div class="element clickable method public method_registerUpdate " data-toggle="collapse" data-target=".method_registerUpdate .collapse" title="public">
+<h2>Register update info in user session</h2>
+<pre>registerUpdate(string $type<code> = ''</code>, string $file<code> = ''</code>, boolean $append<code> = true</code>, string $appendMessage<code> = ''</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$file</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$append</h4>
+<code>boolean</code>
+</div>
+<div class="subelement argument">
+<h4>$appendMessage</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_serve"></a><div class="element clickable method public method_serve " data-toggle="collapse" data-target=".method_serve .collapse" title="public">
+<h2>Serve file (usually via public link)</h2>
+<pre>serve(string $type<code> = ''</code>, integer $projectid<code> = 0</code>, string $query<code> = ''</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>string</code>
+</div>
+<div class="subelement argument">
+<h4>$projectid</h4>
+<code>integer</code>
+</div>
+<div class="subelement argument">
+<h4>$query</h4>
+<code>string</code>
+</div>
+</div></div>
+</div>
+<a id="method_set"></a><div class="element clickable method public method_set inherited" data-toggle="collapse" data-target=".method_set .collapse" title="public">
+<h2>Modifies a property of the object, creating it if it does not already exist.</h2>
+<pre>set(string $property, mixed $value) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Returns $this so set() can be chained</p>
+<p>$object-&gt;set('foo', $bar)
+-&gt;set('bar', $foo)
+-&gt;doSomething();</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>The value of the property to set.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_setError"></a><div class="element clickable method public method_setError inherited" data-toggle="collapse" data-target=".method_setError .collapse" title="public">
+<h2>Add an error message.</h2>
+<pre>setError(string $error, string $key<code> = null</code>) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$error</h4>
+<code>string</code><p>Error message.</p></div>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>Specific key to set the value to</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_setErrors"></a><div class="element clickable method public method_setErrors inherited" data-toggle="collapse" data-target=".method_setErrors .collapse" title="public">
+<h2>Set the list of errors</h2>
+<pre>setErrors(array $errors) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$errors</h4>
+<code>array</code><p>List of Error message.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_setProperties"></a><div class="element clickable method public method_setProperties inherited" data-toggle="collapse" data-target=".method_setProperties .collapse" title="public">
+<h2>Set the object properties based on a named array/hash.</h2>
+<pre>setProperties(mixed $properties) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$properties</h4>
+<code>mixed</code><p>Either an associative array or another object.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_syncError"></a><div class="element clickable method public method_syncError " data-toggle="collapse" data-target=".method_syncError .collapse" title="public">
+<h2>Sync error</h2>
+<pre>syncError() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_syncStatus"></a><div class="element clickable method public method_syncStatus " data-toggle="collapse" data-target=".method_syncStatus .collapse" title="public">
+<h2>Get sync status (AJAX call)</h2>
+<pre>syncStatus() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_view"></a><div class="element clickable method public method_view inherited" data-toggle="collapse" data-target=".method_view .collapse" title="public">
+<h2>Create a plugin view and return it</h2>
+<pre>view(string $layout<code> = 'default'</code>, string $name<code> = ''</code>) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$layout</h4>
+<code>string</code><p>View layout</p></div>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>View name</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method__browse"></a><div class="element clickable method protected method__browse " data-toggle="collapse" data-target=".method__browse .collapse" title="protected">
+<h2>View of project files</h2>
+<pre>_browse(integer $sync<code> = 0</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$sync</h4>
+<code>integer</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__cleanData"></a><div class="element clickable method protected method__cleanData " data-toggle="collapse" data-target=".method__cleanData .collapse" title="protected">
+<h2>Clean incoming data</h2>
+<pre>_cleanData() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__compile"></a><div class="element clickable method protected method__compile " data-toggle="collapse" data-target=".method__compile .collapse" title="protected">
+<h2>Compile PDF/image preview for any kind of file</h2>
+<pre>_compile() : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>array or false</div>
+</div></div>
+</div>
+<a id="method__connect"></a><div class="element clickable method protected method__connect " data-toggle="collapse" data-target=".method__connect .collapse" title="protected">
+<h2>Manage connections to outside services</h2>
+<pre>_connect(string $service<code> = ''</code>, string $callback<code> = ''</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$service</h4>
+<code>string</code><p>Service name (google/dropbox)</p></div>
+<div class="subelement argument">
+<h4>$callback</h4>
+<code>string</code><p>URL to return to after authorization</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__delete"></a><div class="element clickable method protected method__delete " data-toggle="collapse" data-target=".method__delete .collapse" title="protected">
+<h2>Delete items</h2>
+<pre>_delete() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__deleteDir"></a><div class="element clickable method protected method__deleteDir " data-toggle="collapse" data-target=".method__deleteDir .collapse" title="protected">
+<h2>Delete directory</h2>
+<pre>_deleteDir() : \void,</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\void,</code>redirect</div>
+</div></div>
+</div>
+<a id="method__diff"></a><div class="element clickable method protected method__diff " data-toggle="collapse" data-target=".method__diff .collapse" title="protected">
+<h2>Show revision diffs</h2>
+<pre>_diff() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__download"></a><div class="element clickable method protected method__download " data-toggle="collapse" data-target=".method__download .collapse" title="protected">
+<h2>Download file(s)</h2>
+<pre>_download() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__getMemberFiles"></a><div class="element clickable method protected method__getMemberFiles " data-toggle="collapse" data-target=".method__getMemberFiles .collapse" title="protected">
+<h2>Get member files (provisioned project)</h2>
+<pre>_getMemberFiles(boolean $recurse<code> = true</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$recurse</h4>
+<code>boolean</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__getRemoteConnections"></a><div class="element clickable method protected method__getRemoteConnections " data-toggle="collapse" data-target=".method__getRemoteConnections .collapse" title="protected">
+<h2>Get stored remote connections</h2>
+<pre>_getRemoteConnections(boolean $remoteEdit<code> = true</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$remoteEdit</h4>
+<code>boolean</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__history"></a><div class="element clickable method protected method__history " data-toggle="collapse" data-target=".method__history .collapse" title="protected">
+<h2>Show file history</h2>
+<pre>_history() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__iniSync"></a><div class="element clickable method protected method__iniSync " data-toggle="collapse" data-target=".method__iniSync .collapse" title="protected">
+<h2>Initiate sync</h2>
+<pre>_iniSync() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__move"></a><div class="element clickable method protected method__move " data-toggle="collapse" data-target=".method__move .collapse" title="protected">
+<h2>Move file(s)</h2>
+<pre>_move() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__newDir"></a><div class="element clickable method protected method__newDir " data-toggle="collapse" data-target=".method__newDir .collapse" title="protected">
+<h2>New directory form</h2>
+<pre>_newDir() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__rename"></a><div class="element clickable method protected method__rename " data-toggle="collapse" data-target=".method__rename .collapse" title="protected">
+<h2>Rename</h2>
+<pre>_rename() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__restore"></a><div class="element clickable method protected method__restore " data-toggle="collapse" data-target=".method__restore .collapse" title="protected">
+<h2>Restore deleted files</h2>
+<pre>_restore() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__save"></a><div class="element clickable method protected method__save " data-toggle="collapse" data-target=".method__save .collapse" title="protected">
+<h2>Upload file(s) and add to repository</h2>
+<pre>_save() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__saveDir"></a><div class="element clickable method protected method__saveDir " data-toggle="collapse" data-target=".method__saveDir .collapse" title="protected">
+<h2>Save new directory</h2>
+<pre>_saveDir() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__select"></a><div class="element clickable method protected method__select " data-toggle="collapse" data-target=".method__select .collapse" title="protected">
+<h2>Browser within publications (Curation)</h2>
+<pre>_select() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__share"></a><div class="element clickable method protected method__share " data-toggle="collapse" data-target=".method__share .collapse" title="protected">
+<h2>Send file back or from to remote service for remote editing
+Local repo only</h2>
+<pre>_share() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method__showTrash"></a><div class="element clickable method protected method__showTrash " data-toggle="collapse" data-target=".method__showTrash .collapse" title="protected">
+<h2>Show deleted files</h2>
+<pre>_showTrash() : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method__sortIncoming"></a><div class="element clickable method protected method__sortIncoming " data-toggle="collapse" data-target=".method__sortIncoming .collapse" title="protected">
+<h2>Sort incoming file/folder data</h2>
+<pre>_sortIncoming() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method__upload"></a><div class="element clickable method protected method__upload " data-toggle="collapse" data-target=".method__upload .collapse" title="protected">
+<h2>Upload view</h2>
+<pre>_upload() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_isSuperGroupAsset"></a><div class="element clickable method protected method_isSuperGroupAsset inherited" data-toggle="collapse" data-target=".method_isSuperGroupAsset .collapse" title="protected">
+<h2>Modify paths if in a super group</h2>
+<pre>isSuperGroupAsset(object $asset) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$asset</h4>
+<code>object</code><p>Asset</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method__archiveFiles"></a><div class="element clickable method private method__archiveFiles " data-toggle="collapse" data-target=".method__archiveFiles .collapse" title="private">
+<h2>Archive files</h2>
+<pre>_archiveFiles(array $items) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$items</h4>
+<code>array</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>array or false</div>
+</div></div>
+</div>
+<a id="method_detectExtensionName"></a><div class="element clickable method private method_detectExtensionName inherited" data-toggle="collapse" data-target=".method_detectExtensionName .collapse" title="private">
+<h2>Determine the extension the view is being called from</h2>
+<pre>detectExtensionName() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_params"> </a><div class="element clickable property public property_params" data-toggle="collapse" data-target=".property_params .collapse" title="public">
+<h2>A Registry object holding the parameters for the plugin</h2>
+<pre>$params : \Hubzero\Config\Registry</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_pluginMessageQueue"> </a><div class="element clickable property public property_pluginMessageQueue" data-toggle="collapse" data-target=".property_pluginMessageQueue .collapse" title="public">
+<h2>Container for component messages</h2>
+<pre>$pluginMessageQueue : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__autoloadLanguage"> </a><div class="element clickable property protected property__autoloadLanguage" data-toggle="collapse" data-target=".property__autoloadLanguage .collapse" title="protected">
+<h2>Affects constructor behavior. If true, language files will be loaded automatically.</h2>
+<pre>$_autoloadLanguage : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>true</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Hubzero\Plugin\Plugin::_autoloadLanguage</td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__autoloadLanguage"> </a><div class="element clickable property protected property__autoloadLanguage" data-toggle="collapse" data-target=".property__autoloadLanguage .collapse" title="protected">
+<h2>Affects constructor behavior. If true, language files will be loaded automatically.</h2>
+<pre>$_autoloadLanguage : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__errors"> </a><div class="element clickable property protected property__errors" data-toggle="collapse" data-target=".property__errors .collapse" title="protected">
+<h2>An array of error messages or Exception objects.</h2>
+<pre>$_errors : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__msg"> </a><div class="element clickable property protected property__msg" data-toggle="collapse" data-target=".property__msg .collapse" title="protected">
+<h2>Store internal message</h2>
+<pre>$_msg : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__name"> </a><div class="element clickable property protected property__name" data-toggle="collapse" data-target=".property__name .collapse" title="protected">
+<h2>The name of the plugin</h2>
+<pre>$_name : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__option"> </a><div class="element clickable property protected property__option" data-toggle="collapse" data-target=".property__option .collapse" title="protected">
+<h2>Component name</h2>
+<pre>$_option : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'com_projects'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__path"> </a><div class="element clickable property protected property__path" data-toggle="collapse" data-target=".property__path .collapse" title="protected">
+<h2>Repository path</h2>
+<pre>$_path : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__subject"> </a><div class="element clickable property protected property__subject" data-toggle="collapse" data-target=".property__subject .collapse" title="protected">
+<h2>Event object to observe.</h2>
+<pre>$_subject : object</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>deprecated</th>
+<td></td>
+</tr></table>
+</div></div>
+</div>
+<a id="property__type"> </a><div class="element clickable property protected property__type" data-toggle="collapse" data-target=".property__type .collapse" title="protected">
+<h2>The plugin type</h2>
+<pre>$_type : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>null</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:37:22-04:00.<br></footer></div>
+</div>
+</body>
+</html>

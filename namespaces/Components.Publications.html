@@ -1,0 +1,1241 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » Components\Publications</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Namespaces</li>
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>Publications</span><ul class="nav nav-list nav-namespaces">
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>Admin</span><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Publications.Admin.Controllers.html" title="Controllers"><i class="icon-th"></i>Controllers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Api.html" title="Api"><i class="icon-th"></i>Api</a><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Publications.Api.Controllers.html" title="Controllers"><i class="icon-th"></i>Controllers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Helpers.html" title="Helpers"><i class="icon-th"></i>Helpers</a><ul class="nav nav-list nav-namespaces">
+<li>
+<a href="../namespaces/Components.Publications.Helpers.Economy.html" title="Economy"><i class="icon-th"></i>Economy</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Helpers.Usage.html" title="Usage"><i class="icon-th"></i>Usage</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Models.html" title="Models"><i class="icon-th"></i>Models</a><ul class="nav nav-list nav-namespaces">
+<li>
+<a href="../namespaces/Components.Publications.Models.Attachment.html" title="Attachment"><i class="icon-th"></i>Attachment</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Models.Block.html" title="Block"><i class="icon-th"></i>Block</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Models.BlockElement.html" title="BlockElement"><i class="icon-th"></i>BlockElement</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Models.Element.html" title="Element"><i class="icon-th"></i>Element</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Models.Format.html" title="Format"><i class="icon-th"></i>Format</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Models.Handlers.html" title="Handlers"><i class="icon-th"></i>Handlers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Models.Orm.html" title="Orm"><i class="icon-th"></i>Orm</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+</ul>
+</li>
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>Reviews</span><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Publications.Reviews.Models.html" title="Models"><i class="icon-th"></i>Models</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Site.html" title="Site"><i class="icon-th"></i>Site</a><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Publications.Site.Controllers.html" title="Controllers"><i class="icon-th"></i>Controllers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Publications.Tables.html" title="Tables"><i class="icon-th"></i>Tables</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8 namespace-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Admin.html">Admin</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Admin.html">Admin</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Admin.Controllers.html">Controllers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Admin" class="element ajax clickable class">
+<h1>Admin<a href="../classes/Components.Publications.Admin.Controllers.Admin.html">¶</a>
+</h1>
+<p class="short_description">Publication administrative support</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Admin.Controllers.Admin.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Batchcreate" class="element ajax clickable class">
+<h1>Batchcreate<a href="../classes/Components.Publications.Admin.Controllers.Batchcreate.html">¶</a>
+</h1>
+<p class="short_description">Manage publication batch</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Admin.Controllers.Batchcreate.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Categories" class="element ajax clickable class">
+<h1>Categories<a href="../classes/Components.Publications.Admin.Controllers.Categories.html">¶</a>
+</h1>
+<p class="short_description">Manage publication categories</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Admin.Controllers.Categories.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Items" class="element ajax clickable class">
+<h1>Items<a href="../classes/Components.Publications.Admin.Controllers.Items.html">¶</a>
+</h1>
+<p class="short_description">Manage publications</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Admin.Controllers.Items.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Licenses" class="element ajax clickable class">
+<h1>Licenses<a href="../classes/Components.Publications.Admin.Controllers.Licenses.html">¶</a>
+</h1>
+<p class="short_description">Manage publication licenses</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Admin.Controllers.Licenses.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Types" class="element ajax clickable class">
+<h1>Types<a href="../classes/Components.Publications.Admin.Controllers.Types.html">¶</a>
+</h1>
+<p class="short_description">Manage publication master types</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Admin.Controllers.Types.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Api.html">Api</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Router" class="element ajax clickable class">
+<h1>Router<a href="../classes/Components.Publications.Api.Router.html">¶</a>
+</h1>
+<p class="short_description">Routing class for the component</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Api.Router.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Api.html">Api</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Api.Controllers.html">Controllers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Publicationsv1_0" class="element ajax clickable class">
+<h1>Publicationsv1_0<a href="../classes/Components.Publications.Api.Controllers.Publicationsv1_0.html">¶</a>
+</h1>
+<p class="short_description">API controller for the publications component</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Api.Controllers.Publicationsv1_0.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Helpers.html">Helpers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Economy" class="element ajax clickable class">
+<h1>Economy<a href="../classes/Components.Publications.Helpers.Economy.html">¶</a>
+</h1>
+<p class="short_description">Publications Economy class:
+Stores economy functions for publication</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Helpers.Economy.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Html" class="element ajax clickable class">
+<h1>Html<a href="../classes/Components.Publications.Helpers.Html.html">¶</a>
+</h1>
+<p class="short_description">Html helper class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Helpers.Html.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Permissions" class="element ajax clickable class">
+<h1>Permissions<a href="../classes/Components.Publications.Helpers.Permissions.html">¶</a>
+</h1>
+<p class="short_description">Members permissions helper</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Helpers.Permissions.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Tags" class="element ajax clickable class">
+<h1>Tags<a href="../classes/Components.Publications.Helpers.Tags.html">¶</a>
+</h1>
+<p class="short_description">Publication Tagging class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Helpers.Tags.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Usage" class="element ajax clickable class">
+<h1>Usage<a href="../classes/Components.Publications.Helpers.Usage.html">¶</a>
+</h1>
+<p class="short_description">Base class for publication usage</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Helpers.Usage.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Utilities" class="element ajax clickable class">
+<h1>Utilities<a href="../classes/Components.Publications.Helpers.Utilities.html">¶</a>
+</h1>
+<p class="short_description">Utility methods</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Helpers.Utilities.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Helpers.html">Helpers</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Helpers.Economy.html">Economy</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Reviews" class="element ajax clickable class">
+<h1>Reviews<a href="../classes/Components.Publications.Helpers.Economy.Reviews.html">¶</a>
+</h1>
+<p class="short_description">Reviews Economy class:
+Stores economy functions for reviews on publications</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Helpers.Economy.Reviews.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Helpers.html">Helpers</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Helpers.Usage.html">Usage</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Andmore" class="element ajax clickable class">
+<h1>Andmore<a href="../classes/Components.Publications.Helpers.Usage.Andmore.html">¶</a>
+</h1>
+<p class="short_description">Extended resource stats class (And More)</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Helpers.Usage.Andmore.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.html">Models</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Attachment" class="element ajax clickable class">
+<h1>Attachment<a href="../classes/Components.Publications.Models.Attachment.html">¶</a>
+</h1>
+<p class="short_description">Publication attachment model class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Attachment.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Attachments" class="element ajax clickable class">
+<h1>Attachments<a href="../classes/Components.Publications.Models.Attachments.html">¶</a>
+</h1>
+<p class="short_description">Publications attachments class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Attachments.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Block" class="element ajax clickable class">
+<h1>Block<a href="../classes/Components.Publications.Models.Block.html">¶</a>
+</h1>
+<p class="short_description">Publications block base class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Block.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="BlockElement" class="element ajax clickable class">
+<h1>BlockElement<a href="../classes/Components.Publications.Models.BlockElement.html">¶</a>
+</h1>
+<p class="short_description">Publication block element class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.BlockElement.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="BlockElements" class="element ajax clickable class">
+<h1>BlockElements<a href="../classes/Components.Publications.Models.BlockElements.html">¶</a>
+</h1>
+<p class="short_description">Publications block elements class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.BlockElements.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Blocks" class="element ajax clickable class">
+<h1>Blocks<a href="../classes/Components.Publications.Models.Blocks.html">¶</a>
+</h1>
+<p class="short_description">Publications blocks class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Blocks.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Curation" class="element ajax clickable class">
+<h1>Curation<a href="../classes/Components.Publications.Models.Curation.html">¶</a>
+</h1>
+<p class="short_description">Publications curation class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Curation.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Doi" class="element ajax clickable class">
+<h1>Doi<a href="../classes/Components.Publications.Models.Doi.html">¶</a>
+</h1>
+<p class="short_description">Publication doi model class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Doi.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Editor" class="element ajax clickable class">
+<h1>Editor<a href="../classes/Components.Publications.Models.Editor.html">¶</a>
+</h1>
+<p class="short_description">Model for a handler editor</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Editor.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Element" class="element ajax clickable class">
+<h1>Element<a href="../classes/Components.Publications.Models.Element.html">¶</a>
+</h1>
+<p class="short_description">Publication element base class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Elements" class="element ajax clickable class">
+<h1>Elements<a href="../classes/Components.Publications.Models.Elements.html">¶</a>
+</h1>
+<p class="short_description">Publications elements class
+Used for rendering custom resources fields</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Elements.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Format" class="element ajax clickable class">
+<h1>Format<a href="../classes/Components.Publications.Models.Format.html">¶</a>
+</h1>
+<p class="short_description">Abstract Format for resources elements</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Format.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Handler" class="element ajax clickable class">
+<h1>Handler<a href="../classes/Components.Publications.Models.Handler.html">¶</a>
+</h1>
+<p class="short_description">Publication handler model class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Handler.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Handlers" class="element ajax clickable class">
+<h1>Handlers<a href="../classes/Components.Publications.Models.Handlers.html">¶</a>
+</h1>
+<p class="short_description">Publications handlers class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Handlers.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Log" class="element ajax clickable class">
+<h1>Log<a href="../classes/Components.Publications.Models.Log.html">¶</a>
+</h1>
+<p class="short_description">Publications log model class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Log.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Metadata" class="element ajax clickable class">
+<h1>Metadata<a href="../classes/Components.Publications.Models.Metadata.html">¶</a>
+</h1>
+<p class="short_description">Publication DOI metadata base class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Metadata.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Publication" class="element ajax clickable class">
+<h1>Publication<a href="../classes/Components.Publications.Models.Publication.html">¶</a>
+</h1>
+<p class="short_description">Information retrieval for items/info linked to a publication</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Publication.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Status" class="element ajax clickable class">
+<h1>Status<a href="../classes/Components.Publications.Models.Status.html">¶</a>
+</h1>
+<p class="short_description">Publication status model class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Status.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.Attachment.html">Attachment</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Data" class="element ajax clickable class">
+<h1>Data<a href="../classes/Components.Publications.Models.Attachment.Data.html">¶</a>
+</h1>
+<p class="short_description">Handles a Datastore Lite attachment</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Attachment.Data.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="File" class="element ajax clickable class">
+<h1>File<a href="../classes/Components.Publications.Models.Attachment.File.html">¶</a>
+</h1>
+<p class="short_description">Handles a file attachment</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Attachment.File.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Link" class="element ajax clickable class">
+<h1>Link<a href="../classes/Components.Publications.Models.Attachment.Link.html">¶</a>
+</h1>
+<p class="short_description">Handles a link attachment</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Attachment.Link.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Publication" class="element ajax clickable class">
+<h1>Publication<a href="../classes/Components.Publications.Models.Attachment.Publication.html">¶</a>
+</h1>
+<p class="short_description">Handles a publication link attachment</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Attachment.Publication.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Tool" class="element ajax clickable class">
+<h1>Tool<a href="../classes/Components.Publications.Models.Attachment.Tool.html">¶</a>
+</h1>
+<p class="short_description">Handles a tool attachment</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Attachment.Tool.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.Block.html">Block</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Authors" class="element ajax clickable class">
+<h1>Authors<a href="../classes/Components.Publications.Models.Block.Authors.html">¶</a>
+</h1>
+<p class="short_description">Authors block</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Block.Authors.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Citations" class="element ajax clickable class">
+<h1>Citations<a href="../classes/Components.Publications.Models.Block.Citations.html">¶</a>
+</h1>
+<p class="short_description">Citations block</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Block.Citations.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Content" class="element ajax clickable class">
+<h1>Content<a href="../classes/Components.Publications.Models.Block.Content.html">¶</a>
+</h1>
+<p class="short_description">Content block</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Block.Content.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Description" class="element ajax clickable class">
+<h1>Description<a href="../classes/Components.Publications.Models.Block.Description.html">¶</a>
+</h1>
+<p class="short_description">Description block</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Block.Description.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Extras" class="element ajax clickable class">
+<h1>Extras<a href="../classes/Components.Publications.Models.Block.Extras.html">¶</a>
+</h1>
+<p class="short_description">Content block</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Block.Extras.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="License" class="element ajax clickable class">
+<h1>License<a href="../classes/Components.Publications.Models.Block.License.html">¶</a>
+</h1>
+<p class="short_description">License block</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Block.License.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Notes" class="element ajax clickable class">
+<h1>Notes<a href="../classes/Components.Publications.Models.Block.Notes.html">¶</a>
+</h1>
+<p class="short_description">Release Notes block</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Block.Notes.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Review" class="element ajax clickable class">
+<h1>Review<a href="../classes/Components.Publications.Models.Block.Review.html">¶</a>
+</h1>
+<p class="short_description">Review block</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Block.Review.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Tags" class="element ajax clickable class">
+<h1>Tags<a href="../classes/Components.Publications.Models.Block.Tags.html">¶</a>
+</h1>
+<p class="short_description">Tags block</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Block.Tags.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.BlockElement.html">BlockElement</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Dataselector" class="element ajax clickable class">
+<h1>Dataselector<a href="../classes/Components.Publications.Models.BlockElement.Dataselector.html">¶</a>
+</h1>
+<p class="short_description">Renders URL selector element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.BlockElement.Dataselector.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Metadata" class="element ajax clickable class">
+<h1>Metadata<a href="../classes/Components.Publications.Models.BlockElement.Metadata.html">¶</a>
+</h1>
+<p class="short_description">Renders metadata element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.BlockElement.Metadata.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.Element.html">Element</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Checkbox" class="element ajax clickable class">
+<h1>Checkbox<a href="../classes/Components.Publications.Models.Element.Checkbox.html">¶</a>
+</h1>
+<p class="short_description">Renders a checkbox element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.Checkbox.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Date" class="element ajax clickable class">
+<h1>Date<a href="../classes/Components.Publications.Models.Element.Date.html">¶</a>
+</h1>
+<p class="short_description">Renders a category element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.Date.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Editor" class="element ajax clickable class">
+<h1>Editor<a href="../classes/Components.Publications.Models.Element.Editor.html">¶</a>
+</h1>
+<p class="short_description">Renders an editor element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.Editor.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Geo" class="element ajax clickable class">
+<h1>Geo<a href="../classes/Components.Publications.Models.Element.Geo.html">¶</a>
+</h1>
+<p class="short_description">Renders a geolocation element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.Geo.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Hidden" class="element ajax clickable class">
+<h1>Hidden<a href="../classes/Components.Publications.Models.Element.Hidden.html">¶</a>
+</h1>
+<p class="short_description">Renders a hidden element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.Hidden.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Languages" class="element ajax clickable class">
+<h1>Languages<a href="../classes/Components.Publications.Models.Element.Languages.html">¶</a>
+</h1>
+<p class="short_description">Renders a languages element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.Languages.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Radio" class="element ajax clickable class">
+<h1>Radio<a href="../classes/Components.Publications.Models.Element.Radio.html">¶</a>
+</h1>
+<p class="short_description">Renders a radio element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.Radio.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Select" class="element ajax clickable class">
+<h1>Select<a href="../classes/Components.Publications.Models.Element.Select.html">¶</a>
+</h1>
+<p class="short_description">Renders a select list element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.Select.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Text" class="element ajax clickable class">
+<h1>Text<a href="../classes/Components.Publications.Models.Element.Text.html">¶</a>
+</h1>
+<p class="short_description">Renders a text element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.Text.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Textarea" class="element ajax clickable class">
+<h1>Textarea<a href="../classes/Components.Publications.Models.Element.Textarea.html">¶</a>
+</h1>
+<p class="short_description">Renders a textarea element</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Element.Textarea.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.Format.html">Format</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="INI" class="element ajax clickable class">
+<h1>INI<a href="../classes/Components.Publications.Models.Format.INI.html">¶</a>
+</h1>
+<p class="short_description">INI format handler</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Format.INI.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="JSON" class="element ajax clickable class">
+<h1>JSON<a href="../classes/Components.Publications.Models.Format.JSON.html">¶</a>
+</h1>
+<p class="short_description">JSON format handler</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Format.JSON.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="PHP" class="element ajax clickable class">
+<h1>PHP<a href="../classes/Components.Publications.Models.Format.PHP.html">¶</a>
+</h1>
+<p class="short_description">PHP class format handler</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Format.PHP.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="XML" class="element ajax clickable class">
+<h1>XML<a href="../classes/Components.Publications.Models.Format.XML.html">¶</a>
+</h1>
+<p class="short_description">XML format handler</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Format.XML.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.Handlers.html">Handlers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="DataStore" class="element ajax clickable class">
+<h1>DataStore<a href="../classes/Components.Publications.Models.Handlers.DataStore.html">¶</a>
+</h1>
+<p class="short_description">DataStore Lite Handler</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Handlers.DataStore.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="ImageViewer" class="element ajax clickable class">
+<h1>ImageViewer<a href="../classes/Components.Publications.Models.Handlers.ImageViewer.html">¶</a>
+</h1>
+<p class="short_description">Image Viewer Handler</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Handlers.ImageViewer.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Models.Orm.html">Orm</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Attachment" class="element ajax clickable class">
+<h1>Attachment<a href="../classes/Components.Publications.Models.Orm.Attachment.html">¶</a>
+</h1>
+<p class="short_description">Model class for publication attachment</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Orm.Attachment.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Author" class="element ajax clickable class">
+<h1>Author<a href="../classes/Components.Publications.Models.Orm.Author.html">¶</a>
+</h1>
+<p class="short_description">Model class for publication version author</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Orm.Author.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Block" class="element ajax clickable class">
+<h1>Block<a href="../classes/Components.Publications.Models.Orm.Block.html">¶</a>
+</h1>
+<p class="short_description">Model class for publication block</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Orm.Block.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Category" class="element ajax clickable class">
+<h1>Category<a href="../classes/Components.Publications.Models.Orm.Category.html">¶</a>
+</h1>
+<p class="short_description">Model class for publication category</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Orm.Category.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="License" class="element ajax clickable class">
+<h1>License<a href="../classes/Components.Publications.Models.Orm.License.html">¶</a>
+</h1>
+<p class="short_description">Publication license model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Orm.License.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Publication" class="element ajax clickable class">
+<h1>Publication<a href="../classes/Components.Publications.Models.Orm.Publication.html">¶</a>
+</h1>
+<p class="short_description">Model class for publication</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Orm.Publication.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Rating" class="element ajax clickable class">
+<h1>Rating<a href="../classes/Components.Publications.Models.Orm.Rating.html">¶</a>
+</h1>
+<p class="short_description">Model class for publication rating</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Orm.Rating.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Type" class="element ajax clickable class">
+<h1>Type<a href="../classes/Components.Publications.Models.Orm.Type.html">¶</a>
+</h1>
+<p class="short_description">Model class for publication type</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Orm.Type.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Version" class="element ajax clickable class">
+<h1>Version<a href="../classes/Components.Publications.Models.Orm.Version.html">¶</a>
+</h1>
+<p class="short_description">Model class for publication version</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Models.Orm.Version.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Reviews.html">Reviews</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Reviews.html">Reviews</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Reviews.Models.html">Models</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Comment" class="element ajax clickable class">
+<h1>Comment<a href="../classes/Components.Publications.Reviews.Models.Comment.html">¶</a>
+</h1>
+<p class="short_description">Publications model for a comment</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Reviews.Models.Comment.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Site.html">Site</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Router" class="element ajax clickable class">
+<h1>Router<a href="../classes/Components.Publications.Site.Router.html">¶</a>
+</h1>
+<p class="short_description">Routing class for the component</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Site.Router.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Site.html">Site</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Site.Controllers.html">Controllers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Curation" class="element ajax clickable class">
+<h1>Curation<a href="../classes/Components.Publications.Site.Controllers.Curation.html">¶</a>
+</h1>
+<p class="short_description">Primary component controller (extends \Hubzero\Component\SiteController)</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Site.Controllers.Curation.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Media" class="element ajax clickable class">
+<h1>Media<a href="../classes/Components.Publications.Site.Controllers.Media.html">¶</a>
+</h1>
+<p class="short_description">Publications controller class for media</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Site.Controllers.Media.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Publications" class="element ajax clickable class">
+<h1>Publications<a href="../classes/Components.Publications.Site.Controllers.Publications.html">¶</a>
+</h1>
+<p class="short_description">Primary component controller</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Site.Controllers.Publications.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Publications.html">Publications</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Publications.Tables.html">Tables</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Access" class="element ajax clickable class">
+<h1>Access<a href="../classes/Components.Publications.Tables.Access.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication access</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Access.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Attachment" class="element ajax clickable class">
+<h1>Attachment<a href="../classes/Components.Publications.Tables.Attachment.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication attachments</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Attachment.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Audience" class="element ajax clickable class">
+<h1>Audience<a href="../classes/Components.Publications.Tables.Audience.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication audience</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Audience.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="AudienceLevel" class="element ajax clickable class">
+<h1>AudienceLevel<a href="../classes/Components.Publications.Tables.AudienceLevel.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication audience level</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.AudienceLevel.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Author" class="element ajax clickable class">
+<h1>Author<a href="../classes/Components.Publications.Tables.Author.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication author</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Author.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Block" class="element ajax clickable class">
+<h1>Block<a href="../classes/Components.Publications.Tables.Block.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication building blocks</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Block.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Category" class="element ajax clickable class">
+<h1>Category<a href="../classes/Components.Publications.Tables.Category.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication category</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Category.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Curation" class="element ajax clickable class">
+<h1>Curation<a href="../classes/Components.Publications.Tables.Curation.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication curation flow</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Curation.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CurationHistory" class="element ajax clickable class">
+<h1>CurationHistory<a href="../classes/Components.Publications.Tables.CurationHistory.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication curation history</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.CurationHistory.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CurationVersion" class="element ajax clickable class">
+<h1>CurationVersion<a href="../classes/Components.Publications.Tables.CurationVersion.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication curation history</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.CurationVersion.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Handler" class="element ajax clickable class">
+<h1>Handler<a href="../classes/Components.Publications.Tables.Handler.html">¶</a>
+</h1>
+<p class="short_description">Table class for available publication handlers</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Handler.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="HandlerAssoc" class="element ajax clickable class">
+<h1>HandlerAssoc<a href="../classes/Components.Publications.Tables.HandlerAssoc.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication handler associations</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.HandlerAssoc.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="License" class="element ajax clickable class">
+<h1>License<a href="../classes/Components.Publications.Tables.License.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication license</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.License.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Log" class="element ajax clickable class">
+<h1>Log<a href="../classes/Components.Publications.Tables.Log.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication access logs</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Log.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MasterType" class="element ajax clickable class">
+<h1>MasterType<a href="../classes/Components.Publications.Tables.MasterType.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication master type</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.MasterType.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Publication" class="element ajax clickable class">
+<h1>Publication<a href="../classes/Components.Publications.Tables.Publication.html">¶</a>
+</h1>
+<p class="short_description">Table class for publications</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Publication.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Review" class="element ajax clickable class">
+<h1>Review<a href="../classes/Components.Publications.Tables.Review.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication review</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Review.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Screenshot" class="element ajax clickable class">
+<h1>Screenshot<a href="../classes/Components.Publications.Tables.Screenshot.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication screenshot</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Screenshot.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Stats" class="element ajax clickable class">
+<h1>Stats<a href="../classes/Components.Publications.Tables.Stats.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication stats</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Stats.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Version" class="element ajax clickable class">
+<h1>Version<a href="../classes/Components.Publications.Tables.Version.html">¶</a>
+</h1>
+<p class="short_description">Table class for publication version</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Publications.Tables.Version.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:25:07-04:00.<br></footer></div>
+</div>
+</body>
+</html>

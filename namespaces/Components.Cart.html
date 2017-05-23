@@ -1,0 +1,471 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » Components\Cart</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Namespaces</li>
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>Cart</span><ul class="nav nav-list nav-namespaces">
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>Admin</span><ul class="nav nav-list nav-namespaces">
+<li>
+<a href="../namespaces/Components.Cart.Admin.Controllers.html" title="Controllers"><i class="icon-th"></i>Controllers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Cart.Admin.Helpers.html" title="Helpers"><i class="icon-th"></i>Helpers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="../namespaces/Components.Cart.Helpers.html" title="Helpers"><i class="icon-th"></i>Helpers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>Lib</span><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Cart.Lib.Auditors.html" title="Auditors"><i class="icon-th"></i>Auditors</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Cart.Models.html" title="Models"><i class="icon-th"></i>Models</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Cart.Site.html" title="Site"><i class="icon-th"></i>Site</a><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Cart.Site.Controllers.html" title="Controllers"><i class="icon-th"></i>Controllers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8 namespace-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Cart.html">Cart</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.html">Cart</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Admin.html">Admin</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.html">Cart</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Admin.html">Admin</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Admin.Controllers.html">Controllers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Downloads" class="element ajax clickable class">
+<h1>Downloads<a href="../classes/Components.Cart.Admin.Controllers.Downloads.html">¶</a>
+</h1>
+<p class="short_description">Controller class for knowledge base categories</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Admin.Controllers.Downloads.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Orders" class="element ajax clickable class">
+<h1>Orders<a href="../classes/Components.Cart.Admin.Controllers.Orders.html">¶</a>
+</h1>
+<p class="short_description">Controller class for knowledge base categories</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Admin.Controllers.Orders.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.html">Cart</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Admin.html">Admin</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Admin.Helpers.html">Helpers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Permissions" class="element ajax clickable class">
+<h1>Permissions<a href="../classes/Components.Cart.Admin.Helpers.Permissions.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Admin.Helpers.Permissions.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.html">Cart</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Helpers.html">Helpers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Audit" class="element ajax clickable class">
+<h1>Audit<a href="../classes/Components.Cart.Helpers.Audit.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Helpers.Audit.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CartDownload" class="element ajax clickable class">
+<h1>CartDownload<a href="../classes/Components.Cart.Helpers.CartDownload.html">¶</a>
+</h1>
+<p class="short_description">Cart download helpers</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Helpers.CartDownload.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CartHelper" class="element ajax clickable class">
+<h1>CartHelper<a href="../classes/Components.Cart.Helpers.CartHelper.html">¶</a>
+</h1>
+<p class="short_description">Cart helper functions</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Helpers.CartHelper.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CartOrders" class="element ajax clickable class">
+<h1>CartOrders<a href="../classes/Components.Cart.Helpers.CartOrders.html">¶</a>
+</h1>
+<p class="short_description">Cart orders helpers</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Helpers.CartOrders.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CartProductHandler" class="element ajax clickable class">
+<h1>CartProductHandler<a href="../classes/Components.Cart.Helpers.CartProductHandler.html">¶</a>
+</h1>
+<p class="short_description">Product handler. Handles purchased products/items. Runs a proper handler on each purchased item.</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Helpers.CartProductHandler.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.html">Cart</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Lib.html">Lib</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.html">Cart</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Lib.html">Lib</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Lib.Auditors.html">Auditors</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="BaseAuditor" class="element ajax clickable class">
+<h1>BaseAuditor<a href="../classes/Components.Cart.Lib.Auditors.BaseAuditor.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Lib.Auditors.BaseAuditor.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Membership_Auditor" class="element ajax clickable class">
+<h1>Membership_Auditor<a href="../classes/Components.Cart.Lib.Auditors.Membership_Auditor.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Lib.Auditors.Membership_Auditor.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Software_Auditor" class="element ajax clickable class">
+<h1>Software_Auditor<a href="../classes/Components.Cart.Lib.Auditors.Software_Auditor.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Lib.Auditors.Software_Auditor.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.html">Cart</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Models.html">Models</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Cart" class="element ajax clickable class">
+<h1>Cart<a href="../classes/Components.Cart.Models.Cart.html">¶</a>
+</h1>
+<p class="short_description">Core shopping cart</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Models.Cart.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CurrentCart" class="element ajax clickable class">
+<h1>CurrentCart<a href="../classes/Components.Cart.Models.CurrentCart.html">¶</a>
+</h1>
+<p class="short_description">Current user shopping cart</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Models.CurrentCart.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UserCart" class="element ajax clickable class">
+<h1>UserCart<a href="../classes/Components.Cart.Models.UserCart.html">¶</a>
+</h1>
+<p class="short_description">User shopping cart</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Models.UserCart.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.html">Cart</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Site.html">Site</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Router" class="element ajax clickable class">
+<h1>Router<a href="../classes/Components.Cart.Site.Router.html">¶</a>
+</h1>
+<p class="short_description">Routing class for the component</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Site.Router.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.html">Cart</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Site.html">Site</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Cart.Site.Controllers.html">Controllers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Cart" class="element ajax clickable class">
+<h1>Cart<a href="../classes/Components.Cart.Site.Controllers.Cart.html">¶</a>
+</h1>
+<p class="short_description">Cart controller class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Site.Controllers.Cart.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CartControllerDo" class="element ajax clickable class">
+<h1>CartControllerDo<a href="../classes/Components.Cart.Site.Controllers.CartControllerDo.html">¶</a>
+</h1>
+<p class="short_description">AJAX actions controller class (TODO, not yet implemented)</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Site.Controllers.CartControllerDo.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Checkout" class="element ajax clickable class">
+<h1>Checkout<a href="../classes/Components.Cart.Site.Controllers.Checkout.html">¶</a>
+</h1>
+<p class="short_description">Courses controller class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Site.Controllers.Checkout.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="ComponentController" class="element ajax clickable class">
+<h1>ComponentController<a href="../classes/Components.Cart.Site.Controllers.ComponentController.html">¶</a>
+</h1>
+<p class="short_description">Base component controller class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Site.Controllers.ComponentController.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Download" class="element ajax clickable class">
+<h1>Download<a href="../classes/Components.Cart.Site.Controllers.Download.html">¶</a>
+</h1>
+<p class="short_description">Product viewing controller class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Site.Controllers.Download.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Order" class="element ajax clickable class">
+<h1>Order<a href="../classes/Components.Cart.Site.Controllers.Order.html">¶</a>
+</h1>
+<p class="short_description">Cart order controller class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Site.Controllers.Order.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Orders" class="element ajax clickable class">
+<h1>Orders<a href="../classes/Components.Cart.Site.Controllers.Orders.html">¶</a>
+</h1>
+<p class="short_description">Cart controller class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Site.Controllers.Orders.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Request" class="element ajax clickable class">
+<h1>Request<a href="../classes/Components.Cart.Site.Controllers.Request.html">¶</a>
+</h1>
+<p class="short_description">Cart AJAX requests</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Site.Controllers.Request.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Test" class="element ajax clickable class">
+<h1>Test<a href="../classes/Components.Cart.Site.Controllers.Test.html">¶</a>
+</h1>
+<p class="short_description">Cart controller class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Site.Controllers.Test.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:21:32-04:00.<br></footer></div>
+</div>
+</body>
+</html>

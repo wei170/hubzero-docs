@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » Components\Search\Models</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Namespaces</li>
+<li>
+<a href="../namespaces/Components.Search.Models.html" title="Models"><i class="icon-th"></i>Models</a><ul class="nav nav-list nav-namespaces">
+<li>
+<a href="../namespaces/Components.Search.Models.Basic.html" title="Basic"><i class="icon-th"></i>Basic</a><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Search.Models.Basic.Result.html" title="Result"><i class="icon-th"></i>Result</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Search.Models.Solr.html" title="Solr"><i class="icon-th"></i>Solr</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#HubType" title="Database model for search hub types">HubType</a></li>
+</ul>
+</div>
+<div class="span8 namespace-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.html">Search</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Search.Models.html">Models</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="HubType" class="element ajax clickable class">
+<h1>HubType<a href="../classes/Components.Search.Models.HubType.html">¶</a>
+</h1>
+<p class="short_description">Database model for search hub types</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.HubType.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.html">Search</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Search.Models.Basic.html">Basic</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Authorization" class="element ajax clickable class">
+<h1>Authorization<a href="../classes/Components.Search.Models.Basic.Authorization.html">¶</a>
+</h1>
+<p class="short_description">Authorization checker</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.Authorization.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="DocumentMetadata" class="element ajax clickable class">
+<h1>DocumentMetadata<a href="../classes/Components.Search.Models.Basic.DocumentMetadata.html">¶</a>
+</h1>
+<p class="short_description">Stop words handler</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.DocumentMetadata.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Request" class="element ajax clickable class">
+<h1>Request<a href="../classes/Components.Search.Models.Basic.Request.html">¶</a>
+</h1>
+<p class="short_description">Search request model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.Request.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Result" class="element ajax clickable class">
+<h1>Result<a href="../classes/Components.Search.Models.Basic.Result.html">¶</a>
+</h1>
+<p class="short_description">Abstract search result</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.Result.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Terms" class="element ajax clickable class">
+<h1>Terms<a href="../classes/Components.Search.Models.Basic.Terms.html">¶</a>
+</h1>
+<p class="short_description">Search terms</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.Terms.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.html">Search</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.Models.html">Models</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.Models.Basic.html">Basic</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Search.Models.Basic.Result.html">Result</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Assoc" class="element ajax clickable class">
+<h1>Assoc<a href="../classes/Components.Search.Models.Basic.Result.Assoc.html">¶</a>
+</h1>
+<p class="short_description">Associative result</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.Result.Assoc.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="AssocList" class="element ajax clickable class">
+<h1>AssocList<a href="../classes/Components.Search.Models.Basic.Result.AssocList.html">¶</a>
+</h1>
+<p class="short_description">Associative list</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.Result.AssocList.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="AssocScalar" class="element ajax clickable class">
+<h1>AssocScalar<a href="../classes/Components.Search.Models.Basic.Result.AssocScalar.html">¶</a>
+</h1>
+<p class="short_description">Associative scalar result</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.Result.AssocScalar.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Blank" class="element ajax clickable class">
+<h1>Blank<a href="../classes/Components.Search.Models.Basic.Result.Blank.html">¶</a>
+</h1>
+<p class="short_description">Empty result</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.Result.Blank.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Set" class="element ajax clickable class">
+<h1>Set<a href="../classes/Components.Search.Models.Basic.Result.Set.html">¶</a>
+</h1>
+<p class="short_description">Search result set</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.Result.Set.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Sql" class="element ajax clickable class">
+<h1>Sql<a href="../classes/Components.Search.Models.Basic.Result.Sql.html">¶</a>
+</h1>
+<p class="short_description">Search result SQL</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Basic.Result.Sql.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.html">Search</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Search.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Search.Models.Solr.html">Solr</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Blacklist" class="element ajax clickable class">
+<h1>Blacklist<a href="../classes/Components.Search.Models.Solr.Blacklist.html">¶</a>
+</h1>
+<p class="short_description">Database model for search blacklist</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Solr.Blacklist.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Facet" class="element ajax clickable class">
+<h1>Facet<a href="../classes/Components.Search.Models.Solr.Facet.html">¶</a>
+</h1>
+<p class="short_description">Database model for search blacklist</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Solr.Facet.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="QueueDB" class="element ajax clickable class">
+<h1>QueueDB<a href="../classes/Components.Search.Models.Solr.QueueDB.html">¶</a>
+</h1>
+<p class="short_description">Database model for search queue</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Search.Models.Solr.QueueDB.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:26:03-04:00.<br></footer></div>
+</div>
+</body>
+</html>

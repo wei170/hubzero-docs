@@ -1,0 +1,996 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \Components\Storefront\Models\Warehouse</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Constructor method"><span class="description">Constructor method</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___construct" title="__construct() :: Class constructor, overridden in descendant classes."><span class="description">Class constructor, overridden in descendant classes.</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___toString" title="__toString() :: Magic method to convert the object to a string gracefully."><span class="description">Magic method to convert the object to a string gracefully.</span><pre>__toString()</pre></a></li>
+<li class="method public "><a href="#method_addAccessGroups" title="addAccessGroups() :: Add access group scope for entities (currently products only)"><span class="description">Add access group scope for entities (currently products only)</span><pre>addAccessGroups()</pre></a></li>
+<li class="method public "><a href="#method_addAccessLevels" title="addAccessLevels() :: Add access level scope for entities having access property (currently products only)"><span class="description">Add access level scope for entities having access property (currently products only)</span><pre>addAccessLevels()</pre></a></li>
+<li class="method public "><a href="#method_addCollection" title="addCollection() :: Add collection"><span class="description">Add collection</span><pre>addCollection()</pre></a></li>
+<li class="method public "><a href="#method_addCoupon" title="addCoupon() :: Add product coupon"><span class="description">Add product coupon</span><pre>addCoupon()</pre></a></li>
+<li class="method public "><a href="#method_addLookupCollection" title="addLookupCollection() :: Add a collection to the instance lookup scope"><span class="description">Add a collection to the instance lookup scope</span><pre>addLookupCollection()</pre></a></li>
+<li class="method public "><a href="#method_addUserScope" title="addUserScope() :: Add user level scope for entities having user permission property (currently SKUs only)"><span class="description">Add user level scope for entities having user permission property (currently SKUs only)</span><pre>addUserScope()</pre></a></li>
+<li class="method public "><a href="#method_checkProduct" title="checkProduct() :: Check if product exists and can be viewed by the current user"><span class="description">Check if product exists and can be viewed by the current user</span><pre>checkProduct()</pre></a></li>
+<li class="method public "><a href="#method_collectionExists" title="collectionExists() :: Check if collection exists"><span class="description">Check if collection exists</span><pre>collectionExists()</pre></a></li>
+<li class="method public "><a href="#method_couponExists" title="couponExists() :: Check if coupon exists"><span class="description">Check if coupon exists</span><pre>couponExists()</pre></a></li>
+<li class="method public inherited"><a href="#method_def" title="def() :: Sets a default value if not alreay assigned"><span class="description">Sets a default value if not alreay assigned</span><pre>def()</pre></a></li>
+<li class="method public "><a href="#method_deleteCoupon" title="deleteCoupon() :: Delete coupon"><span class="description">Delete coupon</span><pre>deleteCoupon()</pre></a></li>
+<li class="method public inherited"><a href="#method_get" title="get() :: Returns a property of the object or the default value if the property is not set."><span class="description">Returns a property of the object or the default value if the property is not set.</span><pre>get()</pre></a></li>
+<li class="method public "><a href="#method_getCategories" title="getCategories() :: Get all root (no parents) product 'category' collections"><span class="description">Get all root (no parents) product 'category' collections</span><pre>getCategories()</pre></a></li>
+<li class="method public "><a href="#method_getCollection" title="getCollection() :: Get a collection"><span class="description">Get a collection</span><pre>getCollection()</pre></a></li>
+<li class="method public "><a href="#method_getCollectionInfo" title="getCollectionInfo() :: Get collection information"><span class="description">Get collection information</span><pre>getCollectionInfo()</pre></a></li>
+<li class="method public "><a href="#method_getCollections" title="getCollections() :: "><span class="description">getCollections()
+        </span><pre>getCollections()</pre></a></li>
+<li class="method public "><a href="#method_getCourse" title="getCourse() :: Get a course"><span class="description">Get a course</span><pre>getCourse()</pre></a></li>
+<li class="method public "><a href="#method_getCourseByAlias" title="getCourseByAlias() :: Get course by alias"><span class="description">Get course by alias</span><pre>getCourseByAlias()</pre></a></li>
+<li class="method public inherited"><a href="#method_getError" title="getError() :: Get the most recent error message."><span class="description">Get the most recent error message.</span><pre>getError()</pre></a></li>
+<li class="method public inherited"><a href="#method_getErrors" title="getErrors() :: Return all errors, if any."><span class="description">Return all errors, if any.</span><pre>getErrors()</pre></a></li>
+<li class="method public "><a href="#method_getOptionGroupOptions" title="getOptionGroupOptions() :: Get all options for the option group (for admin)"><span class="description">Get all options for the option group (for admin)</span><pre>getOptionGroupOptions()</pre></a></li>
+<li class="method public "><a href="#method_getOptionGroups" title="getOptionGroups() :: "><span class="description">getOptionGroups()
+        </span><pre>getOptionGroups()</pre></a></li>
+<li class="method public "><a href="#method_getProductCollections" title="getProductCollections() :: Get product collections -- collections product is included in"><span class="description">Get product collections -- collections product is included in</span><pre>getProductCollections()</pre></a></li>
+<li class="method public "><a href="#method_getProductInfo" title="getProductInfo() :: Get product information TODO: phase out the legacy format"><span class="description">Get product information TODO: phase out the legacy format</span><pre>getProductInfo()</pre></a></li>
+<li class="method public "><a href="#method_getProductOptions" title="getProductOptions() :: Get product option groups and options"><span class="description">Get product option groups and options</span><pre>getProductOptions()</pre></a></li>
+<li class="method public "><a href="#method_getProductSkus" title="getProductSkus() :: Get product SKU IDs"><span class="description">Get product SKU IDs</span><pre>getProductSkus()</pre></a></li>
+<li class="method public "><a href="#method_getProductTypeInfo" title="getProductTypeInfo() :: Get product type info"><span class="description">Get product type info</span><pre>getProductTypeInfo()</pre></a></li>
+<li class="method public "><a href="#method_getProductTypes" title="getProductTypes() :: Get product types"><span class="description">Get product types</span><pre>getProductTypes()</pre></a></li>
+<li class="method public "><a href="#method_getProducts" title="getProducts() :: Get the products within the given scope"><span class="description">Get the products within the given scope</span><pre>getProducts()</pre></a></li>
+<li class="method public inherited"><a href="#method_getProperties" title="getProperties() :: Returns an associative array of object properties."><span class="description">Returns an associative array of object properties.</span><pre>getProperties()</pre></a></li>
+<li class="method public "><a href="#method_getRootCategories" title="getRootCategories() :: Get all non-empty (those that have at least one active product) root (no parents) product 'category' collections"><span class="description">Get all non-empty (those that have at least one active product) root (no parents) product 'category' collections</span><pre>getRootCategories()</pre></a></li>
+<li class="method public "><a href="#method_getSkuInfo" title="getSkuInfo() :: Get all info for SKU provided, including options"><span class="description">Get all info for SKU provided, including options</span><pre>getSkuInfo()</pre></a></li>
+<li class="method public "><a href="#method_getSkusInfo" title="getSkusInfo() :: Get all info for SKUs provided, including options"><span class="description">Get all info for SKUs provided, including options</span><pre>getSkusInfo()</pre></a></li>
+<li class="method public "><a href="#method_mapSku" title="mapSku() :: Get SKU mapping to the provided options"><span class="description">Get SKU mapping to the provided options</span><pre>mapSku()</pre></a></li>
+<li class="method public "><a href="#method_productExists" title="productExists() :: Check if product exists"><span class="description">Check if product exists</span><pre>productExists()</pre></a></li>
+<li class="method public "><a href="#method_resetLookupCollections" title="resetLookupCollections() :: Reset instance lookup scope"><span class="description">Reset instance lookup scope</span><pre>resetLookupCollections()</pre></a></li>
+<li class="method public inherited"><a href="#method_set" title="set() :: Modifies a property of the object, creating it if it does not already exist."><span class="description">Modifies a property of the object, creating it if it does not already exist.</span><pre>set()</pre></a></li>
+<li class="method public inherited"><a href="#method_setError" title="setError() :: Add an error message."><span class="description">Add an error message.</span><pre>setError()</pre></a></li>
+<li class="method public inherited"><a href="#method_setErrors" title="setErrors() :: Set the list of errors"><span class="description">Set the list of errors</span><pre>setErrors()</pre></a></li>
+<li class="method public inherited"><a href="#method_setProperties" title="setProperties() :: Set the object properties based on a named array/hash."><span class="description">Set the object properties based on a named array/hash.</span><pre>setProperties()</pre></a></li>
+<li class="method public "><a href="#method_updateCollection" title="updateCollection() :: Update existing collection"><span class="description">Update existing collection</span><pre>updateCollection()</pre></a></li>
+<li class="method public "><a href="#method_updateCoupon" title="updateCoupon() :: "><span class="description">updateCoupon()
+        </span><pre>updateCoupon()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header private">» Private
+                    <ul>
+<li class="method private "><a href="#method__doCoupon" title="_doCoupon() :: Handle product coupon (add, update)"><span class="description">Handle product coupon (add, update)</span><pre>_doCoupon()</pre></a></li>
+<li class="method private "><a href="#method__getAllCollections" title="_getAllCollections() :: Get all including empty root (no parents) collections
+TODO: implement subcategories"><span class="description">Get all including empty root (no parents) collections
+TODO: implement subcategories</span><pre>_getAllCollections()</pre></a></li>
+<li class="method private "><a href="#method__getCollections" title="_getCollections() :: Get all non-empty (those that have at least one active product) root (no parents) collections"><span class="description">Get all non-empty (those that have at least one active product) root (no parents) collections</span><pre>_getCollections()</pre></a></li>
+<li class="method private "><a href="#method_doCollection" title="doCollection() :: Handle collection actions (add, update)"><span class="description">Handle collection actions (add, update)</span><pre>doCollection()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_accessGroupsScope" title="$accessGroupsScope() :: "><span class="description"></span><pre>$accessGroupsScope</pre></a></li>
+<li class="property public "><a href="#property_accessLevelsScope" title="$accessLevelsScope() :: "><span class="description"></span><pre>$accessLevelsScope</pre></a></li>
+<li class="property public "><a href="#property_db" title="$db() :: "><span class="description"></span><pre>$db</pre></a></li>
+<li class="property public "><a href="#property_lookupCollections" title="$lookupCollections() :: array Product categories to look at (to define scope)"><span class="description"></span><pre>$lookupCollections</pre></a></li>
+<li class="property public "><a href="#property_userScope" title="$userScope() :: "><span class="description"></span><pre>$userScope</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul><li class="property protected "><a href="#property__errors" title="$_errors() :: An array of error messages or Exception objects."><span class="description"></span><pre>$_errors</pre></a></li></ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Components\Storefront\Models\Warehouse"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Storefront.html">Storefront</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Storefront.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Components.Storefront.Models.Warehouse.html">Warehouse</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Products inventory and structure (only product lookup and inventory management)</p>
+<div class="details">
+<div class="long_description"><p>This class allows for simple but smart objects with get and set methods
+and an internal error handler.</p>
+<p>Based off of Joomla's JObject</p></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/hubzero-cms.html">hubzero-cms</a></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Hubzero\Base\Object</td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Constructor method</h2>
+<pre>__construct() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Hubzero\Base\Object::__construct()</td>
+</tr></table>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Class constructor, overridden in descendant classes.</h2>
+<pre>__construct(mixed $properties<code> = null</code>) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$properties</h4>
+<code>mixed</code><p>Either and associative array or another
+                             object to set the initial properties of the object.</p></div>
+</div></div>
+</div>
+<a id="method___toString"></a><div class="element clickable method public method___toString inherited" data-toggle="collapse" data-target=".method___toString .collapse" title="public">
+<h2>Magic method to convert the object to a string gracefully.</h2>
+<pre>__toString() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The classname.</div>
+</div></div>
+</div>
+<a id="method_addAccessGroups"></a><div class="element clickable method public method_addAccessGroups " data-toggle="collapse" data-target=".method_addAccessGroups .collapse" title="public">
+<h2>Add access group scope for entities (currently products only)</h2>
+<pre>addAccessGroups(array $accessGroups) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$accessGroups</h4>
+<code>array</code><p>Access group IDs</p></div>
+</div></div>
+</div>
+<a id="method_addAccessLevels"></a><div class="element clickable method public method_addAccessLevels " data-toggle="collapse" data-target=".method_addAccessLevels .collapse" title="public">
+<h2>Add access level scope for entities having access property (currently products only)</h2>
+<pre>addAccessLevels(array $accessLevels) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$accessLevels</h4>
+<code>array</code><p>Access levels IDs</p></div>
+</div></div>
+</div>
+<a id="method_addCollection"></a><div class="element clickable method public method_addCollection " data-toggle="collapse" data-target=".method_addCollection .collapse" title="public">
+<h2>Add collection</h2>
+<pre>addCollection(\Components\Storefront\Models\StorefrontModelCollection $collection) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code>\Components\Storefront\Models\StorefrontModelCollection</code>
+</div>
+</div></div>
+</div>
+<a id="method_addCoupon"></a><div class="element clickable method public method_addCoupon " data-toggle="collapse" data-target=".method_addCoupon .collapse" title="public">
+<h2>Add product coupon</h2>
+<pre>addCoupon(\Components\Storefront\Models\StorefrontModelCoupon $coupon) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$coupon</h4>
+<code>\Components\Storefront\Models\StorefrontModelCoupon</code><p>Instance of a coupon to add</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>coupon ID</div>
+</div></div>
+</div>
+<a id="method_addLookupCollection"></a><div class="element clickable method public method_addLookupCollection " data-toggle="collapse" data-target=".method_addLookupCollection .collapse" title="public">
+<h2>Add a collection to the instance lookup scope</h2>
+<pre>addLookupCollection($cId) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cId</h4><p>Collection ID</p></div>
+</div></div>
+</div>
+<a id="method_addUserScope"></a><div class="element clickable method public method_addUserScope " data-toggle="collapse" data-target=".method_addUserScope .collapse" title="public">
+<h2>Add user level scope for entities having user permission property (currently SKUs only)</h2>
+<pre>addUserScope(integer $uId) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$uId</h4>
+<code>integer</code><p>user ID</p></div>
+</div></div>
+</div>
+<a id="method_checkProduct"></a><div class="element clickable method public method_checkProduct " data-toggle="collapse" data-target=".method_checkProduct .collapse" title="public">
+<h2>Check if product exists and can be viewed by the current user</h2>
+<pre>checkProduct(integer $product, $showInactive<code> = false</code>) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$product</h4>
+<code>integer</code><p>product ID or alias</p></div>
+<div class="subelement argument"><h4>$showInactive</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>pId on success, null if no match found</div>
+</div></div>
+</div>
+<a id="method_collectionExists"></a><div class="element clickable method public method_collectionExists " data-toggle="collapse" data-target=".method_collectionExists .collapse" title="public">
+<h2>Check if collection exists</h2>
+<pre>collectionExists(mixed $cId, $showInactive<code> = false</code>) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cId</h4>
+<code>mixed</code><p>collection ID or alias</p></div>
+<div class="subelement argument"><h4>$showInactive</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>cId on success, null if no match found</div>
+</div></div>
+</div>
+<a id="method_couponExists"></a><div class="element clickable method public method_couponExists " data-toggle="collapse" data-target=".method_couponExists .collapse" title="public">
+<h2>Check if coupon exists</h2>
+<pre>couponExists(string $code) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code><p>coupon code</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>coupon ID on sucess, null if no match found</div>
+</div></div>
+</div>
+<a id="method_def"></a><div class="element clickable method public method_def inherited" data-toggle="collapse" data-target=".method_def .collapse" title="public">
+<h2>Sets a default value if not alreay assigned</h2>
+<pre>def(string $property, mixed $default<code> = null</code>) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$default</h4>
+<code>mixed</code><p>The default value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<a id="method_deleteCoupon"></a><div class="element clickable method public method_deleteCoupon " data-toggle="collapse" data-target=".method_deleteCoupon .collapse" title="public">
+<h2>Delete coupon</h2>
+<pre>deleteCoupon(string $code) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$code</h4>
+<code>string</code><p>coupon code</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_get"></a><div class="element clickable method public method_get inherited" data-toggle="collapse" data-target=".method_get .collapse" title="public">
+<h2>Returns a property of the object or the default value if the property is not set.</h2>
+<pre>get(string $property, mixed $default<code> = null</code>) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$default</h4>
+<code>mixed</code><p>The default value.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The value of the property.</div>
+</div></div>
+</div>
+<a id="method_getCategories"></a><div class="element clickable method public method_getCategories " data-toggle="collapse" data-target=".method_getCategories .collapse" title="public">
+<h2>Get all root (no parents) product 'category' collections</h2>
+<pre>getCategories(void $rtrn<code> = 'list'</code>, $filters<code> = array()</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rtrn</h4>
+<code>void</code>
+</div>
+<div class="subelement argument"><h4>$filters</h4></div>
+</div></div>
+</div>
+<a id="method_getCollection"></a><div class="element clickable method public method_getCollection " data-toggle="collapse" data-target=".method_getCollection .collapse" title="public">
+<h2>Get a collection</h2>
+<pre>getCollection(integer $cId) : \Components\Storefront\Models\StorefrontModelCollection</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cId</h4>
+<code>integer</code><p>collection ID</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Storefront\Models\StorefrontModelCollection</code>Instance of a collection</div>
+</div></div>
+</div>
+<a id="method_getCollectionInfo"></a><div class="element clickable method public method_getCollectionInfo " data-toggle="collapse" data-target=".method_getCollectionInfo .collapse" title="public">
+<h2>Get collection information</h2>
+<pre>getCollectionInfo(integer $cId, boolean $showInactive<code> = false</code>) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$cId</h4>
+<code>integer</code><p>Collection ID</p></div>
+<div class="subelement argument">
+<h4>$showInactive</h4>
+<code>boolean</code><p>Flag whether to show inactive collection info</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>Collection info</div>
+</div></div>
+</div>
+<a id="method_getCollections"></a><div class="element clickable method public method_getCollections " data-toggle="collapse" data-target=".method_getCollections .collapse" title="public">
+<h2>getCollections()
+        </h2>
+<pre>getCollections($rtrn<code> = 'list'</code>, $filters<code> = array()</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$rtrn</h4></div>
+<div class="subelement argument"><h4>$filters</h4></div>
+</div></div>
+</div>
+<a id="method_getCourse"></a><div class="element clickable method public method_getCourse " data-toggle="collapse" data-target=".method_getCourse .collapse" title="public">
+<h2>Get a course</h2>
+<pre>getCourse(integer $courseId) : \Components\Storefront\Models\StorefrontModelCourse</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$courseId</h4>
+<code>integer</code><p>course ID</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Storefront\Models\StorefrontModelCourse</code>Instance of a product</div>
+</div></div>
+</div>
+<a id="method_getCourseByAlias"></a><div class="element clickable method public method_getCourseByAlias " data-toggle="collapse" data-target=".method_getCourseByAlias .collapse" title="public">
+<h2>Get course by alias</h2>
+<pre>getCourseByAlias(integer $alias) : \Components\Storefront\Models\StorefrontModelCourse</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$alias</h4>
+<code>integer</code><p>course ID</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Storefront\Models\StorefrontModelCourse</code>Instance of a product</div>
+</div></div>
+</div>
+<a id="method_getError"></a><div class="element clickable method public method_getError inherited" data-toggle="collapse" data-target=".method_getError .collapse" title="public">
+<h2>Get the most recent error message.</h2>
+<pre>getError(integer $i<code> = null</code>, boolean $toString<code> = true</code>) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$i</h4>
+<code>integer</code><p>Option error index.</p></div>
+<div class="subelement argument">
+<h4>$toString</h4>
+<code>boolean</code><p>Indicates if error objects should return their error message.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>Error message</div>
+</div></div>
+</div>
+<a id="method_getErrors"></a><div class="element clickable method public method_getErrors inherited" data-toggle="collapse" data-target=".method_getErrors .collapse" title="public">
+<h2>Return all errors, if any.</h2>
+<pre>getErrors() : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>Array of error messages</div>
+</div></div>
+</div>
+<a id="method_getOptionGroupOptions"></a><div class="element clickable method public method_getOptionGroupOptions " data-toggle="collapse" data-target=".method_getOptionGroupOptions .collapse" title="public">
+<h2>Get all options for the option group (for admin)</h2>
+<pre>getOptionGroupOptions(integer $ogId, $return<code> = 'rows'</code>, $showOnlyActive<code> = true</code>, $filters<code> = false</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ogId</h4>
+<code>integer</code><p>option group ID</p></div>
+<div class="subelement argument"><h4>$return</h4></div>
+<div class="subelement argument"><h4>$showOnlyActive</h4></div>
+<div class="subelement argument"><h4>$filters</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>options IDs</div>
+</div></div>
+</div>
+<a id="method_getOptionGroups"></a><div class="element clickable method public method_getOptionGroups " data-toggle="collapse" data-target=".method_getOptionGroups .collapse" title="public">
+<h2>getOptionGroups()
+        </h2>
+<pre>getOptionGroups($rtrn<code> = 'list'</code>, $filters<code> = array()</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$rtrn</h4></div>
+<div class="subelement argument"><h4>$filters</h4></div>
+</div></div>
+</div>
+<a id="method_getProductCollections"></a><div class="element clickable method public method_getProductCollections " data-toggle="collapse" data-target=".method_getProductCollections .collapse" title="public">
+<h2>Get product collections -- collections product is included in</h2>
+<pre>getProductCollections(integer $pId) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pId</h4>
+<code>integer</code><p>product id</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>collections</div>
+</div></div>
+</div>
+<a id="method_getProductInfo"></a><div class="element clickable method public method_getProductInfo " data-toggle="collapse" data-target=".method_getProductInfo .collapse" title="public">
+<h2>Get product information TODO: phase out the legacy format</h2>
+<pre>getProductInfo(integer $pId, boolean $showInactive<code> = false</code>) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pId</h4>
+<code>integer</code><p>Product ID</p></div>
+<div class="subelement argument">
+<h4>$showInactive</h4>
+<code>boolean</code><p>Flag whether to show inactive product info</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>Product info</div>
+</div></div>
+</div>
+<a id="method_getProductOptions"></a><div class="element clickable method public method_getProductOptions " data-toggle="collapse" data-target=".method_getProductOptions .collapse" title="public">
+<h2>Get product option groups and options</h2>
+<pre>getProductOptions($pId) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pId</h4><p>Product ID</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getProductSkus"></a><div class="element clickable method public method_getProductSkus " data-toggle="collapse" data-target=".method_getProductSkus .collapse" title="public">
+<h2>Get product SKU IDs</h2>
+<pre>getProductSkus(integer $pId, $return<code> = 'rows'</code>, $showOnlyActive<code> = true</code>, $filters<code> = false</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pId</h4>
+<code>integer</code><p>product id</p></div>
+<div class="subelement argument"><h4>$return</h4></div>
+<div class="subelement argument"><h4>$showOnlyActive</h4></div>
+<div class="subelement argument"><h4>$filters</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>SKU IDs</div>
+</div></div>
+</div>
+<a id="method_getProductTypeInfo"></a><div class="element clickable method public method_getProductTypeInfo " data-toggle="collapse" data-target=".method_getProductTypeInfo .collapse" title="public">
+<h2>Get product type info</h2>
+<pre>getProductTypeInfo(integer $ptId) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ptId</h4>
+<code>integer</code><p>product type ID</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>info</div>
+</div></div>
+</div>
+<a id="method_getProductTypes"></a><div class="element clickable method public method_getProductTypes " data-toggle="collapse" data-target=".method_getProductTypes .collapse" title="public">
+<h2>Get product types</h2>
+<pre>getProductTypes() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>info</div>
+</div></div>
+</div>
+<a id="method_getProducts"></a><div class="element clickable method public method_getProducts " data-toggle="collapse" data-target=".method_getProducts .collapse" title="public">
+<h2>Get the products within the given scope</h2>
+<pre>getProducts(void $return<code> = 'rows'</code>, $showOnlyActive<code> = true</code>, $filters<code> = false</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$return</h4>
+<code>void</code>
+</div>
+<div class="subelement argument"><h4>$showOnlyActive</h4></div>
+<div class="subelement argument"><h4>$filters</h4></div>
+</div></div>
+</div>
+<a id="method_getProperties"></a><div class="element clickable method public method_getProperties inherited" data-toggle="collapse" data-target=".method_getProperties .collapse" title="public">
+<h2>Returns an associative array of object properties.</h2>
+<pre>getProperties(boolean $public<code> = true</code>) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$public</h4>
+<code>boolean</code><p>If true, returns only the public properties.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getRootCategories"></a><div class="element clickable method public method_getRootCategories " data-toggle="collapse" data-target=".method_getRootCategories .collapse" title="public">
+<h2>Get all non-empty (those that have at least one active product) root (no parents) product 'category' collections</h2>
+<pre>getRootCategories(string $return<code> = 'rows'</code>, array $filters<code> = false</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$return</h4>
+<code>string</code><p>What to return (count or rows)</p></div>
+<div class="subelement argument">
+<h4>$filters</h4>
+<code>array</code><p>Filters</p></div>
+</div></div>
+</div>
+<a id="method_getSkuInfo"></a><div class="element clickable method public method_getSkuInfo " data-toggle="collapse" data-target=".method_getSkuInfo .collapse" title="public">
+<h2>Get all info for SKU provided, including options</h2>
+<pre>getSkuInfo(integer $sId, $showInactive<code> = true</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$sId</h4>
+<code>integer</code><p>SKU ID</p></div>
+<div class="subelement argument"><h4>$showInactive</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>info</div>
+</div></div>
+</div>
+<a id="method_getSkusInfo"></a><div class="element clickable method public method_getSkusInfo " data-toggle="collapse" data-target=".method_getSkusInfo .collapse" title="public">
+<h2>Get all info for SKUs provided, including options</h2>
+<pre>getSkusInfo(array $skus, boolean $showInactive<code> = false</code>, $filters<code> = false</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$skus</h4>
+<code>array</code><p>SKU IDs</p></div>
+<div class="subelement argument">
+<h4>$showInactive</h4>
+<code>boolean</code><p>Flag whether to show inactive SKU and product info</p></div>
+<div class="subelement argument"><h4>$filters</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>info</div>
+</div></div>
+</div>
+<a id="method_mapSku"></a><div class="element clickable method public method_mapSku " data-toggle="collapse" data-target=".method_mapSku .collapse" title="public">
+<h2>Get SKU mapping to the provided options</h2>
+<pre>mapSku($pId, $options, $throwExceptionOnNomatch<code> = true</code>) : \Components\Storefront\Models\SKU</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$pId</h4><p>Product ID</p></div>
+<div class="subelement argument">
+<h4>$options</h4><p>Selected options (optional for products with no options)</p></div>
+<div class="subelement argument">
+<h4>$throwExceptionOnNomatch</h4><p>Should the exception be thrown if no match found (default: true)</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Components\Storefront\Models\SKU</code>ID</div>
+</div></div>
+</div>
+<a id="method_productExists"></a><div class="element clickable method public method_productExists " data-toggle="collapse" data-target=".method_productExists .collapse" title="public">
+<h2>Check if product exists</h2>
+<pre>productExists(integer $product, $showInactive<code> = false</code>) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$product</h4>
+<code>integer</code><p>product ID or alias</p></div>
+<div class="subelement argument"><h4>$showInactive</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>pId on success, null if no match found</div>
+</div></div>
+</div>
+<a id="method_resetLookupCollections"></a><div class="element clickable method public method_resetLookupCollections " data-toggle="collapse" data-target=".method_resetLookupCollections .collapse" title="public">
+<h2>Reset instance lookup scope</h2>
+<pre>resetLookupCollections() : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_set"></a><div class="element clickable method public method_set inherited" data-toggle="collapse" data-target=".method_set .collapse" title="public">
+<h2>Modifies a property of the object, creating it if it does not already exist.</h2>
+<pre>set(string $property, mixed $value) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Returns $this so set() can be chained</p>
+<p>$object-&gt;set('foo', $bar)
+-&gt;set('bar', $foo)
+-&gt;doSomething();</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$property</h4>
+<code>string</code><p>The name of the property.</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>The value of the property to set.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_setError"></a><div class="element clickable method public method_setError inherited" data-toggle="collapse" data-target=".method_setError .collapse" title="public">
+<h2>Add an error message.</h2>
+<pre>setError(string $error, string $key<code> = null</code>) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$error</h4>
+<code>string</code><p>Error message.</p></div>
+<div class="subelement argument">
+<h4>$key</h4>
+<code>string</code><p>Specific key to set the value to</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_setErrors"></a><div class="element clickable method public method_setErrors inherited" data-toggle="collapse" data-target=".method_setErrors .collapse" title="public">
+<h2>Set the list of errors</h2>
+<pre>setErrors(array $errors) : object</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$errors</h4>
+<code>array</code><p>List of Error message.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>object</code></div>
+</div></div>
+</div>
+<a id="method_setProperties"></a><div class="element clickable method public method_setProperties inherited" data-toggle="collapse" data-target=".method_setProperties .collapse" title="public">
+<h2>Set the object properties based on a named array/hash.</h2>
+<pre>setProperties(mixed $properties) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$properties</h4>
+<code>mixed</code><p>Either an associative array or another object.</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_updateCollection"></a><div class="element clickable method public method_updateCollection " data-toggle="collapse" data-target=".method_updateCollection .collapse" title="public">
+<h2>Update existing collection</h2>
+<pre>updateCollection(\Components\Storefront\Models\StorefrontModelCollection $collection) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code>\Components\Storefront\Models\StorefrontModelCollection</code>
+</div>
+</div></div>
+</div>
+<a id="method_updateCoupon"></a><div class="element clickable method public method_updateCoupon " data-toggle="collapse" data-target=".method_updateCoupon .collapse" title="public">
+<h2>updateCoupon()
+        </h2>
+<pre>updateCoupon($coupon) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$coupon</h4></div>
+</div></div>
+</div>
+<a id="method__doCoupon"></a><div class="element clickable method private method__doCoupon " data-toggle="collapse" data-target=".method__doCoupon .collapse" title="private">
+<h2>Handle product coupon (add, update)</h2>
+<pre>_doCoupon(\Components\Storefront\Models\StorefrontModelCoupon $coupon, $action) : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$coupon</h4>
+<code>\Components\Storefront\Models\StorefrontModelCoupon</code><p>Instance of a product</p></div>
+<div class="subelement argument"><h4>$action</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>integer</code>coupon ID</div>
+</div></div>
+</div>
+<a id="method__getAllCollections"></a><div class="element clickable method private method__getAllCollections " data-toggle="collapse" data-target=".method__getAllCollections .collapse" title="private">
+<h2>Get all including empty root (no parents) collections
+TODO: implement subcategories</h2>
+<pre>_getAllCollections($return<code> = 'list'</code>, $filters<code> = array()</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$return</h4></div>
+<div class="subelement argument"><h4>$filters</h4></div>
+</div></div>
+</div>
+<a id="method__getCollections"></a><div class="element clickable method private method__getCollections " data-toggle="collapse" data-target=".method__getCollections .collapse" title="private">
+<h2>Get all non-empty (those that have at least one active product) root (no parents) collections</h2>
+<pre>_getCollections($collectionType<code> = 'category'</code>, $filters<code> = false</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collectionType</h4><p>-- type of collection, category by default</p></div>
+<div class="subelement argument"><h4>$filters</h4></div>
+</div></div>
+</div>
+<a id="method_doCollection"></a><div class="element clickable method private method_doCollection " data-toggle="collapse" data-target=".method_doCollection .collapse" title="private">
+<h2>Handle collection actions (add, update)</h2>
+<pre>doCollection(\Components\Storefront\Models\StorefrontModelCollection $collection, string $action) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$collection</h4>
+<code>\Components\Storefront\Models\StorefrontModelCollection</code>
+</div>
+<div class="subelement argument">
+<h4>$action</h4>
+<code>string</code>
+</div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>category ID</div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_accessGroupsScope"> </a><div class="element clickable property public property_accessGroupsScope" data-toggle="collapse" data-target=".property_accessGroupsScope .collapse" title="public">
+<h2>$accessGroupsScope</h2>
+<pre>$accessGroupsScope </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_accessLevelsScope"> </a><div class="element clickable property public property_accessLevelsScope" data-toggle="collapse" data-target=".property_accessLevelsScope .collapse" title="public">
+<h2>$accessLevelsScope</h2>
+<pre>$accessLevelsScope </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_db"> </a><div class="element clickable property public property_db" data-toggle="collapse" data-target=".property_db .collapse" title="public">
+<h2>$db</h2>
+<pre>$db </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_lookupCollections"> </a><div class="element clickable property public property_lookupCollections" data-toggle="collapse" data-target=".property_lookupCollections .collapse" title="public">
+<h2>array Product categories to look at (to define scope)</h2>
+<pre>$lookupCollections </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_userScope"> </a><div class="element clickable property public property_userScope" data-toggle="collapse" data-target=".property_userScope .collapse" title="public">
+<h2>$userScope</h2>
+<pre>$userScope </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>false</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__errors"> </a><div class="element clickable property protected property__errors" data-toggle="collapse" data-target=".property__errors .collapse" title="protected">
+<h2>An array of error messages or Exception objects.</h2>
+<pre>$_errors : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:51:13-04:00.<br></footer></div>
+</div>
+</body>
+</html>

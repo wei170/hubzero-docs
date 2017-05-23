@@ -1,0 +1,907 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » hubzero.cms.site</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/hubzero.cms.site.html" title="hubzero.cms.site"><i class="icon-folder-open"></i>hubzero.cms.site</a><ul class="nav nav-list nav-packages"><li>
+<span class="empty-package"><i class="icon-folder-close"></i>com_dataviewer</span><ul class="nav nav-list nav-packages"></ul>
+</li></ul>
+</li>
+<li class="nav-header">
+<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function__dd_post" title="_dd_post() :: "><span class="description">_dd_post()
+        </span><pre>_dd_post</pre></a></li>
+<li class="function  "><a href="#function__dd_post" title="_dd_post() :: "><span class="description">_dd_post()
+        </span><pre>_dd_post</pre></a></li>
+<li class="function  "><a href="#function__dd_post" title="_dd_post() :: "><span class="description">_dd_post()
+        </span><pre>_dd_post</pre></a></li>
+<li class="function  "><a href="#function_authorize" title="authorize() :: "><span class="description">authorize()
+        </span><pre>authorize</pre></a></li>
+<li class="function  "><a href="#function_controller" title="controller() :: "><span class="description">controller()
+        </span><pre>controller</pre></a></li>
+<li class="function  "><a href="#function_dataviewerBuildRoute" title="dataviewerBuildRoute() :: Turn querystring parameters into an SEF route"><span class="description">Turn querystring parameters into an SEF route</span><pre>dataviewerBuildRoute</pre></a></li>
+<li class="function  "><a href="#function_dataviewerParseRoute" title="dataviewerParseRoute() :: Parse a SEF route"><span class="description">Parse a SEF route</span><pre>dataviewerParseRoute</pre></a></li>
+<li class="function  "><a href="#function_dms2dc" title="dms2dc() :: "><span class="description">dms2dc()
+        </span><pre>dms2dc</pre></a></li>
+<li class="function  "><a href="#function_dms2dc" title="dms2dc() :: "><span class="description">dms2dc()
+        </span><pre>dms2dc</pre></a></li>
+<li class="function  "><a href="#function_dms2dc" title="dms2dc() :: "><span class="description">dms2dc()
+        </span><pre>dms2dc</pre></a></li>
+<li class="function  "><a href="#function_dv_add_css" title="dv_add_css() :: "><span class="description">dv_add_css()
+        </span><pre>dv_add_css</pre></a></li>
+<li class="function  "><a href="#function_dv_add_script" title="dv_add_script() :: "><span class="description">dv_add_script()
+        </span><pre>dv_add_script</pre></a></li>
+<li class="function  "><a href="#function_dv_auth" title="dv_auth() :: "><span class="description">dv_auth()
+        </span><pre>dv_auth</pre></a></li>
+<li class="function  "><a href="#function_dv_opmod_set_color" title="dv_opmod_set_color() :: "><span class="description">dv_opmod_set_color()
+        </span><pre>dv_opmod_set_color</pre></a></li>
+<li class="function  "><a href="#function_dv_to_link" title="dv_to_link() :: "><span class="description">dv_to_link()
+        </span><pre>dv_to_link</pre></a></li>
+<li class="function  "><a href="#function_filter" title="filter() :: "><span class="description">filter()
+        </span><pre>filter</pre></a></li>
+<li class="function  "><a href="#function_filter" title="filter() :: "><span class="description">filter()
+        </span><pre>filter</pre></a></li>
+<li class="function  "><a href="#function_filter" title="filter() :: "><span class="description">filter()
+        </span><pre>filter</pre></a></li>
+<li class="function  "><a href="#function_filter" title="filter() :: "><span class="description">filter()
+        </span><pre>filter</pre></a></li>
+<li class="function  "><a href="#function_filter" title="filter() :: "><span class="description">filter()
+        </span><pre>filter</pre></a></li>
+<li class="function  "><a href="#function_get_conf" title="get_conf() :: "><span class="description">get_conf()
+        </span><pre>get_conf</pre></a></li>
+<li class="function  "><a href="#function_get_conf" title="get_conf() :: "><span class="description">get_conf()
+        </span><pre>get_conf</pre></a></li>
+<li class="function  "><a href="#function_get_conf" title="get_conf() :: "><span class="description">get_conf()
+        </span><pre>get_conf</pre></a></li>
+<li class="function  "><a href="#function_get_db" title="get_db() :: "><span class="description">get_db()
+        </span><pre>get_db</pre></a></li>
+<li class="function  "><a href="#function_get_dd" title="get_dd() :: "><span class="description">get_dd()
+        </span><pre>get_dd</pre></a></li>
+<li class="function  "><a href="#function_get_dd" title="get_dd() :: "><span class="description">get_dd()
+        </span><pre>get_dd</pre></a></li>
+<li class="function  "><a href="#function_get_dd" title="get_dd() :: "><span class="description">get_dd()
+        </span><pre>get_dd</pre></a></li>
+<li class="function  "><a href="#function_get_dl_hash" title="get_dl_hash() :: "><span class="description">get_dl_hash()
+        </span><pre>get_dl_hash</pre></a></li>
+<li class="function  "><a href="#function_get_results" title="get_results() :: "><span class="description">get_results()
+        </span><pre>get_results</pre></a></li>
+<li class="function  "><a href="#function_pathway" title="pathway() :: "><span class="description">pathway()
+        </span><pre>pathway</pre></a></li>
+<li class="function  "><a href="#function_pathway" title="pathway() :: "><span class="description">pathway()
+        </span><pre>pathway</pre></a></li>
+<li class="function  "><a href="#function_pathway" title="pathway() :: "><span class="description">pathway()
+        </span><pre>pathway</pre></a></li>
+<li class="function  "><a href="#function_query_gen" title="query_gen() :: "><span class="description">query_gen()
+        </span><pre>query_gen</pre></a></li>
+<li class="function  "><a href="#function_query_gen_total" title="query_gen_total() :: "><span class="description">query_gen_total()
+        </span><pre>query_gen_total</pre></a></li>
+<li class="function  "><a href="#function_stream_file" title="stream_file() :: "><span class="description">stream_file()
+        </span><pre>stream_file</pre></a></li>
+<li class="function  "><a href="#function_task_data" title="task_data() :: "><span class="description">task_data()
+        </span><pre>task_data</pre></a></li>
+<li class="function  "><a href="#function_task_file" title="task_file() :: "><span class="description">task_file()
+        </span><pre>task_file</pre></a></li>
+<li class="function  "><a href="#function_task_stream_file" title="task_stream_file() :: "><span class="description">task_stream_file()
+        </span><pre>task_stream_file</pre></a></li>
+<li class="function  "><a href="#function_task_view" title="task_view() :: "><span class="description">task_view()
+        </span><pre>task_view</pre></a></li>
+<li class="function  "><a href="#function_view" title="view() :: "><span class="description">view()
+        </span><pre>view</pre></a></li>
+<li class="function  "><a href="#function_view" title="view() :: "><span class="description">view()
+        </span><pre>view</pre></a></li>
+<li class="function  "><a href="#function_zip_files" title="zip_files() :: "><span class="description">zip_files()
+        </span><pre>zip_files</pre></a></li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#constant_DV_COM" title="DV_COM() :: "><span class="description">DV_COM</span><pre>DV_COM</pre></a></li>
+<li class="constant  "><a href="#constant_DV_COM_HTML" title="DV_COM_HTML() :: "><span class="description">DV_COM_HTML</span><pre>DV_COM_HTML</pre></a></li>
+<li class="constant  "><a href="#constant_DV_COM_PATH" title="DV_COM_PATH() :: "><span class="description">DV_COM_PATH</span><pre>DV_COM_PATH</pre></a></li>
+<li class="constant  "><a href="#constant_DV_PATH_HTML" title="DV_PATH_HTML() :: "><span class="description">DV_PATH_HTML</span><pre>DV_PATH_HTML</pre></a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
+<a xmlns:php="http://php.net/xsl" id="function__dd_post"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function__dd_post " data-toggle="collapse" data-target=".function__dd_post .collapse" title="">
+<h2>_dd_post()
+        </h2>
+<pre>_dd_post($dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function__dd_post"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function__dd_post " data-toggle="collapse" data-target=".function__dd_post .collapse" title="">
+<h2>_dd_post()
+        </h2>
+<pre>_dd_post($dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function__dd_post"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function__dd_post " data-toggle="collapse" data-target=".function__dd_post .collapse" title="">
+<h2>_dd_post()
+        </h2>
+<pre>_dd_post($dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_authorize"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_authorize " data-toggle="collapse" data-target=".function_authorize .collapse" title="">
+<h2>authorize()
+        </h2>
+<pre>authorize($dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_controller"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_controller " data-toggle="collapse" data-target=".function_controller .collapse" title="">
+<h2>controller()
+        </h2>
+<pre>controller() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dataviewerBuildRoute"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dataviewerBuildRoute " data-toggle="collapse" data-target=".function_dataviewerBuildRoute .collapse" title="">
+<h2>Turn querystring parameters into an SEF route</h2>
+<pre>dataviewerBuildRoute(array $query) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$query</h4>
+<code>array</code><p>&$query Querystring bits</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dataviewerParseRoute"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dataviewerParseRoute " data-toggle="collapse" data-target=".function_dataviewerParseRoute .collapse" title="">
+<h2>Parse a SEF route</h2>
+<pre>dataviewerParseRoute(array $segments) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$segments</h4>
+<code>array</code><p>Exploded SEF URL</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dms2dc"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dms2dc " data-toggle="collapse" data-target=".function_dms2dc .collapse" title="">
+<h2>dms2dc()
+        </h2>
+<pre>dms2dc($cood) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cood</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dms2dc"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dms2dc " data-toggle="collapse" data-target=".function_dms2dc .collapse" title="">
+<h2>dms2dc()
+        </h2>
+<pre>dms2dc($cood) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cood</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dms2dc"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dms2dc " data-toggle="collapse" data-target=".function_dms2dc .collapse" title="">
+<h2>dms2dc()
+        </h2>
+<pre>dms2dc($cood) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$cood</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_add_css"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_add_css " data-toggle="collapse" data-target=".function_dv_add_css .collapse" title="">
+<h2>dv_add_css()
+        </h2>
+<pre>dv_add_css($css, $local<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$css</h4></div>
+<div class="subelement argument"><h4>$local</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_add_script"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_add_script " data-toggle="collapse" data-target=".function_dv_add_script .collapse" title="">
+<h2>dv_add_script()
+        </h2>
+<pre>dv_add_script($script, $local<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$script</h4></div>
+<div class="subelement argument"><h4>$local</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_auth"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_auth " data-toggle="collapse" data-target=".function_dv_auth .collapse" title="">
+<h2>dv_auth()
+        </h2>
+<pre>dv_auth() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_opmod_set_color"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_opmod_set_color " data-toggle="collapse" data-target=".function_dv_opmod_set_color .collapse" title="">
+<h2>dv_opmod_set_color()
+        </h2>
+<pre>dv_opmod_set_color($param) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$param</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_dv_to_link"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_dv_to_link " data-toggle="collapse" data-target=".function_dv_to_link .collapse" title="">
+<h2>dv_to_link()
+        </h2>
+<pre>dv_to_link($rec, $key, $dd, $val, $preview) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$rec</h4></div>
+<div class="subelement argument"><h4>$key</h4></div>
+<div class="subelement argument"><h4>$dd</h4></div>
+<div class="subelement argument"><h4>$val</h4></div>
+<div class="subelement argument"><h4>$preview</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_filter"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_filter " data-toggle="collapse" data-target=".function_filter .collapse" title="">
+<h2>filter()
+        </h2>
+<pre>filter($res, $dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$res</h4></div>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_filter"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_filter " data-toggle="collapse" data-target=".function_filter .collapse" title="">
+<h2>filter()
+        </h2>
+<pre>filter($res, $dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$res</h4></div>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_filter"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_filter " data-toggle="collapse" data-target=".function_filter .collapse" title="">
+<h2>filter()
+        </h2>
+<pre>filter($res, $dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$res</h4></div>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_filter"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_filter " data-toggle="collapse" data-target=".function_filter .collapse" title="">
+<h2>filter()
+        </h2>
+<pre>filter($res, $dd, $ob_mode<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$res</h4></div>
+<div class="subelement argument"><h4>$dd</h4></div>
+<div class="subelement argument"><h4>$ob_mode</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_filter"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_filter " data-toggle="collapse" data-target=".function_filter .collapse" title="">
+<h2>filter()
+        </h2>
+<pre>filter($res, $dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$res</h4></div>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_get_conf"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_get_conf " data-toggle="collapse" data-target=".function_get_conf .collapse" title="">
+<h2>get_conf()
+        </h2>
+<pre>get_conf($db_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db_id</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_get_conf"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_get_conf " data-toggle="collapse" data-target=".function_get_conf .collapse" title="">
+<h2>get_conf()
+        </h2>
+<pre>get_conf($db_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db_id</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_get_conf"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_get_conf " data-toggle="collapse" data-target=".function_get_conf .collapse" title="">
+<h2>get_conf()
+        </h2>
+<pre>get_conf($db_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db_id</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_get_db"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_get_db " data-toggle="collapse" data-target=".function_get_db .collapse" title="">
+<h2>get_db()
+        </h2>
+<pre>get_db($db<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_get_dd"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_get_dd " data-toggle="collapse" data-target=".function_get_dd .collapse" title="">
+<h2>get_dd()
+        </h2>
+<pre>get_dd($db_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db_id</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_get_dd"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_get_dd " data-toggle="collapse" data-target=".function_get_dd .collapse" title="">
+<h2>get_dd()
+        </h2>
+<pre>get_dd($db_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db_id</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_get_dd"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_get_dd " data-toggle="collapse" data-target=".function_get_dd .collapse" title="">
+<h2>get_dd()
+        </h2>
+<pre>get_dd($db_id, $dv_id<code> = false</code>, $version<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db_id</h4></div>
+<div class="subelement argument"><h4>$dv_id</h4></div>
+<div class="subelement argument"><h4>$version</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_get_dl_hash"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_get_dl_hash " data-toggle="collapse" data-target=".function_get_dl_hash .collapse" title="">
+<h2>get_dl_hash()
+        </h2>
+<pre>get_dl_hash($path, $type<code> = 'file_download'</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$path</h4></div>
+<div class="subelement argument"><h4>$type</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_get_results"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_get_results " data-toggle="collapse" data-target=".function_get_results .collapse" title="">
+<h2>get_results()
+        </h2>
+<pre>get_results($sql, $dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$sql</h4></div>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_pathway"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_pathway " data-toggle="collapse" data-target=".function_pathway .collapse" title="">
+<h2>pathway()
+        </h2>
+<pre>pathway($dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_pathway"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_pathway " data-toggle="collapse" data-target=".function_pathway .collapse" title="">
+<h2>pathway()
+        </h2>
+<pre>pathway($dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_pathway"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_pathway " data-toggle="collapse" data-target=".function_pathway .collapse" title="">
+<h2>pathway()
+        </h2>
+<pre>pathway($dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_query_gen"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_query_gen " data-toggle="collapse" data-target=".function_query_gen .collapse" title="">
+<h2>query_gen()
+        </h2>
+<pre>query_gen($dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_query_gen_total"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_query_gen_total " data-toggle="collapse" data-target=".function_query_gen_total .collapse" title="">
+<h2>query_gen_total()
+        </h2>
+<pre>query_gen_total($dd) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_stream_file"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_stream_file " data-toggle="collapse" data-target=".function_stream_file .collapse" title="">
+<h2>stream_file()
+        </h2>
+<pre>stream_file($hash) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$hash</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_task_data"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_task_data " data-toggle="collapse" data-target=".function_task_data .collapse" title="">
+<h2>task_data()
+        </h2>
+<pre>task_data($db_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db_id</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_task_file"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_task_file " data-toggle="collapse" data-target=".function_task_file .collapse" title="">
+<h2>task_file()
+        </h2>
+<pre>task_file($db_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db_id</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_task_stream_file"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_task_stream_file " data-toggle="collapse" data-target=".function_task_stream_file .collapse" title="">
+<h2>task_stream_file()
+        </h2>
+<pre>task_stream_file($db_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db_id</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_task_view"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_task_view " data-toggle="collapse" data-target=".function_task_view .collapse" title="">
+<h2>task_view()
+        </h2>
+<pre>task_view($db_id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$db_id</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_view"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_view " data-toggle="collapse" data-target=".function_view .collapse" title="">
+<h2>view()
+        </h2>
+<pre>view($hash) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$hash</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_view"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_view " data-toggle="collapse" data-target=".function_view .collapse" title="">
+<h2>view()
+        </h2>
+<pre>view($dd<code> = false</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$dd</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_zip_files"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_zip_files " data-toggle="collapse" data-target=".function_zip_files .collapse" title="">
+<h2>zip_files()
+        </h2>
+<pre>zip_files($hash_list) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$hash_list</h4></div>
+</div></div>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a xmlns:php="http://php.net/xsl" id="constant_DV_COM"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_DV_COM" data-toggle="collapse" data-target=".constant_DV_COM .collapse" title="">
+<h2>DV_COM</h2>
+<pre>DV_COM = $com_name </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_DV_COM_HTML"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_DV_COM_HTML" data-toggle="collapse" data-target=".constant_DV_COM_HTML .collapse" title="">
+<h2>DV_COM_HTML</h2>
+<pre>DV_COM_HTML = DV_COM_PATH . DS . 'html' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_DV_COM_PATH"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_DV_COM_PATH" data-toggle="collapse" data-target=".constant_DV_COM_PATH .collapse" title="">
+<h2>DV_COM_PATH</h2>
+<pre>DV_COM_PATH = $com_path </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_DV_PATH_HTML"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_DV_PATH_HTML" data-toggle="collapse" data-target=".constant_DV_PATH_HTML .collapse" title="">
+<h2>DV_PATH_HTML</h2>
+<pre>DV_PATH_HTML = JPATH_COMPONENT . DS . 'html' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/hubzero.cms.site.html">hubzero.cms.site</a></td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:32:42-04:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,2179 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » Default</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Packages</li>
+<li>
+<a href="../packages/Default.html" title="Default"><i class="icon-folder-open"></i>Default</a><ul class="nav nav-list nav-packages"></ul>
+</li>
+<li class="nav-header">
+<i title="Functions" class="icon-custom icon-function"></i> Functions</li>
+<li class="function  "><a href="#function_a" title="a() :: "><span class="description">a()
+        </span><pre>a</pre></a></li>
+<li class="function  "><a href="#function_assertSuperAdmin" title="assertSuperAdmin() :: "><span class="description">assertSuperAdmin()
+        </span><pre>assertSuperAdmin</pre></a></li>
+<li class="function  "><a href="#function_consumeNonce" title="consumeNonce() :: "><span class="description">consumeNonce()
+        </span><pre>consumeNonce</pre></a></li>
+<li class="function  "><a href="#function_createNonce" title="createNonce() :: "><span class="description">createNonce()
+        </span><pre>createNonce</pre></a></li>
+<li class="function  "><a href="#function_file_get_dom" title="file_get_dom() :: "><span class="description">file_get_dom()
+        </span><pre>file_get_dom</pre></a></li>
+<li class="function  "><a href="#function_file_get_html" title="file_get_html() :: "><span class="description">file_get_html()
+        </span><pre>file_get_html</pre></a></li>
+<li class="function  "><a href="#function_geshi_highlight" title="geshi_highlight() :: Easy way to highlight stuff. Behaves just like highlight_string"><span class="description">Easy way to highlight stuff. Behaves just like highlight_string</span><pre>geshi_highlight</pre></a></li>
+<li class="function  "><a href="#function_h" title="h() :: "><span class="description">h()
+        </span><pre>h</pre></a></li>
+<li class="function  "><a href="#function_hgView" title="hgView() :: "><span class="description">hgView()
+        </span><pre>hgView</pre></a></li>
+<li class="function  "><a href="#function_p" title="p() :: "><span class="description">p()
+        </span><pre>p</pre></a></li>
+<li class="function  "><a href="#function_rmUrl" title="rmUrl() :: "><span class="description">rmUrl()
+        </span><pre>rmUrl</pre></a></li>
+<li class="function  "><a href="#function_str_get_dom" title="str_get_dom() :: "><span class="description">str_get_dom()
+        </span><pre>str_get_dom</pre></a></li>
+<li class="function  "><a href="#function_str_get_html" title="str_get_html() :: "><span class="description">str_get_html()
+        </span><pre>str_get_html</pre></a></li>
+<li class="nav-header">
+<i title="Interfaces" class="icon-custom icon-interface"></i> Interfaces</li>
+<li><a href="#FieldInterface" title="CRON field interface">FieldInterface</a></li>
+<li class="nav-header">
+<i title="Classes" class="icon-custom icon-class"></i> Classes</li>
+<li><a href="#IcalParser" title="Copyright (c) 2004 Roman Ožana (http://www.omdesign.cz)">IcalParser</a></li>
+<li><a href="#plgQuickiconJoomlaupdate" title="Joomla! udpate notification plugin">plgQuickiconJoomlaupdate</a></li>
+<li><a href="#plgQuickiconExtensionupdate" title="Extensions udpate notification plugin">plgQuickiconExtensionupdate</a></li>
+<li><a href="#AttachmentField" title="">AttachmentField</a></li>
+<li><a href="#Attachment" title="">Attachment</a></li>
+<li><a href="#Message" title="">Message</a></li>
+<li><a href="#Client" title="">Client</a></li>
+<li><a href="#OAuthConsumer" title="">OAuthConsumer</a></li>
+<li><a href="#OAuthToken" title="">OAuthToken</a></li>
+<li><a href="#OAuthSignatureMethod" title='A class for implementing a Signature Method
+See section 9 ("Signing Requests") in the spec'>OAuthSignatureMethod</a></li>
+<li><a href="#OAuthSignatureMethod_HMAC_SHA1" title="The HMAC-SHA1 signature method uses the HMAC-SHA1 signature algorithm as defined in [RFC2104]
+where the Signature Base String is the text and the key is the concatenated values (each first
+encoded per Parameter Encoding) of the Consumer Secret and Token Secret, separated by an '&amp;'
+character (ASCII code 38) even if empty.">OAuthSignatureMethod_HMAC_SHA1</a></li>
+<li><a href="#OAuthSignatureMethod_PLAINTEXT" title="The PLAINTEXT method does not provide any security protection and SHOULD only be used
+over a secure channel such as HTTPS. It does not use the Signature Base String.">OAuthSignatureMethod_PLAINTEXT</a></li>
+<li><a href="#OAuthSignatureMethod_RSA_SHA1" title="The RSA-SHA1 signature method uses the RSASSA-PKCS1-v1_5 signature algorithm as defined in
+[RFC3447] section 8.2 (more simply known as PKCS#1), using SHA-1 as the hash function for
+EMSA-PKCS1-v1_5. It is assumed that the Consumer has provided its RSA public key in a
+verified way to the Service Provider, in a manner which is beyond the scope of this
+specification.">OAuthSignatureMethod_RSA_SHA1</a></li>
+<li><a href="#OAuthRequest" title="">OAuthRequest</a></li>
+<li><a href="#OAuthServer" title="">OAuthServer</a></li>
+<li><a href="#OAuthUtil" title="">OAuthUtil</a></li>
+<li><a href="#CTCTOauth2" title="">CTCTOauth2</a></li>
+<li><a href="#CTCTOAuth" title="">CTCTOAuth</a></li>
+<li><a href="#CTCTDataStore" title="">CTCTDataStore</a></li>
+<li><a href="#CTCTRequest" title="">CTCTRequest</a></li>
+<li><a href="#Collection" title="">Collection</a></li>
+<li><a href="#ActivitiesCollection" title="">ActivitiesCollection</a></li>
+<li><a href="#ListsCollection" title="">ListsCollection</a></li>
+<li><a href="#ContactsCollection" title="">ContactsCollection</a></li>
+<li><a href="#CampaignsCollection" title="">CampaignsCollection</a></li>
+<li><a href="#LibraryCollection" title="">LibraryCollection</a></li>
+<li><a href="#SettingsCollection" title="">SettingsCollection</a></li>
+<li><a href="#EventsCollection" title="">EventsCollection</a></li>
+<li><a href="#CCObject" title="">CCObject</a></li>
+<li><a href="#ContactList" title="">ContactList</a></li>
+<li><a href="#Contact" title="">Contact</a></li>
+<li><a href="#Campaign" title="">Campaign</a></li>
+<li><a href="#Folder" title="">Folder</a></li>
+<li><a href="#Image" title="">Image</a></li>
+<li><a href="#VerifiedAddress" title="">VerifiedAddress</a></li>
+<li><a href="#EventFee" title="">EventFee</a></li>
+<li><a href="#Registrant" title="">Registrant</a></li>
+<li><a href="#Cost" title="">Cost</a></li>
+<li><a href="#CustomField" title="">CustomField</a></li>
+<li><a href="#RegistrantInformation" title="">RegistrantInformation</a></li>
+<li><a href="#PersonalInformation" title="">PersonalInformation</a></li>
+<li><a href="#BusinessInformation" title="">BusinessInformation</a></li>
+<li><a href="#EventLocation" title="">EventLocation</a></li>
+<li><a href="#CCEvent" title="">CCEvent</a></li>
+<li><a href="#PaymentOption" title="">PaymentOption</a></li>
+<li><a href="#PayPalPayment" title="">PayPalPayment</a></li>
+<li><a href="#DoorPayment" title="">DoorPayment</a></li>
+<li><a href="#CheckPayment" title="">CheckPayment</a></li>
+<li><a href="#RegistrationType" title="">RegistrationType</a></li>
+<li><a href="#CampaignEvent" title="">CampaignEvent</a></li>
+<li><a href="#Schedule" title="">Schedule</a></li>
+<li><a href="#Utility" title="">Utility</a></li>
+<li><a href="#CTCTException" title="">CTCTException</a></li>
+<li><a href="#ConstantContact" title="">ConstantContact</a></li>
+<li><a href="#plgUserJoomla" title="Joomla User plugin">plgUserJoomla</a></li>
+<li><a href="#simple_html_dom_node" title="">simple_html_dom_node</a></li>
+<li><a href="#simple_html_dom" title="">simple_html_dom</a></li>
+<li><a href="#Result" title="Represents the result from a local call on the SpamAssassin server">Result</a></li>
+<li><a href="#Remote" title="Client for accessing a remote SpamAssassin service">Remote</a></li>
+<li><a href="#MollomBadRequestException" title="Mollom error due to bad client request exception.">MollomBadRequestException</a></li>
+<li><a href="#MollomResponseException" title="Mollom server response exception.">MollomResponseException</a></li>
+<li><a href="#MollomAuthenticationException" title="Mollom authentication error exception.">MollomAuthenticationException</a></li>
+<li><a href="#MollomException" title="A catchable Mollom exception.">MollomException</a></li>
+<li><a href="#MollomNetworkException" title="Mollom network error exception.">MollomNetworkException</a></li>
+<li><a href="#AbstractMollom" title="The base class for Mollom client implementations.">AbstractMollom</a></li>
+<li><a href="#PEAR5" title="This is only meant for PHP 5 to get rid of certain strict warning
+that doesn't get hidden since it's in the shutdown function">PEAR5</a></li>
+<li><a href="#Inflect" title="Pluralize and singularize terms">Inflect</a></li>
+<li><a href="#HubgraphRequest" title="">HubgraphRequest</a></li>
+<li><a href="#GenericRenderer" title="">GenericRenderer</a></li>
+<li><a href="#GenericChildRenderer" title="">GenericChildRenderer</a></li>
+<li><a href="#GroupsRenderer" title="">GroupsRenderer</a></li>
+<li><a href="#CitationsRenderer" title="">CitationsRenderer</a></li>
+<li><a href="#EventsRenderer" title="">EventsRenderer</a></li>
+<li><a href="#MembersRenderer" title="">MembersRenderer</a></li>
+<li><a href="#NotFoundError" title="">NotFoundError</a></li>
+<li><a href="#Db" title="">Db</a></li>
+<li><a href="#HubgraphConnectionError" title="">HubgraphConnectionError</a></li>
+<li><a href="#HubgraphConfiguration" title="">HubgraphConfiguration</a></li>
+<li><a href="#HubgraphClient" title="">HubgraphClient</a></li>
+<li><a href="#CurrentCart" title="Current user shopping cart">CurrentCart</a></li>
+<li><a href="#Cart" title="Core shopping cart">Cart</a></li>
+<li><a href="#UserCart" title="User shopping cart">UserCart</a></li>
+<li><a href="#Inflect" title="via: http://kuwamoto.org/2007/12/17/improved-pluralizing-in-php-actionscript-and-ror/
+MIT license">Inflect</a></li>
+<li><a href="#Archive" title="Archive model. Interface between admin and Warehouse">Archive</a></li>
+<li><a href="#BaseSubscription" title="">BaseSubscription</a></li>
+<li><a href="#YearField" title="Year field.  Allows: * , / -">YearField</a></li>
+<li><a href="#MinutesField" title="Minutes field.  Allows: * , / -">MinutesField</a></li>
+<li><a href="#DayOfWeekField" title="Day of week field.  Allows: * / , - ? L #">DayOfWeekField</a></li>
+<li><a href="#DayOfMonthField" title="Day of month field.  Allows: * , / - ? L W">DayOfMonthField</a></li>
+<li><a href="#CronExpression" title="CRON expression parser that can determine whether or not a CRON expression is
+due to run, the next run date and previous run date of a CRON expression.">CronExpression</a></li>
+<li><a href="#MonthField" title="Month field.  Allows: * , / -">MonthField</a></li>
+<li><a href="#FieldFactory" title="CRON field factory implementating a flyweight factory">FieldFactory</a></li>
+<li><a href="#AbstractField" title="Abstract CRON expression field">AbstractField</a></li>
+<li><a href="#HoursField" title="Hours field.  Allows: * , / -">HoursField</a></li>
+<li><a href="#LanguagesViewInstalled" title="Displays a list of the installed languages.">LanguagesViewInstalled</a></li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</li>
+<li class="constant  "><a href="#constant_GESHI_ACTIVE" title="GESHI_ACTIVE() :: Links in the source in the :active state"><span class="description">Links in the source in the :active state</span><pre>GESHI_ACTIVE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_AFTER" title="GESHI_AFTER() :: The key of the regex array defining what bracket group in a
+matched search to put after the replacement"><span class="description">The key of the regex array defining what bracket group in a
+matched search to put after the replacement</span><pre>GESHI_AFTER</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_ALWAYS" title="GESHI_ALWAYS() :: Strict mode always applies"><span class="description">Strict mode always applies</span><pre>GESHI_ALWAYS</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_BEFORE" title="GESHI_BEFORE() :: The key of the regex array defining what bracket group in a
+matched search to put before the replacement"><span class="description">The key of the regex array defining what bracket group in a
+matched search to put before the replacement</span><pre>GESHI_BEFORE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_CAPS_LOWER" title="GESHI_CAPS_LOWER() :: Leave keywords found as the case that they are"><span class="description">Leave keywords found as the case that they are</span><pre>GESHI_CAPS_LOWER</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_CAPS_NO_CHANGE" title="GESHI_CAPS_NO_CHANGE() :: Lowercase keywords found"><span class="description">Lowercase keywords found</span><pre>GESHI_CAPS_NO_CHANGE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_CAPS_UPPER" title="GESHI_CAPS_UPPER() :: Uppercase keywords found"><span class="description">Uppercase keywords found</span><pre>GESHI_CAPS_UPPER</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_CLASS" title="GESHI_CLASS() :: The key of the regex array defining a custom keyword to use
+for this regexp's html tag class"><span class="description">The key of the regex array defining a custom keyword to use
+for this regexp's html tag class</span><pre>GESHI_CLASS</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_COMMENTS" title="GESHI_COMMENTS() :: Used in language files to mark comments"><span class="description">Used in language files to mark comments</span><pre>GESHI_COMMENTS</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_END_IMPORTANT" title="GESHI_END_IMPORTANT() :: The ender for important parts of the source"><span class="description">The ender for important parts of the source</span><pre>GESHI_END_IMPORTANT</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_ERROR_FILE_NOT_READABLE" title="GESHI_ERROR_FILE_NOT_READABLE() :: GeSHi could not open a file for reading (generally a language file)"><span class="description">GeSHi could not open a file for reading (generally a language file)</span><pre>GESHI_ERROR_FILE_NOT_READABLE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_ERROR_INVALID_HEADER_TYPE" title="GESHI_ERROR_INVALID_HEADER_TYPE() :: The header type passed to {@link GeSHi-&gt;set_header_type()} was invalid"><span class="description">The header type passed to {@link GeSHi-&gt;set_header_type()} was invalid</span><pre>GESHI_ERROR_INVALID_HEADER_TYPE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_ERROR_INVALID_LINE_NUMBER_TYPE" title="GESHI_ERROR_INVALID_LINE_NUMBER_TYPE() :: The line number type passed to {@link GeSHi-&gt;enable_line_numbers()} was invalid"><span class="description">The line number type passed to {@link GeSHi-&gt;enable_line_numbers()} was invalid</span><pre>GESHI_ERROR_INVALID_LINE_NUMBER_TYPE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_ERROR_NO_INPUT" title="GESHI_ERROR_NO_INPUT() :: No sourcecode to highlight was specified"><span class="description">No sourcecode to highlight was specified</span><pre>GESHI_ERROR_NO_INPUT</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_ERROR_NO_SUCH_LANG" title="GESHI_ERROR_NO_SUCH_LANG() :: The language specified does not exist"><span class="description">The language specified does not exist</span><pre>GESHI_ERROR_NO_SUCH_LANG</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_FANCY_LINE_NUMBERS" title="GESHI_FANCY_LINE_NUMBERS() :: Use fancy line numbers when building the result"><span class="description">Use fancy line numbers when building the result</span><pre>GESHI_FANCY_LINE_NUMBERS</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_HEADER_DIV" title='GESHI_HEADER_DIV() :: Use a "div" to surround the source'><span class="description">Use a "div" to surround the source</span><pre>GESHI_HEADER_DIV</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_HEADER_NONE" title="GESHI_HEADER_NONE() :: Use nothing to surround the source"><span class="description">Use nothing to surround the source</span><pre>GESHI_HEADER_NONE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_HEADER_PRE" title='GESHI_HEADER_PRE() :: Use a "pre" to surround the source'><span class="description">Use a "pre" to surround the source</span><pre>GESHI_HEADER_PRE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_HEADER_PRE_TABLE" title='GESHI_HEADER_PRE_TABLE() :: Use a "table" to surround the source:'><span class="description">Use a "table" to surround the source:</span><pre>GESHI_HEADER_PRE_TABLE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_HEADER_PRE_VALID" title="GESHI_HEADER_PRE_VALID() :: Use a pre to wrap lines when line numbers are enabled or to wrap the whole code."><span class="description">Use a pre to wrap lines when line numbers are enabled or to wrap the whole code.</span><pre>GESHI_HEADER_PRE_VALID</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_HOVER" title="GESHI_HOVER() :: Links in the source in the :hover state"><span class="description">Links in the source in the :hover state</span><pre>GESHI_HOVER</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_LANG_ROOT" title="GESHI_LANG_ROOT() :: The language file directory for GeSHi"><span class="description">The language file directory for GeSHi</span><pre>GESHI_LANG_ROOT</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_LINK" title="GESHI_LINK() :: Links in the source in the :link state"><span class="description">Links in the source in the :link state</span><pre>GESHI_LINK</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_MAX_PCRE_LENGTH" title="GESHI_MAX_PCRE_LENGTH() :: it's also important not to generate too long regular expressions
+be generous here."><span class="description">it's also important not to generate too long regular expressions
+be generous here.</span><pre>GESHI_MAX_PCRE_LENGTH</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_MAX_PCRE_SUBPATTERNS" title="GESHI_MAX_PCRE_SUBPATTERNS() :: some old PHP / PCRE subpatterns only support up to xxx subpatterns in
+regular expressions. Set this to false if your PCRE lib is up to date"><span class="description">some old PHP / PCRE subpatterns only support up to xxx subpatterns in
+regular expressions. Set this to false if your PCRE lib is up to date</span><pre>GESHI_MAX_PCRE_SUBPATTERNS</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_MAYBE" title="GESHI_MAYBE() :: Strict mode *might* apply, and can be enabled or
+disabled by {@link GeSHi-&gt;enable_strict_mode()}"><span class="description">Strict mode *might* apply, and can be enabled or
+disabled by {@link GeSHi-&gt;enable_strict_mode()}</span><pre>GESHI_MAYBE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_MODIFIERS" title="GESHI_MODIFIERS() :: The key of the regex array defining any modifiers to the regular expression"><span class="description">The key of the regex array defining any modifiers to the regular expression</span><pre>GESHI_MODIFIERS</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NEVER" title="GESHI_NEVER() :: Strict mode never applies (this is the most common)"><span class="description">Strict mode never applies (this is the most common)</span><pre>GESHI_NEVER</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NORMAL_LINE_NUMBERS" title="GESHI_NORMAL_LINE_NUMBERS() :: Use normal line numbers when building the result"><span class="description">Use normal line numbers when building the result</span><pre>GESHI_NORMAL_LINE_NUMBERS</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NO_LINE_NUMBERS" title="GESHI_NO_LINE_NUMBERS() :: Use no line numbers when building the result"><span class="description">Use no line numbers when building the result</span><pre>GESHI_NO_LINE_NUMBERS</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_BIN_PREFIX_0B" title="GESHI_NUMBER_BIN_PREFIX_0B() :: Number format to highlight binary numbers with a prefix 0b (C)"><span class="description">Number format to highlight binary numbers with a prefix 0b (C)</span><pre>GESHI_NUMBER_BIN_PREFIX_0B</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_BIN_PREFIX_PERCENT" title="GESHI_NUMBER_BIN_PREFIX_PERCENT() :: Number format to highlight binary numbers with a prefix %"><span class="description">Number format to highlight binary numbers with a prefix %</span><pre>GESHI_NUMBER_BIN_PREFIX_PERCENT</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_BIN_SUFFIX" title='GESHI_NUMBER_BIN_SUFFIX() :: Number format to highlight binary numbers with a suffix "b"'><span class="description">Number format to highlight binary numbers with a suffix "b"</span><pre>GESHI_NUMBER_BIN_SUFFIX</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_FLT_NONSCI" title="GESHI_NUMBER_FLT_NONSCI() :: Number format to highlight floating-point numbers without support for scientific notation"><span class="description">Number format to highlight floating-point numbers without support for scientific notation</span><pre>GESHI_NUMBER_FLT_NONSCI</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_FLT_NONSCI_F" title="GESHI_NUMBER_FLT_NONSCI_F() :: Number format to highlight floating-point numbers without support for scientific notation"><span class="description">Number format to highlight floating-point numbers without support for scientific notation</span><pre>GESHI_NUMBER_FLT_NONSCI_F</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_FLT_SCI_SHORT" title="GESHI_NUMBER_FLT_SCI_SHORT() :: Number format to highlight floating-point numbers with support for scientific notation (E) and optional leading zero"><span class="description">Number format to highlight floating-point numbers with support for scientific notation (E) and optional leading zero</span><pre>GESHI_NUMBER_FLT_SCI_SHORT</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_FLT_SCI_ZERO" title="GESHI_NUMBER_FLT_SCI_ZERO() :: Number format to highlight floating-point numbers with support for scientific notation (E) and required leading digit"><span class="description">Number format to highlight floating-point numbers with support for scientific notation (E) and required leading digit</span><pre>GESHI_NUMBER_FLT_SCI_ZERO</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_HEX_PREFIX" title="GESHI_NUMBER_HEX_PREFIX() :: Number format to highlight hex numbers with a prefix 0x"><span class="description">Number format to highlight hex numbers with a prefix 0x</span><pre>GESHI_NUMBER_HEX_PREFIX</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_HEX_PREFIX_DOLLAR" title="GESHI_NUMBER_HEX_PREFIX_DOLLAR() :: Number format to highlight hex numbers with a prefix $"><span class="description">Number format to highlight hex numbers with a prefix $</span><pre>GESHI_NUMBER_HEX_PREFIX_DOLLAR</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_HEX_SUFFIX" title="GESHI_NUMBER_HEX_SUFFIX() :: Number format to highlight hex numbers with a suffix of h"><span class="description">Number format to highlight hex numbers with a suffix of h</span><pre>GESHI_NUMBER_HEX_SUFFIX</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_INT_BASIC" title="GESHI_NUMBER_INT_BASIC() :: Basic number format for integers"><span class="description">Basic number format for integers</span><pre>GESHI_NUMBER_INT_BASIC</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_INT_CSTYLE" title="GESHI_NUMBER_INT_CSTYLE() :: Enhanced number format for integers like seen in C"><span class="description">Enhanced number format for integers like seen in C</span><pre>GESHI_NUMBER_INT_CSTYLE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_OCT_PREFIX" title="GESHI_NUMBER_OCT_PREFIX() :: Number format to highlight octal numbers with a leading zero"><span class="description">Number format to highlight octal numbers with a leading zero</span><pre>GESHI_NUMBER_OCT_PREFIX</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_OCT_PREFIX_0O" title="GESHI_NUMBER_OCT_PREFIX_0O() :: Number format to highlight octal numbers with a prefix 0o (logtalk)"><span class="description">Number format to highlight octal numbers with a prefix 0o (logtalk)</span><pre>GESHI_NUMBER_OCT_PREFIX_0O</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_OCT_PREFIX_AT" title="GESHI_NUMBER_OCT_PREFIX_AT() :: Number format to highlight octal numbers with a leading @ (Used in HiSofts Devpac series)."><span class="description">Number format to highlight octal numbers with a leading @ (Used in HiSofts Devpac series).</span><pre>GESHI_NUMBER_OCT_PREFIX_AT</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_NUMBER_OCT_SUFFIX" title="GESHI_NUMBER_OCT_SUFFIX() :: Number format to highlight octal numbers with a suffix of o"><span class="description">Number format to highlight octal numbers with a suffix of o</span><pre>GESHI_NUMBER_OCT_SUFFIX</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_PHP_PRE_433" title="GESHI_PHP_PRE_433() :: Used to work around missing PHP features *"><span class="description">Used to work around missing PHP features *</span><pre>GESHI_PHP_PRE_433</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_REPLACE" title="GESHI_REPLACE() :: The key of the regex array defining what bracket group in a
+matched search to use as a replacement"><span class="description">The key of the regex array defining what bracket group in a
+matched search to use as a replacement</span><pre>GESHI_REPLACE</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_ROOT" title="GESHI_ROOT() :: The root directory for GeSHi"><span class="description">The root directory for GeSHi</span><pre>GESHI_ROOT</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_SEARCH" title="GESHI_SEARCH() :: The key of the regex array defining what to search for"><span class="description">The key of the regex array defining what to search for</span><pre>GESHI_SEARCH</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_SECURITY_PARANOID" title="GESHI_SECURITY_PARANOID() :: Tells GeSHi to be paranoid about security settings"><span class="description">Tells GeSHi to be paranoid about security settings</span><pre>GESHI_SECURITY_PARANOID</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_START_IMPORTANT" title="GESHI_START_IMPORTANT() :: The starter for important parts of the source"><span class="description">The starter for important parts of the source</span><pre>GESHI_START_IMPORTANT</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_VERSION" title="GESHI_VERSION() :: The version of this GeSHi file"><span class="description">The version of this GeSHi file</span><pre>GESHI_VERSION</pre></a></li>
+<li class="constant  "><a href="#constant_GESHI_VISITED" title="GESHI_VISITED() :: Links in the source in the :visited state"><span class="description">Links in the source in the :visited state</span><pre>GESHI_VISITED</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_INFO_BEGIN" title="HDOM_INFO_BEGIN() :: "><span class="description">HDOM_INFO_BEGIN</span><pre>HDOM_INFO_BEGIN</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_INFO_END" title="HDOM_INFO_END() :: "><span class="description">HDOM_INFO_END</span><pre>HDOM_INFO_END</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_INFO_ENDSPACE" title="HDOM_INFO_ENDSPACE() :: "><span class="description">HDOM_INFO_ENDSPACE</span><pre>HDOM_INFO_ENDSPACE</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_INFO_INNER" title="HDOM_INFO_INNER() :: "><span class="description">HDOM_INFO_INNER</span><pre>HDOM_INFO_INNER</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_INFO_OUTER" title="HDOM_INFO_OUTER() :: "><span class="description">HDOM_INFO_OUTER</span><pre>HDOM_INFO_OUTER</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_INFO_QUOTE" title="HDOM_INFO_QUOTE() :: "><span class="description">HDOM_INFO_QUOTE</span><pre>HDOM_INFO_QUOTE</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_INFO_SPACE" title="HDOM_INFO_SPACE() :: "><span class="description">HDOM_INFO_SPACE</span><pre>HDOM_INFO_SPACE</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_INFO_TEXT" title="HDOM_INFO_TEXT() :: "><span class="description">HDOM_INFO_TEXT</span><pre>HDOM_INFO_TEXT</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_QUOTE_DOUBLE" title="HDOM_QUOTE_DOUBLE() :: "><span class="description">HDOM_QUOTE_DOUBLE</span><pre>HDOM_QUOTE_DOUBLE</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_QUOTE_NO" title="HDOM_QUOTE_NO() :: "><span class="description">HDOM_QUOTE_NO</span><pre>HDOM_QUOTE_NO</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_QUOTE_SINGLE" title="HDOM_QUOTE_SINGLE() :: "><span class="description">HDOM_QUOTE_SINGLE</span><pre>HDOM_QUOTE_SINGLE</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_TYPE_COMMENT" title="HDOM_TYPE_COMMENT() :: "><span class="description">HDOM_TYPE_COMMENT</span><pre>HDOM_TYPE_COMMENT</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_TYPE_ELEMENT" title="HDOM_TYPE_ELEMENT() :: "><span class="description">HDOM_TYPE_ELEMENT</span><pre>HDOM_TYPE_ELEMENT</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_TYPE_ENDTAG" title="HDOM_TYPE_ENDTAG() :: "><span class="description">HDOM_TYPE_ENDTAG</span><pre>HDOM_TYPE_ENDTAG</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_TYPE_ROOT" title="HDOM_TYPE_ROOT() :: "><span class="description">HDOM_TYPE_ROOT</span><pre>HDOM_TYPE_ROOT</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_TYPE_TEXT" title="HDOM_TYPE_TEXT() :: "><span class="description">HDOM_TYPE_TEXT</span><pre>HDOM_TYPE_TEXT</pre></a></li>
+<li class="constant  "><a href="#constant_HDOM_TYPE_UNKNOWN" title="HDOM_TYPE_UNKNOWN() :: "><span class="description">HDOM_TYPE_UNKNOWN</span><pre>HDOM_TYPE_UNKNOWN</pre></a></li>
+<li class="constant  "><a href="#constant_HG_AJAX" title="HG_AJAX() :: "><span class="description">HG_AJAX</span><pre>HG_AJAX</pre></a></li>
+<li class="constant  "><a href="#constant_HG_DEBUG" title="HG_DEBUG() :: "><span class="description">HG_DEBUG</span><pre>HG_DEBUG</pre></a></li>
+</ul>
+</div>
+<div class="span8 package-contents">
+<ul class="breadcrumb"><li>
+<a href="../index.html"><i class="icon-folder-open"></i></a><span class="divider">\</span><li class="active"><a href="../packages/Default.html">Default</a></li>
+</li></ul>
+<div class="package-indent">
+<h3>
+<i title="Functions" class="icon-custom icon-function"></i> Functions</h3>
+<a xmlns:php="http://php.net/xsl" id="function_a"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_a " data-toggle="collapse" data-target=".function_a .collapse" title="">
+<h2>a()
+        </h2>
+<pre>a($str) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$str</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_assertSuperAdmin"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_assertSuperAdmin " data-toggle="collapse" data-target=".function_assertSuperAdmin .collapse" title="">
+<h2>assertSuperAdmin()
+        </h2>
+<pre>assertSuperAdmin() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_consumeNonce"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_consumeNonce " data-toggle="collapse" data-target=".function_consumeNonce .collapse" title="">
+<h2>consumeNonce()
+        </h2>
+<pre>consumeNonce($form) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$form</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_createNonce"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_createNonce " data-toggle="collapse" data-target=".function_createNonce .collapse" title="">
+<h2>createNonce()
+        </h2>
+<pre>createNonce() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_file_get_dom"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_file_get_dom " data-toggle="collapse" data-target=".function_file_get_dom .collapse" title="">
+<h2>file_get_dom()
+        </h2>
+<pre>file_get_dom() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_file_get_html"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_file_get_html " data-toggle="collapse" data-target=".function_file_get_html .collapse" title="">
+<h2>file_get_html()
+        </h2>
+<pre>file_get_html() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_geshi_highlight"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_geshi_highlight " data-toggle="collapse" data-target=".function_geshi_highlight .collapse" title="">
+<h2>Easy way to highlight stuff. Behaves just like highlight_string</h2>
+<pre>geshi_highlight(string $string, string $language, string $path<code> = null</code>, boolean $return<code> = false</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>1.0.2</td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$string</h4>
+<code>string</code><p>The code to highlight</p></div>
+<div class="subelement argument">
+<h4>$language</h4>
+<code>string</code><p>The language to highlight the code in</p></div>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>The path to the language files. You can leave this blank if you need
+              as from version 1.0.7 the path should be automatically detected</p></div>
+<div class="subelement argument">
+<h4>$return</h4>
+<code>boolean</code><p>Whether to return the result or to echo</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The code highlighted (if $return is true)</div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_h"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_h " data-toggle="collapse" data-target=".function_h .collapse" title="">
+<h2>h()
+        </h2>
+<pre>h($str) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$str</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_hgView"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_hgView " data-toggle="collapse" data-target=".function_hgView .collapse" title="">
+<h2>hgView()
+        </h2>
+<pre>hgView($view, $args<code> = array()</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$view</h4></div>
+<div class="subelement argument"><h4>$args</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_p"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_p " data-toggle="collapse" data-target=".function_p .collapse" title="">
+<h2>p()
+        </h2>
+<pre>p($num, $label) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$num</h4></div>
+<div class="subelement argument"><h4>$label</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_rmUrl"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_rmUrl " data-toggle="collapse" data-target=".function_rmUrl .collapse" title="">
+<h2>rmUrl()
+        </h2>
+<pre>rmUrl($base, $key, $id) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$base</h4></div>
+<div class="subelement argument"><h4>$key</h4></div>
+<div class="subelement argument"><h4>$id</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_str_get_dom"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_str_get_dom " data-toggle="collapse" data-target=".function_str_get_dom .collapse" title="">
+<h2>str_get_dom()
+        </h2>
+<pre>str_get_dom($str, $lowercase<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$str</h4></div>
+<div class="subelement argument"><h4>$lowercase</h4></div>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="function_str_get_html"></a><div xmlns:php="http://php.net/xsl" class="element clickable function  function_str_get_html " data-toggle="collapse" data-target=".function_str_get_html .collapse" title="">
+<h2>str_get_html()
+        </h2>
+<pre>str_get_html($str, $lowercase<code> = true</code>) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$str</h4></div>
+<div class="subelement argument"><h4>$lowercase</h4></div>
+</div></div>
+</div>
+<h3>
+<i title="Classes" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="FieldInterface" class="element ajax clickable interface">
+<h1>FieldInterface<a href="../classes/Cron.FieldInterface.html">¶</a>
+</h1>
+<p class="short_description">CRON field interface</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.FieldInterface.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="ActivitiesCollection" class="element ajax clickable class">
+<h1>ActivitiesCollection<a href="../classes/ActivitiesCollection.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/ActivitiesCollection.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="BaseSubscription" class="element ajax clickable class">
+<h1>BaseSubscription<a href="../classes/BaseSubscription.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/BaseSubscription.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="BusinessInformation" class="element ajax clickable class">
+<h1>BusinessInformation<a href="../classes/BusinessInformation.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/BusinessInformation.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CCEvent" class="element ajax clickable class">
+<h1>CCEvent<a href="../classes/CCEvent.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CCEvent.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CCObject" class="element ajax clickable class">
+<h1>CCObject<a href="../classes/CCObject.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CCObject.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CTCTDataStore" class="element ajax clickable class">
+<h1>CTCTDataStore<a href="../classes/CTCTDataStore.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CTCTDataStore.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CTCTException" class="element ajax clickable class">
+<h1>CTCTException<a href="../classes/CTCTException.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CTCTException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CTCTOAuth" class="element ajax clickable class">
+<h1>CTCTOAuth<a href="../classes/CTCTOAuth.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CTCTOAuth.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CTCTOauth2" class="element ajax clickable class">
+<h1>CTCTOauth2<a href="../classes/CTCTOauth2.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CTCTOauth2.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CTCTRequest" class="element ajax clickable class">
+<h1>CTCTRequest<a href="../classes/CTCTRequest.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CTCTRequest.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Campaign" class="element ajax clickable class">
+<h1>Campaign<a href="../classes/Campaign.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Campaign.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CampaignEvent" class="element ajax clickable class">
+<h1>CampaignEvent<a href="../classes/CampaignEvent.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CampaignEvent.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CampaignsCollection" class="element ajax clickable class">
+<h1>CampaignsCollection<a href="../classes/CampaignsCollection.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CampaignsCollection.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CheckPayment" class="element ajax clickable class">
+<h1>CheckPayment<a href="../classes/CheckPayment.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CheckPayment.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CitationsRenderer" class="element ajax clickable class">
+<h1>CitationsRenderer<a href="../classes/CitationsRenderer.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CitationsRenderer.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Collection" class="element ajax clickable class">
+<h1>Collection<a href="../classes/Collection.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Collection.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Cart" class="element ajax clickable class">
+<h1>Cart<a href="../classes/Components.Cart.Models.Cart.html">¶</a>
+</h1>
+<p class="short_description">Core shopping cart</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Models.Cart.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CurrentCart" class="element ajax clickable class">
+<h1>CurrentCart<a href="../classes/Components.Cart.Models.CurrentCart.html">¶</a>
+</h1>
+<p class="short_description">Current user shopping cart</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Models.CurrentCart.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="UserCart" class="element ajax clickable class">
+<h1>UserCart<a href="../classes/Components.Cart.Models.UserCart.html">¶</a>
+</h1>
+<p class="short_description">User shopping cart</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Cart.Models.UserCart.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Archive" class="element ajax clickable class">
+<h1>Archive<a href="../classes/Components.Storefront.Models.Archive.html">¶</a>
+</h1>
+<p class="short_description">Archive model. Interface between admin and Warehouse</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Storefront.Models.Archive.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="ConstantContact" class="element ajax clickable class">
+<h1>ConstantContact<a href="../classes/ConstantContact.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/ConstantContact.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Contact" class="element ajax clickable class">
+<h1>Contact<a href="../classes/Contact.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Contact.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="ContactList" class="element ajax clickable class">
+<h1>ContactList<a href="../classes/ContactList.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/ContactList.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="ContactsCollection" class="element ajax clickable class">
+<h1>ContactsCollection<a href="../classes/ContactsCollection.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/ContactsCollection.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Cost" class="element ajax clickable class">
+<h1>Cost<a href="../classes/Cost.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Cost.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="AbstractField" class="element ajax clickable class">
+<h1>AbstractField<a href="../classes/Cron.AbstractField.html">¶</a>
+</h1>
+<p class="short_description">Abstract CRON expression field</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.AbstractField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CronExpression" class="element ajax clickable class">
+<h1>CronExpression<a href="../classes/Cron.CronExpression.html">¶</a>
+</h1>
+<p class="short_description">CRON expression parser that can determine whether or not a CRON expression is
+due to run, the next run date and previous run date of a CRON expression.</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.CronExpression.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="DayOfMonthField" class="element ajax clickable class">
+<h1>DayOfMonthField<a href="../classes/Cron.DayOfMonthField.html">¶</a>
+</h1>
+<p class="short_description">Day of month field.  Allows: * , / - ? L W</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.DayOfMonthField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="DayOfWeekField" class="element ajax clickable class">
+<h1>DayOfWeekField<a href="../classes/Cron.DayOfWeekField.html">¶</a>
+</h1>
+<p class="short_description">Day of week field.  Allows: * / , - ? L #</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.DayOfWeekField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="FieldFactory" class="element ajax clickable class">
+<h1>FieldFactory<a href="../classes/Cron.FieldFactory.html">¶</a>
+</h1>
+<p class="short_description">CRON field factory implementating a flyweight factory</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.FieldFactory.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="HoursField" class="element ajax clickable class">
+<h1>HoursField<a href="../classes/Cron.HoursField.html">¶</a>
+</h1>
+<p class="short_description">Hours field.  Allows: * , / -</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.HoursField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MinutesField" class="element ajax clickable class">
+<h1>MinutesField<a href="../classes/Cron.MinutesField.html">¶</a>
+</h1>
+<p class="short_description">Minutes field.  Allows: * , / -</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.MinutesField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MonthField" class="element ajax clickable class">
+<h1>MonthField<a href="../classes/Cron.MonthField.html">¶</a>
+</h1>
+<p class="short_description">Month field.  Allows: * , / -</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.MonthField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="YearField" class="element ajax clickable class">
+<h1>YearField<a href="../classes/Cron.YearField.html">¶</a>
+</h1>
+<p class="short_description">Year field.  Allows: * , / -</p>
+<div class="details collapse"></div>
+<a href="../classes/Cron.YearField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="CustomField" class="element ajax clickable class">
+<h1>CustomField<a href="../classes/CustomField.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/CustomField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Db" class="element ajax clickable class">
+<h1>Db<a href="../classes/Db.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Db.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="DoorPayment" class="element ajax clickable class">
+<h1>DoorPayment<a href="../classes/DoorPayment.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/DoorPayment.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="EventFee" class="element ajax clickable class">
+<h1>EventFee<a href="../classes/EventFee.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/EventFee.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="EventLocation" class="element ajax clickable class">
+<h1>EventLocation<a href="../classes/EventLocation.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/EventLocation.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="EventsCollection" class="element ajax clickable class">
+<h1>EventsCollection<a href="../classes/EventsCollection.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/EventsCollection.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="EventsRenderer" class="element ajax clickable class">
+<h1>EventsRenderer<a href="../classes/EventsRenderer.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/EventsRenderer.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Folder" class="element ajax clickable class">
+<h1>Folder<a href="../classes/Folder.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Folder.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="GenericChildRenderer" class="element ajax clickable class">
+<h1>GenericChildRenderer<a href="../classes/GenericChildRenderer.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/GenericChildRenderer.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="GenericRenderer" class="element ajax clickable class">
+<h1>GenericRenderer<a href="../classes/GenericRenderer.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/GenericRenderer.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="GroupsRenderer" class="element ajax clickable class">
+<h1>GroupsRenderer<a href="../classes/GroupsRenderer.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/GroupsRenderer.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="HubgraphClient" class="element ajax clickable class">
+<h1>HubgraphClient<a href="../classes/HubgraphClient.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/HubgraphClient.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="HubgraphConfiguration" class="element ajax clickable class">
+<h1>HubgraphConfiguration<a href="../classes/HubgraphConfiguration.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/HubgraphConfiguration.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="HubgraphConnectionError" class="element ajax clickable class">
+<h1>HubgraphConnectionError<a href="../classes/HubgraphConnectionError.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/HubgraphConnectionError.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="HubgraphRequest" class="element ajax clickable class">
+<h1>HubgraphRequest<a href="../classes/HubgraphRequest.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/HubgraphRequest.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="IcalParser" class="element ajax clickable class">
+<h1>IcalParser<a href="../classes/IcalParser.html">¶</a>
+</h1>
+<p class="short_description">Copyright (c) 2004 Roman Ožana (http://www.omdesign.cz)</p>
+<div class="details collapse"></div>
+<a href="../classes/IcalParser.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Image" class="element ajax clickable class">
+<h1>Image<a href="../classes/Image.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Image.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Inflect" class="element ajax clickable class">
+<h1>Inflect<a href="../classes/Inflect.html">¶</a>
+</h1>
+<p class="short_description">Pluralize and singularize terms</p>
+<div class="details collapse"></div>
+<a href="../classes/Inflect.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Inflect" class="element ajax clickable class">
+<h1>Inflect<a href="../classes/Inflect.html">¶</a>
+</h1>
+<p class="short_description">via: http://kuwamoto.org/2007/12/17/improved-pluralizing-in-php-actionscript-and-ror/
+MIT license</p>
+<div class="details collapse"></div>
+<a href="../classes/Inflect.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="LanguagesViewInstalled" class="element ajax clickable class">
+<h1>LanguagesViewInstalled<a href="../classes/LanguagesViewInstalled.html">¶</a>
+</h1>
+<p class="short_description">Displays a list of the installed languages.</p>
+<div class="details collapse"></div>
+<a href="../classes/LanguagesViewInstalled.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="LibraryCollection" class="element ajax clickable class">
+<h1>LibraryCollection<a href="../classes/LibraryCollection.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/LibraryCollection.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="ListsCollection" class="element ajax clickable class">
+<h1>ListsCollection<a href="../classes/ListsCollection.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/ListsCollection.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Attachment" class="element ajax clickable class">
+<h1>Attachment<a href="../classes/Maknz.Slack.Attachment.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Maknz.Slack.Attachment.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="AttachmentField" class="element ajax clickable class">
+<h1>AttachmentField<a href="../classes/Maknz.Slack.AttachmentField.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Maknz.Slack.AttachmentField.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Client" class="element ajax clickable class">
+<h1>Client<a href="../classes/Maknz.Slack.Client.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Maknz.Slack.Client.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Message" class="element ajax clickable class">
+<h1>Message<a href="../classes/Maknz.Slack.Message.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Maknz.Slack.Message.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MembersRenderer" class="element ajax clickable class">
+<h1>MembersRenderer<a href="../classes/MembersRenderer.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/MembersRenderer.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="NotFoundError" class="element ajax clickable class">
+<h1>NotFoundError<a href="../classes/NotFoundError.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/NotFoundError.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="OAuthConsumer" class="element ajax clickable class">
+<h1>OAuthConsumer<a href="../classes/OAuthConsumer.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/OAuthConsumer.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="OAuthRequest" class="element ajax clickable class">
+<h1>OAuthRequest<a href="../classes/OAuthRequest.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/OAuthRequest.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="OAuthServer" class="element ajax clickable class">
+<h1>OAuthServer<a href="../classes/OAuthServer.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/OAuthServer.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="OAuthSignatureMethod" class="element ajax clickable class">
+<h1>OAuthSignatureMethod<a href="../classes/OAuthSignatureMethod.html">¶</a>
+</h1>
+<p class="short_description">A class for implementing a Signature Method
+See section 9 ("Signing Requests") in the spec</p>
+<div class="details collapse"></div>
+<a href="../classes/OAuthSignatureMethod.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="OAuthSignatureMethod_HMAC_SHA1" class="element ajax clickable class">
+<h1>OAuthSignatureMethod_HMAC_SHA1<a href="../classes/OAuthSignatureMethod_HMAC_SHA1.html">¶</a>
+</h1>
+<p class="short_description">The HMAC-SHA1 signature method uses the HMAC-SHA1 signature algorithm as defined in [RFC2104]
+where the Signature Base String is the text and the key is the concatenated values (each first
+encoded per Parameter Encoding) of the Consumer Secret and Token Secret, separated by an '&'
+character (ASCII code 38) even if empty.</p>
+<div class="details collapse"></div>
+<a href="../classes/OAuthSignatureMethod_HMAC_SHA1.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="OAuthSignatureMethod_PLAINTEXT" class="element ajax clickable class">
+<h1>OAuthSignatureMethod_PLAINTEXT<a href="../classes/OAuthSignatureMethod_PLAINTEXT.html">¶</a>
+</h1>
+<p class="short_description">The PLAINTEXT method does not provide any security protection and SHOULD only be used
+over a secure channel such as HTTPS. It does not use the Signature Base String.</p>
+<div class="details collapse"></div>
+<a href="../classes/OAuthSignatureMethod_PLAINTEXT.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="OAuthSignatureMethod_RSA_SHA1" class="element ajax clickable class">
+<h1>OAuthSignatureMethod_RSA_SHA1<a href="../classes/OAuthSignatureMethod_RSA_SHA1.html">¶</a>
+</h1>
+<p class="short_description">The RSA-SHA1 signature method uses the RSASSA-PKCS1-v1_5 signature algorithm as defined in
+[RFC3447] section 8.2 (more simply known as PKCS#1), using SHA-1 as the hash function for
+EMSA-PKCS1-v1_5. It is assumed that the Consumer has provided its RSA public key in a
+verified way to the Service Provider, in a manner which is beyond the scope of this
+specification.</p>
+<div class="details collapse"></div>
+<a href="../classes/OAuthSignatureMethod_RSA_SHA1.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="OAuthToken" class="element ajax clickable class">
+<h1>OAuthToken<a href="../classes/OAuthToken.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/OAuthToken.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="OAuthUtil" class="element ajax clickable class">
+<h1>OAuthUtil<a href="../classes/OAuthUtil.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/OAuthUtil.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="PEAR5" class="element ajax clickable class">
+<h1>PEAR5<a href="../classes/PEAR5.html">¶</a>
+</h1>
+<p class="short_description">This is only meant for PHP 5 to get rid of certain strict warning
+that doesn't get hidden since it's in the shutdown function</p>
+<div class="details collapse"></div>
+<a href="../classes/PEAR5.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="PayPalPayment" class="element ajax clickable class">
+<h1>PayPalPayment<a href="../classes/PayPalPayment.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/PayPalPayment.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="PaymentOption" class="element ajax clickable class">
+<h1>PaymentOption<a href="../classes/PaymentOption.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/PaymentOption.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="PersonalInformation" class="element ajax clickable class">
+<h1>PersonalInformation<a href="../classes/PersonalInformation.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/PersonalInformation.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="AbstractMollom" class="element ajax clickable class">
+<h1>AbstractMollom<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.AbstractMollom.html">¶</a>
+</h1>
+<p class="short_description">The base class for Mollom client implementations.</p>
+<div class="details collapse"></div>
+<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.AbstractMollom.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MollomAuthenticationException" class="element ajax clickable class">
+<h1>MollomAuthenticationException<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.Exception.MollomAuthenticationException.html">¶</a>
+</h1>
+<p class="short_description">Mollom authentication error exception.</p>
+<div class="details collapse"></div>
+<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.Exception.MollomAuthenticationException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MollomBadRequestException" class="element ajax clickable class">
+<h1>MollomBadRequestException<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.Exception.MollomBadRequestException.html">¶</a>
+</h1>
+<p class="short_description">Mollom error due to bad client request exception.</p>
+<div class="details collapse"></div>
+<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.Exception.MollomBadRequestException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MollomException" class="element ajax clickable class">
+<h1>MollomException<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.Exception.MollomException.html">¶</a>
+</h1>
+<p class="short_description">A catchable Mollom exception.</p>
+<div class="details collapse"></div>
+<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.Exception.MollomException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MollomNetworkException" class="element ajax clickable class">
+<h1>MollomNetworkException<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.Exception.MollomNetworkException.html">¶</a>
+</h1>
+<p class="short_description">Mollom network error exception.</p>
+<div class="details collapse"></div>
+<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.Exception.MollomNetworkException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="MollomResponseException" class="element ajax clickable class">
+<h1>MollomResponseException<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.Exception.MollomResponseException.html">¶</a>
+</h1>
+<p class="short_description">Mollom server response exception.</p>
+<div class="details collapse"></div>
+<a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.Exception.MollomResponseException.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Remote" class="element ajax clickable class">
+<h1>Remote<a href="../classes/Plugins.Antispam.SpamAssassin.Service.Client.Remote.html">¶</a>
+</h1>
+<p class="short_description">Client for accessing a remote SpamAssassin service</p>
+<div class="details collapse"></div>
+<a href="../classes/Plugins.Antispam.SpamAssassin.Service.Client.Remote.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Result" class="element ajax clickable class">
+<h1>Result<a href="../classes/Plugins.Antispam.SpamAssassin.Service.Client.Remote.Result.html">¶</a>
+</h1>
+<p class="short_description">Represents the result from a local call on the SpamAssassin server</p>
+<div class="details collapse"></div>
+<a href="../classes/Plugins.Antispam.SpamAssassin.Service.Client.Remote.Result.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Registrant" class="element ajax clickable class">
+<h1>Registrant<a href="../classes/Registrant.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Registrant.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="RegistrantInformation" class="element ajax clickable class">
+<h1>RegistrantInformation<a href="../classes/RegistrantInformation.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/RegistrantInformation.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="RegistrationType" class="element ajax clickable class">
+<h1>RegistrationType<a href="../classes/RegistrationType.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/RegistrationType.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Schedule" class="element ajax clickable class">
+<h1>Schedule<a href="../classes/Schedule.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Schedule.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="SettingsCollection" class="element ajax clickable class">
+<h1>SettingsCollection<a href="../classes/SettingsCollection.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/SettingsCollection.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Utility" class="element ajax clickable class">
+<h1>Utility<a href="../classes/Utility.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/Utility.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="VerifiedAddress" class="element ajax clickable class">
+<h1>VerifiedAddress<a href="../classes/VerifiedAddress.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/VerifiedAddress.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="plgQuickiconExtensionupdate" class="element ajax clickable class">
+<h1>plgQuickiconExtensionupdate<a href="../classes/plgQuickiconExtensionupdate.html">¶</a>
+</h1>
+<p class="short_description">Extensions udpate notification plugin</p>
+<div class="details collapse"></div>
+<a href="../classes/plgQuickiconExtensionupdate.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="plgQuickiconJoomlaupdate" class="element ajax clickable class">
+<h1>plgQuickiconJoomlaupdate<a href="../classes/plgQuickiconJoomlaupdate.html">¶</a>
+</h1>
+<p class="short_description">Joomla! udpate notification plugin</p>
+<div class="details collapse"></div>
+<a href="../classes/plgQuickiconJoomlaupdate.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="plgUserJoomla" class="element ajax clickable class">
+<h1>plgUserJoomla<a href="../classes/plgUserJoomla.html">¶</a>
+</h1>
+<p class="short_description">Joomla User plugin</p>
+<div class="details collapse"></div>
+<a href="../classes/plgUserJoomla.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="simple_html_dom" class="element ajax clickable class">
+<h1>simple_html_dom<a href="../classes/simple_html_dom.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/simple_html_dom.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="simple_html_dom_node" class="element ajax clickable class">
+<h1>simple_html_dom_node<a href="../classes/simple_html_dom_node.html">¶</a>
+</h1>
+<p class="short_description"></p>
+<div class="details collapse"></div>
+<a href="../classes/simple_html_dom_node.html" class="more">« More »</a>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_ACTIVE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_ACTIVE" data-toggle="collapse" data-target=".constant_GESHI_ACTIVE .collapse" title="">
+<h2>Links in the source in the :active state</h2>
+<pre>GESHI_ACTIVE = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_AFTER"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_AFTER" data-toggle="collapse" data-target=".constant_GESHI_AFTER .collapse" title="">
+<h2>The key of the regex array defining what bracket group in a
+matched search to put after the replacement</h2>
+<pre>GESHI_AFTER = 4 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_ALWAYS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_ALWAYS" data-toggle="collapse" data-target=".constant_GESHI_ALWAYS .collapse" title="">
+<h2>Strict mode always applies</h2>
+<pre>GESHI_ALWAYS = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_BEFORE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_BEFORE" data-toggle="collapse" data-target=".constant_GESHI_BEFORE .collapse" title="">
+<h2>The key of the regex array defining what bracket group in a
+matched search to put before the replacement</h2>
+<pre>GESHI_BEFORE = 3 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_CAPS_LOWER"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_CAPS_LOWER" data-toggle="collapse" data-target=".constant_GESHI_CAPS_LOWER .collapse" title="">
+<h2>Leave keywords found as the case that they are</h2>
+<pre>GESHI_CAPS_LOWER = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_CAPS_NO_CHANGE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_CAPS_NO_CHANGE" data-toggle="collapse" data-target=".constant_GESHI_CAPS_NO_CHANGE .collapse" title="">
+<h2>Lowercase keywords found</h2>
+<pre>GESHI_CAPS_NO_CHANGE = 0 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_CAPS_UPPER"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_CAPS_UPPER" data-toggle="collapse" data-target=".constant_GESHI_CAPS_UPPER .collapse" title="">
+<h2>Uppercase keywords found</h2>
+<pre>GESHI_CAPS_UPPER = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_CLASS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_CLASS" data-toggle="collapse" data-target=".constant_GESHI_CLASS .collapse" title="">
+<h2>The key of the regex array defining a custom keyword to use
+for this regexp's html tag class</h2>
+<pre>GESHI_CLASS = 5 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_COMMENTS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_COMMENTS" data-toggle="collapse" data-target=".constant_GESHI_COMMENTS .collapse" title="">
+<h2>Used in language files to mark comments</h2>
+<pre>GESHI_COMMENTS = 0 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_END_IMPORTANT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_END_IMPORTANT" data-toggle="collapse" data-target=".constant_GESHI_END_IMPORTANT .collapse" title="">
+<h2>The ender for important parts of the source</h2>
+<pre>GESHI_END_IMPORTANT = '&lt;END GeSHi&gt;' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_ERROR_FILE_NOT_READABLE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_ERROR_FILE_NOT_READABLE" data-toggle="collapse" data-target=".constant_GESHI_ERROR_FILE_NOT_READABLE .collapse" title="">
+<h2>GeSHi could not open a file for reading (generally a language file)</h2>
+<pre>GESHI_ERROR_FILE_NOT_READABLE = 3 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_ERROR_INVALID_HEADER_TYPE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_ERROR_INVALID_HEADER_TYPE" data-toggle="collapse" data-target=".constant_GESHI_ERROR_INVALID_HEADER_TYPE .collapse" title="">
+<h2>The header type passed to {@link GeSHi-&gt;set_header_type()} was invalid</h2>
+<pre>GESHI_ERROR_INVALID_HEADER_TYPE = 4 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_ERROR_INVALID_LINE_NUMBER_TYPE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_ERROR_INVALID_LINE_NUMBER_TYPE" data-toggle="collapse" data-target=".constant_GESHI_ERROR_INVALID_LINE_NUMBER_TYPE .collapse" title="">
+<h2>The line number type passed to {@link GeSHi-&gt;enable_line_numbers()} was invalid</h2>
+<pre>GESHI_ERROR_INVALID_LINE_NUMBER_TYPE = 5 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_ERROR_NO_INPUT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_ERROR_NO_INPUT" data-toggle="collapse" data-target=".constant_GESHI_ERROR_NO_INPUT .collapse" title="">
+<h2>No sourcecode to highlight was specified</h2>
+<pre>GESHI_ERROR_NO_INPUT = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>deprecated</th>
+<td></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_ERROR_NO_SUCH_LANG"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_ERROR_NO_SUCH_LANG" data-toggle="collapse" data-target=".constant_GESHI_ERROR_NO_SUCH_LANG .collapse" title="">
+<h2>The language specified does not exist</h2>
+<pre>GESHI_ERROR_NO_SUCH_LANG = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_FANCY_LINE_NUMBERS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_FANCY_LINE_NUMBERS" data-toggle="collapse" data-target=".constant_GESHI_FANCY_LINE_NUMBERS .collapse" title="">
+<h2>Use fancy line numbers when building the result</h2>
+<pre>GESHI_FANCY_LINE_NUMBERS = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_HEADER_DIV"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_HEADER_DIV" data-toggle="collapse" data-target=".constant_GESHI_HEADER_DIV .collapse" title="">
+<h2>Use a "div" to surround the source</h2>
+<pre>GESHI_HEADER_DIV = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_HEADER_NONE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_HEADER_NONE" data-toggle="collapse" data-target=".constant_GESHI_HEADER_NONE .collapse" title="">
+<h2>Use nothing to surround the source</h2>
+<pre>GESHI_HEADER_NONE = 0 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_HEADER_PRE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_HEADER_PRE" data-toggle="collapse" data-target=".constant_GESHI_HEADER_PRE .collapse" title="">
+<h2>Use a "pre" to surround the source</h2>
+<pre>GESHI_HEADER_PRE = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_HEADER_PRE_TABLE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_HEADER_PRE_TABLE" data-toggle="collapse" data-target=".constant_GESHI_HEADER_PRE_TABLE .collapse" title="">
+<h2>Use a "table" to surround the source:</h2>
+<pre>GESHI_HEADER_PRE_TABLE = 4 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><table>
+   <thead><tr><td colspan="2">$header</td></tr></thead>
+   <tbody><tr><td><pre>$linenumbers</pre></td><td><pre>$code></pre></td></tr></tbody>
+   <tfooter><tr><td colspan="2">$footer</td></tr></tfoot>
+ </table>
+<p>this is essentially only a workaround for Firefox, see sf#1651996 or take a look at
+<a href="https://bugzilla.mozilla.org/show_bug.cgi?id=365805">https://bugzilla.mozilla.org/show_bug.cgi?id=365805</a></p></div>
+<table class="table table-bordered">
+<tr>
+<th>note</th>
+<td>when linenumbers are disabled this is essentially the same as GESHI_HEADER_PRE</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_HEADER_PRE_VALID"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_HEADER_PRE_VALID" data-toggle="collapse" data-target=".constant_GESHI_HEADER_PRE_VALID .collapse" title="">
+<h2>Use a pre to wrap lines when line numbers are enabled or to wrap the whole code.</h2>
+<pre>GESHI_HEADER_PRE_VALID = 3 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_HOVER"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_HOVER" data-toggle="collapse" data-target=".constant_GESHI_HOVER .collapse" title="">
+<h2>Links in the source in the :hover state</h2>
+<pre>GESHI_HOVER = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_LANG_ROOT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_LANG_ROOT" data-toggle="collapse" data-target=".constant_GESHI_LANG_ROOT .collapse" title="">
+<h2>The language file directory for GeSHi</h2>
+<pre>GESHI_LANG_ROOT = GESHI_ROOT . 'geshi' . DIRECTORY_SEPARATOR </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>access</th>
+<td>private</td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_LINK"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_LINK" data-toggle="collapse" data-target=".constant_GESHI_LINK .collapse" title="">
+<h2>Links in the source in the :link state</h2>
+<pre>GESHI_LINK = 0 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_MAX_PCRE_LENGTH"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_MAX_PCRE_LENGTH" data-toggle="collapse" data-target=".constant_GESHI_MAX_PCRE_LENGTH .collapse" title="">
+<h2>it's also important not to generate too long regular expressions
+be generous here.</h2>
+<pre>GESHI_MAX_PCRE_LENGTH = 12288 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>.. but keep in mind, that when reaching this limit we
+still have to close open patterns. 12k should do just fine on a 16k limit.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CGeSHi-&gt;optimize_regexp_list()"></a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_MAX_PCRE_SUBPATTERNS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_MAX_PCRE_SUBPATTERNS" data-toggle="collapse" data-target=".constant_GESHI_MAX_PCRE_SUBPATTERNS .collapse" title="">
+<h2>some old PHP / PCRE subpatterns only support up to xxx subpatterns in
+regular expressions. Set this to false if your PCRE lib is up to date</h2>
+<pre>GESHI_MAX_PCRE_SUBPATTERNS = 500 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CGeSHi-&gt;optimize_regexp_list()"></a></td>
+</tr>
+<tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_MAYBE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_MAYBE" data-toggle="collapse" data-target=".constant_GESHI_MAYBE .collapse" title="">
+<h2>Strict mode *might* apply, and can be enabled or
+disabled by {@link GeSHi-&gt;enable_strict_mode()}</h2>
+<pre>GESHI_MAYBE = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_MODIFIERS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_MODIFIERS" data-toggle="collapse" data-target=".constant_GESHI_MODIFIERS .collapse" title="">
+<h2>The key of the regex array defining any modifiers to the regular expression</h2>
+<pre>GESHI_MODIFIERS = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NEVER"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NEVER" data-toggle="collapse" data-target=".constant_GESHI_NEVER .collapse" title="">
+<h2>Strict mode never applies (this is the most common)</h2>
+<pre>GESHI_NEVER = 0 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NORMAL_LINE_NUMBERS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NORMAL_LINE_NUMBERS" data-toggle="collapse" data-target=".constant_GESHI_NORMAL_LINE_NUMBERS .collapse" title="">
+<h2>Use normal line numbers when building the result</h2>
+<pre>GESHI_NORMAL_LINE_NUMBERS = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NO_LINE_NUMBERS"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NO_LINE_NUMBERS" data-toggle="collapse" data-target=".constant_GESHI_NO_LINE_NUMBERS .collapse" title="">
+<h2>Use no line numbers when building the result</h2>
+<pre>GESHI_NO_LINE_NUMBERS = 0 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_BIN_PREFIX_0B"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_BIN_PREFIX_0B" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_BIN_PREFIX_0B .collapse" title="">
+<h2>Number format to highlight binary numbers with a prefix 0b (C)</h2>
+<pre>GESHI_NUMBER_BIN_PREFIX_0B = 64 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_BIN_PREFIX_PERCENT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_BIN_PREFIX_PERCENT" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_BIN_PREFIX_PERCENT .collapse" title="">
+<h2>Number format to highlight binary numbers with a prefix %</h2>
+<pre>GESHI_NUMBER_BIN_PREFIX_PERCENT = 32 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_BIN_SUFFIX"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_BIN_SUFFIX" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_BIN_SUFFIX .collapse" title="">
+<h2>Number format to highlight binary numbers with a suffix "b"</h2>
+<pre>GESHI_NUMBER_BIN_SUFFIX = 16 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_FLT_NONSCI"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_FLT_NONSCI" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_FLT_NONSCI .collapse" title="">
+<h2>Number format to highlight floating-point numbers without support for scientific notation</h2>
+<pre>GESHI_NUMBER_FLT_NONSCI = 65536 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_FLT_NONSCI_F"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_FLT_NONSCI_F" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_FLT_NONSCI_F .collapse" title="">
+<h2>Number format to highlight floating-point numbers without support for scientific notation</h2>
+<pre>GESHI_NUMBER_FLT_NONSCI_F = 131072 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_FLT_SCI_SHORT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_FLT_SCI_SHORT" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_FLT_SCI_SHORT .collapse" title="">
+<h2>Number format to highlight floating-point numbers with support for scientific notation (E) and optional leading zero</h2>
+<pre>GESHI_NUMBER_FLT_SCI_SHORT = 262144 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_FLT_SCI_ZERO"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_FLT_SCI_ZERO" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_FLT_SCI_ZERO .collapse" title="">
+<h2>Number format to highlight floating-point numbers with support for scientific notation (E) and required leading digit</h2>
+<pre>GESHI_NUMBER_FLT_SCI_ZERO = 524288 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_HEX_PREFIX"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_HEX_PREFIX" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_HEX_PREFIX .collapse" title="">
+<h2>Number format to highlight hex numbers with a prefix 0x</h2>
+<pre>GESHI_NUMBER_HEX_PREFIX = 4096 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_HEX_PREFIX_DOLLAR"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_HEX_PREFIX_DOLLAR" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_HEX_PREFIX_DOLLAR .collapse" title="">
+<h2>Number format to highlight hex numbers with a prefix $</h2>
+<pre>GESHI_NUMBER_HEX_PREFIX_DOLLAR = 8192 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_HEX_SUFFIX"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_HEX_SUFFIX" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_HEX_SUFFIX .collapse" title="">
+<h2>Number format to highlight hex numbers with a suffix of h</h2>
+<pre>GESHI_NUMBER_HEX_SUFFIX = 16384 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_INT_BASIC"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_INT_BASIC" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_INT_BASIC .collapse" title="">
+<h2>Basic number format for integers</h2>
+<pre>GESHI_NUMBER_INT_BASIC = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_INT_CSTYLE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_INT_CSTYLE" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_INT_CSTYLE .collapse" title="">
+<h2>Enhanced number format for integers like seen in C</h2>
+<pre>GESHI_NUMBER_INT_CSTYLE = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_OCT_PREFIX"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_OCT_PREFIX" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_OCT_PREFIX .collapse" title="">
+<h2>Number format to highlight octal numbers with a leading zero</h2>
+<pre>GESHI_NUMBER_OCT_PREFIX = 256 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_OCT_PREFIX_0O"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_OCT_PREFIX_0O" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_OCT_PREFIX_0O .collapse" title="">
+<h2>Number format to highlight octal numbers with a prefix 0o (logtalk)</h2>
+<pre>GESHI_NUMBER_OCT_PREFIX_0O = 512 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_OCT_PREFIX_AT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_OCT_PREFIX_AT" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_OCT_PREFIX_AT .collapse" title="">
+<h2>Number format to highlight octal numbers with a leading @ (Used in HiSofts Devpac series).</h2>
+<pre>GESHI_NUMBER_OCT_PREFIX_AT = 1024 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_NUMBER_OCT_SUFFIX"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_NUMBER_OCT_SUFFIX" data-toggle="collapse" data-target=".constant_GESHI_NUMBER_OCT_SUFFIX .collapse" title="">
+<h2>Number format to highlight octal numbers with a suffix of o</h2>
+<pre>GESHI_NUMBER_OCT_SUFFIX = 2048 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_PHP_PRE_433"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_PHP_PRE_433" data-toggle="collapse" data-target=".constant_GESHI_PHP_PRE_433 .collapse" title="">
+<h2>Used to work around missing PHP features *</h2>
+<pre>GESHI_PHP_PRE_433 = !(version_compare(PHP_VERSION, '4.3.3') === 1) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_REPLACE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_REPLACE" data-toggle="collapse" data-target=".constant_GESHI_REPLACE .collapse" title="">
+<h2>The key of the regex array defining what bracket group in a
+matched search to use as a replacement</h2>
+<pre>GESHI_REPLACE = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_ROOT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_ROOT" data-toggle="collapse" data-target=".constant_GESHI_ROOT .collapse" title="">
+<h2>The root directory for GeSHi</h2>
+<pre>GESHI_ROOT = dirname(__FILE__) . DIRECTORY_SEPARATOR </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_SEARCH"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_SEARCH" data-toggle="collapse" data-target=".constant_GESHI_SEARCH .collapse" title="">
+<h2>The key of the regex array defining what to search for</h2>
+<pre>GESHI_SEARCH = 0 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_SECURITY_PARANOID"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_SECURITY_PARANOID" data-toggle="collapse" data-target=".constant_GESHI_SECURITY_PARANOID .collapse" title="">
+<h2>Tells GeSHi to be paranoid about security settings</h2>
+<pre>GESHI_SECURITY_PARANOID = false </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_START_IMPORTANT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_START_IMPORTANT" data-toggle="collapse" data-target=".constant_GESHI_START_IMPORTANT .collapse" title="">
+<h2>The starter for important parts of the source</h2>
+<pre>GESHI_START_IMPORTANT = '&lt;BEGIN GeSHi&gt;' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_VERSION"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_VERSION" data-toggle="collapse" data-target=".constant_GESHI_VERSION .collapse" title="">
+<h2>The version of this GeSHi file</h2>
+<pre>GESHI_VERSION = '1.0.8.10' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_GESHI_VISITED"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_GESHI_VISITED" data-toggle="collapse" data-target=".constant_GESHI_VISITED .collapse" title="">
+<h2>Links in the source in the :visited state</h2>
+<pre>GESHI_VISITED = 3 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_INFO_BEGIN"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_INFO_BEGIN" data-toggle="collapse" data-target=".constant_HDOM_INFO_BEGIN .collapse" title="">
+<h2>HDOM_INFO_BEGIN</h2>
+<pre>HDOM_INFO_BEGIN = 0 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_INFO_END"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_INFO_END" data-toggle="collapse" data-target=".constant_HDOM_INFO_END .collapse" title="">
+<h2>HDOM_INFO_END</h2>
+<pre>HDOM_INFO_END = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_INFO_ENDSPACE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_INFO_ENDSPACE" data-toggle="collapse" data-target=".constant_HDOM_INFO_ENDSPACE .collapse" title="">
+<h2>HDOM_INFO_ENDSPACE</h2>
+<pre>HDOM_INFO_ENDSPACE = 7 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_INFO_INNER"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_INFO_INNER" data-toggle="collapse" data-target=".constant_HDOM_INFO_INNER .collapse" title="">
+<h2>HDOM_INFO_INNER</h2>
+<pre>HDOM_INFO_INNER = 5 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_INFO_OUTER"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_INFO_OUTER" data-toggle="collapse" data-target=".constant_HDOM_INFO_OUTER .collapse" title="">
+<h2>HDOM_INFO_OUTER</h2>
+<pre>HDOM_INFO_OUTER = 6 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_INFO_QUOTE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_INFO_QUOTE" data-toggle="collapse" data-target=".constant_HDOM_INFO_QUOTE .collapse" title="">
+<h2>HDOM_INFO_QUOTE</h2>
+<pre>HDOM_INFO_QUOTE = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_INFO_SPACE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_INFO_SPACE" data-toggle="collapse" data-target=".constant_HDOM_INFO_SPACE .collapse" title="">
+<h2>HDOM_INFO_SPACE</h2>
+<pre>HDOM_INFO_SPACE = 3 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_INFO_TEXT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_INFO_TEXT" data-toggle="collapse" data-target=".constant_HDOM_INFO_TEXT .collapse" title="">
+<h2>HDOM_INFO_TEXT</h2>
+<pre>HDOM_INFO_TEXT = 4 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_QUOTE_DOUBLE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_QUOTE_DOUBLE" data-toggle="collapse" data-target=".constant_HDOM_QUOTE_DOUBLE .collapse" title="">
+<h2>HDOM_QUOTE_DOUBLE</h2>
+<pre>HDOM_QUOTE_DOUBLE = 0 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_QUOTE_NO"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_QUOTE_NO" data-toggle="collapse" data-target=".constant_HDOM_QUOTE_NO .collapse" title="">
+<h2>HDOM_QUOTE_NO</h2>
+<pre>HDOM_QUOTE_NO = 3 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_QUOTE_SINGLE"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_QUOTE_SINGLE" data-toggle="collapse" data-target=".constant_HDOM_QUOTE_SINGLE .collapse" title="">
+<h2>HDOM_QUOTE_SINGLE</h2>
+<pre>HDOM_QUOTE_SINGLE = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_TYPE_COMMENT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_TYPE_COMMENT" data-toggle="collapse" data-target=".constant_HDOM_TYPE_COMMENT .collapse" title="">
+<h2>HDOM_TYPE_COMMENT</h2>
+<pre>HDOM_TYPE_COMMENT = 2 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_TYPE_ELEMENT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_TYPE_ELEMENT" data-toggle="collapse" data-target=".constant_HDOM_TYPE_ELEMENT .collapse" title="">
+<h2>HDOM_TYPE_ELEMENT</h2>
+<pre>HDOM_TYPE_ELEMENT = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_TYPE_ENDTAG"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_TYPE_ENDTAG" data-toggle="collapse" data-target=".constant_HDOM_TYPE_ENDTAG .collapse" title="">
+<h2>HDOM_TYPE_ENDTAG</h2>
+<pre>HDOM_TYPE_ENDTAG = 4 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_TYPE_ROOT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_TYPE_ROOT" data-toggle="collapse" data-target=".constant_HDOM_TYPE_ROOT .collapse" title="">
+<h2>HDOM_TYPE_ROOT</h2>
+<pre>HDOM_TYPE_ROOT = 5 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_TYPE_TEXT"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_TYPE_TEXT" data-toggle="collapse" data-target=".constant_HDOM_TYPE_TEXT .collapse" title="">
+<h2>HDOM_TYPE_TEXT</h2>
+<pre>HDOM_TYPE_TEXT = 3 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HDOM_TYPE_UNKNOWN"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HDOM_TYPE_UNKNOWN" data-toggle="collapse" data-target=".constant_HDOM_TYPE_UNKNOWN .collapse" title="">
+<h2>HDOM_TYPE_UNKNOWN</h2>
+<pre>HDOM_TYPE_UNKNOWN = 6 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HG_AJAX"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HG_AJAX" data-toggle="collapse" data-target=".constant_HG_AJAX .collapse" title="">
+<h2>HG_AJAX</h2>
+<pre>HG_AJAX = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+<a xmlns:php="http://php.net/xsl" id="constant_HG_DEBUG"> </a><div xmlns:php="http://php.net/xsl" class="element clickable constant  constant_HG_DEBUG" data-toggle="collapse" data-target=".constant_HG_DEBUG .collapse" title="">
+<h2>HG_DEBUG</h2>
+<pre>HG_DEBUG = 1 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:32:14-04:00.<br></footer></div>
+</div>
+</body>
+</html>

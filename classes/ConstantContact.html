@@ -1,0 +1,1139 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \ConstantContact</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: ConstantContact constructor"><span class="description">ConstantContact constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addCampaign" title="addCampaign() :: "><span class="description">addCampaign()
+        </span><pre>addCampaign()</pre></a></li>
+<li class="method public "><a href="#method_addContact" title="addContact() :: Add a new Contact to a Constant Contact account"><span class="description">Add a new Contact to a Constant Contact account</span><pre>addContact()</pre></a></li>
+<li class="method public "><a href="#method_addFolder" title="addFolder() :: "><span class="description">addFolder()
+        </span><pre>addFolder()</pre></a></li>
+<li class="method public "><a href="#method_addList" title="addList() :: Create a new ContactList"><span class="description">Create a new ContactList</span><pre>addList()</pre></a></li>
+<li class="method public "><a href="#method_bulkAddContacts" title="bulkAddContacts() :: Add multiple contacts at once"><span class="description">Add multiple contacts at once</span><pre>bulkAddContacts()</pre></a></li>
+<li class="method public "><a href="#method_deleteCampaign" title="deleteCampaign() :: Delete an email Campaign"><span class="description">Delete an email Campaign</span><pre>deleteCampaign()</pre></a></li>
+<li class="method public "><a href="#method_deleteCampaignSchedule" title="deleteCampaignSchedule() :: Delete a schedule from a campaign (prevent it from sending)"><span class="description">Delete a schedule from a campaign (prevent it from sending)</span><pre>deleteCampaignSchedule()</pre></a></li>
+<li class="method public "><a href="#method_deleteContact" title="deleteContact() :: Delete a contact"><span class="description">Delete a contact</span><pre>deleteContact()</pre></a></li>
+<li class="method public "><a href="#method_deleteImage" title="deleteImage() :: Delete an image from your account"><span class="description">Delete an image from your account</span><pre>deleteImage()</pre></a></li>
+<li class="method public "><a href="#method_deleteImagesFromFolder" title="deleteImagesFromFolder() :: Delete all images from a folder"><span class="description">Delete all images from a folder</span><pre>deleteImagesFromFolder()</pre></a></li>
+<li class="method public "><a href="#method_deleteList" title="deleteList() :: Deletes a ContactList"><span class="description">Deletes a ContactList</span><pre>deleteList()</pre></a></li>
+<li class="method public "><a href="#method_getCampaignBounces" title="getCampaignBounces() :: Get bounce events for a Campaign"><span class="description">Get bounce events for a Campaign</span><pre>getCampaignBounces()</pre></a></li>
+<li class="method public "><a href="#method_getCampaignByID" title="getCampaignByID() :: Get a Campaign from an ID"><span class="description">Get a Campaign from an ID</span><pre>getCampaignByID()</pre></a></li>
+<li class="method public "><a href="#method_getCampaignDetails" title="getCampaignDetails() :: Get full details for a Campaign"><span class="description">Get full details for a Campaign</span><pre>getCampaignDetails()</pre></a></li>
+<li class="method public "><a href="#method_getCampaignEvents" title="getCampaignEvents() :: Get events from a Campaign"><span class="description">Get events from a Campaign</span><pre>getCampaignEvents()</pre></a></li>
+<li class="method public "><a href="#method_getCampaignForwards" title="getCampaignForwards() :: Get forwards events for a Campaign"><span class="description">Get forwards events for a Campaign</span><pre>getCampaignForwards()</pre></a></li>
+<li class="method public "><a href="#method_getCampaignOpens" title="getCampaignOpens() :: Get open events for a Campaign"><span class="description">Get open events for a Campaign</span><pre>getCampaignOpens()</pre></a></li>
+<li class="method public "><a href="#method_getCampaignOptOuts" title="getCampaignOptOuts() :: Get opt out events for a Campaign"><span class="description">Get opt out events for a Campaign</span><pre>getCampaignOptOuts()</pre></a></li>
+<li class="method public "><a href="#method_getCampaignSchedule" title="getCampaignSchedule() :: Get Schedule for a campaign in scheduled status"><span class="description">Get Schedule for a campaign in scheduled status</span><pre>getCampaignSchedule()</pre></a></li>
+<li class="method public "><a href="#method_getCampaignSends" title="getCampaignSends() :: Get send events for a Campaign"><span class="description">Get send events for a Campaign</span><pre>getCampaignSends()</pre></a></li>
+<li class="method public "><a href="#method_getCampaigns" title="getCampaigns() :: Get a page of Campaigns"><span class="description">Get a page of Campaigns</span><pre>getCampaigns()</pre></a></li>
+<li class="method public "><a href="#method_getCampaignsByStatus" title="getCampaignsByStatus() :: Get a page of campaigns in a particular status"><span class="description">Get a page of campaigns in a particular status</span><pre>getCampaignsByStatus()</pre></a></li>
+<li class="method public "><a href="#method_getContactBounces" title="getContactBounces() :: Get bounce events for a contact"><span class="description">Get bounce events for a contact</span><pre>getContactBounces()</pre></a></li>
+<li class="method public "><a href="#method_getContactClicks" title="getContactClicks() :: Get click events for a contact"><span class="description">Get click events for a contact</span><pre>getContactClicks()</pre></a></li>
+<li class="method public "><a href="#method_getContactDetails" title="getContactDetails() :: Get full details for a Contact"><span class="description">Get full details for a Contact</span><pre>getContactDetails()</pre></a></li>
+<li class="method public "><a href="#method_getContactForwards" title="getContactForwards() :: Get forwards events for a contact"><span class="description">Get forwards events for a contact</span><pre>getContactForwards()</pre></a></li>
+<li class="method public "><a href="#method_getContactOpens" title="getContactOpens() :: Get open events for a contact"><span class="description">Get open events for a contact</span><pre>getContactOpens()</pre></a></li>
+<li class="method public "><a href="#method_getContactOptOuts" title="getContactOptOuts() :: Get opt out events for a contact"><span class="description">Get opt out events for a contact</span><pre>getContactOptOuts()</pre></a></li>
+<li class="method public "><a href="#method_getContactSends" title="getContactSends() :: Get send events for a contact"><span class="description">Get send events for a contact</span><pre>getContactSends()</pre></a></li>
+<li class="method public "><a href="#method_getContacts" title="getContacts() :: Get a page of Contacts"><span class="description">Get a page of Contacts</span><pre>getContacts()</pre></a></li>
+<li class="method public "><a href="#method_getEventDetails" title="getEventDetails() :: Get all details for an event"><span class="description">Get all details for an event</span><pre>getEventDetails()</pre></a></li>
+<li class="method public "><a href="#method_getEvents" title="getEvents() :: Get a page of Event objects"><span class="description">Get a page of Event objects</span><pre>getEvents()</pre></a></li>
+<li class="method public "><a href="#method_getFolders" title="getFolders() :: Get a page of Folders"><span class="description">Get a page of Folders</span><pre>getFolders()</pre></a></li>
+<li class="method public "><a href="#method_getImageDetails" title="getImageDetails() :: Get detailed results for an image"><span class="description">Get detailed results for an image</span><pre>getImageDetails()</pre></a></li>
+<li class="method public "><a href="#method_getImagesFromFolder" title="getImagesFromFolder() :: Get a page of images from a folder"><span class="description">Get a page of images from a folder</span><pre>getImagesFromFolder()</pre></a></li>
+<li class="method public "><a href="#method_getListDetails" title="getListDetails() :: Get full details for a list"><span class="description">Get full details for a list</span><pre>getListDetails()</pre></a></li>
+<li class="method public "><a href="#method_getListMembers" title="getListMembers() :: Get a page of list members"><span class="description">Get a page of list members</span><pre>getListMembers()</pre></a></li>
+<li class="method public "><a href="#method_getLists" title="getLists() :: Get a page of Lists"><span class="description">Get a page of Lists</span><pre>getLists()</pre></a></li>
+<li class="method public "><a href="#method_getRegistrantDetails" title="getRegistrantDetails() :: Get detailed information on a Registrant"><span class="description">Get detailed information on a Registrant</span><pre>getRegistrantDetails()</pre></a></li>
+<li class="method public "><a href="#method_getRegistrants" title="getRegistrants() :: Get registrants from a particular event"><span class="description">Get registrants from a particular event</span><pre>getRegistrants()</pre></a></li>
+<li class="method public "><a href="#method_getVerifiedAddresses" title="getVerifiedAddresses() :: Get a list of verified email addresses in the account"><span class="description">Get a list of verified email addresses in the account</span><pre>getVerifiedAddresses()</pre></a></li>
+<li class="method public "><a href="#method_scheduleCampaign" title="scheduleCampaign() :: Schedule an email campaign for delivery"><span class="description">Schedule an email campaign for delivery</span><pre>scheduleCampaign()</pre></a></li>
+<li class="method public "><a href="#method_searchContactsByEmail" title="searchContactsByEmail() :: Search for contacts by email address"><span class="description">Search for contacts by email address</span><pre>searchContactsByEmail()</pre></a></li>
+<li class="method public "><a href="#method_searchContactsByLastUpdate" title="searchContactsByLastUpdate() :: Search for contacts in a list who have been updated since a given date"><span class="description">Search for contacts in a list who have been updated since a given date</span><pre>searchContactsByLastUpdate()</pre></a></li>
+<li class="method public "><a href="#method_updateCampaign" title="updateCampaign() :: Update a campaign with its current properties"><span class="description">Update a campaign with its current properties</span><pre>updateCampaign()</pre></a></li>
+<li class="method public "><a href="#method_updateContact" title="updateContact() :: Update a contact with current properties"><span class="description">Update a contact with current properties</span><pre>updateContact()</pre></a></li>
+<li class="method public "><a href="#method_updateList" title="updateList() :: Update a ContactList with its current properties"><span class="description">Update a ContactList with its current properties</span><pre>updateList()</pre></a></li>
+<li class="method public "><a href="#method_uploadImage" title="uploadImage() :: "><span class="description">uploadImage()
+        </span><pre>uploadImage()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_CTCTRequest" title="$CTCTRequest() :: "><span class="description"></span><pre>$CTCTRequest</pre></a></li>
+<li class="property public "><a href="#property_apiKey" title="$apiKey() :: "><span class="description"></span><pre>$apiKey</pre></a></li>
+<li class="property public "><a href="#property_authType" title="$authType() :: "><span class="description"></span><pre>$authType</pre></a></li>
+<li class="property public "><a href="#property_consumerSecret" title="$consumerSecret() :: "><span class="description"></span><pre>$consumerSecret</pre></a></li>
+<li class="property public "><a href="#property_password" title="$password() :: "><span class="description"></span><pre>$password</pre></a></li>
+<li class="property public "><a href="#property_username" title="$username() :: "><span class="description"></span><pre>$username</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\ConstantContact"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/ConstantContact.html">ConstantContact</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description"></p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>ConstantContact constructor</h2>
+<pre>__construct(string $authType, string $apiKey, string $username, string $param) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$authType</h4>
+<code>string</code><ul>
+<li>Authentication type, 'basic' or 'oauth'</li>
+</ul></div>
+<div class="subelement argument">
+<h4>$apiKey</h4>
+<code>string</code><ul>
+<li>Constant Contact API key</li>
+</ul></div>
+<div class="subelement argument">
+<h4>$username</h4>
+<code>string</code><ul>
+<li>Constant Contact Username</li>
+</ul></div>
+<div class="subelement argument">
+<h4>$param</h4>
+<code>string</code><ul>
+<li>For basic - password, for oauth - consumerSecret</li>
+</ul></div>
+</div></div>
+</div>
+<a id="method_addCampaign"></a><div class="element clickable method public method_addCampaign " data-toggle="collapse" data-target=".method_addCampaign .collapse" title="public">
+<h2>addCampaign()
+        </h2>
+<pre>addCampaign(\Campaign $Campaign, \VerifiedAddress $fromEmail, \VerifiedAddress $replyEmail<code> = null</code>) : \Campaign</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$Campaign</h4></div>
+<div class="subelement argument">
+<h4>$fromEmail</h4>
+<code>\VerifiedAddress</code><ul>
+<li>from email for the campaign</li>
+</ul></div>
+<div class="subelement argument">
+<h4>$replyEmail</h4>
+<code>\VerifiedAddress</code><ul>
+<li>OPTIONAL: reply email if different than fromEmail</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Campaign</code></div>
+</div></div>
+</div>
+<a id="method_addContact"></a><div class="element clickable method public method_addContact " data-toggle="collapse" data-target=".method_addContact .collapse" title="public">
+<h2>Add a new Contact to a Constant Contact account</h2>
+<pre>addContact(\Contact $Contact) : \Contact</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Contact</h4>
+<code>\Contact</code><ul>
+<li>Contact Object</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Contact</code></div>
+</div></div>
+</div>
+<a id="method_addFolder"></a><div class="element clickable method public method_addFolder " data-toggle="collapse" data-target=".method_addFolder .collapse" title="public">
+<h2>addFolder()
+        </h2>
+<pre>addFolder(\Folder $Folder) : \Folder</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Folder</h4>
+<code>\Folder</code><ul>
+<li>Folder object</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Folder</code>- Folder object</div>
+</div></div>
+</div>
+<a id="method_addList"></a><div class="element clickable method public method_addList " data-toggle="collapse" data-target=".method_addList .collapse" title="public">
+<h2>Create a new ContactList</h2>
+<pre>addList(\ContactList $List) : \ContactList</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$List</h4>
+<code>\ContactList</code><ul>
+<li>ContactList object</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\ContactList</code></div>
+</div></div>
+</div>
+<a id="method_bulkAddContacts"></a><div class="element clickable method public method_bulkAddContacts " data-toggle="collapse" data-target=".method_bulkAddContacts .collapse" title="public">
+<h2>Add multiple contacts at once</h2>
+<pre>bulkAddContacts(string $postString) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$postString</h4>
+<code>string</code><ul>
+<li>urlencoded string of data</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_deleteCampaign"></a><div class="element clickable method public method_deleteCampaign " data-toggle="collapse" data-target=".method_deleteCampaign .collapse" title="public">
+<h2>Delete an email Campaign</h2>
+<pre>deleteCampaign(\Campaign $Campaign) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Campaign</code><ul>
+<li>Campaign object</li>
+</ul></div>
+</div></div>
+</div>
+<a id="method_deleteCampaignSchedule"></a><div class="element clickable method public method_deleteCampaignSchedule " data-toggle="collapse" data-target=".method_deleteCampaignSchedule .collapse" title="public">
+<h2>Delete a schedule from a campaign (prevent it from sending)</h2>
+<pre>deleteCampaignSchedule(\Campaign $Campaign) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Campaign</code><ul>
+<li>Campaign to delete schedule for</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>- true if successful, else false</div>
+</div></div>
+</div>
+<a id="method_deleteContact"></a><div class="element clickable method public method_deleteContact " data-toggle="collapse" data-target=".method_deleteContact .collapse" title="public">
+<h2>Delete a contact</h2>
+<pre>deleteContact(\Contact $Contact) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Contact</h4>
+<code>\Contact</code><ul>
+<li>Contact</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_deleteImage"></a><div class="element clickable method public method_deleteImage " data-toggle="collapse" data-target=".method_deleteImage .collapse" title="public">
+<h2>Delete an image from your account</h2>
+<pre>deleteImage(\Image $Image) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Image</h4>
+<code>\Image</code><ul>
+<li>Image object</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>- true if successful, else false</div>
+</div></div>
+</div>
+<a id="method_deleteImagesFromFolder"></a><div class="element clickable method public method_deleteImagesFromFolder " data-toggle="collapse" data-target=".method_deleteImagesFromFolder .collapse" title="public">
+<h2>Delete all images from a folder</h2>
+<pre>deleteImagesFromFolder(\Folder $Folder) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Folder</h4>
+<code>\Folder</code><ul>
+<li>Folder object</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>- true if successful, else false</div>
+</div></div>
+</div>
+<a id="method_deleteList"></a><div class="element clickable method public method_deleteList " data-toggle="collapse" data-target=".method_deleteList .collapse" title="public">
+<h2>Deletes a ContactList</h2>
+<pre>deleteList(\ContactList $List) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$List</h4>
+<code>\ContactList</code><ul>
+<li>ContactList object</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_getCampaignBounces"></a><div class="element clickable method public method_getCampaignBounces " data-toggle="collapse" data-target=".method_getCampaignBounces .collapse" title="public">
+<h2>Get bounce events for a Campaign</h2>
+<pre>getCampaignBounces(\Contact $Campaign, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Contact</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactBounces call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getCampaignByID"></a><div class="element clickable method public method_getCampaignByID " data-toggle="collapse" data-target=".method_getCampaignByID .collapse" title="public">
+<h2>Get a Campaign from an ID</h2>
+<pre>getCampaignByID(string $ID) : \Campaign</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$ID</h4>
+<code>string</code><ul>
+<li>Must be an ID of a campaign</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Campaign</code>Object of Campaign of given ID</div>
+</div></div>
+</div>
+<a id="method_getCampaignDetails"></a><div class="element clickable method public method_getCampaignDetails " data-toggle="collapse" data-target=".method_getCampaignDetails .collapse" title="public">
+<h2>Get full details for a Campaign</h2>
+<pre>getCampaignDetails(\Campaign $Campaign) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$Campaign</h4></div>
+</div></div>
+</div>
+<a id="method_getCampaignEvents"></a><div class="element clickable method public method_getCampaignEvents " data-toggle="collapse" data-target=".method_getCampaignEvents .collapse" title="public">
+<h2>Get events from a Campaign</h2>
+<pre>getCampaignEvents(\Campaign $Campaign, string $eventType) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Campaign</code><ul>
+<li>Campaign to get events for</li>
+</ul></div>
+<div class="subelement argument">
+<h4>$eventType</h4>
+<code>string</code><ul>
+<li>Sends, Forwards,  Bounces, OptOuts, Opens</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getCampaignForwards"></a><div class="element clickable method public method_getCampaignForwards " data-toggle="collapse" data-target=".method_getCampaignForwards .collapse" title="public">
+<h2>Get forwards events for a Campaign</h2>
+<pre>getCampaignForwards(\Contact $Campaign, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Contact</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactForwards call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getCampaignOpens"></a><div class="element clickable method public method_getCampaignOpens " data-toggle="collapse" data-target=".method_getCampaignOpens .collapse" title="public">
+<h2>Get open events for a Campaign</h2>
+<pre>getCampaignOpens(\Campaign $Campaign, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Campaign</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactOpens call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getCampaignOptOuts"></a><div class="element clickable method public method_getCampaignOptOuts " data-toggle="collapse" data-target=".method_getCampaignOptOuts .collapse" title="public">
+<h2>Get opt out events for a Campaign</h2>
+<pre>getCampaignOptOuts(\Contact $Campaign, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Contact</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactOptOuts call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getCampaignSchedule"></a><div class="element clickable method public method_getCampaignSchedule " data-toggle="collapse" data-target=".method_getCampaignSchedule .collapse" title="public">
+<h2>Get Schedule for a campaign in scheduled status</h2>
+<pre>getCampaignSchedule(\Campaign $Campaign) : boolean | \Schedule</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Campaign</code><ul>
+<li>Campaign to get a schedule for</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code><code>\Schedule</code>- returns Schedule if found, else false</div>
+</div></div>
+</div>
+<a id="method_getCampaignSends"></a><div class="element clickable method public method_getCampaignSends " data-toggle="collapse" data-target=".method_getCampaignSends .collapse" title="public">
+<h2>Get send events for a Campaign</h2>
+<pre>getCampaignSends(\Contact $Campaign, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Contact</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactSends call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getCampaigns"></a><div class="element clickable method public method_getCampaigns " data-toggle="collapse" data-target=".method_getCampaigns .collapse" title="public">
+<h2>Get a page of Campaigns</h2>
+<pre>getCampaigns(string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' returned from a previous getLists() call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 Campaigns and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getCampaignsByStatus"></a><div class="element clickable method public method_getCampaignsByStatus " data-toggle="collapse" data-target=".method_getCampaignsByStatus .collapse" title="public">
+<h2>Get a page of campaigns in a particular status</h2>
+<pre>getCampaignsByStatus(string $status, $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$status</h4>
+<code>string</code><ul>
+<li>status of campaign to search for (sent, draft, running, scheduled)</li>
+</ul></div>
+<div class="subelement argument"><h4>$page</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 Campaigns and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getContactBounces"></a><div class="element clickable method public method_getContactBounces " data-toggle="collapse" data-target=".method_getContactBounces .collapse" title="public">
+<h2>Get bounce events for a contact</h2>
+<pre>getContactBounces(\Contact $Contact, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Contact</h4>
+<code>\Contact</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactBounces call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getContactClicks"></a><div class="element clickable method public method_getContactClicks " data-toggle="collapse" data-target=".method_getContactClicks .collapse" title="public">
+<h2>Get click events for a contact</h2>
+<pre>getContactClicks(\Contact $Contact, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Contact</h4>
+<code>\Contact</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactClicks call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getContactDetails"></a><div class="element clickable method public method_getContactDetails " data-toggle="collapse" data-target=".method_getContactDetails .collapse" title="public">
+<h2>Get full details for a Contact</h2>
+<pre>getContactDetails(\Contact $Contact) : \Contact</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Contact</h4>
+<code>\Contact</code><ul>
+<li>Contact object</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Contact</code></div>
+</div></div>
+</div>
+<a id="method_getContactForwards"></a><div class="element clickable method public method_getContactForwards " data-toggle="collapse" data-target=".method_getContactForwards .collapse" title="public">
+<h2>Get forwards events for a contact</h2>
+<pre>getContactForwards(\Contact $Contact, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Contact</h4>
+<code>\Contact</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactForwards call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getContactOpens"></a><div class="element clickable method public method_getContactOpens " data-toggle="collapse" data-target=".method_getContactOpens .collapse" title="public">
+<h2>Get open events for a contact</h2>
+<pre>getContactOpens(\Contact $Contact, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Contact</h4>
+<code>\Contact</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactOpens call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getContactOptOuts"></a><div class="element clickable method public method_getContactOptOuts " data-toggle="collapse" data-target=".method_getContactOptOuts .collapse" title="public">
+<h2>Get opt out events for a contact</h2>
+<pre>getContactOptOuts(\Contact $Contact, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Contact</h4>
+<code>\Contact</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactOptOuts call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getContactSends"></a><div class="element clickable method public method_getContactSends " data-toggle="collapse" data-target=".method_getContactSends .collapse" title="public">
+<h2>Get send events for a contact</h2>
+<pre>getContactSends(\Contact $Contact, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Contact</h4>
+<code>\Contact</code>
+</div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' from previous getContactSends call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 CampaignEvents and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getContacts"></a><div class="element clickable method public method_getContacts " data-toggle="collapse" data-target=".method_getContacts .collapse" title="public">
+<h2>Get a page of Contacts</h2>
+<pre>getContacts(string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' returned from a previous getContacts() call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 Contacts and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getEventDetails"></a><div class="element clickable method public method_getEventDetails " data-toggle="collapse" data-target=".method_getEventDetails .collapse" title="public">
+<h2>Get all details for an event</h2>
+<pre>getEventDetails(\CCEvent $Event) : \Event</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Event</h4>
+<code>\Event</code><p>Event - Event object to get details for</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Event</code></div>
+</div></div>
+</div>
+<a id="method_getEvents"></a><div class="element clickable method public method_getEvents " data-toggle="collapse" data-target=".method_getEvents .collapse" title="public">
+<h2>Get a page of Event objects</h2>
+<pre>getEvents(string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' returned from a previous getEvents() call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 Images and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getFolders"></a><div class="element clickable method public method_getFolders " data-toggle="collapse" data-target=".method_getFolders .collapse" title="public">
+<h2>Get a page of Folders</h2>
+<pre>getFolders(string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' returned from a previous getFolders() call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 Folders and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getImageDetails"></a><div class="element clickable method public method_getImageDetails " data-toggle="collapse" data-target=".method_getImageDetails .collapse" title="public">
+<h2>Get detailed results for an image</h2>
+<pre>getImageDetails(\Image $Image) : \Image</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$Image</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Image</code>- Image object</div>
+</div></div>
+</div>
+<a id="method_getImagesFromFolder"></a><div class="element clickable method public method_getImagesFromFolder " data-toggle="collapse" data-target=".method_getImagesFromFolder .collapse" title="public">
+<h2>Get a page of images from a folder</h2>
+<pre>getImagesFromFolder($Folder) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$Folder</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- All images contained within the folder</div>
+</div></div>
+</div>
+<a id="method_getListDetails"></a><div class="element clickable method public method_getListDetails " data-toggle="collapse" data-target=".method_getListDetails .collapse" title="public">
+<h2>Get full details for a list</h2>
+<pre>getListDetails(\ContactList $List) : \ContactList</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$List</h4></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\ContactList</code></div>
+</div></div>
+</div>
+<a id="method_getListMembers"></a><div class="element clickable method public method_getListMembers " data-toggle="collapse" data-target=".method_getListMembers .collapse" title="public">
+<h2>Get a page of list members</h2>
+<pre>getListMembers(\ContactList $List, string $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$List</h4></div>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' returned from a previous getListMembers() call</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getLists"></a><div class="element clickable method public method_getLists " data-toggle="collapse" data-target=".method_getLists .collapse" title="public">
+<h2>Get a page of Lists</h2>
+<pre>getLists(string $page<code> = null</code>, boolean $systemLists<code> = false</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$page</h4>
+<code>string</code><ul>
+<li>optional 'nextLink' returned from a previous getLists() call</li>
+</ul></div>
+<div class="subelement argument">
+<h4>$systemLists</h4>
+<code>boolean</code><ul>
+<li>set to true to return the 'Active', 'Removed' and 'Do Not Mail' system lists</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 Lists and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getRegistrantDetails"></a><div class="element clickable method public method_getRegistrantDetails " data-toggle="collapse" data-target=".method_getRegistrantDetails .collapse" title="public">
+<h2>Get detailed information on a Registrant</h2>
+<pre>getRegistrantDetails(\Registrant $Registrant) : \Registrant</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Registrant</h4>
+<code>\Registrant</code><ul>
+<li>Registrant Object</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Registrant</code></div>
+</div></div>
+</div>
+<a id="method_getRegistrants"></a><div class="element clickable method public method_getRegistrants " data-toggle="collapse" data-target=".method_getRegistrants .collapse" title="public">
+<h2>Get registrants from a particular event</h2>
+<pre>getRegistrants(\Event $Event, $page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Event</h4>
+<code>\Event</code><ul>
+<li>Event Object</li>
+</ul></div>
+<div class="subelement argument"><h4>$page</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- up to 50 registrants and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_getVerifiedAddresses"></a><div class="element clickable method public method_getVerifiedAddresses " data-toggle="collapse" data-target=".method_getVerifiedAddresses .collapse" title="public">
+<h2>Get a list of verified email addresses in the account</h2>
+<pre>getVerifiedAddresses($page<code> = null</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument"><h4>$page</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 Verified addresses and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_scheduleCampaign"></a><div class="element clickable method public method_scheduleCampaign " data-toggle="collapse" data-target=".method_scheduleCampaign .collapse" title="public">
+<h2>Schedule an email campaign for delivery</h2>
+<pre>scheduleCampaign(\Campaign $Campaign, string $time) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Campaign</code><ul>
+<li>Email to be delivered</li>
+</ul></div>
+<div class="subelement argument">
+<h4>$time</h4>
+<code>string</code><ul>
+<li>Date/Time for email to be sent</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>- true if successful, else false</div>
+</div></div>
+</div>
+<a id="method_searchContactsByEmail"></a><div class="element clickable method public method_searchContactsByEmail " data-toggle="collapse" data-target=".method_searchContactsByEmail .collapse" title="public">
+<h2>Search for contacts by email address</h2>
+<pre>searchContactsByEmail(array $emailAddress) : \-</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$emailAddress</h4>
+<code>string</code><code>array</code><ul>
+<li>email address of user to search for</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\-</code>array of found contacts, otherwise returns false</div>
+</div></div>
+</div>
+<a id="method_searchContactsByLastUpdate"></a><div class="element clickable method public method_searchContactsByLastUpdate " data-toggle="collapse" data-target=".method_searchContactsByLastUpdate .collapse" title="public">
+<h2>Search for contacts in a list who have been updated since a given date</h2>
+<pre>searchContactsByLastUpdate(\ContactList $List, string $date) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$List</h4>
+<code>\ContactList</code><ul>
+<li>ContactList object to search</li>
+</ul></div>
+<div class="subelement argument">
+<h4>$date</h4>
+<code>string</code><ul>
+<li>Last updated date to search from</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>- Up to 50 contacts and a link to the next page if one exists</div>
+</div></div>
+</div>
+<a id="method_updateCampaign"></a><div class="element clickable method public method_updateCampaign " data-toggle="collapse" data-target=".method_updateCampaign .collapse" title="public">
+<h2>Update a campaign with its current properties</h2>
+<pre>updateCampaign(\Campaign $Campaign) : </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Campaign</h4>
+<code>\Campaign</code><ul>
+<li>Campaign to update</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"></div>
+</div></div>
+</div>
+<a id="method_updateContact"></a><div class="element clickable method public method_updateContact " data-toggle="collapse" data-target=".method_updateContact .collapse" title="public">
+<h2>Update a contact with current properties</h2>
+<pre>updateContact(\Contact $Contact) : \Contact</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$Contact</h4>
+<code>\Contact</code><ul>
+<li>Contact object</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>\Contact</code></div>
+</div></div>
+</div>
+<a id="method_updateList"></a><div class="element clickable method public method_updateList " data-toggle="collapse" data-target=".method_updateList .collapse" title="public">
+<h2>Update a ContactList with its current properties</h2>
+<pre>updateList(\ContactList $List) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$List</h4>
+<code>\ContactList</code><ul>
+<li>ContactList object</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>boolean</code></div>
+</div></div>
+</div>
+<a id="method_uploadImage"></a><div class="element clickable method public method_uploadImage " data-toggle="collapse" data-target=".method_uploadImage .collapse" title="public">
+<h2>uploadImage()
+        </h2>
+<pre>uploadImage(string $imageLocation, \Folder $Folder) : \Image</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$imageLocation</h4>
+<code>string</code><ul>
+<li>current location of image on disk</li>
+</ul></div>
+<div class="subelement argument"><h4>$Folder</h4></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>\Image</code>- created Image object</div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_CTCTRequest"> </a><div class="element clickable property public property_CTCTRequest" data-toggle="collapse" data-target=".property_CTCTRequest .collapse" title="public">
+<h2>$CTCTRequest</h2>
+<pre>$CTCTRequest </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_apiKey"> </a><div class="element clickable property public property_apiKey" data-toggle="collapse" data-target=".property_apiKey .collapse" title="public">
+<h2>$apiKey</h2>
+<pre>$apiKey </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_authType"> </a><div class="element clickable property public property_authType" data-toggle="collapse" data-target=".property_authType .collapse" title="public">
+<h2>$authType</h2>
+<pre>$authType </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_consumerSecret"> </a><div class="element clickable property public property_consumerSecret" data-toggle="collapse" data-target=".property_consumerSecret .collapse" title="public">
+<h2>$consumerSecret</h2>
+<pre>$consumerSecret </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_password"> </a><div class="element clickable property public property_password" data-toggle="collapse" data-target=".property_password .collapse" title="public">
+<h2>$password</h2>
+<pre>$password </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_username"> </a><div class="element clickable property public property_username" data-toggle="collapse" data-target=".property_username .collapse" title="public">
+<h2>$username</h2>
+<pre>$username </pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:37:12-04:00.<br></footer></div>
+</div>
+</body>
+</html>

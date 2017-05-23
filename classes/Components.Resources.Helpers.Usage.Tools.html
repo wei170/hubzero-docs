@@ -1,0 +1,521 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \Components\Resources\Helpers\Usage\Tools</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public inherited"><a href="#method___construct" title="__construct() :: Constructor"><span class="description">Constructor</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_display" title="display() :: Display formatted results for a given time range"><span class="description">Display formatted results for a given time range</span><pre>display()</pre></a></li>
+<li class="method public inherited"><a href="#method_display" title="display() :: Display formatted results for a given time range"><span class="description">Display formatted results for a given time range</span><pre>display()</pre></a></li>
+<li class="method public inherited"><a href="#method_display_substats" title="display_substats() :: Display a table for ancillary data"><span class="description">Display a table for ancillary data</span><pre>display_substats()</pre></a></li>
+<li class="method public inherited"><a href="#method_fetch" title="fetch() :: Fetch data for a particular time range"><span class="description">Fetch data for a particular time range</span><pre>fetch()</pre></a></li>
+<li class="method public inherited"><a href="#method_getRatingClass" title="getRatingClass() :: Get the classname for a rating value"><span class="description">Get the classname for a rating value</span><pre>getRatingClass()</pre></a></li>
+<li class="method public "><a href="#method_process" title="process() :: Push database results to $this for internal use"><span class="description">Push database results to $this for internal use</span><pre>process()</pre></a></li>
+<li class="method public inherited"><a href="#method_process" title="process() :: Push database results to $this for internal use"><span class="description">Push database results to $this for internal use</span><pre>process()</pre></a></li>
+<li class="method public inherited"><a href="#method_valfmt" title="valfmt() :: Format a value"><span class="description">Format a value</span><pre>valfmt()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property__db" title="$_db() :: JDatabase"><span class="description"></span><pre>$_db</pre></a></li>
+<li class="property public "><a href="#property__resid" title="$_resid() :: Resource ID"><span class="description"></span><pre>$_resid</pre></a></li>
+<li class="property public "><a href="#property__type" title="$_type() :: Resource type"><span class="description"></span><pre>$_type</pre></a></li>
+<li class="property public "><a href="#property_avg_cpu" title="$avg_cpu() :: Average CPU time"><span class="description"></span><pre>$avg_cpu</pre></a></li>
+<li class="property public "><a href="#property_avg_exec" title="$avg_exec() :: Average execution time"><span class="description"></span><pre>$avg_exec</pre></a></li>
+<li class="property public "><a href="#property_avg_wall" title="$avg_wall() :: Average wall time"><span class="description"></span><pre>$avg_wall</pre></a></li>
+<li class="property public "><a href="#property_cites" title="$cites() :: Number of citations"><span class="description"></span><pre>$cites</pre></a></li>
+<li class="property public "><a href="#property_dateFormat" title="$dateFormat() :: Date format"><span class="description"></span><pre>$dateFormat</pre></a></li>
+<li class="property public "><a href="#property_datetime" title="$datetime() :: Description for 'datetime'"><span class="description"></span><pre>$datetime</pre></a></li>
+<li class="property public "><a href="#property_jobs" title="$jobs() :: Number of jobs"><span class="description"></span><pre>$jobs</pre></a></li>
+<li class="property public "><a href="#property_lastcite" title="$lastcite() :: Last citation date"><span class="description"></span><pre>$lastcite</pre></a></li>
+<li class="property public "><a href="#property_rating" title="$rating() :: Resource rating"><span class="description"></span><pre>$rating</pre></a></li>
+<li class="property public "><a href="#property_tot_cpu" title="$tot_cpu() :: Total CPU time"><span class="description"></span><pre>$tot_cpu</pre></a></li>
+<li class="property public "><a href="#property_tot_exec" title="$tot_exec() :: Total execution time"><span class="description"></span><pre>$tot_exec</pre></a></li>
+<li class="property public "><a href="#property_tot_wall" title="$tot_wall() :: Total wall time"><span class="description"></span><pre>$tot_wall</pre></a></li>
+<li class="property public "><a href="#property_users" title="$users() :: Number of users"><span class="description"></span><pre>$users</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Components\Resources\Helpers\Usage\Tools"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Resources.html">Resources</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Resources.Helpers.html">Helpers</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Resources.Helpers.Usage.html">Usage</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Components.Resources.Helpers.Usage.Tools.html">Tools</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">Extended resource stats class (Tools)</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/hubzero-cms.html">hubzero-cms</a></td>
+</tr>
+<tr>
+<th>inherited_from</th>
+<td>\Components\Resources\Helpers\Usage</td>
+</tr>
+</table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Constructor</h2>
+<pre>__construct(object $db, integer $resid, integer $type, integer $rating<code> = 0</code>, integer $cites<code> = 0</code>, string $lastcite<code> = ''</code>) : void</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Components\Resources\Helpers\Usage::__construct()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$db</h4>
+<code>object</code><p>&$db      JDatabase</p></div>
+<div class="subelement argument">
+<h4>$resid</h4>
+<code>integer</code><p>Resource ID</p></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>integer</code><p>Resource type</p></div>
+<div class="subelement argument">
+<h4>$rating</h4>
+<code>integer</code><p>Resource rating</p></div>
+<div class="subelement argument">
+<h4>$cites</h4>
+<code>integer</code><p>Number of citations</p></div>
+<div class="subelement argument">
+<h4>$lastcite</h4>
+<code>string</code><p>Last citation date</p></div>
+</div></div>
+</div>
+<a id="method___construct"></a><div class="element clickable method public method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>Constructor</h2>
+<pre>__construct(object $db, integer $resid, integer $type, integer $rating<code> = 0</code>, integer $cites<code> = 0</code>, string $lastcite<code> = ''</code>) : void</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$db</h4>
+<code>object</code><p>&$db      JDatabase</p></div>
+<div class="subelement argument">
+<h4>$resid</h4>
+<code>integer</code><p>Resource ID</p></div>
+<div class="subelement argument">
+<h4>$type</h4>
+<code>integer</code><p>Resource type</p></div>
+<div class="subelement argument">
+<h4>$rating</h4>
+<code>integer</code><p>Resource rating</p></div>
+<div class="subelement argument">
+<h4>$cites</h4>
+<code>integer</code><p>Number of citations</p></div>
+<div class="subelement argument">
+<h4>$lastcite</h4>
+<code>string</code><p>Last citation date</p></div>
+</div></div>
+</div>
+<a id="method_display"></a><div class="element clickable method public method_display " data-toggle="collapse" data-target=".method_display .collapse" title="public">
+<h2>Display formatted results for a given time range</h2>
+<pre>display(string $disp<code> = 'ALL'</code>) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Components\Resources\Helpers\Usage::display()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$disp</h4>
+<code>string</code><p>Time range [curr, last, year, all]</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_display"></a><div class="element clickable method public method_display inherited" data-toggle="collapse" data-target=".method_display .collapse" title="public">
+<h2>Display formatted results for a given time range</h2>
+<pre>display(string $disp) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$disp</h4>
+<code>string</code><p>Time range [curr, last, year, all]</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_display_substats"></a><div class="element clickable method public method_display_substats inherited" data-toggle="collapse" data-target=".method_display_substats .collapse" title="public">
+<h2>Display a table for ancillary data</h2>
+<pre>display_substats() : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>HTML</div>
+</div></div>
+</div>
+<a id="method_fetch"></a><div class="element clickable method public method_fetch inherited" data-toggle="collapse" data-target=".method_fetch .collapse" title="public">
+<h2>Fetch data for a particular time range</h2>
+<pre>fetch(string $disp) : array</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$disp</h4>
+<code>string</code><p>Data time range ti display</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>array</code></div>
+</div></div>
+</div>
+<a id="method_getRatingClass"></a><div class="element clickable method public method_getRatingClass inherited" data-toggle="collapse" data-target=".method_getRatingClass .collapse" title="public">
+<h2>Get the classname for a rating value</h2>
+<pre>getRatingClass(integer $rating<code> = 0</code>) : string</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$rating</h4>
+<code>integer</code><p>Rating (out of 5 total)</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>string</code></div>
+</div></div>
+</div>
+<a id="method_process"></a><div class="element clickable method public method_process " data-toggle="collapse" data-target=".method_process .collapse" title="public">
+<h2>Push database results to $this for internal use</h2>
+<pre>process(array $result) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>inherited_from</th>
+<td>\Components\Resources\Helpers\Usage::process()</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$result</h4>
+<code>array</code><p>&$result Database records</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>False if errors, true on success</div>
+</div></div>
+</div>
+<a id="method_process"></a><div class="element clickable method public method_process inherited" data-toggle="collapse" data-target=".method_process .collapse" title="public">
+<h2>Push database results to $this for internal use</h2>
+<pre>process(array $result) : boolean</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$result</h4>
+<code>array</code><p>&$result Database records</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>False if errors, true on success</div>
+</div></div>
+</div>
+<a id="method_valfmt"></a><div class="element clickable method public method_valfmt inherited" data-toggle="collapse" data-target=".method_valfmt .collapse" title="public">
+<h2>Format a value</h2>
+<pre>valfmt(mixed $val) : mixed</pre>
+<div class="labels"><span class="label">Inherited</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$val</h4>
+<code>mixed</code><p>Parameter description (if any) ...</p></div>
+<h3>Returns</h3>
+<div class="subelement response"><code>mixed</code></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property__db"> </a><div class="element clickable property public property__db" data-toggle="collapse" data-target=".property__db .collapse" title="public">
+<h2>JDatabase</h2>
+<pre>$_db : object</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__resid"> </a><div class="element clickable property public property__resid" data-toggle="collapse" data-target=".property__resid .collapse" title="public">
+<h2>Resource ID</h2>
+<pre>$_resid : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property__type"> </a><div class="element clickable property public property__type" data-toggle="collapse" data-target=".property__type .collapse" title="public">
+<h2>Resource type</h2>
+<pre>$_type : \Components\Resources\Helpers\unknown</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_avg_cpu"> </a><div class="element clickable property public property_avg_cpu" data-toggle="collapse" data-target=".property_avg_cpu .collapse" title="public">
+<h2>Average CPU time</h2>
+<pre>$avg_cpu : mixed</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'unavailable'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_avg_exec"> </a><div class="element clickable property public property_avg_exec" data-toggle="collapse" data-target=".property_avg_exec .collapse" title="public">
+<h2>Average execution time</h2>
+<pre>$avg_exec : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'unavailable'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_avg_wall"> </a><div class="element clickable property public property_avg_wall" data-toggle="collapse" data-target=".property_avg_wall .collapse" title="public">
+<h2>Average wall time</h2>
+<pre>$avg_wall : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'unavailable'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_cites"> </a><div class="element clickable property public property_cites" data-toggle="collapse" data-target=".property_cites .collapse" title="public">
+<h2>Number of citations</h2>
+<pre>$cites : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_dateFormat"> </a><div class="element clickable property public property_dateFormat" data-toggle="collapse" data-target=".property_dateFormat .collapse" title="public">
+<h2>Date format</h2>
+<pre>$dateFormat : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_datetime"> </a><div class="element clickable property public property_datetime" data-toggle="collapse" data-target=".property_datetime .collapse" title="public">
+<h2>Description for 'datetime'</h2>
+<pre>$datetime : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_jobs"> </a><div class="element clickable property public property_jobs" data-toggle="collapse" data-target=".property_jobs .collapse" title="public">
+<h2>Number of jobs</h2>
+<pre>$jobs : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'unavailable'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_lastcite"> </a><div class="element clickable property public property_lastcite" data-toggle="collapse" data-target=".property_lastcite .collapse" title="public">
+<h2>Last citation date</h2>
+<pre>$lastcite : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_rating"> </a><div class="element clickable property public property_rating" data-toggle="collapse" data-target=".property_rating .collapse" title="public">
+<h2>Resource rating</h2>
+<pre>$rating : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tot_cpu"> </a><div class="element clickable property public property_tot_cpu" data-toggle="collapse" data-target=".property_tot_cpu .collapse" title="public">
+<h2>Total CPU time</h2>
+<pre>$tot_cpu : mixed</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'unavailable'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tot_exec"> </a><div class="element clickable property public property_tot_exec" data-toggle="collapse" data-target=".property_tot_exec .collapse" title="public">
+<h2>Total execution time</h2>
+<pre>$tot_exec : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'unavailable'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_tot_wall"> </a><div class="element clickable property public property_tot_wall" data-toggle="collapse" data-target=".property_tot_wall .collapse" title="public">
+<h2>Total wall time</h2>
+<pre>$tot_wall : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'unavailable'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_users"> </a><div class="element clickable property public property_users" data-toggle="collapse" data-target=".property_users .collapse" title="public">
+<h2>Number of users</h2>
+<pre>$users : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'unavailable'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:43:25-04:00.<br></footer></div>
+</div>
+</body>
+</html>

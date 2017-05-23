@@ -1,0 +1,893 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » Components\Members</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+<ul class="side-nav nav nav-list">
+<li class="nav-header">
+<i class="icon-map-marker"></i> Namespaces</li>
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>Members</span><ul class="nav nav-list nav-namespaces">
+<li>
+<span class="empty-namespace"><i class="icon-stop"></i>Admin</span><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Members.Admin.Controllers.html" title="Controllers"><i class="icon-th"></i>Controllers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Members.Api.html" title="Api"><i class="icon-th"></i>Api</a><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Members.Api.Controllers.html" title="Controllers"><i class="icon-th"></i>Controllers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Members.Helpers.html" title="Helpers"><i class="icon-th"></i>Helpers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Members.Models.html" title="Models"><i class="icon-th"></i>Models</a><ul class="nav nav-list nav-namespaces">
+<li>
+<a href="../namespaces/Components.Members.Models.Import.html" title="Import"><i class="icon-th"></i>Import</a><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Members.Models.Import.Handler.html" title="Handler"><i class="icon-th"></i>Handler</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Members.Models.Incremental.html" title="Incremental"><i class="icon-th"></i>Incremental</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Members.Models.Note.html" title="Note"><i class="icon-th"></i>Note</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Members.Models.Password.html" title="Password"><i class="icon-th"></i>Password</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Members.Models.Picture.html" title="Picture"><i class="icon-th"></i>Picture</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Members.Models.Profile.html" title="Profile"><i class="icon-th"></i>Profile</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+<li>
+<a href="../namespaces/Components.Members.Models.Quota.html" title="Quota"><i class="icon-th"></i>Quota</a><ul class="nav nav-list nav-namespaces"></ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="../namespaces/Components.Members.Site.html" title="Site"><i class="icon-th"></i>Site</a><ul class="nav nav-list nav-namespaces"><li>
+<a href="../namespaces/Components.Members.Site.Controllers.html" title="Controllers"><i class="icon-th"></i>Controllers</a><ul class="nav nav-list nav-namespaces"></ul>
+</li></ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8 namespace-contents">
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Admin.html">Admin</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<div class="alert alert-info">This namespace does not contain any documentable elements</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Admin.html">Admin</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Admin.Controllers.html">Controllers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Accessgroups" class="element ajax clickable class">
+<h1>Accessgroups<a href="../classes/Components.Members.Admin.Controllers.Accessgroups.html">¶</a>
+</h1>
+<p class="short_description">Manage user Access Groups</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Accessgroups.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Accesslevels" class="element ajax clickable class">
+<h1>Accesslevels<a href="../classes/Components.Members.Admin.Controllers.Accesslevels.html">¶</a>
+</h1>
+<p class="short_description">Manage user Access Levels</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Accesslevels.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Exports" class="element ajax clickable class">
+<h1>Exports<a href="../classes/Components.Members.Admin.Controllers.Exports.html">¶</a>
+</h1>
+<p class="short_description">Member exporter</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Exports.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Groups" class="element ajax clickable class">
+<h1>Groups<a href="../classes/Components.Members.Admin.Controllers.Groups.html">¶</a>
+</h1>
+<p class="short_description">Manage a member's group memberships</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Groups.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Hosts" class="element ajax clickable class">
+<h1>Hosts<a href="../classes/Components.Members.Admin.Controllers.Hosts.html">¶</a>
+</h1>
+<p class="short_description">Manage host entries for a member</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Hosts.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="ImportHooks" class="element ajax clickable class">
+<h1>ImportHooks<a href="../classes/Components.Members.Admin.Controllers.ImportHooks.html">¶</a>
+</h1>
+<p class="short_description">Members controlelr class for import hooks</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.ImportHooks.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Imports" class="element ajax clickable class">
+<h1>Imports<a href="../classes/Components.Members.Admin.Controllers.Imports.html">¶</a>
+</h1>
+<p class="short_description">Member importer</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Imports.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Incremental" class="element ajax clickable class">
+<h1>Incremental<a href="../classes/Components.Members.Admin.Controllers.Incremental.html">¶</a>
+</h1>
+<p class="short_description">Controller class for incremental registration</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Incremental.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Media" class="element ajax clickable class">
+<h1>Media<a href="../classes/Components.Members.Admin.Controllers.Media.html">¶</a>
+</h1>
+<p class="short_description">Manage files for a member</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Media.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Members" class="element ajax clickable class">
+<h1>Members<a href="../classes/Components.Members.Admin.Controllers.Members.html">¶</a>
+</h1>
+<p class="short_description">Manage site members</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Members.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Messages" class="element ajax clickable class">
+<h1>Messages<a href="../classes/Components.Members.Admin.Controllers.Messages.html">¶</a>
+</h1>
+<p class="short_description">Manage messaging settings</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Messages.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Notes" class="element ajax clickable class">
+<h1>Notes<a href="../classes/Components.Members.Admin.Controllers.Notes.html">¶</a>
+</h1>
+<p class="short_description">Manage member notes</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Notes.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="PasswordBlacklist" class="element ajax clickable class">
+<h1>PasswordBlacklist<a href="../classes/Components.Members.Admin.Controllers.PasswordBlacklist.html">¶</a>
+</h1>
+<p class="short_description">Manage members password blacklist</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.PasswordBlacklist.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="PasswordRules" class="element ajax clickable class">
+<h1>PasswordRules<a href="../classes/Components.Members.Admin.Controllers.PasswordRules.html">¶</a>
+</h1>
+<p class="short_description">Manage members password rules</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.PasswordRules.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Plugins" class="element ajax clickable class">
+<h1>Plugins<a href="../classes/Components.Members.Admin.Controllers.Plugins.html">¶</a>
+</h1>
+<p class="short_description">Manage resource types</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Plugins.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Points" class="element ajax clickable class">
+<h1>Points<a href="../classes/Components.Members.Admin.Controllers.Points.html">¶</a>
+</h1>
+<p class="short_description">Members controller class for user points</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Points.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Premis" class="element ajax clickable class">
+<h1>Premis<a href="../classes/Components.Members.Admin.Controllers.Premis.html">¶</a>
+</h1>
+<p class="short_description">Import PREMIS redistration dump files</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Premis.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Quotas" class="element ajax clickable class">
+<h1>Quotas<a href="../classes/Components.Members.Admin.Controllers.Quotas.html">¶</a>
+</h1>
+<p class="short_description">Manage member quotas</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Quotas.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Registration" class="element ajax clickable class">
+<h1>Registration<a href="../classes/Components.Members.Admin.Controllers.Registration.html">¶</a>
+</h1>
+<p class="short_description">Controller class for registration configuration</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.Registration.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="WhosOnline" class="element ajax clickable class">
+<h1>WhosOnline<a href="../classes/Components.Members.Admin.Controllers.WhosOnline.html">¶</a>
+</h1>
+<p class="short_description">Manage members password blacklist</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Admin.Controllers.WhosOnline.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Api.html">Api</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Router" class="element ajax clickable class">
+<h1>Router<a href="../classes/Components.Members.Api.Router.html">¶</a>
+</h1>
+<p class="short_description">Routing class for the component</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Api.Router.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Api.html">Api</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Api.Controllers.html">Controllers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Profilesv1_0" class="element ajax clickable class">
+<h1>Profilesv1_0<a href="../classes/Components.Members.Api.Controllers.Profilesv1_0.html">¶</a>
+</h1>
+<p class="short_description">Members API controller class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Api.Controllers.Profilesv1_0.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Toolsv1_0" class="element ajax clickable class">
+<h1>Toolsv1_0<a href="../classes/Components.Members.Api.Controllers.Toolsv1_0.html">¶</a>
+</h1>
+<p class="short_description">Members API controller class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Api.Controllers.Toolsv1_0.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Helpers.html">Helpers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Admin" class="element ajax clickable class">
+<h1>Admin<a href="../classes/Components.Members.Helpers.Admin.html">¶</a>
+</h1>
+<p class="short_description">Members admin helper</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Helpers.Admin.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Debug" class="element ajax clickable class">
+<h1>Debug<a href="../classes/Components.Members.Helpers.Debug.html">¶</a>
+</h1>
+<p class="short_description">Users component debugging helper.</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Helpers.Debug.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Filters" class="element ajax clickable class">
+<h1>Filters<a href="../classes/Components.Members.Helpers.Filters.html">¶</a>
+</h1>
+<p class="short_description">Filters helper class for time component</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Helpers.Filters.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Html" class="element ajax clickable class">
+<h1>Html<a href="../classes/Components.Members.Helpers.Html.html">¶</a>
+</h1>
+<p class="short_description">Members helper class for various HTML output</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Helpers.Html.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="ImgHandler" class="element ajax clickable class">
+<h1>ImgHandler<a href="../classes/Components.Members.Helpers.ImgHandler.html">¶</a>
+</h1>
+<p class="short_description">Image manipulation class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Helpers.ImgHandler.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Permissions" class="element ajax clickable class">
+<h1>Permissions<a href="../classes/Components.Members.Helpers.Permissions.html">¶</a>
+</h1>
+<p class="short_description">Members permissions helper</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Helpers.Permissions.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Utility" class="element ajax clickable class">
+<h1>Utility<a href="../classes/Components.Members.Helpers.Utility.html">¶</a>
+</h1>
+<p class="short_description">Helper class for registration.</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Helpers.Utility.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.html">Models</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Address" class="element ajax clickable class">
+<h1>Address<a href="../classes/Components.Members.Models.Address.html">¶</a>
+</h1>
+<p class="short_description">User address model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Address.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Host" class="element ajax clickable class">
+<h1>Host<a href="../classes/Components.Members.Models.Host.html">¶</a>
+</h1>
+<p class="short_description">User host model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Host.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Import" class="element ajax clickable class">
+<h1>Import<a href="../classes/Components.Members.Models.Import.html">¶</a>
+</h1>
+<p class="short_description">Member importer</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Import.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Member" class="element ajax clickable class">
+<h1>Member<a href="../classes/Components.Members.Models.Member.html">¶</a>
+</h1>
+<p class="short_description">User model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Member.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Note" class="element ajax clickable class">
+<h1>Note<a href="../classes/Components.Members.Models.Note.html">¶</a>
+</h1>
+<p class="short_description">User note model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Note.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Profile" class="element ajax clickable class">
+<h1>Profile<a href="../classes/Components.Members.Models.Profile.html">¶</a>
+</h1>
+<p class="short_description">User profile model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Profile.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Quota" class="element ajax clickable class">
+<h1>Quota<a href="../classes/Components.Members.Models.Quota.html">¶</a>
+</h1>
+<p class="short_description">User quota model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Quota.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Registration" class="element ajax clickable class">
+<h1>Registration<a href="../classes/Components.Members.Models.Registration.html">¶</a>
+</h1>
+<p class="short_description">Model class for a registration</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Registration.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Tags" class="element ajax clickable class">
+<h1>Tags<a href="../classes/Components.Members.Models.Tags.html">¶</a>
+</h1>
+<p class="short_description">Members Tagging class</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Tags.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Token" class="element ajax clickable class">
+<h1>Token<a href="../classes/Components.Members.Models.Token.html">¶</a>
+</h1>
+<p class="short_description">Members password reset token database model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Token.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.Import.html">Import</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Record" class="element ajax clickable class">
+<h1>Record<a href="../classes/Components.Members.Models.Import.Record.html">¶</a>
+</h1>
+<p class="short_description">Member Record importer</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Import.Record.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.html">Models</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.Import.html">Import</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.Import.Handler.html">Handler</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Groups" class="element ajax clickable class">
+<h1>Groups<a href="../classes/Components.Members.Models.Import.Handler.Groups.html">¶</a>
+</h1>
+<p class="short_description">Member Groups import handler</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Import.Handler.Groups.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Projects" class="element ajax clickable class">
+<h1>Projects<a href="../classes/Components.Members.Models.Import.Handler.Projects.html">¶</a>
+</h1>
+<p class="short_description">Member Projects import handler</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Import.Handler.Projects.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Tags" class="element ajax clickable class">
+<h1>Tags<a href="../classes/Components.Members.Models.Import.Handler.Tags.html">¶</a>
+</h1>
+<p class="short_description">Member Tags import handler</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Import.Handler.Tags.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.Incremental.html">Incremental</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Awards" class="element ajax clickable class">
+<h1>Awards<a href="../classes/Components.Members.Models.Incremental.Awards.html">¶</a>
+</h1>
+<p class="short_description">Class for incremental registration awards</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Incremental.Awards.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Groups" class="element ajax clickable class">
+<h1>Groups<a href="../classes/Components.Members.Models.Incremental.Groups.html">¶</a>
+</h1>
+<p class="short_description">Class for incremental registration groups</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Incremental.Groups.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Options" class="element ajax clickable class">
+<h1>Options<a href="../classes/Components.Members.Models.Incremental.Options.html">¶</a>
+</h1>
+<p class="short_description">Class for incremental registration options</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Incremental.Options.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.Note.html">Note</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Category" class="element ajax clickable class">
+<h1>Category<a href="../classes/Components.Members.Models.Note.Category.html">¶</a>
+</h1>
+<p class="short_description">Member notes model for a category</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Note.Category.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.Password.html">Password</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="History" class="element ajax clickable class">
+<h1>History<a href="../classes/Components.Members.Models.Password.History.html">¶</a>
+</h1>
+<p class="short_description">Password history model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Password.History.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.Picture.html">Picture</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Gravatar" class="element ajax clickable class">
+<h1>Gravatar<a href="../classes/Components.Members.Models.Picture.Gravatar.html">¶</a>
+</h1>
+<p class="short_description">Gravatar User picture</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Picture.Gravatar.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Identicon" class="element ajax clickable class">
+<h1>Identicon<a href="../classes/Components.Members.Models.Picture.Identicon.html">¶</a>
+</h1>
+<p class="short_description">Identicon User picture</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Picture.Identicon.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.Profile.html">Profile</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Field" class="element ajax clickable class">
+<h1>Field<a href="../classes/Components.Members.Models.Profile.Field.html">¶</a>
+</h1>
+<p class="short_description">User profile field model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Profile.Field.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Option" class="element ajax clickable class">
+<h1>Option<a href="../classes/Components.Members.Models.Profile.Option.html">¶</a>
+</h1>
+<p class="short_description">User profile field option model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Profile.Option.html" class="more">« More »</a>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.html">Models</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Models.Quota.html">Quota</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Category" class="element ajax clickable class">
+<h1>Category<a href="../classes/Components.Members.Models.Quota.Category.html">¶</a>
+</h1>
+<p class="short_description">Quota class model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Quota.Category.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Group" class="element ajax clickable class">
+<h1>Group<a href="../classes/Components.Members.Models.Quota.Group.html">¶</a>
+</h1>
+<p class="short_description">Quota class group model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Quota.Group.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Log" class="element ajax clickable class">
+<h1>Log<a href="../classes/Components.Members.Models.Quota.Log.html">¶</a>
+</h1>
+<p class="short_description">Quota log model</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Models.Quota.Log.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Site.html">Site</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Router" class="element ajax clickable class">
+<h1>Router<a href="../classes/Components.Members.Site.Router.html">¶</a>
+</h1>
+<p class="short_description">Routing class for the component</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Site.Router.html" class="more">« More »</a>
+</div>
+<ul class="breadcrumb">
+<li>
+<a href="../index.html"><i class="icon-th"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Components.html">Components</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.html">Members</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Components.Members.Site.html">Site</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../namespaces/Components.Members.Site.Controllers.html">Controllers</a>
+</li>
+</ul>
+<div class="namespace-indent">
+<h3>
+<i title="Class" class="icon-custom icon-class"></i> Classes, interfaces, and traits</h3>
+<div xmlns:php="http://php.net/xsl" id="Credentials" class="element ajax clickable class">
+<h1>Credentials<a href="../classes/Components.Members.Site.Controllers.Credentials.html">¶</a>
+</h1>
+<p class="short_description">Members controller class for profiles</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Site.Controllers.Credentials.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Media" class="element ajax clickable class">
+<h1>Media<a href="../classes/Components.Members.Site.Controllers.Media.html">¶</a>
+</h1>
+<p class="short_description">Members controller class for media</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Site.Controllers.Media.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Orcid" class="element ajax clickable class">
+<h1>Orcid<a href="../classes/Components.Members.Site.Controllers.Orcid.html">¶</a>
+</h1>
+<p class="short_description">Members controller class for ORCIDs</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Site.Controllers.Orcid.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Profiles" class="element ajax clickable class">
+<h1>Profiles<a href="../classes/Components.Members.Site.Controllers.Profiles.html">¶</a>
+</h1>
+<p class="short_description">Members controller class for profiles</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Site.Controllers.Profiles.html" class="more">« More »</a>
+</div>
+<div xmlns:php="http://php.net/xsl" id="Register" class="element ajax clickable class">
+<h1>Register<a href="../classes/Components.Members.Site.Controllers.Register.html">¶</a>
+</h1>
+<p class="short_description">Controller class for member registration</p>
+<div class="details collapse"></div>
+<a href="../classes/Components.Members.Site.Controllers.Register.html" class="more">« More »</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:23:55-04:00.<br></footer></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,1322 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta charset="utf-8">
+<title>Hubzero-cms Api Documentation » \Plugins\Antispam\Mollom\Service\Mollom\AbstractMollom</title>
+<meta name="author" content="Guocheng Wei">
+<meta name="description" content="Api Documentation for HUBzero framework">
+<link href="../css/template.css" rel="stylesheet" media="all">
+<script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script><script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script><script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script><script src="../js/bootstrap.js" type="text/javascript"></script><script src="../js/template.js" type="text/javascript"></script><script src="../js/prettify/prettify.min.js" type="text/javascript"></script><link rel="icon" type="image/png" href="../img/favicon-16x16.png">
+<link rel="icon" type="image/png" href="../img/favicon-32x32.png">
+<link rel="icon" type="image/png" href="../img/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="57x57" href="../img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/apple-icon-180x180.png">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner"><div class="container">
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a><a class="brand" href="../index.html">Hubzero-cms Api Documentation</a><div class="nav-collapse"><ul class="nav">
+<li class="dropdown">
+<a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                    API Documentation <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a>Namespaces</a></li>
+<li><a href="../namespaces/Components.html"><i class="icon-th"></i> Components</a></li>
+<li><a href="../namespaces/Cron.html"><i class="icon-th"></i> Cron</a></li>
+<li><a href="../namespaces/Hubzero.html"><i class="icon-th"></i> Hubzero</a></li>
+<li><a href="../namespaces/Maknz.html"><i class="icon-th"></i> Maknz</a></li>
+<li><a href="../namespaces/Modules.html"><i class="icon-th"></i> Modules</a></li>
+<li><a href="../namespaces/Plugins.html"><i class="icon-th"></i> Plugins</a></li>
+<li><a href="../namespaces/SciStarter.html"><i class="icon-th"></i> SciStarter</a></li>
+<li><a href="../namespaces/TwitterFeed.html"><i class="icon-th"></i> TwitterFeed</a></li>
+<li><a href="../namespaces/global.html"><i class="icon-th"></i> global</a></li>
+<li><a>Packages</a></li>
+<li><a href="../packages/Dataviewer%20::%20Data%20Definition%20Converter.html"><i class="icon-folder-open"></i> Dataviewer :: Data Definition Converter</a></li>
+<li><a href="../packages/Default.html"><i class="icon-folder-open"></i> Default</a></li>
+<li><a href="../packages/Diff.html"><i class="icon-folder-open"></i> Diff</a></li>
+<li><a href="../packages/DiffLib.html"><i class="icon-folder-open"></i> DiffLib</a></li>
+<li><a href="../packages/HUBzero.html"><i class="icon-folder-open"></i> HUBzero</a></li>
+<li><a href="../packages/HUBzero%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20CMS.html"><i class="icon-folder-open"></i> HUBzero                                  CMS</a></li>
+<li><a href="../packages/Hubzero.html"><i class="icon-folder-open"></i> Hubzero</a></li>
+<li><a href="../packages/Joomla.html"><i class="icon-folder-open"></i> Joomla</a></li>
+<li><a href="../packages/Joomla.Administrator.html"><i class="icon-folder-open"></i> Joomla.Administrator</a></li>
+<li><a href="../packages/Joomla.Plugin.html"><i class="icon-folder-open"></i> Joomla.Plugin</a></li>
+<li><a href="../packages/Joomla.Site.html"><i class="icon-folder-open"></i> Joomla.Site</a></li>
+<li><a href="../packages/MathRenderer.html"><i class="icon-folder-open"></i> MathRenderer</a></li>
+<li><a href="../packages/PEAR.html"><i class="icon-folder-open"></i> PEAR</a></li>
+<li><a href="../packages/SpamAssassin_Client.html"><i class="icon-folder-open"></i> SpamAssassin_Client</a></li>
+<li><a href="../packages/Structures_BibTex.html"><i class="icon-folder-open"></i> Structures_BibTex</a></li>
+<li><a href="../packages/akismet.html"><i class="icon-folder-open"></i> akismet</a></li>
+<li><a href="../packages/framework.html"><i class="icon-folder-open"></i> framework</a></li>
+<li><a href="../packages/geshi.html"><i class="icon-folder-open"></i> geshi</a></li>
+<li><a href="../packages/hubzero-cms.html"><i class="icon-folder-open"></i> hubzero-cms</a></li>
+<li><a href="../packages/hubzero.cms.admin.html"><i class="icon-folder-open"></i> hubzero.cms.admin</a></li>
+<li><a href="../packages/hubzero.cms.site.html"><i class="icon-folder-open"></i> hubzero.cms.site</a></li>
+</ul>
+</li>
+<li class="dropdown" id="charts-menu">
+<a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                    Charts <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="../graph_class.html"><i class="icon-list-alt"></i> Class hierarchy diagram</a></li></ul>
+</li>
+<li class="dropdown" id="reports-menu">
+<a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                    Reports <b class="caret"></b></a><ul class="dropdown-menu">
+<li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
+                <span class="label label-info">6184</span></a></li>
+<li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
+                <ul></ul></a></li>
+<li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
+                <span class="label label-info">3585</span></a></li>
+</ul>
+</li>
+</ul></div>
+</div></div>
+<div class="go_to_top"><a href="#___" style="color: inherit">Back to top  <i class="icon-upload icon-white"></i></a></div>
+</div>
+<div id="___" class="container">
+<noscript><div class="alert alert-warning">
+                            Javascript is disabled; several features are only available
+                            if Javascript is enabled.
+                        </div></noscript>
+<div class="row">
+<div class="span4">
+<div xmlns:php="http://php.net/xsl" class="btn-toolbar">
+<div class="btn-group visibility" data-toggle="buttons-checkbox">
+<button class="btn public active" title="Show public elements">Public</button><button class="btn protected" title="Show protected elements">Protected</button><button class="btn private" title="Show private elements">Private</button><button class="btn inherited" title="Show inherited elements">Inherited</button>
+</div>
+<div class="btn-group view pull-right" data-toggle="buttons-radio">
+<button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button><button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+</div>
+</div>
+<ul xmlns:php="http://php.net/xsl" class="side-nav nav nav-list">
+<li class="nav-header">
+<i title="Methods" class="icon-custom icon-method"></i> Methods
+                    <ul>
+<li class="method public "><a href="#method___construct" title="__construct() :: "><span class="description">__construct()
+        </span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_addAuthentication" title="addAuthentication() :: Returns GET/POST request parameters after adding 2-legged OAuth authentication parameters."><span class="description">Returns GET/POST request parameters after adding 2-legged OAuth authentication parameters.</span><pre>addAuthentication()</pre></a></li>
+<li class="method public "><a href="#method_checkCaptcha" title="checkCaptcha() :: Checks whether a user-submitted solution for a CAPTCHA is correct."><span class="description">Checks whether a user-submitted solution for a CAPTCHA is correct.</span><pre>checkCaptcha()</pre></a></li>
+<li class="method public "><a href="#method_checkContent" title="checkContent() :: Checks user-submitted content with Mollom."><span class="description">Checks user-submitted content with Mollom.</span><pre>checkContent()</pre></a></li>
+<li class="method public "><a href="#method_createCaptcha" title="createCaptcha() :: Retrieves a CAPTCHA resource from Mollom."><span class="description">Retrieves a CAPTCHA resource from Mollom.</span><pre>createCaptcha()</pre></a></li>
+<li class="method public "><a href="#method_createSite" title="createSite() :: Creates a new site."><span class="description">Creates a new site.</span><pre>createSite()</pre></a></li>
+<li class="method public "><a href="#method_deleteBlacklistEntry" title="deleteBlacklistEntry() :: Deletes a blacklist entry from a site."><span class="description">Deletes a blacklist entry from a site.</span><pre>deleteBlacklistEntry()</pre></a></li>
+<li class="method public "><a href="#method_deleteSite" title="deleteSite() :: Deletes a site."><span class="description">Deletes a site.</span><pre>deleteSite()</pre></a></li>
+<li class="method public "><a href="#method_getBlacklist" title="getBlacklist() :: Retrieves the blacklist for a site."><span class="description">Retrieves the blacklist for a site.</span><pre>getBlacklist()</pre></a></li>
+<li class="method public "><a href="#method_getBlacklistEntry" title="getBlacklistEntry() :: Retrieves a blacklist entry stored for a site."><span class="description">Retrieves a blacklist entry stored for a site.</span><pre>getBlacklistEntry()</pre></a></li>
+<li class="method public "><a href="#method_getClientInformation" title="getClientInformation() :: Returns platform and version information about the Mollom client."><span class="description">Returns platform and version information about the Mollom client.</span><pre>getClientInformation()</pre></a></li>
+<li class="method public "><a href="#method_getServerAuthentication" title="getServerAuthentication() :: Retrieves the OAuth Authorization header of an inbound HTTP request."><span class="description">Retrieves the OAuth Authorization header of an inbound HTTP request.</span><pre>getServerAuthentication()</pre></a></li>
+<li class="method public "><a href="#method_getServerParameters" title="getServerParameters() :: Retrieves GET/HEAD or POST/PUT parameters of an inbound HTTP request."><span class="description">Retrieves GET/HEAD or POST/PUT parameters of an inbound HTTP request.</span><pre>getServerParameters()</pre></a></li>
+<li class="method public "><a href="#method_getSite" title="getSite() :: Retrieves information about a site."><span class="description">Retrieves information about a site.</span><pre>getSite()</pre></a></li>
+<li class="method public "><a href="#method_getSites" title="getSites() :: Retrieves a list of sites accessible to this client."><span class="description">Retrieves a list of sites accessible to this client.</span><pre>getSites()</pre></a></li>
+<li class="method public "><a href="#method_httpBuildQuery" title="httpBuildQuery() :: Builds an RFC-compliant, rawurlencoded query string."><span class="description">Builds an RFC-compliant, rawurlencoded query string.</span><pre>httpBuildQuery()</pre></a></li>
+<li class="method public "><a href="#method_httpParseQuery" title="httpParseQuery() :: Parses an RFC-compliant, rawurlencoded query string."><span class="description">Parses an RFC-compliant, rawurlencoded query string.</span><pre>httpParseQuery()</pre></a></li>
+<li class="method public "><a href="#method_parseXML" title="parseXML() :: Converts a SimpleXMLIterator structure into an associative array."><span class="description">Converts a SimpleXMLIterator structure into an associative array.</span><pre>parseXML()</pre></a></li>
+<li class="method public "><a href="#method_purgeLog" title="purgeLog() :: Purges captured log messages."><span class="description">Purges captured log messages.</span><pre>purgeLog()</pre></a></li>
+<li class="method public "><a href="#method_query" title="query() :: Send or retrieve data from/to Mollom."><span class="description">Send or retrieve data from/to Mollom.</span><pre>query()</pre></a></li>
+<li class="method public "><a href="#method_rawurlencode" title="rawurlencode() :: Encodes a URL compliant with OAuth RFC 5849."><span class="description">Encodes a URL compliant with OAuth RFC 5849.</span><pre>rawurlencode()</pre></a></li>
+<li class="method public "><a href="#method_saveBlacklistEntry" title="saveBlacklistEntry() :: Creates or updates a blacklist entry for a site."><span class="description">Creates or updates a blacklist entry for a site.</span><pre>saveBlacklistEntry()</pre></a></li>
+<li class="method public "><a href="#method_sendFeedback" title="sendFeedback() :: Sends feedback to Mollom."><span class="description">Sends feedback to Mollom.</span><pre>sendFeedback()</pre></a></li>
+<li class="method public "><a href="#method_updateSite" title="updateSite() :: Updates a site."><span class="description">Updates a site.</span><pre>updateSite()</pre></a></li>
+<li class="method public "><a href="#method_verifyKeys" title="verifyKeys() :: Updates a site to verify API keys and send client information."><span class="description">Updates a site to verify API keys and send client information.</span><pre>verifyKeys()</pre></a></li>
+<li class="method public "><a href="#method_writeLog" title="writeLog() :: Writes log messages to a permanent location/storage."><span class="description">Writes log messages to a permanent location/storage.</span><pre>writeLog()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header protected">» Protected
+                    <ul>
+<li class="method protected "><a href="#method_deleteConfiguration" title="deleteConfiguration() :: Deletes a configuration value from client-side storage."><span class="description">Deletes a configuration value from client-side storage.</span><pre>deleteConfiguration()</pre></a></li>
+<li class="method protected "><a href="#method_handleRequest" title="handleRequest() :: Prepares a HTTP request to a Mollom server and processes the response."><span class="description">Prepares a HTTP request to a Mollom server and processes the response.</span><pre>handleRequest()</pre></a></li>
+<li class="method protected "><a href="#method_loadConfiguration" title="loadConfiguration() :: Loads a configuration value from client-side storage."><span class="description">Loads a configuration value from client-side storage.</span><pre>loadConfiguration()</pre></a></li>
+<li class="method protected "><a href="#method_request" title="request() :: Performs a HTTP request to a Mollom server."><span class="description">Performs a HTTP request to a Mollom server.</span><pre>request()</pre></a></li>
+<li class="method protected "><a href="#method_saveConfiguration" title="saveConfiguration() :: Saves a configuration value to client-side storage."><span class="description">Saves a configuration value to client-side storage.</span><pre>saveConfiguration()</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Properties" class="icon-custom icon-property"></i> Properties
+                    <ul>
+<li class="property public "><a href="#property_lastResponseCode" title="$lastResponseCode() :: The status code of the last server response, or TRUE if the request succeeded."><span class="description"></span><pre>$lastResponseCode</pre></a></li>
+<li class="property public "><a href="#property_listCount" title="$listCount() :: The amount of items contained in a list response."><span class="description"></span><pre>$listCount</pre></a></li>
+<li class="property public "><a href="#property_listOffset" title="$listOffset() :: The current offset of a list response."><span class="description"></span><pre>$listOffset</pre></a></li>
+<li class="property public "><a href="#property_listTotal" title="$listTotal() :: The total amount of items contained in a list response."><span class="description"></span><pre>$listTotal</pre></a></li>
+<li class="property public "><a href="#property_log" title="$log() :: A list of logged requests."><span class="description"></span><pre>$log</pre></a></li>
+<li class="property public "><a href="#property_oAuthStrategy" title="$oAuthStrategy() :: OAuth protocol parameter strategy to use."><span class="description"></span><pre>$oAuthStrategy</pre></a></li>
+<li class="property public "><a href="#property_privateKey" title="$privateKey() :: The private Mollom API key to use for request authentication."><span class="description"></span><pre>$privateKey</pre></a></li>
+<li class="property public "><a href="#property_publicKey" title="$publicKey() :: The public Mollom API key to use for request authentication."><span class="description"></span><pre>$publicKey</pre></a></li>
+<li class="property public "><a href="#property_requestMaxAttempts" title="$requestMaxAttempts() :: Maximum number of attempts for a request to a Mollom server."><span class="description"></span><pre>$requestMaxAttempts</pre></a></li>
+<li class="property public "><a href="#property_requestTimeout" title="$requestTimeout() :: Seconds in which a request to a Mollom server times out."><span class="description"></span><pre>$requestTimeout</pre></a></li>
+<li class="property public "><a href="#property_server" title="$server() :: The Mollom server to communicate with, without protocol."><span class="description"></span><pre>$server</pre></a></li>
+<li class="property public "><a href="#property_writeLog" title="$writeLog() :: Flag indicating whether to invoke Mollom::writeLog() in Mollom::query()."><span class="description"></span><pre>$writeLog</pre></a></li>
+</ul>
+</li>
+<li class="nav-header">
+<i title="Constants" class="icon-custom icon-constant"></i> Constants
+                    <ul>
+<li class="constant  "><a href="#constant_API_VERSION" title="API_VERSION() :: The Mollom API version, used in HTTP requests."><span class="description">The Mollom API version, used in HTTP requests.</span><pre>API_VERSION</pre></a></li>
+<li class="constant  "><a href="#constant_AUTH_ERROR" title="AUTH_ERROR() :: Client communication failure code: Authentication error."><span class="description">Client communication failure code: Authentication error.</span><pre>AUTH_ERROR</pre></a></li>
+<li class="constant  "><a href="#constant_NETWORK_ERROR" title="NETWORK_ERROR() :: Network communication failure code: Server could not be reached."><span class="description">Network communication failure code: Server could not be reached.</span><pre>NETWORK_ERROR</pre></a></li>
+<li class="constant  "><a href="#constant_REQUEST_ERROR" title="REQUEST_ERROR() :: Client communication failure code: Bad request."><span class="description">Client communication failure code: Bad request.</span><pre>REQUEST_ERROR</pre></a></li>
+<li class="constant  "><a href="#constant_RESPONSE_ERROR" title="RESPONSE_ERROR() :: Server communication failure code: Unexpected server response."><span class="description">Server communication failure code: Unexpected server response.</span><pre>RESPONSE_ERROR</pre></a></li>
+<li class="constant  "><a href="#constant_TIME_OFFSET_MAX" title="TIME_OFFSET_MAX() :: Maximum allowed time offset from UTC in seconds allowed for the client's local time."><span class="description">Maximum allowed time offset from UTC in seconds allowed for the client's local time.</span><pre>TIME_OFFSET_MAX</pre></a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="span8">
+<a xmlns:php="http://php.net/xsl" id="\Plugins\Antispam\Mollom\Service\Mollom\AbstractMollom"></a><ul xmlns:php="http://php.net/xsl" class="breadcrumb">
+<li>
+<a href="../index.html"><i title="Classes" class="icon-custom icon-class"></i></a><span class="divider">\</span>
+</li>
+<li><a href="../namespaces/Plugins.html">Plugins</a></li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Plugins.Antispam.html">Antispam</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Plugins.Antispam.Mollom.html">Mollom</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Plugins.Antispam.Mollom.Service.html">Service</a>
+</li>
+<li>
+<span class="divider">\</span><a href="../namespaces/Plugins.Antispam.Mollom.Service.Mollom.html">Mollom</a>
+</li>
+<li class="active">
+<span class="divider">\</span><a href="../classes/Plugins.Antispam.Mollom.Service.Mollom.AbstractMollom.html">AbstractMollom</a>
+</li>
+</ul>
+<div xmlns:php="http://php.net/xsl" class="element class">
+<p class="short_description">The base class for Mollom client implementations.</p>
+<div class="details">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>package</th>
+<td><a href="../packages/Default.html">Default</a></td>
+</tr></table>
+<h3>
+<i title="Methods" class="icon-custom icon-method"></i> Methods</h3>
+<a id="method___construct"></a><div class="element clickable method public method___construct " data-toggle="collapse" data-target=".method___construct .collapse" title="public">
+<h2>__construct()
+        </h2>
+<pre>__construct() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="method_addAuthentication"></a><div class="element clickable method public method_addAuthentication " data-toggle="collapse" data-target=".method_addAuthentication .collapse" title="public">
+<h2>Returns GET/POST request parameters after adding 2-legged OAuth authentication parameters.</h2>
+<pre>addAuthentication(string $method, string $server, string $path, array $data, array $headers) : string</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>All available OAuth libraries for PHP are needlessly over-engineered,
+poorly written and maintained, contain code for server implementations, and
+would be mostly overhead for the simple purpose of 2-legged authentication.
+Therefore, this simple function implements OAuth request signing based on
+latest RFC 5849, using the public API key as client/consumer key and the
+private API key as client secret.</p>
+<p>Make sure that your server time is synchronized with the world clocks, and
+that you do not share your private key with anyone else.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="http://tools.ietf.org/html/rfc5849"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::oAuthStrategy"></a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>The HTTP method to use; i.e., 'GET' or 'POST'.</p></div>
+<div class="subelement argument">
+<h4>$server</h4>
+<code>string</code><p>The base URL of the server to perform the request against; e.g.,
+'<a href="http://foo.mollom.com">http://foo.mollom.com</a>'.</p></div>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>The REST path/resource to request; e.g., 'site/1a2b3c'.</p></div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>An associative array of query parameters to send with the request. Passed
+  by reference.</p></div>
+<div class="subelement argument">
+<h4>$headers</h4>
+<code>array</code><p>An associative array of HTTP request headers to send along with the
+  request. Passed by reference.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>A string containing encoded request parameters derived of $data to use as
+  GET query string or POST body data.</div>
+</div></div>
+</div>
+<a id="method_checkCaptcha"></a><div class="element clickable method public method_checkCaptcha " data-toggle="collapse" data-target=".method_checkCaptcha .collapse" title="public">
+<h2>Checks whether a user-submitted solution for a CAPTCHA is correct.</h2>
+<pre>checkCaptcha(array $data<code> = array()</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>An associative array containing:</p>
+<ul>
+<li>id: The ID of the CAPTCHA to check.</li>
+<li>solution: The answer provided by the author.
+and any of the keys:</li>
+<li>authorName: The (real) name of the content author.</li>
+<li>authorUrl: The homepage/website URL of the content author.</li>
+<li>authorMail: The e-mail address of the content author.</li>
+<li>authorIp: The IP address of the content author.</li>
+<li>authorId: The local user ID on the client site of the content author.</li>
+<li>authorOpenid: An indexed array of Open IDs of the content author.</li>
+<li>rateLimit: Seconds that must have passed by for the same author to post
+again. Defaults to 15.</li>
+<li>honeypot: The value of a client-side honeypot form element, if
+non-empty.</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>On success, an associative array representing the full CAPTCHA record,
+  additionally containing:
+  - solved: Whether the provided solution was correct (1) or not (0).
+  - reason: A string denoting the reason for Mollom's classification; e.g.,
+    - rateLimit: Author was seen on Mollom-protected sites within the given
+      'rateLimit' time-frame.
+  On failure, the error response code returned by the server.
+  Or FALSE if no 'id' was specified.</div>
+</div></div>
+</div>
+<a id="method_checkContent"></a><div class="element clickable method public method_checkContent " data-toggle="collapse" data-target=".method_checkContent .collapse" title="public">
+<h2>Checks user-submitted content with Mollom.</h2>
+<pre>checkContent(array $data<code> = array()</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>An associative array containing any of the keys:</p>
+<ul>
+<li>id: The existing content ID of the content, if it or a variant or
+revision of it has been checked before.</li>
+<li>postTitle: The title of the content.</li>
+<li>postBody: The body of the content. If the content consists of multiple
+fields, concatenate them into one postBody string, separated by " \n"
+(space and line-feed).</li>
+<li>authorName: The (real) name of the content author.</li>
+<li>authorUrl: The homepage/website URL of the content author.</li>
+<li>authorMail: The e-mail address of the content author.</li>
+<li>authorIp: The IP address of the content author.</li>
+<li>authorId: The local user ID on the client site of the content author.</li>
+<li>authorOpenid: An indexed array of Open IDs of the content author.</li>
+<li>checks: An indexed array of strings denoting the checks to perform, one
+or more of: 'spam', 'quality', 'profanity', 'language', 'sentiment'.
+Defaults to 'spam'.</li>
+<li>type: An optional string identifier to request a special content
+classification behavior. Possible values are:
+<ul>
+<li>'user': Enables classification of 'author*' request parameters as
+primary content. postTitle and postBody may be left empty without
+negative impact on the classification result. Use this for checking
+user registration forms. Optionally pass additional user profile text
+fields as postBody.</li>
+</ul></li>
+<li>unsure: Integer denoting whether a "unsure" response should be allowed
+(1) for the 'spam' check (which should lead to CAPTCHA) or not (0).
+Defaults to 1.</li>
+<li>strictness: A string denoting the strictness of Mollom checks to
+perform; one of 'strict', 'normal', or 'relaxed'. Defaults to 'normal'.</li>
+<li>rateLimit: Seconds that must have passed by for the same author to post
+again. Defaults to 15.</li>
+<li>honeypot: The value of a client-side honeypot form element, if
+non-empty.</li>
+<li>stored: Integer denoting whether the content has been stored (1) on the
+client-side or not (0). Use 0 during form validation, 1 after
+successful submission. Defaults to 0.</li>
+<li>url: The absolute URL to the stored content.</li>
+<li>contextUrl: An absolute URL to parent/context content of the stored
+content; e.g., the URL of the article or forum thread a comment is
+posted on (not the parent comment that was replied to).</li>
+<li>contextTitle: The title of the parent/context content of the stored
+content; e.g., the title of the article or forum thread a comment is
+posted on (not the parent comment that was replied to).</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>On success, an associative array representing the full content record,
+  containing the additional keys:
+  - spamScore: A floating point value with a precision of 2, ranging
+    between 0.00 and 1.00; whereas 0.00 denotes 100% spam, 0.50 denotes
+    "unsure", and 1.00 denotes ham. Only returned if 'spam' was passed for
+    'checks'.
+  - spamClassification: The final spam classification; one of 'spam',
+    'unsure', or 'ham'. Only returned if 'spam' was passed for 'checks'.
+  - profanityScore: A floating point value with a precision of 2, ranging
+    between 0.00 and 1.00; whereas 0.00 denotes 0% profanity and 1.00
+    denotes 100% profanity. Only returned if 'profanity' was passed for
+    'checks'.
+  - qualityScore: A floating point value with a precision of 2, ranging
+    between 0.00 and 1.00; whereas 0.00 denotes poor quality and 1.00
+    high quality. Only returned if 'quality' was passed for 'checks'.
+  - sentimentScore: A floating point value with a precision of 2, ranging
+    between 0.00 and 1.00; whereas 0.00 denotes bad sentiment and 1.00
+    good sentiment. Only returned if 'sentiment' was passed for 'checks'.
+  - reason: A string denoting the reason for Mollom's classification; e.g.,
+    - rateLimit: Author was seen on Mollom-protected sites within the given
+      'rateLimit' time-frame.
+  On failure, the error response code returned by the server.</div>
+</div></div>
+</div>
+<a id="method_createCaptcha"></a><div class="element clickable method public method_createCaptcha " data-toggle="collapse" data-target=".method_createCaptcha .collapse" title="public">
+<h2>Retrieves a CAPTCHA resource from Mollom.</h2>
+<pre>createCaptcha(array $data<code> = array()</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>An associative array containing:</p>
+<ul>
+<li>type: A string denoting the type of CAPTCHA to create; one of 'image'
+or 'audio'.
+and any of the keys:</li>
+<li>contentId: The ID of a content resource to link the CAPTCHA to. Allows
+Mollom to learn when it was unsure.</li>
+<li>ssl: An integer denoting whether to create a CAPTCHA URL using HTTPS
+(1) or not (0). Only available for paid subscriptions.</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>On success, an associative array representing the full CAPTCHA record,
+  containing:
+  - id: The ID of the CAPTCHA.
+  - url: The URL of the CAPTCHA.
+  On failure, the error response code returned by the server.
+  Or FALSE if a unknown 'type' was specified.</div>
+</div></div>
+</div>
+<a id="method_createSite"></a><div class="element clickable method public method_createSite " data-toggle="collapse" data-target=".method_createSite .collapse" title="public">
+<h2>Creates a new site.</h2>
+<pre>createSite(array $data<code> = array()</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>An associative array of properties for the new site. At least 'url' and
+'email' are required. See Mollom::getSite() for details.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>On success, the full site information of the created site; see
+  Mollom::getSite() for details. On failure, the error response code
+  returned by the server. Or FALSE if 'url' or 'email' was not specified.</div>
+</div></div>
+</div>
+<a id="method_deleteBlacklistEntry"></a><div class="element clickable method public method_deleteBlacklistEntry " data-toggle="collapse" data-target=".method_deleteBlacklistEntry .collapse" title="public">
+<h2>Deletes a blacklist entry from a site.</h2>
+<pre>deleteBlacklistEntry(string $entryId, string $publicKey<code> = NULL</code>) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entryId</h4>
+<code>string</code><p>The ID of the blacklist entry to delete.</p></div>
+<div class="subelement argument">
+<h4>$publicKey</h4>
+<code>string</code><p>(optional) The public Mollom API key of the site to create the blacklist
+entry for. Defaults to the public key of the client.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE on success, FALSE otherwise.</div>
+</div></div>
+</div>
+<a id="method_deleteSite"></a><div class="element clickable method public method_deleteSite " data-toggle="collapse" data-target=".method_deleteSite .collapse" title="public">
+<h2>Deletes a site.</h2>
+<pre>deleteSite(string $publicKey) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$publicKey</h4>
+<code>string</code><p>The public Mollom API key of the site to delete.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE on success, FALSE otherwise.</div>
+</div></div>
+</div>
+<a id="method_getBlacklist"></a><div class="element clickable method public method_getBlacklist " data-toggle="collapse" data-target=".method_getBlacklist .collapse" title="public">
+<h2>Retrieves the blacklist for a site.</h2>
+<pre>getBlacklist(string $publicKey<code> = NULL</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>todo</th>
+<td>List parameters.</td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$publicKey</h4>
+<code>string</code><p>(optional) The public Mollom API key of the site to retrieve the
+blacklist for. Defaults to the public key of the client.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>An array containing blacklist entries; see Mollom::getBlacklistEntry()
+  for details. On failure, the error response code returned by the server.</div>
+</div></div>
+</div>
+<a id="method_getBlacklistEntry"></a><div class="element clickable method public method_getBlacklistEntry " data-toggle="collapse" data-target=".method_getBlacklistEntry .collapse" title="public">
+<h2>Retrieves a blacklist entry stored for a site.</h2>
+<pre>getBlacklistEntry(string $entryId, string $publicKey<code> = NULL</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$entryId</h4>
+<code>string</code><p>The ID of the blacklist entry to retrieve.</p></div>
+<div class="subelement argument">
+<h4>$publicKey</h4>
+<code>string</code><p>(optional) The public Mollom API key of the site to retrieve the
+blacklist entry for. Defaults to the public key of the client.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>On success, an associative array containing:
+  - id: The ID the of blacklist entry.
+  - created: A timestamp in seconds since the UNIX epoch of when the entry
+    was created.
+  - value: The blacklisted string/value.
+  - reason: A string denoting the reason for why the value is blacklisted;
+    one of 'spam', 'profanity', 'quality', or 'unwanted'. Defaults to
+    'unwanted'.
+  - context: A string denoting where the entry's value may match; one of
+    'allFields', 'links', 'authorName', 'authorMail', 'authorIp',
+    'authorIp', or 'postTitle'. Defaults to 'allFields'.
+  - match: A string denoting how precise the entry's value may match; one
+    of 'exact' or 'contains'. Defaults to 'contains'.
+  - status: An integer denoting whether the entry is enabled (1) or not
+    (0).
+  - note: A custom string explaining the entry. Useful in a multi-moderator
+    scenario.
+  On failure, the error response code returned by the server.</div>
+</div></div>
+</div>
+<a id="method_getClientInformation"></a><div class="element clickable method public method_getClientInformation " data-toggle="collapse" data-target=".method_getClientInformation .collapse" title="public">
+<h2>Returns platform and version information about the Mollom client.</h2>
+<pre>getClientInformation() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Retrieves platform and Mollom client version information to send along to
+Mollom when verifying keys.</p>
+<p>This information is used to speed up support requests and technical
+inquiries. The data may also be aggregated to help the Mollom staff to make
+decisions on new features or the necessity of back-porting improved
+functionality to older versions.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An associative array containing:
+  - platformName: The name of the platform/distribution; e.g., "Drupal".
+  - platformVersion: The version of platform/distribution; e.g., "7.0".
+  - clientName: The official Mollom client name; e.g., "Mollom".
+  - clientVersion: The version of the Mollom client; e.g., "7.x-1.0".</div>
+</div></div>
+</div>
+<a id="method_getServerAuthentication"></a><div class="element clickable method public method_getServerAuthentication " data-toggle="collapse" data-target=".method_getServerAuthentication .collapse" title="public">
+<h2>Retrieves the OAuth Authorization header of an inbound HTTP request.</h2>
+<pre>getServerAuthentication() : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An array containing all key/value pairs extracted out of the
+  'Authorization' HTTP header, if any.</div>
+</div></div>
+</div>
+<a id="method_getServerParameters"></a><div class="element clickable method public method_getServerParameters " data-toggle="collapse" data-target=".method_getServerParameters .collapse" title="public">
+<h2>Retrieves GET/HEAD or POST/PUT parameters of an inbound HTTP request.</h2>
+<pre>getServerParameters() : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An array containing either GET/HEAD query string parameters or POST/PUT
+  post body parameters. Parameter parsing accounts for multiple request
+  parameters in non-PHP format; e.g., 'foo=one&amp;foo=bar'.</div>
+</div></div>
+</div>
+<a id="method_getSite"></a><div class="element clickable method public method_getSite " data-toggle="collapse" data-target=".method_getSite .collapse" title="public">
+<h2>Retrieves information about a site.</h2>
+<pre>getSite(string $publicKey<code> = NULL</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$publicKey</h4>
+<code>string</code><p>(optional) The public Mollom API key of the site to retrieve. Defaults to
+the public key of the client.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>On success, an associative array containing:
+  - publicKey: The public Mollom API key of the site.
+  - privateKey: The private Mollom API key of the site.
+  - url: The URL of the site.
+  - email: The e-mail address of the primary contact of the site.
+  - languages: (optional) An array of language ISO codes, content is
+    expected to submitted in on the site.
+  - platformName: (optional) The name of the platform running the site
+    (e.g., "Drupal").
+  - platformVersion: (optional) The version of the platform running the
+    site (e.g., "6.20").
+  - clientName: (optional) The name of the Mollom client plugin used
+    (e.g., "Mollom").
+  - clientVersion: (optional) The version of the Mollom client plugin used
+    (e.g., "6.15").
+  On failure, the error response code returned by the server.</div>
+</div></div>
+</div>
+<a id="method_getSites"></a><div class="element clickable method public method_getSites " data-toggle="collapse" data-target=".method_getSites .collapse" title="public">
+<h2>Retrieves a list of sites accessible to this client.</h2>
+<pre>getSites() : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Used by Mollom resellers only.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An array containing site resources, as returned by Mollom::getsite().</div>
+</div></div>
+</div>
+<a id="method_httpBuildQuery"></a><div class="element clickable method public method_httpBuildQuery " data-toggle="collapse" data-target=".method_httpBuildQuery .collapse" title="public">
+<h2>Builds an RFC-compliant, rawurlencoded query string.</h2>
+<pre>httpBuildQuery(array $query, string $parent<code> = ''</code>) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>PHP did a design decision to only support HTTP query parameters in the form
+of foo[]=1&amp;foo[]=2, primarily for its built-in and automated conversion to
+PHP arrays. Other platforms (including the Mollom backend) do not support
+this syntax and expect multiple parameters to be in the form of
+foo=1&amp;foo=2.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5Chttp_build_query()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="http://en.wikipedia.org/wiki/Query_string"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="http://tools.ietf.org/html/rfc3986#section-3.4"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::httpParseQuery()"></a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$query</h4>
+<code>array</code><p>The query parameter array to be processed, e.g. $_GET.</p></div>
+<div class="subelement argument">
+<h4>$parent</h4>
+<code>string</code><p>Internal use only. Used to build the $query array key for nested items.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>A rawurlencoded string which can be used as or appended to the URL query
+  string.</div>
+</div></div>
+</div>
+<a id="method_httpParseQuery"></a><div class="element clickable method public method_httpParseQuery " data-toggle="collapse" data-target=".method_httpParseQuery .collapse" title="public">
+<h2>Parses an RFC-compliant, rawurlencoded query string.</h2>
+<pre>httpParseQuery(string $query) : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Mollom clients normally do not need this function, as they do not need to
+process requests from a server - unless a client attempts to implement
+client-side unit testing.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::httpBuildQuery()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5Cparse_str()"></a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$query</h4>
+<code>string</code><p>The query parameter string to process, e.g. $_SERVER['QUERY_STRING']
+(GET) or php://input (POST/PUT).</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>A query parameter array parsed from $query.</div>
+</div></div>
+</div>
+<a id="method_parseXML"></a><div class="element clickable method public method_parseXML " data-toggle="collapse" data-target=".method_parseXML .collapse" title="public">
+<h2>Converts a SimpleXMLIterator structure into an associative array.</h2>
+<pre>parseXML(\Plugins\Antispam\Mollom\Service\Mollom\SimpleXMLIterator $sxi) : array</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Used to parse an XML response from Mollom servers into a PHP array. For
+example:</p></div>
+<table class="table table-bordered">
+<tr>
+<th>code</th>
+<td>$elements = new SimpleXmlIterator($response_body);
+$parsed_response = $this->parseXML($elements);</td>
+</tr>
+<tr>
+<th>endcode</th>
+<td></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$sxi</h4>
+<code>\Plugins\Antispam\Mollom\Service\Mollom\SimpleXMLIterator</code><p>A SimpleXMLIterator structure of the server response body.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An associative, possibly multidimensional array.</div>
+</div></div>
+</div>
+<a id="method_purgeLog"></a><div class="element clickable method public method_purgeLog " data-toggle="collapse" data-target=".method_purgeLog .collapse" title="public">
+<h2>Purges captured log messages.</h2>
+<pre>purgeLog() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::writeLog()"></a></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_query"></a><div class="element clickable method public method_query " data-toggle="collapse" data-target=".method_query .collapse" title="public">
+<h2>Send or retrieve data from/to Mollom.</h2>
+<pre>query(string $method, string $path, array $data<code> = array()</code>, array $expected<code> = array()</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::handleRequest()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::request()"></a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>The HTTP method to use; i.e., 'GET', 'POST', or 'PUT'.</p></div>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>The REST path/resource to request; e.g., 'site/1a2b3c'.</p></div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>An associative array of query parameters to send with the request.</p></div>
+<div class="subelement argument">
+<h4>$expected</h4>
+<code>array</code><p>(optional) An element that is expected in the response, denoted as a list
+of parent element keys to the element and the element key itself; e.g., a
+value of array('content', 'id') expects $response['content']['id'] to
+exist in the response.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>On success, the parsed response body. On failure, the last response code,
+  in case it is a known one; otherwise Mollom::NETWORK_ERROR.</div>
+</div></div>
+</div>
+<a id="method_rawurlencode"></a><div class="element clickable method public method_rawurlencode " data-toggle="collapse" data-target=".method_rawurlencode .collapse" title="public">
+<h2>Encodes a URL compliant with OAuth RFC 5849.</h2>
+<pre>rawurlencode(string $value) : string</pre>
+<div class="labels"><span class="label">Static</span></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>string</code><p>The URL string to be encoded.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>string</code>The rawurlencode()d URL, containing string literals for "~" (tildes) and
+  " " (spaces). (RFC 5849 3.4.1.3.1 and 3.6)</div>
+</div></div>
+</div>
+<a id="method_saveBlacklistEntry"></a><div class="element clickable method public method_saveBlacklistEntry " data-toggle="collapse" data-target=".method_saveBlacklistEntry .collapse" title="public">
+<h2>Creates or updates a blacklist entry for a site.</h2>
+<pre>saveBlacklistEntry(array $data<code> = array()</code>, string $publicKey<code> = NULL</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>An associative array describing the blacklist entry to create or update.
+See return value of Mollom::getBlacklistEntry() for details. To update
+an existing entry, its ID must be specified in 'id'.</p></div>
+<div class="subelement argument">
+<h4>$publicKey</h4>
+<code>string</code><p>(optional) The public Mollom API key of the site to save the blacklist
+entry for. Defaults to the public key of the client.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>On success, the full blacklist entry record of the saved entry; see
+  Mollom::getBlacklistEntry() for details. On failure, the error response
+  code returned by the server.</div>
+</div></div>
+</div>
+<a id="method_sendFeedback"></a><div class="element clickable method public method_sendFeedback " data-toggle="collapse" data-target=".method_sendFeedback .collapse" title="public">
+<h2>Sends feedback to Mollom.</h2>
+<pre>sendFeedback(array $data) : boolean</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>An associative array containing:</p>
+<ul>
+<li>reason: A string denoting the reason for why the content associated
+with either contentId or captchaId is being reported; one of:
+<ul>
+<li>spam: The content is spam, unsolicited advertising.</li>
+<li>profanity: The content contains obscene, violent, profane language.</li>
+<li>quality: The content is of low quality.</li>
+<li>unwanted: The content is unwanted, taunting, off-topic.
+and at least one of:</li>
+</ul></li>
+<li>contentId: A Mollom content ID associated with the content.</li>
+<li>captchaId: A Mollom CAPTCHA ID associated with the content.</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>boolean</code>TRUE if the feedback was sent successfully, FALSE otherwise.</div>
+</div></div>
+</div>
+<a id="method_updateSite"></a><div class="element clickable method public method_updateSite " data-toggle="collapse" data-target=".method_updateSite .collapse" title="public">
+<h2>Updates a site.</h2>
+<pre>updateSite(array $data<code> = array()</code>, string $publicKey<code> = NULL</code>) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Note that most Mollom clients want to use Mollom::verifyKeys() only. This
+method is primarily used by Mollom resellers, who are provisioning sites
+and may need to set other site properties.</p></div>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>An associative array of properties to set for the site. See
+Mollom::getSite() for details.</p></div>
+<div class="subelement argument">
+<h4>$publicKey</h4>
+<code>string</code><p>(optional) The public Mollom API key of the site to update. Defaults to
+the public key of the client.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>On success, the full site information of the created site; see
+  Mollom::getSite() for details. On failure, the error response code
+  returned by the server.</div>
+</div></div>
+</div>
+<a id="method_verifyKeys"></a><div class="element clickable method public method_verifyKeys " data-toggle="collapse" data-target=".method_verifyKeys .collapse" title="public">
+<h2>Updates a site to verify API keys and send client information.</h2>
+<pre>verifyKeys() : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Mollom API keys are validated in all API calls already. This method should
+be used when the API keys of a Mollom client are configured for a site. It
+should be invoked at least once for a site, to send client and version
+information to Mollom in order to aid with Mollom support requests.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>TRUE on success. On failure, the error response code returned by the
+  server; either Mollom::REQUEST_ERROR, Mollom::AUTH_ERROR or
+  Mollom::NETWORK_ERROR.</div>
+</div></div>
+</div>
+<a id="method_writeLog"></a><div class="element clickable method public method_writeLog " data-toggle="collapse" data-target=".method_writeLog .collapse" title="public">
+<h2>Writes log messages to a permanent location/storage.</h2>
+<pre>writeLog() </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Not abstract, since clients are not required to write log messages.
+However, all clients should permanently store the log messages, as it
+dramatically improves resolution of support requests filed by users.
+The log may be written and appended to a file (via file_put_contents()),
+syslog (on *nix-based systems), or a database.</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::log"></a></td>
+</tr></table>
+</div></div>
+</div>
+<a id="method_deleteConfiguration"></a><div class="element clickable method protected method_deleteConfiguration " data-toggle="collapse" data-target=".method_deleteConfiguration .collapse" title="protected">
+<h2>Deletes a configuration value from client-side storage.</h2>
+<pre>deleteConfiguration(string $name) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::loadConfiguration()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::saveConfiguration()"></a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The configuration setting name to delete.</p></div>
+</div></div>
+</div>
+<a id="method_handleRequest"></a><div class="element clickable method protected method_handleRequest " data-toggle="collapse" data-target=".method_handleRequest .collapse" title="protected">
+<h2>Prepares a HTTP request to a Mollom server and processes the response.</h2>
+<pre>handleRequest(string $method, string $server, string $path, array $data, array $expected<code> = array()</code>) : array</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::lastResponseCode"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::query()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::httpBuildQuery()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::parseXML()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5Cjson_decode()"></a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>The HTTP method to use; i.e., 'GET' or 'POST'.</p></div>
+<div class="subelement argument">
+<h4>$server</h4>
+<code>string</code><p>The base URL of the server to perform the request against; e.g.,
+'<a href="http://foo.mollom.com">http://foo.mollom.com</a>'.</p></div>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>The REST path/resource to request; e.g., 'site/1a2b3c'.</p></div>
+<div class="subelement argument">
+<h4>$data</h4>
+<code>array</code><p>An associative array of query parameters to send with the request.</p></div>
+<div class="subelement argument">
+<h4>$expected</h4>
+<code>array</code><p>(optional) An element that is expected in the response, denoted as a list
+of parent element keys to the element and the element key itself; e.g., a
+value of array('content', 'id') expects $response['content']['id'] to
+exist in the response. If the expected element does not exist, a
+MollomResponseException is thrown.</p></div>
+<h3>Exceptions</h3>
+<table class="table table-bordered">
+<tr>
+<th><code>\Plugins\Antispam\Mollom\Service\Mollom\Exception\MollomNetworkException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Plugins\Antispam\Mollom\Service\Mollom\Exception\MollomAuthenticationException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Plugins\Antispam\Mollom\Service\Mollom\Exception\MollomResponseException</code></th>
+<td></td>
+</tr>
+<tr>
+<th><code>\Plugins\Antispam\Mollom\Service\Mollom\Exception\MollomException</code></th>
+<td></td>
+</tr>
+</table>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>array</code>An associative array representing the parsed response body on success. On
+  any failure, a MollomException is thrown. Additionally,
+  Mollom::lastResponseCode is set to TRUE on success, or to the Mollom or
+  HTTP status code on failure.</div>
+</div></div>
+</div>
+<a id="method_loadConfiguration"></a><div class="element clickable method protected method_loadConfiguration " data-toggle="collapse" data-target=".method_loadConfiguration .collapse" title="protected">
+<h2>Loads a configuration value from client-side storage.</h2>
+<pre>loadConfiguration(string $name) : mixed</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::saveConfiguration()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::deleteConfiguration()"></a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The configuration setting name to load, one of:</p>
+<ul>
+<li>publicKey: The public API key for Mollom authentication.</li>
+<li>privateKey: The private API key for Mollom authentication.</li>
+</ul></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>mixed</code>The stored configuration value or NULL if there is none.</div>
+</div></div>
+</div>
+<a id="method_request"></a><div class="element clickable method protected method_request " data-toggle="collapse" data-target=".method_request .collapse" title="protected">
+<h2>Performs a HTTP request to a Mollom server.</h2>
+<pre>request(string $method, string $server, string $path, string $query<code> = NULL</code>, array $headers<code> = array()</code>) : object</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::handleRequest()"></a></td>
+</tr></table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$method</h4>
+<code>string</code><p>The HTTP method to use; i.e., 'GET', 'POST', or 'PUT'.</p></div>
+<div class="subelement argument">
+<h4>$server</h4>
+<code>string</code><p>The base URL of the server to perform the request against; e.g.,
+'<a href="http://foo.mollom.com">http://foo.mollom.com</a>'.</p></div>
+<div class="subelement argument">
+<h4>$path</h4>
+<code>string</code><p>The REST path/resource to request; e.g., 'site/1a2b3c'.</p></div>
+<div class="subelement argument">
+<h4>$query</h4>
+<code>string</code><p>(optional) A prepared string of HTTP query parameters to append to $path
+for $method GET, or to use as request body for $method POST.</p></div>
+<div class="subelement argument">
+<h4>$headers</h4>
+<code>array</code><p>(optional) An associative array of HTTP request headers to send along
+with the request.</p></div>
+<h3>Returns</h3>
+<div class="subelement response">
+<code>object</code>An object containing response properties:
+  - code: The HTTP status code as integer returned by the Mollom server.
+  - message: The HTTP status message string returned by the Mollom server,
+    or NULL if there is no message.
+  - headers: An associative array containing the HTTP response headers
+    returned by the Mollom server. Header name keys are expected to be
+    lower-case; i.e., "content-type" instead of "Content-Type".
+  - body: The HTTP response body string returned by the Mollom server, or
+    NULL if there is none.</div>
+</div></div>
+</div>
+<a id="method_saveConfiguration"></a><div class="element clickable method protected method_saveConfiguration " data-toggle="collapse" data-target=".method_saveConfiguration .collapse" title="protected">
+<h2>Saves a configuration value to client-side storage.</h2>
+<pre>saveConfiguration(string $name, mixed $value) </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::loadConfiguration()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::deleteConfiguration()"></a></td>
+</tr>
+</table>
+<h3>Parameters</h3>
+<div class="subelement argument">
+<h4>$name</h4>
+<code>string</code><p>The configuration setting name to save.</p></div>
+<div class="subelement argument">
+<h4>$value</h4>
+<code>mixed</code><p>The value to save.</p></div>
+</div></div>
+</div>
+<h3>
+<i title="Properties" class="icon-custom icon-property"></i> Properties</h3>
+<a id="property_lastResponseCode"> </a><div class="element clickable property public property_lastResponseCode" data-toggle="collapse" data-target=".property_lastResponseCode .collapse" title="public">
+<h2>The status code of the last server response, or TRUE if the request succeeded.</h2>
+<pre>$lastResponseCode : integer | boolean | null</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"><p>If not TRUE, then the value is either one of</p>
+<ul>
+<li>Mollom::NETWORK_ERROR</li>
+<li>Mollom::RESPONSE_ERROR</li>
+<li>Mollom::REQUEST_ERROR</li>
+<li>Mollom::AUTH_ERROR
+or the actual HTTP status code returned by the server.</li>
+</ul></div></div></div>
+</div>
+<a id="property_listCount"> </a><div class="element clickable property public property_listCount" data-toggle="collapse" data-target=".property_listCount .collapse" title="public">
+<h2>The amount of items contained in a list response.</h2>
+<pre>$listCount : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_listOffset"> </a><div class="element clickable property public property_listOffset" data-toggle="collapse" data-target=".property_listOffset .collapse" title="public">
+<h2>The current offset of a list response.</h2>
+<pre>$listOffset : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>0</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_listTotal"> </a><div class="element clickable property public property_listTotal" data-toggle="collapse" data-target=".property_listTotal .collapse" title="public">
+<h2>The total amount of items contained in a list response.</h2>
+<pre>$listTotal : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>NULL</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_log"> </a><div class="element clickable property public property_log" data-toggle="collapse" data-target=".property_log .collapse" title="public">
+<h2>A list of logged requests.</h2>
+<pre>$log : array</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>array()</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_oAuthStrategy"> </a><div class="element clickable property public property_oAuthStrategy" data-toggle="collapse" data-target=".property_oAuthStrategy .collapse" title="public">
+<h2>OAuth protocol parameter strategy to use.</h2>
+<pre>$oAuthStrategy : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'header'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Either 'header' for HTTP headers (preferred), or 'query' for GET/POST
+request parameters.</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::addAuthentication()"></a></td>
+</tr></table>
+</div></div>
+</div>
+<a id="property_privateKey"> </a><div class="element clickable property public property_privateKey" data-toggle="collapse" data-target=".property_privateKey .collapse" title="public">
+<h2>The private Mollom API key to use for request authentication.</h2>
+<pre>$privateKey : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_publicKey"> </a><div class="element clickable property public property_publicKey" data-toggle="collapse" data-target=".property_publicKey .collapse" title="public">
+<h2>The public Mollom API key to use for request authentication.</h2>
+<pre>$publicKey : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>''</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_requestMaxAttempts"> </a><div class="element clickable property public property_requestMaxAttempts" data-toggle="collapse" data-target=".property_requestMaxAttempts .collapse" title="public">
+<h2>Maximum number of attempts for a request to a Mollom server.</h2>
+<pre>$requestMaxAttempts : integer</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>2</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::query()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::%24requestTimeout"></a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_requestTimeout"> </a><div class="element clickable property public property_requestTimeout" data-toggle="collapse" data-target=".property_requestTimeout .collapse" title="public">
+<h2>Seconds in which a request to a Mollom server times out.</h2>
+<pre>$requestTimeout : float</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>3.0</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Mollom servers usually respond within a few milliseconds. However, if a
+server is under very high load, or in case of networking issues, a response
+might take longer. A maximum response time of 3 seconds ensures that the
+client waits long enough in edge-cases, but also not too long in case a
+particular server is unreachable.</p>
+<p>The timeout applies per request. Mollom::query() will retry a request until
+it reaches Mollom::$requestMaxAttempts. With the default values, a Mollom
+API call has a total timeout of 6 seconds in case of a server failure.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::request()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::%24requestMaxAttempts"></a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="property_server"> </a><div class="element clickable property public property_server" data-toggle="collapse" data-target=".property_server .collapse" title="public">
+<h2>The Mollom server to communicate with, without protocol.</h2>
+<pre>$server : string</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>'rest.mollom.com'</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="property_writeLog"> </a><div class="element clickable property public property_writeLog" data-toggle="collapse" data-target=".property_writeLog .collapse" title="public">
+<h2>Flag indicating whether to invoke Mollom::writeLog() in Mollom::query().</h2>
+<pre>$writeLog : boolean</pre>
+<div class="row collapse"><div class="detail-description">
+<h3>Default</h3>
+<div class="subelement argument"><code>TRUE</code></div>
+</div></div>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<h3>
+<i title="Constants" class="icon-custom icon-constant"></i> Constants</h3>
+<a id="constant_API_VERSION"> </a><div class="element clickable constant  constant_API_VERSION" data-toggle="collapse" data-target=".constant_API_VERSION .collapse" title="">
+<h2>The Mollom API version, used in HTTP requests.</h2>
+<pre>API_VERSION = 'v1' </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description"><div class="long_description"></div></div></div>
+</div>
+<a id="constant_AUTH_ERROR"> </a><div class="element clickable constant  constant_AUTH_ERROR" data-toggle="collapse" data-target=".constant_AUTH_ERROR .collapse" title="">
+<h2>Client communication failure code: Authentication error.</h2>
+<pre>AUTH_ERROR = 401 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollomAuthenticationException"></a></td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_NETWORK_ERROR"> </a><div class="element clickable constant  constant_NETWORK_ERROR" data-toggle="collapse" data-target=".constant_NETWORK_ERROR .collapse" title="">
+<h2>Network communication failure code: Server could not be reached.</h2>
+<pre>NETWORK_ERROR = 900 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollomNetworkException"></a></td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_REQUEST_ERROR"> </a><div class="element clickable constant  constant_REQUEST_ERROR" data-toggle="collapse" data-target=".constant_REQUEST_ERROR .collapse" title="">
+<h2>Client communication failure code: Bad request.</h2>
+<pre>REQUEST_ERROR = 400 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Used in case of a too large system time offset from UTC.</p></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollomBadRequestException"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::TIME_OFFSET_MAX"></a></td>
+</tr>
+</table>
+</div></div>
+</div>
+<a id="constant_RESPONSE_ERROR"> </a><div class="element clickable constant  constant_RESPONSE_ERROR" data-toggle="collapse" data-target=".constant_RESPONSE_ERROR .collapse" title="">
+<h2>Server communication failure code: Unexpected server response.</h2>
+<pre>RESPONSE_ERROR = 511 </pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"><p>Using the 5xx HTTP status code range, but not re-using an existing HTTP
+code to prevent bogus bug reports. 511 is the closest comparable code
+501 (Not Implemented) plus 10.</p></div>
+<table class="table table-bordered"><tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollomResponseException"></a></td>
+</tr></table>
+</div></div>
+</div>
+<a id="constant_TIME_OFFSET_MAX"> </a><div class="element clickable constant  constant_TIME_OFFSET_MAX" data-toggle="collapse" data-target=".constant_TIME_OFFSET_MAX .collapse" title="">
+<h2>Maximum allowed time offset from UTC in seconds allowed for the client's local time.</h2>
+<pre>TIME_OFFSET_MAX = 300 : integer</pre>
+<div class="labels"></div>
+<div class="row collapse"><div class="detail-description">
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollom::handleRequest()"></a></td>
+</tr>
+<tr>
+<th>see</th>
+<td><a href="%5CPlugins%5CAntispam%5CMollom%5CService%5CMollom%5CMollomBadRequestException"></a></td>
+</tr>
+</table>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><footer class="span12" style="text-align: center;">
+			Created by <a href="https://wei170.github.io">Guocheng Wei</a>.<br>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.8.5</a> and<br>
+            generated on 2017-05-22T16:38:15-04:00.<br></footer></div>
+</div>
+</body>
+</html>
