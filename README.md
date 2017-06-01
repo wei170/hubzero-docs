@@ -8,7 +8,7 @@ It includes :
 
 ## Purpose
 
-The main purpose to let developers navigate through hubzero source codes much easier and effectively,  no matter when reading code or developing.
+The main purpose to let developers navigate through hubzero source codes much easier and more effectively, no matter when reading code or developing.
 
 **Happy developing !** 
 
